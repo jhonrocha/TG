@@ -1,0 +1,129 @@
+%% LyX 2.2.2 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[oneside,english,brazil,11pt,a4paper,openright,titlepage]{book}
+\setcounter{secnumdepth}{3}
+\setcounter{tocdepth}{3}
+\usepackage{array}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+% Classe alternativa, apropriada para impressão frente-verso. Inclui páginas em branco
+% de forma que capítulos sempre tenham início na página à direita:
+% \documentclass[11pt,a4paper,openright,titlepage]{book}
+
+\usepackage[T1]{fontenc}
+\usepackage{ft4unb_MKT}
+\usepackage[portuguese]{babel}
+
+\@ifundefined{showcaptionsetup}{}{%
+ \PassOptionsToPackage{caption=false}{subfig}}
+\usepackage{subfig}
+\makeatother
+
+\usepackage{babel}
+\begin{document}
+%CAPA
+\grau{Engenheiro Mecatrônico}{Engenheiro} \tipodemonografia{Trabalho de Graduação}
+
+% Título do trabalho (nao deletar linhas. Caso desejado, deixar em branco)
+\titulolinhai{Template em Latex para} 
+\titulolinhaii{Trabalhos de Graduação da Mecatrônica} 
+\titulolinhaiii{Versão LaTeX} 
+\titulolinhaiv{}
+\tituloingles{Latex template}
+
+%Autores
+\autori{Marco Emílio} 
+\autorii{} % deixar em branco se não houver segundo autor. 
+\autoriii{} % deixar em branco se não houver terceiro autor. 
+
+\capaprincipal
+
+%CONTRA CAPA
+
+%Membros da banca (até 5 membros) 
+\membrodabancai{Prof. Nome, Dept/Univ} \membrodabancaifuncao{Orientador} 
+\membrodabancaii{Prof. Nome, Dept/Univ} \membrodabancaiifuncao{Co-Orientador} 
+\membrodabancaiii{Prof. Nome, Dept/Univ} \membrodabancaiiifuncao{Examinador Externo} 
+\membrodabancaiv{Prof. Nome, Dept/Univ} \membrodabancaivfuncao{Examinador Interno} 
+\membrodabancav{} \membrodabancavfuncao{}
+
+%Data de defesa: dia, mês e ano. 
+\dia{01} \mes{janeiro} \ano{2011}
+
+\capaassinaturas
+
+%FICHA CATALOGRAFICA
+
+%Sobrenome, Nome Completo 
+\autorcatalogo{Silva, João Souza} 
+%Sobrenome, Iniciais 
+\autorabreviadocatalogo{Silva, J.S.} 
+%Número de páginas
+\numeropaginascatalogo{100p.} 
+\palavraschavecatalogoi{Palavra 1} 
+\palavraschavecatalogoii{Palavra 2} 
+\palavraschavecatalogoiii{Palavra 3} 
+\palavraschavecatalogoiv{Palavra 4} 
+%Número da publicação (fornecido pelo departamento após a defesa) 
+\publicacao{TG-001/2011}
+
+\fichacatalografica
+
+%DEDICATORIA
+\frontmatter
+% Texto primeiro autor 
+\dedicatoriaautori{Dedicatória do autor 1}
+% Texto segundo autor
+\dedicatoriaautorii{Dedicatória do autor 2}
+% Texto terceiro autor
+\dedicatoriaautoriii{Dedicatória do autor 3}
+
+\dedicatoria
+
+%AGRADECIMENTOS
+% Texto primeiro autor 
+\agradecimentosautori{Primeira página de agradecimentos} 
+% Conteudo da segunda pagina (caso agradecimentos sejam muito extensos)
+\agradecimentosautorcont{}
+% Texto segundo autor
+\agradecimentosautorii{}
+% Texto terceiro autor
+\agradecimentosautoriii{}
+
+\agradecimentos
+
+\include{abstract}
+
+\sumario
+
+\listadefiguras
+
+\listadetabelas
+
+\include{symbols}
+
+\include{notation}
+
+%CORPO PRINCIPAL
+\mainmatter 
+\setcounter{page}{1} \pagestyle{plain} 
+
+\include{capt_01}
+
+\include{capt_02}
+
+%BIBLIOGRAPHY
+\addcontentsline{toc}{chapter}{Referências Bibliográficas} 
+
+\bibliographystyle{IEEEtran}
+\bibliography{bibliography}
+
+\end{document}

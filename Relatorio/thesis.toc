@@ -1,0 +1,58 @@
+\select@language {portuguese}
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {1}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{1}
+\contentsline {section}{\numberline {1.1}Introdu\IeC {\c c}\IeC {\~a}o}{1}
+\contentsline {section}{\numberline {1.2}Justificativa}{6}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {2}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{8}
+\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{8}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {2.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{13}
+\select@language {brazil}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{15}
