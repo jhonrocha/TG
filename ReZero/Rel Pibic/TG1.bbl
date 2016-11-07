@@ -1,0 +1,29 @@
+\begin{thebibliography}{1}
+
+\bibitem{controllogix}
+Allan-Bradley and Rocwell Automation.
+\newblock {\em User Manual - ControlLogix System}, 2014.
+
+\bibitem{johansson1}
+K.~H. Johansson.
+\newblock The quadruple-tank process: A multivariable laboratory process with
+  an adjustable zero.
+\newblock 2000.
+
+\bibitem{rslinx}
+Allan-Bradley and Rocwell Automation.
+\newblock {\em RSLinx Classic Getting Results Guide}, 2014.
+
+\bibitem{ethernetmodule}
+Allan-Bradley and Rocwell Automation.
+\newblock {\em User Manual - EtherNet/IP Network Configuration}, 2014.
+
+\bibitem{logix5000}
+Allan-Bradley and Rocwell Automation.
+\newblock {\em Quick Start - Logix5000 Controllers}, 2014.
+
+\bibitem{analogmodules}
+Allan-Bradley and Rocwell Automation.
+\newblock {\em User Manual - ControlLogix Analog I/O Modules}, 2014.
+
+\end{thebibliography}

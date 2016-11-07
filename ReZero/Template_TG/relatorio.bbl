@@ -1,0 +1,13 @@
+\providecommand{\abntreprintinfo}[1]{%
+ \citeonline{#1}}
+\begin{thebibliography}{}
+\providecommand{\abntrefinfo}[3]{}
+\providecommand{\abntbstabout}[1]{}
+\abntbstabout{1.42.2.1 }
+
+\bibitem{article:dummy}
+\abntrefinfo{Smith e Williams}{SMITH; WILLIAMS}{0000}
+{SMITH, J.; WILLIAMS, M. A dummy citation entry.
+\emph{Journal of Publications}, v.~0, p.~0--0, jan. 0000.}
+
+\end{thebibliography}

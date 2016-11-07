@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.28)  28 OCT 2016 11:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.20)  30 OCT 2016 11:27
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -465,303 +465,27 @@ Package babel Info: Making " an active character on input line 145.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\babel-portuges\portuges.ldf"
 Language: portuges 2008/03/18 v1.2q Portuguese support from the babel system
 ))
-("C:\Program Files\MiKTeX 2.9\tex\latex\subfig\subfig.sty"
-Package: subfig 2005/06/28 ver: 1.3 subfig package
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption.sty"
-Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+! LaTeX Error: File `subfig.sty' not found.
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\caption\caption3.sty"
-Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 67.
-\captionmargin=\dimen116
-\captionmargin@=\dimen117
-\captionwidth=\dimen118
-\caption@tempdima=\dimen119
-\caption@indent=\dimen120
-\caption@parindent=\dimen121
-\caption@hangindent=\dimen122
-)
-\c@ContinuedFloat=\count93
-)
-\c@KVtest=\count94
-\sf@farskip=\skip45
-\sf@captopadj=\dimen123
-\sf@capskip=\skip46
-\sf@nearskip=\skip47
-\c@subfigure=\count95
-\c@subfigure@save=\count96
-\c@lofdepth=\count97
-\c@subtable=\count98
-\c@subtable@save=\count99
-\c@lotdepth=\count100
-\sf@top=\skip48
-\sf@bottom=\skip49
-) (thesis.aux
-(abstract.aux) (symbols.aux) (notation.aux) (capt_01.aux) (capt_02.aux))
-\openout1 = `thesis.aux'.
+Type X to quit or <RETURN> to proceed,
+or enter new name. (Default extension: sty)
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 31.
-LaTeX Font Info:    ... okay on input line 31.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 31.
+Enter file name: 
+! Emergency stop.
+<read *> 
+         
+l.28 \makeatother
+                 
+*** (cannot \read from terminal in nonstop modes)
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
-File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
-)
-("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count101
-\scratchdimen=\dimen124
-\scratchbox=\box26
-\nofMPsegments=\count102
-\nofMParguments=\count103
-\everyMPshowfont=\toks19
-\MPscratchCnt=\count104
-\MPscratchDim=\dimen125
-\MPnumerator=\count105
-\makeMPintoPDFobject=\count106
-\everyMPtoPDFconversion=\toks20
-) ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\pdftexcmds.sty"
-Package: pdftexcmds 2016/05/21 v0.22 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\ifluatex.sty"
-Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
-Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
-
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\grfext.sty"
-Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvdefinekeys.sty"
-Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
-))
-("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\kvoptions.sty"
-Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\kvsetkeys.sty"
-Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
-
-("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\etexcmds.sty"
-Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
-38.
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 456.
-)
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: a4paper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: 
-* h-part:(L,W,R)=(78.24507pt, 441.01772pt, 78.24509pt)
-* v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
-* \paperwidth=597.50787pt
-* \paperheight=845.04684pt
-* \textwidth=441.01772pt
-* \textheight=702.78308pt
-* \oddsidemargin=22.76228pt
-* \evensidemargin=-5.69046pt
-* \topmargin=-27.59187pt
-* \headheight=12.0pt
-* \headsep=14.45377pt
-* \topskip=11.0pt
-* \footskip=28.45274pt
-* \marginparwidth=53.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-\AtBeginShipoutBox=\box27
-Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
-Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 47.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 47.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 47.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 47.
-<figs/capa_fundo.pdf, id=1, 597.50786pt x 845.04686pt>
-File: figs/capa_fundo.pdf Graphic file (type pdf)
-
-<use figs/capa_fundo.pdf>
-Package pdftex.def Info: figs/capa_fundo.pdf used on input line 47.
-(pdftex.def)             Requested size: 614.5797pt x 869.19592pt.
-
-Overfull \hbox (17.07182pt too wide) has occurred while \output is active
- [][] 
- []
-
-[1
-
-
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./figs/capa_fundo.pdf>]
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 61.
-LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 61.
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
-[1
-
-]
-Underfull \hbox (badness 10000) in paragraph at lines 78--78
-
- []
-
-
-Overfull \hbox (9.53748pt too wide) in paragraph at lines 78--78
-[][]  
- []
-
-[1
-
-] [1
-
-
-] [1
-
-]
-\openout2 = `abstract.aux'.
-
- (abstract.tex) [1
-
-] (thesis.toc
-LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 45.
-)
-\tf@toc=\write3
-\openout3 = `thesis.toc'.
-
- [2
-
-
-] (thesis.lof)
-\tf@lof=\write4
-\openout4 = `thesis.lof'.
-
- [3
-
-] (thesis.lot)
-\tf@lot=\write5
-\openout5 = `thesis.lot'.
-
-
-[4
-
-]
-\openout2 = `symbols.aux'.
-
- (symbols.tex) [5
-
-
-]
-\openout2 = `notation.aux'.
-
- (notation.tex) [6
-
-
-
-]
-\openout2 = `capt_01.aux'.
-
- (capt_01.tex
-Chapter 1.
-[1
-
-
-
-
-] <figs/chapt01/lara_logo.png, id=71, 332.442pt x 203.159pt>
-File: figs/chapt01/lara_logo.png Graphic file (type png)
-
-<use figs/chapt01/lara_logo.png>
-Package pdftex.def Info: figs/chapt01/lara_logo.png used on input line 80.
-(pdftex.def)             Requested size: 85.35826pt x 52.16289pt.
- [2 <./figs/chapt01/lara_logo.png>] [3]
-[4] [5] [6]) [7]
-\openout2 = `capt_02.aux'.
-
- (capt_02.tex
-Chapter 2.
-[8
-
-
-
-] [9] [10] [11] [12]
-<figs/chapt02/lara_logo.png, id=109, 332.442pt x 203.159pt>
-File: figs/chapt02/lara_logo.png Graphic file (type png)
-
-<use figs/chapt02/lara_logo.png>
-Package pdftex.def Info: figs/chapt02/lara_logo.png used on input line 342.
-(pdftex.def)             Requested size: 85.35826pt x 52.16289pt.
-File: figs/chapt02/lara_logo.png Graphic file (type png)
- <use figs/chapt02/lara_logo.png>
-Package pdftex.def Info: figs/chapt02/lara_logo.png used on input line 345.
-(pdftex.def)             Requested size: 85.35826pt x 52.16289pt.
- [13 <./figs/chapt02/lara_logo.png>]) [14] (thesis.bbl) [15
-
-
-] (thesis.aux (abstract.aux)
-(symbols.aux) (notation.aux) (capt_01.aux) (capt_02.aux)) ) 
+ 
 Here is how much of TeX's memory you used:
- 4964 strings out of 493334
- 72364 string characters out of 3139236
- 154881 words of memory out of 3000000
- 8340 multiletter control sequences out of 15000+200000
- 45814 words of font info for 50 fonts, out of 3000000 for 9000
+ 2912 strings out of 493334
+ 38071 string characters out of 3139254
+ 112215 words of memory out of 3000000
+ 6416 multiletter control sequences out of 15000+200000
+ 4709 words of font info for 16 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,13n,51p,470b,395s stack positions out of 5000i,500n,10000p,200000b,50000s
-{C:/Program Files/Mi
-KTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/MiKTeX 2.9/fonts/typ
-e1/public/amsfonts/cm/cmbx10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publi
-c/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfon
-ts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (26 pages, 185775 bytes).
-PDF statistics:
- 142 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
-
+ 31i,0n,23p,470b,38s stack positions out of 5000i,500n,10000p,200000b,50000s
+!  ==> Fatal error occurred, no output PDF file produced!

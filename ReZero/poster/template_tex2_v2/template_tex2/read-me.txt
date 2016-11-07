@@ -1,0 +1,3 @@
+Compilar com pdflatex:
+
+"C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\pdflatex.exe" --output-format pdf -synctex=1 -interaction=nonstopmode "poster_ic".tex
