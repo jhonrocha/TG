@@ -1,0 +1,151 @@
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{float}
+\parindent15pt  \parskip0pt              
+\setlength\voffset{-2.0cm}
+\setlength\hoffset{-1.5cm}
+\setlength\textwidth{16.0cm}
+\setlength\textheight{24.5cm}
+\setlength\baselineskip{2cm}
+\renewcommand{\baselinestretch}{1.2}
+
+\makeindex
+
+\title{
+{\Large\sf Relatório Descritivo} \vspace{0.5cm} \\
+\textbf{\LARGE Aplicação de modelagem Fuzzy Takagi-Sugeno à planta Quatro-Tanques multivariável}\\
+}
+\author{Jhonantans Moraes Rocha \vspace{2mm}\\
+\it Laboratório de Robótica e Automação (LARA) \\
+\it Departamento de Engenharia El\'{e}trica - FT - UnB\\
+\it Caixa Postal 4.386 - Bras\'{i}lia - DF - Brasil\\
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	Realiza-se neste trabalho a modelagem não-linear, linearizada e fuzzy Takagi-Sugeno de uma planta quatro-tanques, como um exemplo geral de processos multivariáveis. Objetiva-se a comparação dos resultados obtidos, demonstrando a maior eficiência da abordagem fuzzy sobre a linearização simultaneamente à sua simplicidade.
+
+\end{abstract}
+
+\section{Introdução} 
+\indent 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{figs/4tank.png}
+	\caption{Diagrama esquemático do sistema de quatro tanques.}
+	\label{fig:4tanks}
+\end{figure}
+
+
+\section{Modelagem da Planta} \label{sec:modelagem}
+\subsection{Modelo Não Linear} \label{subsec:modnaolinear}
+Observando o esquemático apresentado na Figura \ref{fig:4tanks} e partindo das equações de Bernoulli para conservação de energia de fluídos incompressíveis, chega-se às seguintes equações não lineares:
+
+\begin{equation}
+\label{eq:modnaolinear}
+\begin{cases}
+\dot{h_{1}} = \frac{1}{A_{1}}(a_{3}\sqrt{2gh_{3}} + \gamma_{1}k_{1}v_{1} - a_{1}\sqrt{2gh_{1}})\\
+
+\dot{h_{2}} = \frac{1}{A_{2}}(a_{4}\sqrt{2gh_{4}} + \gamma_{2}k_{2}v_{2} - a_{2}\sqrt{2gh_{2}})\\
+
+\dot{h_{3}} = \frac{1}{A_{3}}((1 - \gamma_{2})k_{2}v_{2} - a_{3}\sqrt{2gh_{3}})\\
+
+\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - a_{4}\sqrt{2gh_{4}})
+\end{cases}
+\end{equation}
+em que, $h_{i}$, $A_{i}$ e $a_{i}$ são o nível de água, a área da secção transversal e a área de secção transversal do orifício de saída do tanque i, $i=1,2,3,4$, respectivamente. A constante de fluxo e a tensão aplicada na bomba j são dadas respectivamente por $k_{j}$ e $v_{i}$, $j=1,2$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4, $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
+
+\subsection{Linearização} \label{subsec:linearizacao}
+Seja o ponto em regime permanente dado por $\overline{h}=(\overline{h_{1}},\overline{h_{2}},\overline{h_{3}},\overline{h_{4}})$ e $\overline{v}=(\overline{v_{1}},\overline{v_{2}})$, realiza-se a linearização, por expansão em série de Taylor, das equações \ref{eq:modnaolinear}. Chega-se a:
+
+\begin{multline}
+\centering
+\begin{bmatrix}
+\dot{\Delta h_{1}} \\
+\dot{\Delta h_{2}} \\
+\dot{\Delta h_{3}} \\
+\dot{\Delta h_{4}} 
+\end{bmatrix}
+= 
+\begin{bmatrix}
+\frac{-a_{1}\sqrt{2g}}{2A_{1}\sqrt{h_{1}}} & 0 & \frac{a_{3}\sqrt{2g}}{2A_{1}\sqrt{h_{3}}} & 0 \\
+0 & \frac{-a_{2}\sqrt{2g}}{2A_{2}\sqrt{h_{2}}} & 0 & \frac{a_{4}\sqrt{2g}}{2A_{2}\sqrt{h_{4}}} \\
+0 & 0 & \frac{-a_{3}\sqrt{2g}}{2A_{3}\sqrt{h_{3}}} & 0 \\
+0 & 0 & 0 & \frac{-a_{4}\sqrt{2g}}{2A_{4}\sqrt{h_{4}}}
+\end{bmatrix}
+\begin{bmatrix}
+\Delta h_{1} \\
+\Delta h_{2} \\
+\Delta h_{3} \\
+\Delta h_{4} 
+\end{bmatrix}
++
+\begin{bmatrix}
+\frac{\gamma_{1}k_{1}}{A_{1}} & 0 \\
+0 & \frac{\gamma_{2}k_{2}}{A_{2}} \\
+0 & \frac{(1-\gamma_{2}) k_{2}}{A_{3}} \\
+\frac{(1-\gamma_{1})k_{1}}{A_{4}} & 0
+\end{bmatrix}
+\begin{bmatrix}
+\Delta v_{1} \\
+\Delta v_{2}
+\end{bmatrix}
+\label{eq2}
+\end{multline}
+\begin{equation}
+\begin{bmatrix}
+y_{1} \\
+y_{2} \\
+y_{3} \\
+y_{4} 
+\end{bmatrix}
+= 
+I
+\begin{bmatrix}
+\Delta h_{1} \\
+\Delta h_{2} \\
+\Delta h_{3} \\
+\Delta h_{4} 
+\end{bmatrix}
+\label{eq3}
+\end{equation}
+
+em que $y_{i}$ são as saídas medidas do sistema, $\Delta h_{i}=h_{i} - \overline{h_{i}}$, $\Delta v_{i}=v_{i} - \overline{v_{i}}$, e $i=1,2,3,4$.
+
+E por fim, a matriz função de transferência do sistema obtida é:
+\begin{equation}
+G(s) = 
+\begin{bmatrix}
+\frac{T_{1}\gamma_{1}k_{1}}{A_{1}(1+sT_{1})} &  \frac{T_{1}(1-\gamma_{2})k_{2}}{A_{1}(1+sT_{3})(1+sT_{1})} \\
+\frac{T_{2}(1-\gamma_{1})k_{1}}{A_{2}(1+sT_{4})(1+sT_{2})} &  \frac{T_{2}\gamma_{2}k_{2}}{A_{2}(1+sT_{2})} \\
+0 &  \frac{T_{3}(1-\gamma_{2})k_{2}}{A_{3}(1+sT_{3})} \\
+\frac{T_{4}(1-\gamma_{1})k_{1}}{A_{4}(1+sT_{4})} &  0 
+\end{bmatrix}
+\label{eq4}
+\end{equation}
+
+em que $G(s)=\frac{\Delta h(s)}{\Delta v(s)}$ e $T_{i}=\frac{2A_{i}\sqrt{h_{i}}}{a_{i}\sqrt{2g}}$, $i=1,2,3,4$.
+
+\section{Instalação e especificação do CLP} \label{sec:clp}
+
+	
+\section{Conclusões}\label{sec:conclusoes}
+Neste trabalho foi realizada a implementação do CLP Rockwell 1756-L62, juntamente com o conjunto de módulos para seu funcionamento e comunicação com uma bancada de quatro tanques e com um microcomputador. Iniciou-se com o estudo e descrição da bancada, seguida da instalação do controlador bem como seus módulos de entrada e saídas de dados e de comunicação. Seguiu-se também o estudo das linguagens de programação disponíveis para os softwares proprietários da fornecedora do CLP e como aplicá-las ao controle desejado.
+
+\bibliographystyle{unsrt} 
+\bibliography{Jhon}
+
+\appendix
+
+\end{document}          
+

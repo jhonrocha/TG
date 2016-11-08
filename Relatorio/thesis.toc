@@ -42,17 +42,62 @@
 \select@language {english}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {1}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{1}
-\contentsline {section}{\numberline {1.1}Introdu\IeC {\c c}\IeC {\~a}o}{1}
-\contentsline {section}{\numberline {1.2}Justificativa}{6}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
+\contentsline {section}{\numberline {1.1}Introdu\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
+\contentsline {section}{\numberline {1.2}Justificativa}{7}{section.1.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {2}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{8}
-\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{8}
+\contentsline {chapter}{\numberline {2}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{9}{chapter.2}
+\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{section.2.1}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {brazil}
 \select@language {english}
-\contentsline {section}{\numberline {2.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{13}
+\contentsline {section}{\numberline {2.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{14}{section.2.2}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{15}
+\select@language {english}
+\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{16}{chapter.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{16}{section.3.1}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {3.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{21}{section.3.2}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{23}{chapter.4}
+\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{23}{section.4.1}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {4.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{28}{section.4.2}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {5}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{30}{chapter.5}
+\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{30}{section.5.1}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {5.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{35}{section.5.2}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {6}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{37}{chapter.6}
+\contentsline {section}{\numberline {6.1}Introdu\IeC {\c c}\IeC {\~a}o}{37}{section.6.1}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {6.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{42}{section.6.2}
+\select@language {brazil}
+\select@language {english}
+\contentsline {chapter}{\numberline {7}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{44}{chapter.7}
+\contentsline {section}{\numberline {7.1}Introdu\IeC {\c c}\IeC {\~a}o}{44}{section.7.1}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\contentsline {section}{\numberline {7.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{49}{section.7.2}
+\select@language {brazil}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{51}{figure.caption.15}

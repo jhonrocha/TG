@@ -21,26 +21,31 @@
 \usepackage[T1]{fontenc}
 \usepackage{ft4unb_MKT}
 \usepackage[portuguese]{babel}
-
 \@ifundefined{showcaptionsetup}{}{%
  \PassOptionsToPackage{caption=false}{subfig}}
 \usepackage{subfig}
 \makeatother
 
 \usepackage{babel}
+
+%%%%%%% My Includes %%%%%%%
+\usepackage[hidelinks]{hyperref}
+\usepackage{float}
+
+
 \begin{document}
 %CAPA
 \grau{Engenheiro Mecatrônico}{Engenheiro} \tipodemonografia{Trabalho de Graduação}
 
 % Título do trabalho (nao deletar linhas. Caso desejado, deixar em branco)
-\titulolinhai{Controle Fuzzy de } 
-\titulolinhaii{Planta Industrial} 
+\titulolinhai{Implementação de Controle Fuzzy} 
+\titulolinhaii{Em CLP Industrial} 
 \titulolinhaiii{} 
 \titulolinhaiv{}
-\tituloingles{Latex template}
+\tituloingles{Fuzzy Control Implementation in Industrial CLP}
 
 %Autores
-\autori{Marco Emílio} 
+\autori{Jhonantans Moraes Rocha} 
 \autorii{} % deixar em branco se não houver segundo autor. 
 \autoriii{} % deixar em branco se não houver terceiro autor. 
 
@@ -49,31 +54,31 @@
 %CONTRA CAPA
 
 %Membros da banca (até 5 membros) 
-\membrodabancai{Prof. Nome, Dept/Univ} \membrodabancaifuncao{Orientador} 
-\membrodabancaii{Prof. Nome, Dept/Univ} \membrodabancaiifuncao{Co-Orientador} 
+\membrodabancai{Prof. Eduardo Stockler Tognetti, ENE/UnB} \membrodabancaifuncao{Orientador} 
+\membrodabancaii{Prof. Nome, Dept/Univ} \membrodabancaiifuncao{Co-Orientador}
 \membrodabancaiii{Prof. Nome, Dept/Univ} \membrodabancaiiifuncao{Examinador Externo} 
 \membrodabancaiv{Prof. Nome, Dept/Univ} \membrodabancaivfuncao{Examinador Interno} 
 \membrodabancav{} \membrodabancavfuncao{}
 
 %Data de defesa: dia, mês e ano. 
-\dia{01} \mes{janeiro} \ano{2011}
+\dia{14} \mes{dezembro} \ano{2016}
 
 \capaassinaturas
 
 %FICHA CATALOGRAFICA
 
 %Sobrenome, Nome Completo 
-\autorcatalogo{Silva, João Souza} 
+\autorcatalogo{Rocha, Jhonantans Moraes} 
 %Sobrenome, Iniciais 
-\autorabreviadocatalogo{Silva, J.S.} 
+\autorabreviadocatalogo{Rocha, J.M.} 
 %Número de páginas
-\numeropaginascatalogo{100p.} 
-\palavraschavecatalogoi{Palavra 1} 
-\palavraschavecatalogoii{Palavra 2} 
-\palavraschavecatalogoiii{Palavra 3} 
-\palavraschavecatalogoiv{Palavra 4} 
+\numeropaginascatalogo{60p.} 
+\palavraschavecatalogoi{Fuzzy} 
+\palavraschavecatalogoii{Controle} 
+\palavraschavecatalogoiii{Quatro-Tanques} 
+\palavraschavecatalogoiv{CLP} 
 %Número da publicação (fornecido pelo departamento após a defesa) 
-\publicacao{TG-001/2011}
+\publicacao{TG-002/2016}
 
 \fichacatalografica
 
@@ -116,9 +121,19 @@
 \mainmatter 
 \setcounter{page}{1} \pagestyle{plain} 
 
-\include{capt_01}
+\include{capt_intro}
 
-\include{capt_02}
+\include{capt_descricao}
+
+\include{capt_modFuzzy}
+
+\include{capt_controle}
+
+\include{capt_simulacoes}
+
+\include{capt_implementacao}
+
+\include{capt_conclusao}
 
 %BIBLIOGRAPHY
 \addcontentsline{toc}{chapter}{Referências Bibliográficas} 

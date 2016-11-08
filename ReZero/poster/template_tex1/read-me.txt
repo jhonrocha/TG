@@ -1,0 +1,15 @@
+Compilar com latex:
+------------------------------------------------
+
+"C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\latex.exe"  --synctex=-1 -interaction=nonstopmode "poster_sbai_2015".tex
+
+Gerar .ps:
+------------------------------------------------
+
+"C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\dvips.exe"  -o "poster_sbai_2015".ps "poster_sbai_2015".dvi
+
+
+E depois converter de .ps para .pdf:
+------------------------------------------------
+
+"C:\Program Files (x86)\MiKTeX 2.9\miktex\bin\ps2pdf.exe"  "poster_sbai_2015".ps

@@ -1,0 +1,412 @@
+%================================================================
+% Author: xxx - x@x.com
+% 04/10/15
+%================================================================
+\documentclass[a0,11pt,portrait,harvard,brazil]{a0poster}
+\usepackage[latin1]{inputenc} %para aceitar carcteres da língua portuguesa
+\usepackage{ae} %para aceitar acentos
+%\usepackage{alltt}
+\usepackage{color}
+\usepackage{times}
+\usepackage{a0poster,mathrsfs,eso-pic,psfrag}
+\usepackage{graphicx,pst-grad,epsfig,amsmath,amssymb}
+\usepackage[a0paper,hmargin={1.5cm,1.5cm},vmargin={1.5cm,1.5cm}]{geometry}
+%\usepackage[width=700mm,height=1000mm]{geometry}
+\usepackage{pifont}
+\usepackage{multirow,array}
+
+%\usepackage{psfrag,mathptmx}
+%\usepackage{amssymb,latexsym,amsmath}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\Pal}{P(\mu)}
+
+\def\Cset{\mathbb{C}}
+\def\Dset{\mathbb{D}}
+\def\Kset{\mathbb{K}}
+\def\Rset{\mathbb{R}}
+\def\R{\mathbb{R}}
+\def\Nset{\mathbb{N}}
+\def\Zset{\mathbb{Z}}
+
+\renewcommand{\Re}{\mathop{\mathrm{Re}}}
+\renewcommand{\Im}{\mathop{\mathrm{Im}}}
+\newcommand{\Al}{\alpha}
+
+\newtheorem{theo}{Teorema}
+%\newtheorem{coro}[theo]{Corolario}
+%\newtheorem{prop}[theo]{Proposição}
+\newtheorem{definition}{Definição}
+\newtheorem{lemma}{Lema}
+\newtheorem{teorema}{Teorema}
+\newtheorem{exam}{Exemplo}
+
+\newcommand{\implica}{\hspace*{1.0cm} {\color{red} $\leadsto$}~~}
+\newcommand{\topico}{{\color{black} $\bullet$}~~~}
+\newcommand{\subtopico}{{\color{black} \hspace{0.5cm} \ding{226}}~~~}
+\definecolor{azul_clarinho}{rgb}{0.88, 0.94, 1}
+\definecolor{verde}{rgb}{0.0, 0.85, 0.5}
+\definecolor{cinzinha}{rgb}{0.85, 0.85, 0.85}
+
+%Commands
+\newcommand{\bref}[2][*]{\ifthenelse{\equal{#1}{*}}{(\ref{#2})}{(\ref{#1}\ensuremath{\text{--}}\ref{#2})}}
+\newcommand{\Iset}{\mathcal{I}}
+\newcommand{\Qset}{\mathcal{Q}}
+\renewcommand{\i}{\mathbf{i}}
+\newcommand{\ip}{\mathbf{i}_{+}}
+\newcommand{\ones}{\sigma}
+\newcommand{\z}[1]{\ensuremath{\left(z(#1)\right)}}
+
+\newcommand{\tabcent}[1]{>{\centering\arraybackslash}m{#1 cm}}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+\newcommand{\Hi}{{\mathcal{H}}_{\infty}}
+\newcommand{\Hd}{{\mathcal{H}}_{2}}
+\newcommand\I{\mbox{\bf I}}
+\newcommand\Z{\mbox{\bf 0}}
+\newcommand\pdef{\triangleq}
+\newcommand{\Tr}{\mbox{\sl Tr}}
+\def\reais{{\rm I\kern-.17em R}} % R de reais
+\def\nat{{\rm I\kern-.17em N}} % R de reais
+%\def\real{$\mathds{R}$}
+\def\real{{\rm I\kern-.17em R}} % R de reais
+\def\Dest{{\rm I\kern-.17em D}} % R de reais
+%\newtheorem{teorema}{\noindent{\bf \color{blue} Theorem} }
+\newtheorem{lema}{\noindent{\bf \color{blue}Lemma} }
+\newtheorem{corolario}{\noindent{\bf Corolary} }
+\newenvironment{prova}{\noindent{\bf Proof:}}{\null\hfill $\rule{1.5mm}{1.5mm}$}
+\newtheorem{definicao}{\noindent{\bf Definition} }
+\newtheorem{remark}{\noindent{\bf Remark} }
+
+\newrgbcolor{cinza}{0.96 0.96 0.96}
+\newrgbcolor{cinza_escuro}{0.76 0.76 0.76}
+\newrgbcolor{azul_pkd}{0.39 0.58 1.0}
+
+\newrgbcolor{navyblue}{0 0.15 0} %(modificado para verde)   
+%\newrgbcolor{navyblue}{1 0 0.5} 
+
+%\newrgbcolor{gradbegin}{0.39 0.58 1.0}%
+%\newrgbcolor{gradbegin}{0.855 0.648 0.325}
+
+%\newrgbcolor{gradbegin}{1 0.9 0.3}
+%\newrgbcolor{gradend}{1 1 0.67}%{1 1 0.5}%
+
+
+%COR DE FUNDO DO POSTER
+%\newrgbcolor{gradbegin}{.0 .0 .30}
+\newrgbcolor{gradbegin}{.0 .0 .30}
+%\newrgbcolor{gradend}{.66 .66 1.11}
+\newrgbcolor{gradend}{.66 .66 1.11}
+
+\newlength{\kastenwidth}
+\def\anzspalten{3}
+\newsavebox{\dummybox}
+\newsavebox{\spalten}
+
+\newenvironment{kasten}{%
+  \hspace{1cm}\begin{lrbox}{\dummybox}%
+    \begin{minipage}{0.96\linewidth}}%
+    {\end{minipage}%
+  \end{lrbox}%
+  \raisebox{-\depth}{\psshadowbox[framesep=1em]{\usebox{\dummybox}}}\\[0.5em]}
+
+\newenvironment{spalte}{%
+  \setlength\kastenwidth{1.4\textwidth}
+  \divide\kastenwidth by \anzspalten
+  \begin{minipage}[t]{\kastenwidth}}{\end{minipage}\hfill}
+
+\renewcommand{\emph}[1]{{\color{red}\textbf{#1}}}
+
+\hyphenation{outras lite-ra-tu-ra}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+\psframe[fillstyle=gradient,gradend=gradend,gradbegin=gradbegin,gradmidpoint=0.5](811mm,-1159mm)
+%\psframe[fillstyle=gradient,gradend=gradend,gradbegin=gradbegin,gradmidpoint=0.5](1141mm,-1259mm)
+
+\vspace{1cm}
+\hspace{1cm}
+\psshadowbox{\makebox[0.965\textwidth]
+{
+    \hfill
+    \parbox[r]{0.15\linewidth}{\begin{tabular}{c}\epsfxsize=0.50\linewidth \centerline{\epsffile{lara_logo}}
+    \end{tabular}}
+    \hfill
+    \parbox[c]{0.75\linewidth}{%
+    \begin{center}
+        \textbf{\huge {Filtragem de sistemas dinâmicos não-lineares \\ plataforma de petróleo}}\\[0.5em]
+        \textsc{\Large Autor 1, Autor 2 e Autor 3 }\\[0.5em]
+        {\large {\bf Departamento de Engenharia Elétrica, ENE/FT/UnB, Brasília, DF, Brasil
+     }}
+    \end{center}}
+    \hfill
+    \parbox[c]{0.10\linewidth}{\hspace{0cm}\epsfxsize=0.60\linewidth \epsffile{unb.eps}}
+}}
+
+%\vspace{1cm}
+
+\begin{spalte}
+\begin{kasten}
+\begin{center}
+{\large{\bf \color{navyblue}    \underline{RESUMO}  } }
+\end{center}
+Neste artigo, o problema de projeto de filtros para sistemas contínuos e invariantes no tempo é investigado no contexto de estabilidade absoluta. O filtro é obtido de tal forma a garantir que o sistema aumentado (filtro acoplado à planta) seja absoluto estável em relação a uma classe de não-linearidades limitadas em um cone. As condições de síntese obtidas por meio de funções de Lyapunov são expressas como desigualdades matriciais lineares. Incertezas no sistema também são consideradas utilizando modelos politópicos. Um filtro de ordem completa é obtido solucionando um problema de otimização $\mathcal{H}_\infty$. Uma aplicação prática em plataforma de momento giroscópico é apresentada.
+\end{kasten}
+
+%%%%%%%%%%%%%%%%% Introdução %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{kasten}
+\section*{{\color{navyblue} 1} \hspace{0.1cm} {\color{navyblue} \underline{Introdução}} }
+
+\vspace{-0.5cm}
+
+O conceito de estabilidade absoluta de um sistema dinâmico, introduzido por Lur'e e Postnikov na década de 40, estabelece condições para a análise das trajetórias de um sistema cuja malha de realimentação é dada por uma função não-linear desconhecida. Para uma classe de não-linearidades invariantes no tempo\footnote{$\mathbb{K}$ representa o campo dos Complexos ou Reais.}, $N:\mathbb{K}^q \longmapsto \mathbb{K}^\ell$, diferenciável na origem com $N(0)=0$, e satisfazendo a condição global de Lipschitz, o ponto de equilíbrio nulo do sistema
+\[ \dot x(t) = Ax(t)\]
+é dito estável no sentido absoluto em relação a um conjunto de perturbações $\mathcal{D}$, se o sistema
+\[ \dot x(t) = Ax(t) + BN(Cx(t)), ~~t \geq 0\]
+for globalmente assintoticamente estável para todo $N \in \mathcal{D}$. 
+
+\vspace{0.5cm}
+O estudo de estabilidade deste tipo de sistema ficou conhecido na literatura como problema de Lur'e, e provavelmente os resultados mais conhe\-cidos apresentados até hoje são a conjectura de Aizerman, a conjectura de Kalman, o critério do Círculo e o critério de Popov.  Dentro deste contexto, a maior parte dos resultados apresentados até o momento encontra-se dividida em dois grupos principais de problemas: análise de estabilidade e síntese de controladores. Extensões para o problema de filtragem absoluta, de importância inquestionável, pode se beneficiar de diversas contribuições apresentadas para síntese de controladores absolutos, e em alguns casos ainda carece de resultados semelhantes.
+
+\vspace{1cm}
+\psframe[fillstyle=gradient,gradend=cinza,gradbegin=cinza,gradmidpoint=0.0](-0.1,0.8)(36.5,-3.4)
+{\bf \color{red} Contribuição:} 
+Condições de síntese de filtros dinâmicos tal que o sistema aumentado seja absolutamente estável em relação a uma classe de não-linearidades limitadas em um cone, com um limitante superior para o desempenho $\mathcal{H}_\infty$ garantido. Extensões para o caso de sistemas incertos também são consideradas. O resultado é validado em uma bancada de controle de momento giroscópico.
+\end{kasten}
+
+
+\begin{kasten}
+\section*{{\color{navyblue} 2} \hspace{0.1cm} {\color{navyblue} \underline{Descrição do Sistema e Definição do Problema}} }
+
+A classe de sistemas dinâmicos considerada neste trabalho é composta por plantas descritas como
+\begin{equation} \label{eq:sist}
+\begin{aligned}
+\dot{x}\left(t\right)&=Ax\left(t\right)+Nf\left(x\right)+Bw\left(t\right)\\
+y\left(t\right)&=Cx\left(t\right)+Mf\left(x\right)+Dw\left(t\right)\\
+z\left(t\right)&=Lx\left(t\right)
+\end{aligned}
+\end{equation}
+As equações do filtro são dadas por
+\begin{equation} \label{eq:filter_sys}
+\begin{aligned}
+\dot{x}_{f}(t)&=A_{f}x_{f}(t)+N_{f}g(x_f)+B_{f}y(t)\\
+z_{f}(t)&=C_{f}x_{f}(t)+M_{f}g(x_f)
+\end{aligned}
+\end{equation}
+em que as funções $f$ e $g$ são não lineares, radialmente ilimitadas, pertencentes à classe de funções
+\[
+\begin{array}{c}
+\mathcal{F}(\gamma ,\delta )=\{x\rightarrow f(x)=[f_1(x_1)\ldots f_n(x_n)]': \\
+\gamma_i \tau^2 < f_i(\tau) \tau < \delta_i \tau^2, 0<\gamma_i \leq1 \leq \delta_i,~ f_i(0)=0, ~~ \forall i \in \mathbb{N}^{*} \}.
+\end{array}
+\]
+
+Acoplando o filtro à planta, as equações que descrevem a dinâmica do sistema aumentado são
+
+\vspace{0.5cm}
+\begin{equation} \label{eq:filter_error}
+\begin{aligned}
+\begin{bmatrix}
+ \dot x(t) \\ \dot x_f(t)
+\end{bmatrix}
+&= \begin{bmatrix}
+A       &\Z \\
+B_f C  &A_f
+\end{bmatrix} 
+\begin{bmatrix}
+x(t) \\ x_f(t)
+\end{bmatrix} + 
+\begin{bmatrix}
+N       &\Z \\
+B_f M  &N_f
+\end{bmatrix} 
+\begin{bmatrix}
+f(x(t)) \\ g(x_f(t))
+\end{bmatrix} +
+\begin{bmatrix}
+B \\
+B_f D
+\end{bmatrix} w(t)\\[0.3cm]
+e(t) &= \begin{bmatrix}
+C_z & -C_f
+\end{bmatrix} \begin{bmatrix}
+x(t) \\ x_f(t)
+\end{bmatrix} +
+\begin{bmatrix}
+\Z & -M_f
+\end{bmatrix}
+\begin{bmatrix}
+f(x(t)) \\ g(x_f(t))
+\end{bmatrix}
+\end{aligned}
+\end{equation}
+em que $e(t)=z(t)-z_f(t)$.
+
+\vspace{1.0cm}
+\psframe[fillstyle=gradient,gradend=cinza,gradbegin=cinza,gradmidpoint=0.0](-0.1,0.8)(36.5,-6)
+{\bf \color{red} Problema:} 
+Encontre matrizes $A_{f} \in \reais^{n \times n}$, $N_{f} \in \reais^{n \times n}$, $B_{f} \in \reais^{n \times q}$, $C_{f} \in \reais^{p \times n}$ e $M_{f} \in \reais^{p \times n}$ do filtro \eqref{eq:filter_sys}, tais que a dinâmica do sistema aumentado \eqref{eq:filter_error} seja absolutamente estável em relação à classe de não-linearidades $\mathcal{F}$, e um limitante superior $\mu$ do desempenho $\Hi$ do erro de estimação seja garantido, ou seja,
+\begin{equation} \label{eq:hoo}
+\sup_{\| w \|_2 \neq 0,~  w  \in  \mathcal{L}^2[0,\infty)}~ \frac{\|e \|_2^2}{\|w \|_2^2} < \mu^2 ,~ \forall f \in \mathcal{F}.
+\end{equation}
+\end{kasten}
+
+%=======================================================================
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{kasten}
+\section*{{\color{navyblue} 3} \hspace{0.1cm} {\color{navyblue} \underline{Resultado Auxiliar}} }
+
+O lema a seguir apresenta uma condição suficiente para a solução do problema acima.
+
+\vspace{0.5cm}
+\begin{lemma} \label{lema:analise}
+	Dado um sistema não-linear invariante no tempo do tipo (\ref{eq:sist}), matrizes diagonais $\Delta \succ 0$ e $\Gamma \succeq 0$ (obtidas pela especificação do setor), uma matriz bloco diagonal $Q \succ 0$, e um escalar positivo $\mu$,  se existir uma matriz simétrica $W \succ 0$ (variável do problema) tal que\footnote{O símbolo $(\star)$ representa o bloco simétrico na matriz.}
+	\begin{equation} \label{eq:lmi_analysis}
+	\Xi :=
+	\left[\begin{array}{cccc}
+	-Q & \tilde{N}^{'}W + \frac{1}{2}Q\left(\Gamma + \Delta\right) & \Z & \tilde{M}'\\
+	(\star) & \tilde{A}^{'}W+W\tilde{A}-\Gamma\Delta Q & W\tilde{B} & \tilde{C}'\\
+	(\star) & (\star) & -\mu^{2}I & \Z\\
+	(\star) & (\star) & (\star) & -I \\
+	\end{array} \right] \prec 0
+	\end{equation}
+	então o sistema~(\ref{eq:filter_error}) é absolutamente estável para todo $\tilde{f} \in \mathcal{F}(\gamma ,\delta )$ com um limitante superior para a norma $\mathcal{H}_\infty$ dado por $\mu$.
+\end{lemma}
+\end{kasten}
+
+\end{spalte}
+%%%%%%%%%%%%%%%%%%%%%%% Segunda Coluna %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{spalte}
+
+%=========================================================================================
+%=========================================================================================
+
+\begin{kasten}
+\section*{{\color{navyblue} 4} \hspace{0.1cm} {\color{navyblue} \underline{Resultado Principal}} }
+O teorema a seguir apresenta uma condição suficiente para a síntese de filtros com erro de estimação absolutamente estável.
+
+\begin{teorema} \label{teo:absolute_filter}
+	Dado um sistema não-linear do tipo (\ref{eq:sist}), matrizes diagonais $\Delta_{11} \succ 0$, $\Delta_{22} \succ 0$ (obtidas pela especificação do setor), $Q_{11} \succ 0$, $Q_{22} \succ 0$ e um escalar positivo $\mu$, se existirem (variáveis do problema) matrizes simétricas $X, ~ Z \in \R^{n\times n}$, e matrizes $E,~ G, ~ R \in\R^{n\times n}$, $F \in \R^{q \times n}$, $S, ~ M_f \in \R^{p \times n}$ tais que
+	\begin{equation} \label{eq:lmi_lyap_matrix}
+	\left[\begin{array}{cc}
+	Z & Z \\
+	Z & X \\
+	\end{array} \right]  \succ 0
+	\end{equation} 
+	
+	\begin {equation} \label{eq:lmi_absolute_filter}
+	\Upsilon :=
+	{ \small
+		\left[\begin{array}{cccccc}
+			-Q_{11} & 0 & N^{'}Z + \frac{1}{2} Q_{11}\Delta_{11} & N^{'}X + M^{'}F + \frac{1}{2}Q_{11}\Delta_{11} & 0 & 0\\
+			(\star) & -Q_{22} & \frac{1}{2}R & G & 0 & -M_{f}'\\
+			(\star) & (\star) & A^{'}Z + ZA & A^{'}X + C^{'}F + E + ZA & Z'B & L' - S' \\
+			(\star)& (\star)& (\star) & A^{'}X + C^{'}F + XA + F'C & XB + F'D & L'\\
+			(\star)& (\star)& (\star) & (\star) & -\mu^{2}I & 0\\ 
+			(\star)& (\star)& (\star) & (\star) & (\star) & -I\\
+		\end{array} \right] \prec 0
+	}
+	\end {equation}
+%	\[
+%	\begin{array}{c}
+%	\mathcal{T}_{13} = N^{'}Z + \frac{1}{2} Q_{11}\Delta_{11}, ~ \mathcal{T}_{36} = L' - S'\\ 
+%	\mathcal{T}_{14} = N^{'}X + M^{'}F + \frac{1}{2}Q_{11}\Delta_{11}, \\
+%	\mathcal{T}_{33} = A^{'}Z + ZA, ~\mathcal{T}_{34} = A^{'}X + C^{'}F + E + ZA \\
+%	\mathcal{T}_{44} = A^{'}X + C^{'}F + XA + F'C, ~ \mathcal{T}_{45} = XB + F'D
+%	\end{array}
+%	\]
+	então existe um filtro dado por (\ref{eq:filter_sys}), tal que o erro de estimação (\ref{eq:filter_error})  é absolutamente estável para todo $\tilde{f} \in \mathcal{F}(\gamma ,\delta )$ com um limitante superior para a norma $\mathcal{H}_\infty$ dado por $\mu$. As matrizes do filtro são dadas por
+	\[
+	\begin{array}{c}
+	A_{f}=\left(U'\right)^{-1}E'YV^{-1}, ~ B_{f}=\left(U'\right)^{-1}F', \\
+	N_{f}=\left(U'\right)^{-1}G', ~ C_{f}=SYV^{-1}, ~ M_f,
+	\end{array}
+	\]
+	em que 
+	\[
+	\begin{array}{c}
+	Y = Z^{-1}, ~ V = (Q_{22}\Delta_{22})^{-1}RZ^{-1}, \\
+	U =(V^{-1}-XZ^{-1}V^{-1})'.
+	\end{array}
+	\]
+\end{teorema}
+\psframe[fillstyle=gradient,gradend=cinza,gradbegin=cinza,gradmidpoint=0.0](-0.1,0.8)(36.5,-3.4)
+{\bf \color{red} Comentários:} 
+A extensão do Teorema~\ref{teo:absolute_filter} para tratar o caso no qual o sistema~(\ref{eq:sist}) possui incertezas descritas por um vetor de parâmetros $\alpha \in \reais^{N}$ pertencente ao N-simplexo unitário também foi considerada. A minimização de $\mu$ sujeito às condições do Teorema~\ref{teo:absolute_filter} fornece o filtro dinâmico com o menor custo garantido $\mathcal{H}_\infty$ assegurando a estabilidade absoluta do erro de estimação (\ref{eq:filter_error}).
+\end{kasten}
+
+%=========================================================================================
+%=========================================================================================
+\begin{kasten}
+\section*{{\color{navyblue} 5} \hspace{0.1cm} {\color{navyblue} \underline{Simulações em bancada de momento giroscópico}} }
+A plataforma de análise e controle de momento giroscópico utilizada neste experimento é a seguinte:
+\begin{figure}
+	\epsfxsize=16cm
+	\centerline{\epsffile{tq.eps}}
+	{ Plataforma do giroscópio.}
+\end{figure}
+Para o ensaio em questão, o gimbal C foi mantido fixo e a dinâmica aproximada por um modelo linearizado de ordem 3 dado por
+{
+	\begin{equation*}
+	\begin{bmatrix}
+	{\dot q}_4 \\
+	{\dot \omega}_2 \\
+	{\dot \omega}_4
+	\end{bmatrix} = 
+	\begin{bmatrix}
+	0 & 0 & 1 \\
+	0 & 0 & \frac{J_D \Omega}{(I_C+ I_D)(k_{e2}/k_{e4})} \\
+	0 & \frac{-J_D \Omega}{I_D+K_A+K_B+K_C} & 0
+	\end{bmatrix}
+	\begin{bmatrix}
+	{q}_4 \\
+	{\omega}_2 \\
+	{\omega}_4
+	\end{bmatrix} + 
+	\begin{bmatrix}
+	0 \\
+	\frac{1}{(I_C+ I_D)k_{u2}k_{e4}} \\
+	0
+	\end{bmatrix} T_2.
+\end{equation*}}
+\noindent O sistema é estabilizado na posição de interesse e um pulso unitário de largura 4s aplicado à planta.  Observa-se a saturação no esforço de controle em +/- 10V. O Teorema~\ref{teo:absolute_filter} foi aplicado para projetar um filtro absoluto em relação a saturação e robusto a eventuais perturbações na planta, que estime a velocidade angular $\omega_4$. O filtro projetado ainda tolera eventuais não-lineares nas demais componentes do esforço de controle relacionadas com a posição angular $q_4$ e velocidade $\omega_4$ desde que limitadas por um setor com inclinação $0.1$ conforme especificação de projeto, embora apresente um erro maior durante o transitório.
+%\begin{figure}
+%	\epsfxsize=12cm
+%	\centerline{\epsffile{tq.eps} \hfil 
+%	\epsfxsize=12cm
+%	\epsffile{tq.eps}}
+%	\vspace{-0.5cm}
+%	{Não-linearidade limitada em setor à esquerda, e estimação de $\omega_4$ implementado na plataforma à direita.}
+%\end{figure}
+O limitante superior para a norma $\mathcal{H}_\infty$ obtido minimizando $\mu$ sujeito às condições do Teorema~\ref{teo:absolute_filter} foi de $5.311 \times 10^{-7}$, indicando uma boa característica robusta do filtro a pequenas perturbações. A taxa de amostragem considerada foi de $T_s = 0.00884$s, o que de acordo com o fabricante é suficiente para tratar o sistema de forma contínua.
+
+\end{kasten}
+%=========================================================================================
+%=========================================================================================
+%\begin{kasten}
+%\section*{{\color{navyblue} 6} \hspace{0.1cm} {\color{navyblue} \underline{Conclusão}} }
+%Neste artigo, um procedimento de síntese de filtros contínuos no tempo para sistemas com não-linearidades limitadas em setor tal que a dinâmica do erro de estimação seja absolutamente estável com desempenho $\mathcal{H}_\infty$ garantido foi apresentado. A principal característica das condições propostas está no fato de que tanto o sistema quanto o filtro são considerados afetados por não-linearidades limitadas em uma região pré-estabelecida. Tal resultado foi obtido utilizando uma função de Lyapunov quadrática, que apresentou vantagens algébricas quando comparada com funcões de Lyapunov do tipo Lur'e no contexto do problema de filtragem considerado. Ressalta-se que da forma como foi considerado o projeto do filtro, a planta também precisa ser absolutamente estável. Extensões para o caso de sistemas incertos, com modelos politópicos para as incertezas, também foram consideradas. O filtro obtido é resultado da solução de um problema de otimização com restrições LMIs, em que um limitane superior da norma $\mathcal{H}_\infty$ é minimizado. O experimento realizado ilustra o resultado principal apresentado no texto.
+%\end{kasten}
+
+%=========================================================================================
+%=========================================================================================
+ \begin{kasten}
+ \section*{{\color{navyblue} 6} \hspace{0.1cm} {\color{navyblue} \underline{Conclusão}} }
+Neste artigo, um procedimento de síntese de filtros contínuos no tempo para sistemas com não-linearidades limitadas em setor tal que a dinâmica do erro de estimação seja absolutamente estável com desempenho $\mathcal{H}_\infty$ garantido foi apresentado. A principal característica das condições propostas está no fato de que tanto o sistema quanto o filtro são considerados afetados por não-linearidades limitadas em uma região pré-estabelecida. Tal resultado foi obtido utilizando uma função de Lyapunov quadrática, que apresentou vantagens algébricas quando comparada com funcões de Lyapunov do tipo Lur'e no contexto do problema de filtragem considerado. Ressalta-se que da forma como foi considerado o projeto do filtro, a planta também precisa ser absolutamente estável. Extensões para o caso de sistemas incertos, com modelos politópicos para as incertezas, também foram consideradas. O filtro obtido é resultado da solução de um problema de otimização com restrições LMIs. \end{kasten}
+
+%=========================================================================================
+%=========================================================================================
+\end{spalte}
+
+\begin{kasten}
+\begin{center}
+%\psframe[fillcolor=cinza,fillstyle=solid,linewidth=0pt](-1.5,1.6)(48.5,-0.5)
+{\color{navyblue} \Large 
+{\bf Agradecimentos:} $~~~$ \epsfxsize=0.06\linewidth  \epsffile{cnpq.eps}~~ \epsfxsize=0.05\linewidth \epsffile{capes.eps} ~~ UnB/DPP ~~~~~~~~~~~~~~~~~~~
+{\bf Emails:}  autor1@gmail.com, autor2@gmail.com e autor3@ene.unb.br}
+\end{center}
+\end{kasten}
+\end{document}
