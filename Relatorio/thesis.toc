@@ -43,61 +43,51 @@
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Introdu\IeC {\c c}\IeC {\~a}o}{2}{section.1.1}
-\contentsline {section}{\numberline {1.2}Justificativa}{7}{section.1.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {2}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{9}{chapter.2}
-\contentsline {section}{\numberline {2.1}Introdu\IeC {\c c}\IeC {\~a}o}{9}{section.2.1}
-\select@language {brazil}
-\select@language {brazil}
+\contentsline {chapter}{\numberline {2}Descri\IeC {\c c}\IeC {\~a}o do Sistema}{4}{chapter.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {section}{\numberline {2.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{14}{section.2.2}
+\contentsline {chapter}{\numberline {3}Fundamentos Fuzzy}{5}{chapter.3}
+\contentsline {section}{\numberline {3.1}Conjuntos Fuzzy}{5}{section.3.1}
+\contentsline {section}{\numberline {3.2}Fun\IeC {\c c}\IeC {\~o}es de Pertin\IeC {\^e}ncia}{5}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Vari\IeC {\'a}veis Lingu\IeC {\'\i }sticas}{5}{subsection.3.2.1}
+\contentsline {section}{\numberline {3.3}Infer\IeC {\^e}ncia}{5}{section.3.3}
+\contentsline {subsection}{\numberline {3.3.1}Fuzzyficac\IeC {\~a}o}{5}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Regras}{5}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Defuzzyficac\IeC {\~a}o}{5}{subsection.3.3.3}
+\contentsline {section}{\numberline {3.4}Modelo Fuzzy Takagi-Sugeno}{5}{section.3.4}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {3}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{16}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{16}{section.3.1}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {english}
-\contentsline {section}{\numberline {3.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{21}{section.3.2}
-\select@language {brazil}
-\select@language {english}
-\contentsline {chapter}{\numberline {4}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{23}{chapter.4}
-\contentsline {section}{\numberline {4.1}Introdu\IeC {\c c}\IeC {\~a}o}{23}{section.4.1}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {english}
-\contentsline {section}{\numberline {4.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{28}{section.4.2}
+\contentsline {chapter}{\numberline {4}Modelagem}{6}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modelagem Convencional}{6}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Modelo N\IeC {\~a}o Linear}{6}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Lineariza\IeC {\c c}\IeC {\~a}o}{6}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Modelagem Fuzzy}{7}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Conjuntos Fuzzy}{7}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Fun\IeC {\c c}\IeC {\~o}es De Pertin\IeC {\^e}ncia}{7}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.3}Modelo Fuzzy Takagi-Sugeno}{8}{subsection.4.2.3}
+\contentsline {section}{\numberline {4.3}Modelagem}{9}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Modelagem N\IeC {\~a}o Linear}{9}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Lineariza\IeC {\c c}\IeC {\~a}o}{9}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Modelo Takagi-Sugeno}{9}{section.4.4}
+\contentsline {section}{\numberline {4.5}Controladores}{9}{section.4.5}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {5}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{30}{chapter.5}
-\contentsline {section}{\numberline {5.1}Introdu\IeC {\c c}\IeC {\~a}o}{30}{section.5.1}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {english}
-\contentsline {section}{\numberline {5.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{35}{section.5.2}
+\contentsline {chapter}{\numberline {5}Implementa\IeC {\c c}\IeC {\~a}o}{10}{chapter.5}
+\contentsline {section}{\numberline {5.1}Identifica\IeC {\c c}\IeC {\~a}o}{10}{section.5.1}
+\contentsline {section}{\numberline {5.2}C\IeC {\'a}lculo do Controlador}{10}{section.5.2}
+\contentsline {section}{\numberline {5.3}Modelo}{10}{section.5.3}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {6}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{37}{chapter.6}
-\contentsline {section}{\numberline {6.1}Introdu\IeC {\c c}\IeC {\~a}o}{37}{section.6.1}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {brazil}
-\select@language {english}
-\contentsline {section}{\numberline {6.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{42}{section.6.2}
-\select@language {brazil}
-\select@language {english}
-\contentsline {chapter}{\numberline {7}T\IeC {\'\i }tulo do Cap\IeC {\'\i }tulo}{44}{chapter.7}
-\contentsline {section}{\numberline {7.1}Introdu\IeC {\c c}\IeC {\~a}o}{44}{section.7.1}
-\select@language {brazil}
-\select@language {brazil}
+\contentsline {chapter}{\numberline {6}Resultados}{11}{chapter.6}
+\contentsline {section}{\numberline {6.1}An\IeC {\'a}lise dos Resultados}{11}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Fase M\IeC {\'\i }nima}{11}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{12}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Simula\IeC {\c c}\IeC {\~o}es}{14}{section.6.2}
+\contentsline {section}{\numberline {6.3}Implementa\IeC {\c c}\IeC {\~a}o}{14}{section.6.3}
 \select@language {brazil}
 \select@language {english}
-\contentsline {section}{\numberline {7.2}Contextualiza\IeC {\c c}\IeC {\~a}o}{49}{section.7.2}
+\contentsline {chapter}{\numberline {7}Conslus\IeC {\~a}o}{15}{chapter.7}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{51}{figure.caption.15}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{16}{chapter.7}

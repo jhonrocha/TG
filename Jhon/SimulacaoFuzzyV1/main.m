@@ -23,17 +23,25 @@ final_time = 1200;
 tot_samps = final_time/samp_time;
 t = linspace(0, final_time, tot_samps);
 
+% Getting Reference to Plot
+for idx = 1:numel(t)
+    i1(idx) = v1(t(idx));
+    i2(idx) = v2(t(idx));
+end
+
 % [t,Hv] = ode45(@quadtank,t,[h01 h02 h03 h04]);
 [t,Hv] = ode45(@quadtank,t,[h1 h2 h3 h4]);
 
 % Vizualization
 y = [ Hv(:,1) Hv(:,2)];
+
+save('simulacao.mat');
 hold on;
 % plot(t,y(:,1),'--r',t,y(:,2),'--b');
 plot(t,y(:,1),'--b', 'LineWidth',2);
 
 % title('Linear Fase Minima');
- title('Linearização Fuzzy em h1 = [13.5  15.0 20.0]')
+title('Linearização Fuzzy em h1 = [13.5  15.0 20.0]')
 ylabel('Altura (cm)');
 xlabel('Tempo (s)');
 

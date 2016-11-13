@@ -44,65 +44,30 @@
 \select@language {english}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Diagrama esquem\IeC {\'a}tico do sistema de quatro tanques e planta did\IeC {\'a}tica\relax }}{2}{figure.caption.8}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces Minha figura de teste Chapter 01\relax }}{3}{figure.caption.9}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{14}{figure.caption.10}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{14}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{14}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{21}{figure.caption.11}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{21}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{21}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{28}{figure.caption.12}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{28}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{28}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagrama esquem\IeC {\'a}tico do sistema de quatro tanques e planta did\IeC {\'a}tica.\relax }}{8}{figure.caption.9}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{35}{figure.caption.13}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{35}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{35}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{42}{figure.caption.14}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{42}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{42}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=5, \mathaccentV {bar}016{h2}=5$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[10 \ \ 15] \ \ \mathaccentV {bar}016{h2}=[10 \ \ 15]$ \relax }}{11}{figure.caption.10}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=10, \mathaccentV {bar}016{h2}=10$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[10 \ \ 15 \ \ 20] \ \ \mathaccentV {bar}016{h2}=[10 \ \ 15 \ \ 20]$ \relax }}{12}{figure.caption.12}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=10, \mathaccentV {bar}016{h2}=10$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[10 \ \ 15] \ \ \mathaccentV {bar}016{h2}=[10 \ \ 15]$ \relax }}{12}{figure.caption.11}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=5, \mathaccentV {bar}016{h2}=5$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[5 \ \ 10] \ \ \mathaccentV {bar}016{h2}=[5 \ \ 10]$ \relax }}{13}{figure.caption.13}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=5, \mathaccentV {bar}016{h2}=5$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[5 \ \ 10 \ \ 15] \ \ \mathaccentV {bar}016{h2}=[5 \ \ 10 \ \ 15]$ \relax }}{13}{figure.caption.14}
+\contentsline {figure}{\numberline {6.6}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=10, \mathaccentV {bar}016{h2}=10$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: $\mathaccentV {bar}016{h1}=[5 \ \ 10 \ \ 15] \ \ \mathaccentV {bar}016{h2}=[5 \ \ 10 \ \ 15]$ \relax }}{14}{figure.caption.15}
+\contentsline {figure}{\numberline {6.7}{\ignorespaces \relax \fontsize {10}{12}\selectfont \abovedisplayskip 10\p@ plus2\p@ minus5\p@ \abovedisplayshortskip \z@ plus3\p@ \belowdisplayshortskip 6\p@ plus3\p@ minus3\p@ \def \leftmargin \leftmargini \parsep 4.5\p@ plus2\p@ minus\p@ \topsep 9\p@ plus3\p@ minus5\p@ \itemsep 4.5\p@ plus2\p@ minus\p@ {\leftmargin \leftmargini \topsep 6\p@ plus2\p@ minus2\p@ \parsep 3\p@ plus2\p@ minus\p@ \itemsep \parsep }\belowdisplayskip \abovedisplayskip Lineariza\IeC {\c c}\IeC {\~a}o Convencional: $ \mathaccentV {bar}016{h1}=10, \mathaccentV {bar}016{h2}=10$. Lineariza\IeC {\c c}\IeC {\~o}es Fuzzy: uma lineariza\IeC {\c c}\IeC {\~a}o a cada 1 cent\IeC {\'\i }metro para ambos os n\IeC {\'\i }veis.\relax }}{14}{figure.caption.16}
 \select@language {brazil}
 \select@language {english}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Minha figura de teste Chapter 02\relax }}{49}{figure.caption.15}
-\select@language {brazil}
-\select@language {brazil}
-\contentsline {subfigure}{\numberline {(a)}{\ignorespaces {Fig 1}}}{49}{subfigure.1.1}
-\contentsline {subfigure}{\numberline {(b)}{\ignorespaces {Fig 2}}}{49}{subfigure.1.2}
-\select@language {brazil}
-\select@language {english}
 \select@language {brazil}

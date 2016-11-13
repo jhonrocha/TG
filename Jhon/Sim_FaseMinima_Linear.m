@@ -107,6 +107,7 @@ v = [v01*vi1 v02*vi2;
     v01*vi1 v02*vi2];
 
 % Simula��o do Sistema Linearizado
+sys = ss(A,B,C,0)
 [y, t2] = lsim(sys,v,t,[h01 h02 h03 h04]);
 s = [ y(:,1)-hp1 y(:,2)-hp2 ];
 save s
