@@ -83,13 +83,13 @@ E por fim, a matriz função de transferência do sistema obtida é:
 		\frac{T_{2}(1-\gamma_{1})k_{1}}{A_{2}(1+sT_{4})(1+sT_{2})} &  \frac{T_{2}\gamma_{2}k_{2}}{A_{2}(1+sT_{2})} \\
 		0 &  \frac{T_{3}(1-\gamma_{2})k_{2}}{A_{3}(1+sT_{3})} \\
 		\frac{T_{4}(1-\gamma_{1})k_{1}}{A_{4}(1+sT_{4})} &  0 
-	\end{bmatrix}
+	\end{bmatrix} 
 	\label{eq4}
 \end{equation}
 
 em que $G(s)=\frac{\Delta h(s)}{\Delta v(s)}$ e $T_{i}=\frac{2A_{i}\sqrt{h_{i}}}{a_{i}\sqrt{2g}}$, $i=1,2,3,4$.
 
-\section{Modelagem Fuzzy} \label{secModFuzzy}
+\section{Modelagem Fuzzy Takagi-Sugeno} \label{secModFuzzy}
 \indent A Teoria Fuzzy tem seu princípio cunhado por \cite{zadeh65}. Os trabalhos seguintes, como o \cite{takagi_sugeno} abordaram sua utilização para a modelagem de sistemas complexos por meio de aproximações, utilizando uma teoria de conjuntos diferente da convencional.
 
 \subsection{Conjuntos Fuzzy}
@@ -161,14 +161,6 @@ A abordagem proposta por \cite{takagi_sugeno} promove a utilização da lógica 
 	Nota-se que o número de regras é obtido a partir da combinação simples entre as variáveis de discurso. Além disso, é importante notar que se tratam de linearizações, portanto as variáveis utilizadas são todas desvios de cada um dos respectivos pontos de linearização, que portanto precisam ser previamente calculados e inseridos no modelo.
 	
 \end{itemize}
-
-\section{Modelagem}
-\subsection{Modelagem Não Linear}
-\subsection{Linearização}
-
-\section{Modelo Takagi-Sugeno}
-
-\section{Controladores}
 
 \selectlanguage{brazil}%
 

@@ -23,8 +23,17 @@ final_time = 1200;
 tot_samps = final_time/samp_time;
 t = linspace(0, final_time, tot_samps);
 
+% Getting Reference to Plot
+for idx = 1:numel(t)
+    i1(idx) = v1(t(idx));
+    i2(idx) = v2(t(idx));
+end
+inputs = [i1' i2'];
+
 % [t,Hv] = ode45(@quadtank,t,[h01 h02 h03 h04]);
 [t,Hv] = ode45(@quadtank,t,[h1 h2 h3 h4]);
+sys = ss(Ai(:,:,1),Bi(:,:,1),eye(4),0);
+% [Hv, t] = lsim(sys,inputs,t,[0 0 0 0]);
 
 % Vizualization
 y = [ Hv(:,1) Hv(:,2)];

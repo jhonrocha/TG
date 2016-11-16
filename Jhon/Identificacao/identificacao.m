@@ -1,24 +1,9 @@
-display('Simulating Model');
+clear
+% display('Simulating Model');
 load ident_4000_full.mat
 inicio = 1;
 final = 20000;
-% figure
-% plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
-% figure
-% plot(inputs.Time(inicio:final),inputs.Data(inicio:final,2));
-figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
-title('Tank4');
-figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));
-title('Tank3');
-figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3));
-title('Tank2');
-figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4));
-title('Tank1');
-
+% 
 % display('Setting idData');
 % samp_time = 0.2;
 % tanks = iddata(outputs.Data,inputs.Data, samp_time);
@@ -36,5 +21,27 @@ title('Tank1');
 % 
 % display('Simulating Results');
 % [yEst, tEst] = lsim(m1,inputs.Data,outputs.Time,[0 0 0 0]);
-% % plot(tEst, yEst(:,1), '--red', tEst, yEst(:,2),'--blue');
+figure
+plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
+figure
+plot(inputs.Time(inicio:final),inputs.Data(inicio:final,2));
+% figure
+% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
+% title('Tank4');
+% hold on
+% plot(tEst, yEst(:,1));
+% figure
+% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));
+% hold on
+% plot(tEst, yEst(:,2));
+% title('Tank3');
+% figure
+% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3));
+% title('Tank2');
+% hold on
 % plot(tEst, yEst(:,3));
+% figure
+% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4));
+% title('Tank1');
+% hold on
+% plot(tEst, yEst(:,4));

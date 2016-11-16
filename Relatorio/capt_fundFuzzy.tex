@@ -8,7 +8,7 @@ no tratamento dos valores lógicos das variáveis, podendo assumir qualquer valo
 \indent De acordo com a teoria de conjuntos clássica, um elemento $x$ qualquer, pode pertencer ou não à um conjunto universo de discurso $U$, $x \in U$. Chamando de $f_u(x)$ a função de pertinência de $x$ ao conjunto $U$. Desta forma, tem-se:
 
 \begin{align}
-	f_u(x) : U \rightarrow {0,1}
+	f_u(x) : U \rightarrow \{0,1\}
 	&& f_u(x) =
 	\begin{cases*}
 		1 & se e somente se $x \in U$ \\
@@ -22,12 +22,81 @@ Essa definição binária se encaixa bem em problemas restritos, cujo caráter d
 \section{Funções de Pertinência}
 	\subsection{Variáveis Linguísticas}
 	
+	\begin{align}
+		f_p(x) : U \rightarrow [0,1]
+		\label{eqFuncPertFuzzy}
+	\end{align}
+	
+	\begin{itemize}
+		\item Clássica \\
+		\item Triangular		
+	\end{itemize}
+	
+	
 \section{Inferência}
 
 \subsection{Fuzzyficacão}
 
 \subsection{Regras}
-	\subsection{Defuzzyficacão}
+	
+	\textbf{Regra i:}
+	\begin{align}
+		&\textbf{SE:} \text{ $v_1(t)$ é $M_{i1}$ e $v_2(t)$ é $M_{i2}$ e ... e $v_n(t)$ e $M_{in}$,} \\
+		&\textbf{ENTÃO}: \ \ \begin{cases}
+			\dot{x}(t) = A_ix(t) + B_iu(t),\\
+			y(t) = C_ix(t)
+		\end{cases}
+	\label{eqRegraIGeral}
+	\end{align}
+	
+	\textbf{Regra i:}
+	\begin{align}
+		\textbf{SE:}  \hspace{1cm} &\text{ $h_1(t)$ é $P_{1,i}$ e $h_2(t)$ é $P_{2,i}$,} \\
+		\textbf{ENTÃO:} \hspace{1cm} & \dot{h}(t) =  A_i \Delta h_i(t) +  B_i \Delta u_i(t)
+	\end{align}
+	
+	Cada regra definida implica um sistema linear diferente, que melhor representa a dinâmica da planta em cada região. Essas linearizações são baseadas nas variáveis de desvio, assim, para cada regra $i$, temos:
+	\begin{align}
+		\Delta h_i(t) =
+		\begin{bmatrix}
+			h_1(t) - \bar{h_{1i}} \\
+			h_2(t) - \bar{h_{2i}} \\
+			h_3(t) - \bar{h_{3i}} \\
+			h_4(t) - \bar{h_{4i}}
+		\end{bmatrix} 
+		&&
+		\Delta u_i(t) = 
+		\begin{bmatrix}
+			u_1(t) - \bar{u_{1i}} \\
+			u_2(t) - \bar{u_{12}}
+		\end{bmatrix}
+	\end{align}	
+	
+	Grau de ativação geral:
+	\begin{equation}
+		\begin{aligned}
+			w_{i,j}(t) = M_i(h_1(t)) * N_j(h_2(t)) \\
+		\end{aligned}
+	\end{equation}
+	
+	O modelo final é dado por:
+	\begin{align}
+		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h)}
+	\end{align}
+	
+	Neste trabalho:
+	\begin{equation}
+	\begin{aligned}
+		w_{1}(t) = M_1(h_1(t)) * N_1(h_2(t)) \\
+		w_{2}(t) = M_2(h_1(t)) * N_2(h_2(t)) \\
+		w_{3}(t) = M_3(h_1(t)) * N_3(h_2(t)) \\
+		w_{4}(t) = M_4(h_1(t)) * N_4(h_2(t))
+	\end{aligned}
+	\end{equation}
+	
+	\begin{align}
+		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h)}
+	\end{align}
 
 
 \section{Modelo Fuzzy Takagi-Sugeno}
