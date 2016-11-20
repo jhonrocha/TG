@@ -71,26 +71,14 @@ Essa definição binária se encaixa bem em problemas restritos, cujo caráter d
 			u_2(t) - \bar{u_{12}}
 		\end{bmatrix}
 	\end{align}	
-	
-	Grau de ativação geral:
-	\begin{equation}
-		\begin{aligned}
-			w_{i,j}(t) = M_i(h_1(t)) * N_j(h_2(t)) \\
-		\end{aligned}
-	\end{equation}
-	
-	O modelo final é dado por:
-	\begin{align}
-		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h)}
-	\end{align}
-	
-	Neste trabalho:
+
+\section{Modelo Fuzzy Takagi-Sugeno}
 	\begin{equation}
 	\begin{aligned}
 		w_{1}(t) = M_1(h_1(t)) * N_1(h_2(t)) \\
-		w_{2}(t) = M_2(h_1(t)) * N_2(h_2(t)) \\
-		w_{3}(t) = M_3(h_1(t)) * N_3(h_2(t)) \\
-		w_{4}(t) = M_4(h_1(t)) * N_4(h_2(t))
+		w_{2}(t) = M_1(h_1(t)) * N_2(h_2(t)) \\
+		w_{3}(t) = M_2(h_1(t)) * N_1(h_2(t)) \\
+		w_{4}(t) = M_2(h_1(t)) * N_2(h_2(t))
 	\end{aligned}
 	\end{equation}
 	
@@ -98,8 +86,42 @@ Essa definição binária se encaixa bem em problemas restritos, cujo caráter d
 		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h)}
 	\end{align}
 
+\indent A Teoria Fuzzy tem seu princípio cunhado por \cite{zadeh65}. Os trabalhos seguintes, como o \cite{takagi_sugeno} abordaram sua utilização para a modelagem de sistemas complexos por meio de aproximações, utilizando uma teoria de conjuntos diferente da convencional.
 
-\section{Modelo Fuzzy Takagi-Sugeno}
+\subsection{Conjuntos Fuzzy}
+\indent A teoria de conjuntos convencional utiliza lógica booleana para definir os valores lógicos das funções de pertinências dos conjuntos. Assim, dado $X$ o universo de discurso de um determinado conjunto $C$, um elemento genérico $x$ tem sua função de pertinência ao conjunto $C$ dado por:
+
+\begin{align*}
+f_{C}(x)&:X \rightarrow \{0,1\} \quad \\
+f_{C}(x)&= 
+\begin{cases}
+1 \text{ se e somente se x} \in C \\
+0 \text{ se e somente se x} \notin C\\
+\end{cases}
+\end{align*}
+
+Existem, no entanto, situações em que a definição dos conjuntos de seus limites se tornam muito subjetivos. Nestas situações, a utilização da lógica difusa apresenta vantagens para a modelagem de sistemas. 
+
+Considere-se como exemplo a temperatura de uma sala. Pode-se definir dois conjuntos de estados \{quente,frio\}. No entanto, torna-se um pouco confuso e arbitrário decidir em qual destes conjuntos um estado específico se encaixa. Utilizando funções de pertinências não binárias, observa-se o \textbf{quanto} determinada temperatura se encaixa em cada um dos conjuntos. Funções de pertinências fuzzy são definidas da forma:
+
+\begin{align*}
+f_{C}(x)&:X \rightarrow [0,1]
+\end{align*}
+
+\subsection{Funções De Pertinência}
+Existem várias normas e regras disponíveis para funções de pertinência. Este trabalho considera a norma triangular. Seguindo o exemplo dado, dada uma temperatura $x$ verifica-se o quão pertencente aos conjuntos \textit{quente} e \textit{fria} ela é utilizando a função do gráfico a seguir:
+
+\begin{figure}[H]
+	\includegraphics[width=0.5\textwidth]{img/pertinencia.png}
+	\caption{Diagrama esquemático do sistema de quatro tanques e planta didática.}
+	\label{figPertinencia}
+\end{figure}
+
+Nota-se que se escolhem limites para os conjuntos: toda temperatura abaixo de 10 é fria; toda temperatura acima de 30 é quente. As demais, pertencem mais ou menos à cada um dos conjuntos.
+
+Em lógica Fuzzy, as variáveis definidas de forma subjetiva, com expressões para limites são chamadas variáveis linguísticas.
+
+
 
 
 \selectlanguage{brazil}%

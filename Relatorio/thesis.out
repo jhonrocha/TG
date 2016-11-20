@@ -8,24 +8,27 @@
 \BOOKMARK [2][-]{subsection.3.3.1}{Fuzzyficac\343o}{section.3.3}% 8
 \BOOKMARK [2][-]{subsection.3.3.2}{Regras}{section.3.3}% 9
 \BOOKMARK [1][-]{section.3.4}{Modelo Fuzzy Takagi-Sugeno}{chapter.3}% 10
-\BOOKMARK [0][-]{chapter.4}{Modelagem}{}% 11
-\BOOKMARK [1][-]{section.4.1}{Modelagem Convencional}{chapter.4}% 12
-\BOOKMARK [2][-]{subsection.4.1.1}{Modelo N\343o Linear}{section.4.1}% 13
-\BOOKMARK [2][-]{subsection.4.1.2}{Lineariza\347\343o}{section.4.1}% 14
-\BOOKMARK [1][-]{section.4.2}{Modelagem Fuzzy Takagi-Sugeno}{chapter.4}% 15
-\BOOKMARK [2][-]{subsection.4.2.1}{Conjuntos Fuzzy}{section.4.2}% 16
-\BOOKMARK [2][-]{subsection.4.2.2}{Fun\347\365es De Pertin\352ncia}{section.4.2}% 17
-\BOOKMARK [2][-]{subsection.4.2.3}{Modelo Fuzzy Takagi-Sugeno}{section.4.2}% 18
-\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 19
-\BOOKMARK [1][-]{section.5.1}{Controladores}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.2}{Identifica\347\343o}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.3}{C\341lculo do Controlador}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.4}{Modelo}{chapter.5}% 23
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 24
-\BOOKMARK [1][-]{section.6.1}{An\341lise dos Resultados}{chapter.6}% 25
-\BOOKMARK [2][-]{subsection.6.1.1}{Fase M\355nima}{section.6.1}% 26
-\BOOKMARK [2][-]{subsection.6.1.2}{Fase N\343o-M\355nima}{section.6.1}% 27
-\BOOKMARK [1][-]{section.6.2}{Simula\347\365es}{chapter.6}% 28
-\BOOKMARK [1][-]{section.6.3}{Implementa\347\343o}{chapter.6}% 29
-\BOOKMARK [0][-]{chapter.7}{Conslus\343o}{}% 30
-\BOOKMARK [0][-]{chapter.7}{Refer\352ncias Bibliogr\341ficas}{}% 31
+\BOOKMARK [2][-]{subsection.3.4.1}{Conjuntos Fuzzy}{section.3.4}% 11
+\BOOKMARK [2][-]{subsection.3.4.2}{Fun\347\365es De Pertin\352ncia}{section.3.4}% 12
+\BOOKMARK [0][-]{chapter.4}{Modelagem}{}% 13
+\BOOKMARK [1][-]{section.4.1}{Modelo N\343o Linear}{chapter.4}% 14
+\BOOKMARK [1][-]{section.4.2}{Lineariza\347\343o}{chapter.4}% 15
+\BOOKMARK [1][-]{section.4.3}{Modelagem Fuzzy Takagi-Sugeno}{chapter.4}% 16
+\BOOKMARK [2][-]{subsection.4.3.1}{Vari\341veis Lingu\355sticas}{section.4.3}% 17
+\BOOKMARK [2][-]{subsection.4.3.2}{Regras Se-Ent\343o}{section.4.3}% 18
+\BOOKMARK [2][-]{subsection.4.3.3}{Pertin\352ncia}{section.4.3}% 19
+\BOOKMARK [2][-]{subsection.4.3.4}{Ativa\347\343o}{section.4.3}% 20
+\BOOKMARK [2][-]{subsection.4.3.5}{Modelo Final}{section.4.3}% 21
+\BOOKMARK [2][-]{subsection.4.3.6}{Controlador Fuzzy}{section.4.3}% 22
+\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 23
+\BOOKMARK [1][-]{section.5.1}{Identifica\347\343o}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.2}{Controlador Fuzzy}{chapter.5}% 25
+\BOOKMARK [1][-]{section.5.3}{Resultados}{chapter.5}% 26
+\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 27
+\BOOKMARK [1][-]{section.6.1}{An\341lise dos Resultados}{chapter.6}% 28
+\BOOKMARK [2][-]{subsection.6.1.1}{Fase M\355nima}{section.6.1}% 29
+\BOOKMARK [2][-]{subsection.6.1.2}{Fase N\343o-M\355nima}{section.6.1}% 30
+\BOOKMARK [1][-]{section.6.2}{Simula\347\365es}{chapter.6}% 31
+\BOOKMARK [1][-]{section.6.3}{Implementa\347\343o}{chapter.6}% 32
+\BOOKMARK [0][-]{chapter.7}{Conslus\343o}{}% 33
+\BOOKMARK [0][-]{chapter.7}{Refer\352ncias Bibliogr\341ficas}{}% 34
