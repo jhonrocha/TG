@@ -13,7 +13,7 @@ vec_h2 = [10];
 [K_fuzzy] = fuzzy_ganhos(vec_h1,vec_h2);
 K_fuzzy
 % Initial Condition
-h01 = 10;
+h01 = 0;
 h02 = 0;
 h03 = 0;
 h04 = 0;
@@ -22,7 +22,7 @@ hi2 = 0;
 
 % Time
 tAmostragem = 0.01;
-tFinal = 5000;
+tFinal = 100;
 totAmostras = tFinal/tAmostragem;
 t = linspace(0, tFinal, totAmostras);
 
@@ -90,8 +90,8 @@ function dh = quadtank(t,h)
             K = K + alphas(i,j) * K_fuzzy(:,:,i,j);
         end
     end
-    u = K*h;
-    
+%     u = K*h;
+    u = K(:,1:4)*h(1:4) + K(:,5:6)*h(5:6);
     erro = [r1(t) - h(1);
             r2(t) - h(2)];
         

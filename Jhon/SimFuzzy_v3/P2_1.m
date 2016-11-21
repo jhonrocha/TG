@@ -1,3 +1,5 @@
+% FUNCIONANDO!!!!
+function output = P2_1()
 % UnB, Brasília: 26 de novembro de 2014
 % Aluno: Jhonantans Moraes Rocha
 % Matrícula: 11/0014090
@@ -26,7 +28,7 @@ warning off;
 
 A = [-3 2; 4 -5];
 Bu = [1 0; 0 1];
-Bw = [1 0; 0 1];
+% Bw = [1 0; 0 1];
 Cz = [1 0; 0 1];
 
 %------ Estado aumentado:
@@ -44,8 +46,8 @@ Cz = [1 0; 0 1];
 % Cza = [Cz 0]
 
 Aa = [A zeros(2); Cz zeros(2)];
-Bua = [Bu; eye(2)];
-Bwa = [Bw zeros(2); zeros(2) -eye(2)];
+Bua = [Bu; zeros(2)];
+% Bwa = [Bw zeros(2); zeros(2) -eye(2)];
 Cza = [Cz zeros(2)];
 
 % ------ Utilizando o Lema 8 da realimentação de estados:
@@ -75,9 +77,9 @@ LMIs = [LMIs, [T11 T12 T13; T12' T22 T23; T13' T23' T33]<0];
 
 % Solving
 obj = mu;
-sol = solvesdp(LMIs,obj,sdpsettings('verbose',1,'solver','sedumi'));
+sol = optimize(LMIs,obj,sdpsettings('verbose',0,'solver','sedumi'));
 
-p=min(checkset(LMI's));
+p=min(checkset(LMIs));
 
 %capturing the solutions (if ones exist)
 if p > -tolerance;
@@ -91,3 +93,45 @@ if p > -tolerance;
 else
     display('Error MSG!')
 end
+
+% Timing
+samp_time = 0.01;
+final_time = 50;
+tot_samps = final_time/samp_time;
+t = linspace(0, final_time, tot_samps);
+
+% Getting Reference to Plot
+for idx = 1:numel(t)
+    v1(idx) = r1(t(idx));
+    v2(idx) = r2(t(idx));
+end
+
+inputs = [v1' v2'];
+Ac = [(A-Bu*K1) -Bu*K2; -Cz zeros(2)];
+Bc = [zeros(2); eye(2)];
+% [tv,Hv] = ode15s(@quadtank,t,[h1 h2 h3 h4]);
+sys = ss(Ac,Bc,Cza,0);
+[y, t] = lsim(sys,inputs,t,[0 0 0 0]);
+
+figure;
+plot(t,y(:,1),'--r');
+ylabel('Altura (cm)');
+xlabel('Tempo (s)');
+figure;
+plot(t,y(:,2),'--r');
+ylabel('Altura (cm)');
+xlabel('Tempo (s)');
+% /////////////////////////////////////
+% Reference Inputs
+% /////////////////////////////////////
+function r11 = r1(t)
+    r11 = 10;
+end
+   
+function r22 = r2(t)
+    r22 = 15;
+end
+
+end
+
+

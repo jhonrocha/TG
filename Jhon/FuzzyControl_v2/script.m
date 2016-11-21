@@ -14,7 +14,7 @@ vec_h2 = [10];
 
 % ------ Utilizando o Lema 8 da realimentação de estados:
 % Tolerância
-tolerance = 1e-7;
+% tolerance = 1e-7;
 
 %new LMI system
 LMIs = [];
