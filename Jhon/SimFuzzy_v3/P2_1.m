@@ -125,7 +125,7 @@ xlabel('Tempo (s)');
 % Reference Inputs
 % /////////////////////////////////////
 function r11 = r1(t)
-    r11 = 10;
+    r11 = 20;
 end
    
 function r22 = r2(t)
