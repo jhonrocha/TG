@@ -1,8 +1,8 @@
 % clear
 display('Simulating Model');
-load ident_4000_full.mat
-inicio = 1;
-final = 10000;
+% load ident_4000_full.mat
+inicio = 10000;
+final = 20000;
 
 display('Setting idData');
 samp_time = 0.2;
@@ -32,7 +32,8 @@ m1 = ssest(amostra,m);
 display('Simulating Results');
 % [yEst, tEst] = lsim(m1,inputs.Data,outputs.Time,[0 0 0 0]);
 sys = ss(m1.a, m1.b, m1.c, m1.d, samp_time);
-[yEst1, tEst1] = lsim(sys,inputs.Data(inicio:final,:),outputs.Time(inicio:final),[0 0 0 0]);
+% [yEst1, tEst1] = lsim(sys,inputs.Data(inicio:final,:),outputs.Time(inicio:final),[0 0 0 0]);
+[yEst1, tEst1] = lsim(sys,inputs.Data,outputs.Time,[0 0 0 0]);
 % figure
 % plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
 % figure

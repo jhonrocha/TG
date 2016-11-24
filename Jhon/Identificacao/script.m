@@ -1,17 +1,27 @@
+% figure
+% plot(outputs.Time,outputs.Data(:,1),'-b');
+% hold on
+% plot(tEst1, yEst1(:,1),'-r');
+% title('H1 Ident1');
+% 
+% figure
+% plot(outputs.Time,outputs.Data(:,2),'-b');
+% hold on
+% plot(tEst1, yEst1(:,2),'-r');
+% title('H2 Ident1');
+
 figure
 plot(outputs.Time,outputs.Data(:,1),'-b');
 hold on
-plot(tEst1, yEst1(:,1),'-r');
+plot(tEst1(inicio:final), yEst1(inicio:final,1),'-r');
 title('H1 Ident1');
 
 figure
 plot(outputs.Time,outputs.Data(:,2),'-b');
 hold on
-plot(tEst1, yEst1(:,2),'-r');
-title('H2 Ident1');
+plot(tEst1(inicio:final), yEst1(inicio:final,2),'-r');
+title('H2 Ident2');
 
-% inicio = 1;
-% final = 20000;
 % figure
 % plot(outputs.Time,outputs.Data(:,1),'-b');
 % hold on
