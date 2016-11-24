@@ -33,30 +33,30 @@ display('Simulating Results');
 % [yEst, tEst] = lsim(m1,inputs.Data,outputs.Time,[0 0 0 0]);
 sys = ss(m1.a, m1.b, m1.c, m1.d, samp_time);
 [yEst1, tEst1] = lsim(sys,inputs.Data(inicio:final,:),outputs.Time(inicio:final),[0 0 0 0]);
-% figure
-% plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
-% figure
-% plot(inputs.Time(inicio:final),inputs.Data(inicio:final,2));
-% figure
-% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
-% hold on
-% plot(tEst, yEst(:,1));
-% title('Tank4');
-% 
-% figure
-% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));
-% hold on
-% plot(tEst, yEst(:,2));
-% title('Tank3');
-% 
-% figure
-% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3));
-% hold on
-% plot(tEst, yEst(:,3));
-% title('Tank2');
-% 
-% figure
-% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4));
-% hold on
-% plot(tEst, yEst(:,4));
-% title('Tank1');
+figure
+plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
+figure
+plot(inputs.Time(inicio:final),inputs.Data(inicio:final,2));
+figure
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
+hold on
+plot(tEst, yEst(:,1));
+title('Tank4');
+
+figure
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));
+hold on
+plot(tEst, yEst(:,2));
+title('Tank3');
+
+figure
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3));
+hold on
+plot(tEst, yEst(:,3));
+title('Tank2');
+
+figure
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4));
+hold on
+plot(tEst, yEst(:,4));
+title('Tank1');

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RSLogix5000Content ContainsContext="true" SchemaRevision="1.0" TargetName="plc_code_test" TargetType="Routine">
+   <Controller Use="Context">
+      <DataTypes>
+         <DataType Class="User" Family="NoFamily" Name="SubsystemUDT">
+            <Members>
+               <Member DataType="REAL" Dimension="0" Name="U"/>
+               <Member DataType="REAL" Dimension="0" Name="Y"/>
+            </Members>
+         </DataType>
+      </DataTypes>
+      <Programs Use="Context">
+         <Program Name="MainProgram" Use="Context">
+            <Tags>
+               <Tag Constant="false" DataType="SubsystemUDT" ExternalAccess="Read/Write" Name="i0_Subsystem" TagType="Base">
+                  <Data Format="Decorated">
+                     <Structure DataType="SubsystemUDT">
+                        <DataValueMember DataType="REAL" Name="U" Value="0.0"/>
+                        <DataValueMember DataType="REAL" Name="Y" Value="0.0"/>
+                     </Structure>
+                  </Data>
+               </Tag>
+            </Tags>
+            <Routines Use="Context">
+               <Routine Name="Subsystem" Type="ST" Use="Target">
+                  <STContent>
+                     <Line Number="1"><![CDATA[]]></Line>
+                     <Line Number="2"><![CDATA[(* Outport: '<Root>/Y' incorporates:]]></Line>
+                     <Line Number="3"><![CDATA[ *  Constant: '<S1>/Constant']]></Line>
+                     <Line Number="4"><![CDATA[ *  Sum: '<S1>/Sum' *)]]></Line>
+                     <Line Number="5"><![CDATA[i0_Subsystem.Y := 1.0;]]></Line>
+                  </STContent>
+               </Routine>
+            </Routines>
+         </Program>
+      </Programs>
+   </Controller>
+</RSLogix5000Content>
