@@ -1,6 +1,147 @@
 \selectlanguage{english}%
 
 \chapter{Descrição do Sistema}
+\indent 
+
+Sistemas controlados são constituídos essencialmente por uma ou mais plantas e por um dispositivo que implementará os algoritmos de controle aplicados à ela. Neste trabalho o objeto de estudo é uma planta de Quatro-Tanques, descrita na seção a seguir, e o controlador utilizado é um CLP Rockwell 1756-L62, apresentado logo depois na seção homônima.
+
+\section{Sistema de Quatro-Tanques}
+Em 1999 o Professor Karl Henrick Johansson publicou o artigo "Theaching Multivariable Control Using the Quadruple-Tank System" \cite{johansson2}, onde são apresentadas as ideias do sistema de quatro-tanques como utilizado neste trabalho. Trata-se de um laboratório didático de processo multivariável capaz de demonstrar dinâmicas de zeros alocáveis em fases mínima e não-mínima. Além disso, ilustra claramente os problemas de controle MIMO (Multiples Inputs Multiples Outputs) e de sistemas não lineares.
+
+Seu diagrama esquemático é apresentado na  \hyperref[figDesc4tank]{Figura \ref{figDesc4tank}} a seguir. Ele consiste em quatro tanques interconectados, um reservatório inferior, quatro válvulas esferas e duas bombas de corrente contínua.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/4tank.png}
+	\caption{\label{figDesc4tank}Diagrama esquemático do sistema de quatro tanques e planta didática.}
+\end{figure}
+
+As bombas impulsionam fluído por duas rotas: bomba 1 para tanques 1 e 4, bomba 2 para 2 e 3.  As válvulas regulam a proporção direcionada entre os tanques inferiores e superiores de cada rota.
+
+A \hyperref[imgPlanta]{Imagem \ref{imgPlanta}} a seguir apresenta a planta utilizada neste experimento, localizada no LARA (Laboratório de Automação e Robótica) - SG-11 (UnB) .
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{img/4tank.png}
+	\caption{\label{imgPlanta}Planta de Quatro-Tanques no LARA.}
+\end{figure}
+
+Suas dimensões aferidas são apresentadas na \hyperref[tabDescPlanta]{Tabela \ref{tabDescPlanta}}, onde $A_{i}$ e $a_{i}$ representa a área da secção transversal da base do tanque $i$ e a área de secção transversal do orifício de saída do tanque $i$, respectivamente. A constante de proporcionalidade fluxo-tensão na bomba $j$ é dada por $k_{j}$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4 e $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
+
+\begin{table}[!ht]
+	\caption{Especificações Iniciais da Planta.}
+	\label{tabDescPlanta}
+	\small
+	\centering
+	\scalebox{1}{
+			\begin{tabular}{|c|c|}
+			\hline
+			\multicolumn{2}{|c|}{Especificações Iniciais da Planta} \\
+			\hline
+			A1, A3 & 28 \\ \hline
+			A2, A4 & 32 \\ \hline
+			a1 & 0.071 \\ \hline
+			a2 & 0.071 \\ \hline
+			a3 & 0.071 \\ \hline
+			a4 & 0.057 \\ \hline
+			g & 981 \\ \hline
+			k1 & 3,33 \\ \hline
+			k2 & 3.35 \\ \hline
+			$\gamma_1$ & 0.70 \\ \hline
+			$\gamma_2$ & 0.60 \\ \hline
+		\end{tabular}
+	}
+\end{table}
+
+\section{CLP Rockwell 1756-L62}
+Controladores Lógico Programáveis(CLP) são largamente utilizados para controle de processos e automação industrial atualmente. Trata-se de um equipamento eletrônico digital com hardware e software adaptados para as condições industriais. Utilizam uma memória programável para armazenar instruções de controle e conexões com diversos módulos para interface com processos externos, entrada e saída de dados, comunicação digital, entre diversas outras funções.
+
+\subsection{Instalação}
+Neste trabalho realizou-se a montagem de toda a estação de controle. Assim, escolheu-se primeiramente um local adequado para a disposição do painel de controle: próximo à planta e ao microcomputador ao qual se conecta, porém afastado de fiações elétricas ou locais úmidos. Outro cuidado deve de ser observado durante a instalação da fonte junto ao chassi, observando a compatibilidade com as tensões de entrada e saída do controlador. Seguiu-se fixação do painel no local escolhida, instalação do microcomputador à ser utilizado e instalação da fiação elétrica. Observa-se na figura \ref{fig:mesa} o resultado instalado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10cm,keepaspectratio]{figs/mesa.jpg}
+	\caption{Estação de trabalho.}
+	\label{fig:mesa}
+\end{figure}
+
+A figura \ref{fig:interior} a seguir ilustra o interior do painel, já com o chassi do controlador instalado e as trilhas utilizadas distribuídas no espaço restante para conexão dos bornes a serem utilizados no projeto.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10cm,keepaspectratio]{figs/interior.jpg}
+	\caption{Interior do painel.}
+	\label{fig:interior}
+\end{figure}
+
+Os módulos de entrada e saída foram instalados conforme a \hyperref[tab:modulos]{Tabela \ref{tab:modulos}} abaixo. 
+
+\begin{table}[!ht]
+	\caption{Módulos 1756 instalados.}
+	\label{tab:modulos}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Especificação & Descrição & Posição no chassi\\
+			\hline
+			1756-A7/B & Chassi & .\\
+			\hline
+			1756-L62 & Controlador & 0 \\
+			\hline
+			1756-ENBT/A & EtherNetIp & 1\\
+			\hline
+			1756-IF8/A & Entradas Analógicas & 2\\
+			\hline
+			1756-OF8/A & Saídas Analógicas & 3\\
+			\hline
+			1756-IB16/A & Entradas DC & 4 \\
+			\hline
+			1756-OB8I/A & Saídas DC & 5 \\
+			\hline
+		\end{tabular}
+	}
+\end{table}
+
+Observa-se na Figura \ref{fig:modulos} a seguir a configuração instalada.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=10cm,keepaspectratio]{figs/modulos.jpg}
+	\caption{Módulos do painel.}
+	\label{fig:modulos}
+\end{figure}
+
+\subsection{Integração}
+Seguiu-se a preparação dos softwares de comunicação com o CLP. Dois modos de comunicação são disponíveis para os módulos utilizados: serial, realizada diretamente com o controlador, e Ethernet, através do módulo EtherNetIP. Ambas foram implementadas e testadas.
+
+Para comunicação serial, basta configurar a entrada serial no computador a ser utilizado e em seguida configurar o controlador no software RSLinx \cite{rslinx}. Para utilizar a comunicação EtherNetIp é necessário antes configurar o módulo EhterNetIp \cite{ethernetmodule}. O software BOOTP/DHCP torna possível assinar um endereço IP para o módulo recém instalado. Para que a comunicação em uma rede EtherNetIp ocorra corretamente todos os dispositivos dela precisam possuir endereços IP seguindo o padrão definido pela máscara de sub-rede, neste caso, 255.255.255.0. Isso significa, basicamente, que os pontos comunicantes da rede devem possuir ids únicos apenas nos último octeto de seus endereços. A tabela a seguir apresenta os endereços utilizados, bem como a configuração padrão da rede.
+
+\begin{table}[!ht]
+	\caption{IPs dos dispositivos}
+	\label{tabIPs}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|}
+			\hline
+			\textbf{Dispositivo} & \textbf{Endereço}\\
+			\hline
+			PC (RSLinx) & 192.168.0.10\\
+			\hline
+			1756-ENBT/A (CLP) & 192.168.0.22 \\
+			\hline
+			Geral & 192.168.0.xxx\\
+			\hline
+		\end{tabular}
+	}
+\end{table}
+
+Ao fim dos processos de conexão realiza-se a configuração do CLP através do RSLinx e passa a ser possível acessar e configurar os módulos através da estação de trabalho. A figura a seguir ilustra configurações funcionais dos módulos no RSLinx.
+
+Um importante cuidado de segurança observado foi o aterramento de diversos elementos do equipamento. É conhecida sua capacidade de operação em condições adversas, mesmo assim, como precaução houve o cuidado de aterrar o chassi, a placa onde foi instalado e o painel exterior.
 
 
 \selectlanguage{brazil}%

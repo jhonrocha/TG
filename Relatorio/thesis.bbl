@@ -25,6 +25,14 @@
 K.~H. Johansson, A.~Horch, O.~Wijk, and A.~Hansson, ``Teaching multivariable
   control using the quadruple-tank process,'' 1999.
 
+\bibitem{rslinx}
+\emph{RSLinx Classic Getting Results Guide}, Allan-Bradley and Rocwell
+  Automation, 2014.
+
+\bibitem{ethernetmodule}
+\emph{User Manual - EtherNet/IP Network Configuration}, Allan-Bradley and
+  Rocwell Automation, 2014.
+
 \bibitem{zadeh}
 L.~A. Zadeh, ``Fuzzy sets,'' 1965.
 

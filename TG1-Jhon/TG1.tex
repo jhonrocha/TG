@@ -1,0 +1,262 @@
+\documentclass[a4paper,11pt]{article}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{cases}
+\usepackage{url}
+\usepackage{makeidx}
+\usepackage{float}
+\parindent15pt  \parskip0pt              
+\setlength\voffset{-2.0cm}
+\setlength\hoffset{-1.5cm}
+\setlength\textwidth{16.0cm}
+\setlength\textheight{24.5cm}
+\setlength\baselineskip{2cm}
+\renewcommand{\baselinestretch}{1.2}
+
+\makeindex
+
+\title{
+{\Large\sf Relatório Descritivo} \vspace{0.5cm} \\
+\textbf{\LARGE Implementação de Controle Fuzzy em CLP industrial de Bancada de Quatro Tanques}\\
+}
+\author{Jhonantans Moraes Rocha \vspace{2mm}\\
+\it Laboratório de Robótica e Automação (LARA) \\
+\it Departamento de Engenharia El\'{e}trica - FT - UnB\\
+\it Caixa Postal 4.386 - Bras\'{i}lia - DF - Brasil\\
+}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+	O objetivo principal deste trabalho é realizar a instalação de um CLP (Controlador Lógico Programável) Rockwell Control Logix  5562 a uma bancada de quatro tanques. Apresenta-se a descrição e modelagem matemática da bancada seguidas da especificação de montagem do CLP. Observa-se em seguida descrições das lógicas de controle implementadas e breves resultados obtidos à simulações.
+
+\end{abstract}
+
+\section{Introdução} 
+\indent Controladores Lógico Programáveis(CLP) são largamente utilizados para controle de processos e automação industrial atualmente. Trata-se de um equipamento eletrônico digital com hardware e software adaptados para as condições industriais. Utilizam uma memória programável para armazenar instruções de controle e conexões com diversos módulos para interface com processos externos, entrada e saída de dados, comunicação digital, entre diversas outras funções. 
+
+Neste contexto, realiza-se a utilização do CLP Rockwell 1756-L62 \cite{controllogix} para controle de plantas multivariáveis. Apresenta-se o sistema de quatro tanques, desenvolvido por \cite{johansson1} com o objetivo didático de demonstrar as diversas peculiaridades de sistemas com múltiplas entradas e múltiplas saídas(MIMO, do inglês \textit{Multiple Input Multiple Output}).
+
+Apresenta-se na Figure \ref{fig:4tanks} à seguir o diagrama esquemático da bancada de quatro tanques.
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=10cm]{figs/4tank.png}
+	\caption{Diagrama esquemático do sistema de quatro tanques.}
+	\label{fig:4tanks}
+\end{figure}
+
+ Trata-se de um sistema com quatro tanques interconectados, um reservatório inferior, quatro válvulas esfera e duas bombas de corrente contínua que bombeiam o fluido do grande reservatório inferior para os tanques de forma cruzada, com a razão entre os fluxos definida de acordo com a posição das válvulas.
+ 
+A partir das equações, que serão apresentadas na seção \ref{sec:modelagem} a seguir, observa-se que sistema de quatro tanques é não linear. Sendo assim, para a implementação de uma forma de controle eficiente, realiza-se a linearização em torno de um ponto de operação a partir das equações não lineares obtidas. Nota-se que este modelo linearizado apresenta um zero multivariável que pode estar localizado tanto no semi-plano esquerdo quanto no semi-plano direito, dependendo da configuração das válvulas. A abertura das válvulas determina se o sistema é de fase mínima ou de fase não-mínima afetando a estratégia de controle a ser adotada.
+
+Neste trabalho, o objetivo final é apresentar um CLP conectado à planta preparado para implementar as várias estratégias de controle necessárias para manter os níveis do fluido nos tanques inferiores 1 e 2 em valores referenciados. 
+
+As variáveis de entrada da planta são as tensões analógicas das bombas e suas saídas são tensões proporcionais aos níveis dos tanques.
+
+
+\section{Modelagem da Planta} \label{sec:modelagem}
+\subsection{Modelo Não Linear} \label{subsec:modnaolinear}
+Observando o esquemático apresentado na Figura \ref{fig:4tanks} e partindo das equações de Bernoulli para conservação de energia de fluídos incompressíveis, chega-se às seguintes equações não lineares:
+
+\begin{equation}
+\label{eq:modnaolinear}
+\begin{cases}
+\dot{h_{1}} = \frac{1}{A_{1}}(o_{3}\sqrt{2gh_{3}} + \gamma_{1}k_{1}v_{1} - o_{1}\sqrt{2gh_{1}})\\
+
+\dot{h_{2}} = \frac{1}{A_{2}}(o_{4}\sqrt{2gh_{4}} + \gamma_{2}k_{2}v_{2} - o_{2}\sqrt{2gh_{2}})\\
+
+\dot{h_{3}} = \frac{1}{A_{3}}((1 - \gamma_{2})k_{2}v_{2} - o_{3}\sqrt{2gh_{3}})\\
+
+\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - o_{4}\sqrt{2gh_{4}})
+\end{cases}
+\end{equation}
+em que, $h_{i}$, $A_{i}$ e $o_{i}$ são o nível de água, a área da secção transversal e a área de secção transversal do orifício de saída do tanque i, $i=1,2,3,4$, respectivamente. A constante de fluxo e a tensão aplicada na bomba j são dadas respectivamente por $k_{j}$ e $v_{i}$, $j=1,2$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4, $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
+
+\subsection{Linearização} \label{subsec:linearizacao}
+Seja o ponto em regime permanente dado por $\overline{h}=(\overline{h_{1}},\overline{h_{2}},\overline{h_{3}},\overline{h_{4}})$ e $\overline{v}=(\overline{v_{1}},\overline{v_{2}})$, realiza-se a linearização, por expansão em série de Taylor, das equações \ref{eq:modnaolinear}. Chega-se a:
+
+\begin{multline}
+\centering
+\begin{bmatrix}
+\dot{\Delta h_{1}} \\
+\dot{\Delta h_{2}} \\
+\dot{\Delta h_{3}} \\
+\dot{\Delta h_{4}} 
+\end{bmatrix}
+= 
+\begin{bmatrix}
+\frac{-o_{1}\sqrt{2g}}{2A_{1}\sqrt{h_{1}}} & 0 & \frac{o_{3}\sqrt{2g}}{2A_{1}\sqrt{h_{3}}} & 0 \\
+0 & \frac{-o_{2}\sqrt{2g}}{2A_{2}\sqrt{h_{2}}} & 0 & \frac{o_{4}\sqrt{2g}}{2A_{2}\sqrt{h_{4}}} \\
+0 & 0 & \frac{-o_{3}\sqrt{2g}}{2A_{3}\sqrt{h_{3}}} & 0 \\
+0 & 0 & 0 & \frac{-o_{4}\sqrt{2g}}{2A_{4}\sqrt{h_{4}}}
+\end{bmatrix}
+\begin{bmatrix}
+\Delta h_{1} \\
+\Delta h_{2} \\
+\Delta h_{3} \\
+\Delta h_{4} 
+\end{bmatrix}
++
+\begin{bmatrix}
+\frac{\gamma_{1}k_{1}}{A_{1}} & 0 \\
+0 & \frac{\gamma_{2}k_{2}}{A_{2}} \\
+0 & \frac{(1-\gamma_{2}) k_{2}}{A_{3}} \\
+\frac{(1-\gamma_{1})k_{1}}{A_{4}} & 0
+\end{bmatrix}
+\begin{bmatrix}
+\Delta v_{1} \\
+\Delta v_{2}
+\end{bmatrix}
+\label{eq2}
+\end{multline}
+\begin{equation}
+\begin{bmatrix}
+y_{1} \\
+y_{2} \\
+y_{3} \\
+y_{4} 
+\end{bmatrix}
+= 
+I
+\begin{bmatrix}
+\Delta h_{1} \\
+\Delta h_{2} \\
+\Delta h_{3} \\
+\Delta h_{4} 
+\end{bmatrix}
+\label{eq3}
+\end{equation}
+
+em que $y_{i}$ são as saídas medidas do sistema, $\Delta h_{i}=h_{i} - \overline{h_{i}}$, $\Delta v_{i}=v_{i} - \overline{v_{i}}$, e $i=1,2,3,4$.
+
+E por fim, a matriz função de transferência do sistema obtida é:
+\begin{equation}
+G(s) = 
+\begin{bmatrix}
+\frac{T_{1}\gamma_{1}k_{1}}{A_{1}(1+sT_{1})} &  \frac{T_{1}(1-\gamma_{2})k_{2}}{A_{1}(1+sT_{3})(1+sT_{1})} \\
+\frac{T_{2}(1-\gamma_{1})k_{1}}{A_{2}(1+sT_{4})(1+sT_{2})} &  \frac{T_{2}\gamma_{2}k_{2}}{A_{2}(1+sT_{2})} \\
+0 &  \frac{T_{3}(1-\gamma_{2})k_{2}}{A_{3}(1+sT_{3})} \\
+\frac{T_{4}(1-\gamma_{1})k_{1}}{A_{4}(1+sT_{4})} &  0 
+\end{bmatrix}
+\label{eq4}
+\end{equation}
+
+em que $G(s)=\frac{\Delta h(s)}{\Delta v(s)}$ e $T_{i}=\frac{2A_{i}\sqrt{h_{i}}}{o_{i}\sqrt{2g}}$, $i=1,2,3,4$.
+
+\section{Instalação e especificação do CLP} \label{sec:clp}
+Neste trabalho realizou-se a montagem de toda a estação de controle. Assim, escolheu-se primeiramente um local adequado para a disposição do painel de controle: próximo à planta e ao microcomputador ao qual se conecta, porém afastado de fiações elétricas ou locais úmidos. Outro cuidado deve de ser observado durante a instalação da fonte junto ao chassi, observando a compatibilidade com as tensões de entrada e saída do controlador. Seguiu-se fixação do painel no local escolhida, instalação do microcomputador à ser utilizado e instalação da fiação elétrica. Observa-se na figura \ref{fig:mesa} o resultado instalado.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/mesa.jpg}
+	\caption{Estação de trabalho.}
+	\label{fig:mesa}
+\end{figure}
+ 
+A figura \ref{fig:interior} a seguir ilustra o interior do painel, onde instalou-se o chassi do controlador e distribuiu-se no espaço restante trilhas para conexão dos bornes a serem utilizados no projeto.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/interior.jpg}
+	\caption{Interior do painel.}
+	\label{fig:interior}
+\end{figure}
+
+Em seguida, realizou-se a instalação dos módulos no chassi já instalado. Organiza-se, na Tabela \ref{tab:modulos} abaixo, a descrição, especificação e posição dos módulos instalados do sistema ControlLogix implementado:
+	
+\begin{table}[!ht]
+	\caption{Módulos 1756 instalados.}
+	\label{tab:modulos}
+	\small
+	\centering
+	\scalebox{0.9}{
+		\begin{tabular}{|c|c|c|}
+			\hline
+			Especificação & Descrição & Posição no chassi\\
+			\hline
+			1756-A7/B & Chassi & .\\
+			\hline
+			1756-L62 & Controlador & 0 \\
+			\hline
+			1756-ENBT/A & EtherNetIp & 1\\
+			\hline
+			1756-IF8/A & Entradas Analógicas & 2\\
+			\hline
+			1756-OF8/A & Saídas Análogicas & 3\\
+			\hline
+			1756-IB16/A & Entradas DC & 4 \\
+			\hline
+			1756-OB8I/A & Saídas DC & 5 \\
+			\hline
+		\end{tabular}
+	}
+\end{table}
+
+Observa-se na Figura \ref{fig:modulos} a seguir a configuração instalada.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/modulos.jpg}
+	\caption{Módulos do painel.}
+	\label{fig:modulos}
+\end{figure}
+
+Seguiu-se a preparação dos softwares de comunicação com o CLP. Dois modos de comunicação são disponíveis com os módulos utilizados: serial, realizada diretamente com o controlador, e Ethernet, através do módulo EtherNetIP. Ambas foram implementadas.
+
+Para comunicação serial, basta configurar a entrada serial no computador a ser utilizado e em seguida configurar o controlador no software RSLinx \cite{rslinx}. Para utilizar a comunicação EtherNetIp é necessário antes configurar o módulo EhterNetIp \cite{ethernetmodule}. Isso foi realizado utilizando o software BOOTP/DHCP, incutindo um endereço IP para o módulo recém instalado. Além disso, sabe-se que para que a comunicação em uma rede EtherNetIp ocorra corretamente todos os dispositivos da rede precisam possuir endereços IP que indiquem à está rede, porém únicos. Assim, configurou-se também o endereço do computador utilizado. 
+
+Ao fim dos processos de conexão realiza-se a configuração do CLP através do RSLinx e passa a ser possível acessar e configurar os módulos através da estação de trabalho. A figura a seguir ilustra configurações funcionais dos módulos no RSLinx.
+
+Um importante cuidado de segurança observado foi o aterramento de diversos elementos do equipamento. É conhecida sua capacidade de operação em condições adversas, mesmo assim, como precaução houve o cuidado de aterrar o chassi, a placa onde foi instalado e o painel exterior.
+
+\section{Lógica de Controle} \label{sec:logica}
+
+Após a montagem do CLP e configuração dos módulos é necessária a instalação dos softwares requeridos para utilização sua utilização. Como mencionado anteriormente, o programa RSLinx irá realizar a comunicação CLP-Microcomputador. Além disso, realiza-se a instalação do FactoryTalk, software responsável por realizar a supervisão do sistema, e do RSLogix 5000 \cite{logix5000}, a plataforma onde irá ser desenvolvido o controle.
+
+Antes de se iniciar o desenvolvimento realizou a configuração do Logix5000. Para isso, cria-se um novo projeto, adiciona-se os módulos de entrada e saída \cite{analogmodules} que serão utilizados. Em seguida, projeta-se a lógica de controle em alguma linguagem escolhida. Segue-se, realiza-se o download do projeto para o controlador, a paritr de uma interface com o RSLinx, onde ele já está configurado. Por fim, escolhe-se uma forma de operação para o controlador (normalmente RUN) e inicia-se o controle utilizando o comando START.
+
+O RSLogix permite o desenvolvimento utilizando 3 formas de programação. Descreve-se a seguir duas escolhidas para teste: Linguagem Ladder e Blocos de Funções. É possível também a utilização de Texto Estruturado.
+
+\subsection{Linguagem Ladder} \label{subsec:ladder}
+A linguagem Ladder é a pioneira dos CLPs por se tratar de uma evolução natural de diagramas elétricos, utilizados antes da chegada dos controladores digitais.  Seu ambiente de desenvolvimento utiliza o posicionamento de de símbolos e blocos para implementação da lógica de controle. 
+O ambiente inicial é formado por duas linhas verticais, que representam nível lógico alto (à esquerda) e baixo(à direita) de um sistema. Entre essa linhas são desenhados ramais horizontais que representam representados os estados do CLP.
+
+Uma forma de compreender essa linguagem seria como uma série de conexões de contatos e bobinas. Se for possível traçar um caminho da esquerda para direita, conectando-se à uma bobina de saída ao final, então o valor dessa bobina será verdadeiro. Trabalhando-se com controladores digitais, são criadas variáveis no programa que representam diretamente os valores presentes nos módulos de saída e entrada. Essas variáveis recebem o nome de TAGs. Assim, as variáveis de entradas são assinaladas à tags utilizadas como chaves e as variáveis de saídas à tags associadas às bobinas de saída. Percorrendo-se o caminho da esquerda para direita em um ramal, ao se chegar à uma chave, observa-se se o valor assinalado à ela é verdadeiro. Caso seja, continua-se o caminho até uma bobina de saída. Se está for alcançada, seu valor é setado para verdadeiro, consequentemente a saída associada a ela recebe a tensão associado à este nível lógico no controlador.
+
+A figura \ref{fig:ladder} à seguir ilustra um exemplo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/ladder.png}
+	\caption{Exemplo de Diagrama Ladder.}
+	\label{fig:ladder}
+\end{figure}
+
+\subsection{Blocos Funcionais} \label{subsec:blocos}
+Trata-se de outra linguagem de programação gráfica disponível aos CLPs Rockwell. É bastante semelhante à observada em vários outros softwares comuns ao meio acadêmico, como o MATLAB. Para sua utilização, assinala-se tags às entradas e saídas dos módulos já adicionados ao projeto. O desenvolvimento utiliza blocos de entradas e saídas associados à essas variáveis. Conexões entre os blocos, por meio de linhas representam passagem dos valores por esses fios. A lógica de controle é feita por meio de blocos de funções, estes possuem uma ou mais entradas e uma ou mais saídas. Os valores assinalados à suas saídas são determinados pelas funções às quais estão associados e que utilizam os valores de entrada como argumentos.
+
+A figura \ref{fig:blocos} à seguir ilustra um exemplo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/blocos.png}
+	\caption{Exemplo de diagrama de blocos.}
+	\label{fig:blocos}
+\end{figure}
+
+Observa-se o caso do bloco GEQ\_01. Suas entradas são o nível do tanque (SourceA = Tank\_Level) e um valor constante (SourceB = 50). Sua saída (dest) será assinalada com nível lógico verdadeiro apenas quando $SourceA \geq SourceB$, ou seja, $Dest=1$ se $Tank\_Level \geq 50$, sendo $Dest = 0$ caso contrário.
+	
+\section{Conclusões}\label{sec:conclusoes}
+Neste trabalho foi realizada a implementação do CLP Rockwell 1756-L62, juntamente com o conjunto de módulos para seu funcionamento e comunicação com uma bancada de quatro tanques e com um microcomputador. Iniciou-se com o estudo e descrição da bancada, seguida da instalação do controlador bem como seus módulos de entrada e saídas de dados e de comunicação. Seguiu-se também o estudo das linguagens de programação disponíveis para os softwares proprietários da fornecedora do CLP e como aplicá-las ao controle desejado.
+
+\bibliographystyle{unsrt} 
+\bibliography{Jhon}
+
+\appendix
+
+\end{document}          
+

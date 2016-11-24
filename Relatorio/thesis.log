@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  17 NOV 2016 08:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  24 NOV 2016 12:45
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -827,7 +827,7 @@ LaTeX Info: Redefining \nameref on input line 36.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 52.
 
-<figs/capa_fundo.pdf, id=138, 597.50786pt x 845.04686pt>
+<figs/capa_fundo.pdf, id=154, 597.50786pt x 845.04686pt>
 File: figs/capa_fundo.pdf Graphic file (type pdf)
 
 <use figs/capa_fundo.pdf>
@@ -920,7 +920,10 @@ l.108 \include{abstract}
 ] (thesis.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/sc' tried instead on input line 45.
-)
+ [2
+
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -928,10 +931,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 112.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 112.
- [2
-
-
-] (thesis.lof)
+ [3] (thesis.lof)
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -939,7 +939,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 114.
- [3
+ [4
 
 ] (thesis.lot)
 \tf@lot=\write6
@@ -949,8 +949,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
-
-[4
+[5
 
 ]
 \openout2 = `symbols.aux'.
@@ -960,7 +959,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 116.
- [5
+ [6
 
 
 ]
@@ -971,7 +970,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 118.
- [6
+ [7
 
 
 
@@ -1008,72 +1007,84 @@ LaTeX Warning: Hyper reference `secConclusao' on page 1 undefined on input line
 
 LaTeX Warning: Reference `secConclusao' on page 1 undefined on input line 17.
 
-<figs/4tank.png, id=282, 414.79968pt x 426.84468pt>
+<figs/4tank.png, id=323, 414.79968pt x 426.84468pt>
 File: figs/4tank.png Graphic file (type png)
  <use figs/4tank.png>
 Package pdftex.def Info: figs/4tank.png used on input line 21.
 (pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
+)
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 124.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 A
-       lineariza√ß√£o simples, realizada por meio da s√©rie de Taylor, resul...
-[1
+l.124 \include{capt_intro}
+                           [1
 
 
 
 
 ]
-
-LaTeX Warning: Citation `zadeh65' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Citation `takagi_sugeno' on page 2 undefined on input line 30.
-
-
-LaTeX Warning: Hyper reference `fig4tank' on page 2 undefined on input line 32.
-
-
-
-LaTeX Warning: Reference `fig4tank' on page 2 undefined on input line 32.
-
-[2 <./figs/4tank.png>]
-
-LaTeX Warning: Hyper reference `secModConvencional' on page 3 undefined on inpu
-t line 38.
-
-
-LaTeX Warning: Reference `secModConvencional' on page 3 undefined on input line
- 38.
-
-
-LaTeX Warning: Hyper reference `secConclusao' on page 3 undefined on input line
- 38.
-
-
-LaTeX Warning: Reference `secConclusao' on page 3 undefined on input line 38.
-
-)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 124.
- [3]
+ [2 <./figs/4tank.png>]
 \openout2 = `capt_descricao.aux'.
 
  (capt_descricao.tex
 Chapter 2.
-)
+<img/4tank.png, id=337, 414.79968pt x 426.84468pt>
+File: img/4tank.png Graphic file (type png)
+ <use img/4tank.png>
+Package pdftex.def Info: img/4tank.png used on input line 15.
+(pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
+File: img/4tank.png Graphic file (type png)
+
+<use img/4tank.png>
+Package pdftex.def Info: img/4tank.png used on input line 25.
+(pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
+ [3
+
+
+
+ <./img/4tank.png>] [4]
+Overfull \hbox (1.98653pt too wide) in paragraph at lines 60--61
+[]\T1/ptm/m/n/10.95 Neste tra-balho realizou-se a mon-tagem de toda a es-taÁ„o 
+de con-t-role. As-sim, escolheu-se primeira-
+ []
+
+<figs/mesa.jpg, id=354, 903.375pt x 1606.0pt>
+File: figs/mesa.jpg Graphic file (type jpg)
+ <use figs/mesa.jpg>
+Package pdftex.def Info: figs/mesa.jpg used on input line 64.
+(pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
+
+<figs/interior.jpg, id=356, 903.375pt x 1606.0pt>
+File: figs/interior.jpg Graphic file (type jpg)
+ <use figs/interior.jpg>
+Package pdftex.def Info: figs/interior.jpg used on input line 73.
+(pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
+
+[5 <./figs/mesa.jpg>] <figs/modulos.jpg, id=364, 1204.5pt x 1606.0pt>
+File: figs/modulos.jpg Graphic file (type jpg)
+
+<use figs/modulos.jpg>
+Package pdftex.def Info: figs/modulos.jpg used on input line 112.
+(pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
+ [6 <./figs/interior.jpg>]
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 139.
+ [7 <./figs/modulos.jpg>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 126.
- [4
 
-
-
-]
+[8]
 \openout2 = `capt_fundFuzzy.aux'.
 
  (capt_fundFuzzy.tex
@@ -1089,39 +1100,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
-[5
+[9
 
 
 
 ]
 
-LaTeX Warning: Citation `zadeh65' on page 6 undefined on input line 89.
+LaTeX Warning: Citation `zadeh65' on page 10 undefined on input line 89.
 
 
-LaTeX Warning: Citation `takagi_sugeno' on page 6 undefined on input line 89.
+LaTeX Warning: Citation `takagi_sugeno' on page 10 undefined on input line 89.
 
-[6] <img/pertinencia.png, id=328, 421.575pt x 316.18124pt>
+[10] <img/pertinencia.png, id=403, 421.575pt x 316.18124pt>
 File: img/pertinencia.png Graphic file (type png)
 
 <use img/pertinencia.png>
 Package pdftex.def Info: img/pertinencia.png used on input line 115.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- [7 <./img/pertinencia.png (PNG copy)>])
+ [11 <./img/pertinencia.png (PNG copy)>])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 128.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 128.
- [8]
+ [12]
 \openout2 = `capt_modelagem.aux'.
 
 
 (capt_modelagem.tex
 Chapter 4.
-[9
+[13
 
 
 
-] [10] <img/modelo_controlado.png, id=356, 782.17218pt x 356.83313pt>
+] [14] <img/modelo_controlado.png, id=431, 782.17218pt x 356.83313pt>
 File: img/modelo_controlado.png Graphic file (type png)
 
 <use img/modelo_controlado.png>
@@ -1132,7 +1143,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 130.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 130.
- [11 <./img/modelo_controlado.png>]
+ [15 <./img/modelo_controlado.png>]
 \openout2 = `capt_implementacao.aux'.
 
 
@@ -1143,7 +1154,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 132.
- [12
+ [16
 
 
 
@@ -1158,20 +1169,20 @@ Overfull \hbox (9.77264pt too wide) in paragraph at lines 6--7
 sis-tema de quatro-tanques mod-e-lado seguindo
  []
 
-<img/FM_h1_5_10_15.png, id=370, 421.575pt x 316.18124pt>
+<img/FM_h1_5_10_15.png, id=445, 421.575pt x 316.18124pt>
 File: img/FM_h1_5_10_15.png Graphic file (type png)
 
 <use img/FM_h1_5_10_15.png>
 Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 31.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/FM_h1_10_15.png, id=371, 421.575pt x 316.18124pt>
+<img/FM_h1_10_15.png, id=446, 421.575pt x 316.18124pt>
 File: img/FM_h1_10_15.png Graphic file (type png)
 
 <use img/FM_h1_10_15.png>
 Package pdftex.def Info: img/FM_h1_10_15.png used on input line 37.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- [13
+ [17
 
 
 
@@ -1180,33 +1191,33 @@ Package pdftex.def Info: img/FM_h1_10_15.png used on input line 37.
 LaTeX Warning: No positions in optional float specifier.
                Default added (so using `tbp') on input line 42.
 
-<img/FM_h1_10_15_20.png, id=376, 421.575pt x 316.18124pt>
+<img/FM_h1_10_15_20.png, id=451, 421.575pt x 316.18124pt>
 File: img/FM_h1_10_15_20.png Graphic file (type png)
 
 <use img/FM_h1_10_15_20.png>
 Package pdftex.def Info: img/FM_h1_10_15_20.png used on input line 43.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- [14 <./img/FM_h1_10_15_20.png (PNG copy)> <./img/FM_h1_10_15.png (PNG copy)>]
-<img/h1Fuz5_10.png, id=382, 422.32782pt x 316.18124pt>
+ [18 <./img/FM_h1_10_15_20.png (PNG copy)> <./img/FM_h1_10_15.png (PNG copy)>]
+<img/h1Fuz5_10.png, id=456, 422.32782pt x 316.18124pt>
 File: img/h1Fuz5_10.png Graphic file (type png)
  <use img/h1Fuz5_10.png>
 Package pdftex.def Info: img/h1Fuz5_10.png used on input line 71.
 (pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
 
-<img/h1Fuz5_10_15.png, id=383, 421.575pt x 316.18124pt>
+<img/h1Fuz5_10_15.png, id=457, 421.575pt x 316.18124pt>
 File: img/h1Fuz5_10_15.png Graphic file (type png)
 
 <use img/h1Fuz5_10_15.png>
 Package pdftex.def Info: img/h1Fuz5_10_15.png used on input line 77.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- <img/h1conv10.png, id=384, 421.575pt x 316.18124pt>
+ <img/h1conv10.png, id=458, 421.575pt x 316.18124pt>
 File: img/h1conv10.png Graphic file (type png)
 
 <use img/h1conv10.png>
 Package pdftex.def Info: img/h1conv10.png used on input line 83.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- [15 <./img/h1Fuz5_10.png (PNG copy)> <./img/h1Fuz5_10_15.png (PNG copy)>] <img
-/h1Fuz_1to30.png, id=389, 421.575pt x 316.18124pt>
+ [19 <./img/h1Fuz5_10.png (PNG copy)> <./img/h1Fuz5_10_15.png (PNG copy)>] <img
+/h1Fuz_1to30.png, id=464, 421.575pt x 316.18124pt>
 File: img/h1Fuz_1to30.png Graphic file (type png)
 
 <use img/h1Fuz_1to30.png>
@@ -1217,7 +1228,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 134.
- [16 <./img/h1conv10.png (PNG copy)> <./img/h1Fuz_1to30.png (PNG copy)>]
+ [20 <./img/h1conv10.png (PNG copy)> <./img/h1Fuz_1to30.png (PNG copy)>]
 \openout2 = `capt_conclusao.aux'.
 
  (capt_conclusao.tex
@@ -1227,7 +1238,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 136.
- [17
+ [21
 
 
 
@@ -1240,7 +1251,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
- [18
+ [22
 
 
 ]
@@ -1252,7 +1263,7 @@ _descricao.aux) (capt_fundFuzzy.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 144.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 144.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 752A0CFBD728CA79D596D6FC887213FF;2258.
+(rerunfilecheck)             Checksum: 36FFB4745DB5EAB1AE1BF4028233A72A;2542.
 
 
 LaTeX Warning: There were undefined references.
@@ -1260,28 +1271,29 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 144.
  ) 
 Here is how much of TeX's memory you used:
- 9883 strings out of 493334
- 145560 string characters out of 3139252
- 270184 words of memory out of 3000000
- 13047 multiletter control sequences out of 15000+200000
- 60714 words of font info for 74 fonts, out of 3000000 for 9000
+ 9941 strings out of 493334
+ 146405 string characters out of 3139252
+ 270767 words of memory out of 3000000
+ 13080 multiletter control sequences out of 15000+200000
+ 64630 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,20n,42p,856b,458s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,20n,42p,874b,598s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9/fon
 ts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
 public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
 sfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm
-/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Prog
-ram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
-/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
-utmri8a.pfb>
-Output written on thesis.pdf (29 pages, 357659 bytes).
+/cmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb>
+<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
+/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (34 pages, 806852 bytes).
 PDF statistics:
- 466 PDF objects out of 1000 (max. 8388607)
- 96 named destinations out of 1000 (max. 500000)
- 328 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 552 PDF objects out of 1000 (max. 8388607)
+ 115 named destinations out of 1000 (max. 500000)
+ 380 words of extra memory for PDF output out of 10000 (max. 10000000)
 
