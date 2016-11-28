@@ -1,6 +1,8 @@
 \selectlanguage{english}%
 
 \chapter{Modelagem}
+\label{capMod}
+Os modelos físicos do sistema de quatro-tanques utilizados neste trabalho são apresentados nas seções a seguir.
 
 \section{Modelo Não Linear}
 Baseado nos princípios de conservação de massa e na lei de Bernoulli para líquidos incompressíveis tem-se o seguinte sistema de equações não lineares que descrevem o processo.
@@ -15,8 +17,12 @@ Baseado nos princípios de conservação de massa e na lei de Bernoulli para lí
 		
 		\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - a_{4}\sqrt{2gh_{4}})
 	\end{cases}
+	\label{eqModNL}
 \end{equation}
-em que, $h_{i}$, $A_{i}$ e $a_{i}$ são o nível de água, a área da secção transversal e a área de secção transversal do orifício de saída do tanque i, $i=1,2,3,4$, respectivamente. A constante de fluxo e a tensão aplicada na bomba j são dadas respectivamente por $k_{j}$ e $v_{i}$, $j=1,2$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4, $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
+
+Na \jhhref{eqModNL}{Equação}, os termos $h_{i}$, $A_{i}$ e $a_{i}$ representam o nível de água, a área da secção transversal da base do tanque $i$ e a área de secção transversal do orifício de saída do tanque $i$, $i=1,2,3,4$, respectivamente. A constante de fluxo da bomba $j$ e a tensão aplicada sobre ela são dadas por $k_{j}$ e $v_{j}$, $j=1,2$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4 enquanto $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
+
+É fácil notar nas equações deste sistema os termos não lineares (as raízes). O aspecto do acoplamento entre as variáveis também pode ser observado ao analisar as equações: o nível $h_1$ varia conforme o fluxo da bomba 1, dependente de $v_1$, e conforme o nível $h_3$, que por sua vez depende do fluxo da bomba 2, $v_2$. Assim, as variáveis manipuladas, $v_1$ e $v_2$, influem em ambos os níveis simultaneamente, apresentando um desafio considerável para a estabilização dos níveis desejados, $h_1$ e $h_2$, que são as variáveis controladas deste trabalho.
 
 \section{Linearização}
 Linearizando o sistema em torno dos ponto de operação $\overline{h}=(\overline{h_{1}},\overline{h_{2}},\overline{h_{3}},\overline{h_{4}})$ e $\overline{v}=(\overline{v_{1}},\overline{v_{2}})$, por expansão em série de Taylor, obtém-se a seguinte representação no espaço de estados:
@@ -76,7 +82,7 @@ em que $y_{i}$ são as saídas medidas do sistema, $\Delta h_{i}=h_{i} - \overli
 
 E por fim, a matriz função de transferência do sistema obtida é:
 \begin{equation}
-	G(s) = 
+		G(s) = 
 	\begin{bmatrix}
 		\frac{T_{1}\gamma_{1}k_{1}}{A_{1}(1+sT_{1})} &  \frac{T_{1}(1-\gamma_{2})k_{2}}{A_{1}(1+sT_{3})(1+sT_{1})} \\
 		\frac{T_{2}(1-\gamma_{1})k_{1}}{A_{2}(1+sT_{4})(1+sT_{2})} &  \frac{T_{2}\gamma_{2}k_{2}}{A_{2}(1+sT_{2})} \\
@@ -89,53 +95,94 @@ E por fim, a matriz função de transferência do sistema obtida é:
 em que $G(s)=\frac{\Delta h(s)}{\Delta v(s)}$ e $T_{i}=\frac{2A_{i}\sqrt{h_{i}}}{a_{i}\sqrt{2g}}$, $i=1,2,3,4$.
 
 \section{Modelagem Fuzzy Takagi-Sugeno} \label{secModFuzzy}
+A modelagem via Takagi-Sugeno segue os mesmos passos propostos na \jhhref{secTakSug}{Seção}: escolhem-se as variáveis linguística do sistema e seus conjuntos fuzzy, definem-se as funções de pertinência de cada um deles, as regras Se-Então, a fórmula de ativação e o resultado final do modelo.
+
 \subsection{Variáveis Linguísticas}
-	As linearizações do sistema são baseadas nos estados de em que os níveis do sistema são  estacionários, ou seja $\dot{h}(t) = 0$. Assim, o modelo linear, que trata o valor de desvio das variáveis, é dado por: 
-		\begin{equation}
-			\dot{h}(t) =  A \Delta h(t) +  B \Delta u(t)
-		\end{equation}
-
-	As variáveis aferidas da planta são os níveis, por este motivo serão as variáveis linguísticas definidas para o modelo fuzzy. Escolhem-se então "Nível do Tanque 1" e "Nível do Tanque 2" e os valores fuzzy {nível baixo, nível alto} para cada uma.
-
-\subsection{Regras Se-Então}
-	A combinação simples dos conjuntos de valores linguísticos fornece as seguintes regras Se-Então:
-	\begin{itemize}
-		\centering
-		\item Regra 1: Se $h_1$ é baixo e $h_2$ é baixo, então $\dot{h}(t) =  A_1 \Delta h_1(t) +  B_1 \Delta u_1(t)$
-		\item Regra 2: Se $h_1$ é baixo e $h_2$ é alto, então $\dot{h}(t) =  A_2 \Delta h_2(t) +  B_2 \Delta u_2(t)$
-		\item Regra 3: Se $h_1$ é alto e $h_2$ é baixo, então $\dot{h}(t) =  A_3 \Delta h_3(t) +  B_3 \Delta u_3(t)$
-		\item Regra 4: Se $h_1$ é alto e $h_2$ é alto, então $\dot{h}(t) =  A_4 \Delta h_4(t) +  B_4 \Delta u_4(t)$
-	\end{itemize}
-
-	Onde
-	\begin{align}
-		\Delta h_i(t) =
-		\begin{bmatrix}
-			h_1(t) - \bar{h_{1i}} \\
-			h_2(t) - \bar{h_{2i}} \\
-			h_3(t) - \bar{h_{3i}} \\
-			h_4(t) - \bar{h_{4i}}
-		\end{bmatrix} 
-		&&
-		\Delta u_i(t) = 
-		\begin{bmatrix}
-			u_1(t) - \bar{u_{1i}} \\
-			u_2(t) - \bar{u_{12}}
-		\end{bmatrix}
-	\end{align}	
+Como visto, as regras do modelo são ativadas de acordo com o estado atual do sistema. As variáveis aferidas da planta são os níveis, por este motivo serão as variáveis linguísticas definidas para o modelo fuzzy. Escolhem-se então "Nível do Tanque 1" e "Nível do Tanque 2" e os conjuntos {nível baixo, nível alto} para cada uma.
 
 \subsection{Pertinência}
-	Fazendo-se:
+Como visto, a linearização é baseada nos estados estacionários do sistema, ou seja, são escolhidos pontos em que $\dot{h}(t) = 0$. Assim, o modelo linear trata do valor de desvio das variáveis e é dado por: 
+
+	\begin{equation}
+		\dot{h}(t) =  A \Delta h(t) +  B \Delta u(t)
+	\end{equation}
+
+Seguindo os passos descritos na \jhhref{secFncPert}{Seção} definem-se os conjuntos escolhidos. Há quatro vértices para os estados do sistema:
+\begin{align}
+	\begin{cases}
+		\text{Nível 1 Baixo}
+		&\begin{cases}
+			\text{Nível 2 Baixo}\\
+			\text{Nível 2 Alto}
+		\end{cases}	\\
+		\text{Nível 1 Alto}
+		&\begin{cases}
+			\text{Nível 2 Baixo}\\
+			\text{Nível 2 Alto}
+		\end{cases}
+	\end{cases}
+\end{align}
+Obtemos um modelo linear em cada um destes vértices:
+	\begin{equation}
+	\dot{h}(t) =  A_i \Delta h(t) +  B_i \Delta u(t) \\
+	i = 1,2,3,4
+	\end{equation}
+
+
+Como descrito na \jhhref{tabDescPlanta}{Tabela}, a altura dos tanques é de 25cm. Assim, escolhe-se os limitantes 5cm como "completamente" verdade para o nível baixo e  25cm como "completamente" verdade para o nível alto. As funções de pertinência obtidas são:
+
+\begin{figure}[H]
+	\centering
+	\begin{tabular}{c}
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png}\\
+		(a) Primeira\\
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
+		(b) Terceira
+	\end{tabular}
+	\caption{\label{figPertMod} Funções de Pertinência.}
+\end{figure}
+
+Onde $M_1(h_1(t))$ e $M_2(h_1(t))$ é o grau de pertinência do nível $h_1(t)$ aos conjuntos "baixo" e "alto", respectivamente. De maneira análoga, tem-se $N_1(h_2(t))$ e $N_2(h_2(t))$ para o nível $h_2(t)$.
+
+\subsection{Regras Se-Então}
+Haverá uma regra para cada um dos sistemas dados:
+
 	\begin{itemize}
-		\centering
-		\item $M_1(h_1(t))$: Grau de pertinência fuzzy de $h_1(t)$ ao conjunto "Nível H1 Baixo" 
-		\item $M_2(h_1(t))$: Grau de pertinência fuzzy de $h_1(t)$ ao conjunto "Nível H1 Alto"
-		\item $N_1(h_2(t))$: Grau de pertinência fuzzy de $h_2(t)$ ao conjunto "Nível H2 Baixo"
-		\item $N_2(h_2(t))$: Grau de pertinência fuzzy de $h_2(t)$ ao conjunto "Nível H2 Alto"
-	\end{itemize}	
-	
+		\item Regra 1:\\ 
+		\begin{align*}
+			\begin{cases}
+				\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é baixo} \\
+				\text{ENTÃO } &\dot{h}(t) =  A_1 \Delta h(t) +  B_1 \Delta u(t)
+			\end{cases}		
+		\end{align*}
+
+		\item Regra 2:\\ 
+		\begin{align*}
+		\begin{cases}
+			\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é alto} \\
+			\text{ENTÃO } &\dot{h}(t) =  A_2 \Delta h(t) +  B_2 \Delta u(t)
+		\end{cases}		
+		\end{align*}
+
+		\item Regra 3:\\ 
+		\begin{align*}
+		\begin{cases}
+			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é baixo} \\
+			\text{ENTÃO } &\dot{h}(t) =  A_3 \Delta h(t) +  B_3 \Delta u(t)
+		\end{cases}		
+		\end{align*}
+
+		\item Regra 4:\\ 
+		\begin{align*}
+		\begin{cases}
+			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é alto} \\
+			\text{ENTÃO } &\dot{h}(t) =  A_4 \Delta h(t) +  B_4 \Delta u(t)
+		\end{cases}		
+		\end{align*}
+	\end{itemize}
+
 \subsection{Ativação}
-	O nível de ativação de cada uma das Regras é dado respectivamente por:
+O nível de ativação de cada uma das \textbf{Regras} $i$ é dado respectivamente por $w_i$:
 	\begin{equation}
 	\begin{aligned}
 		w_{1}(t) = M_1(h_1(t)) * N_1(h_2(t)) \\
@@ -147,9 +194,9 @@ em que $G(s)=\frac{\Delta h(s)}{\Delta v(s)}$ e $T_{i}=\frac{2A_{i}\sqrt{h_{i}}}
 	\end{equation}
 	
 \subsection{Modelo Final}
-	O método de Takagi-Sugeno fornece, finalmente:
+O modelo Takagi-Sugeno fornece, finalmente:
 	\begin{align}
-		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h(t))}
+		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
 
 \subsection{Controlador Fuzzy}

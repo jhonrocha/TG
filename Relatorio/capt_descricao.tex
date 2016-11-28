@@ -1,8 +1,6 @@
 \selectlanguage{english}%
 
-\chapter{Descrição do Sistema}
-\indent 
-
+\chapter{Descrição do Sistema} \label{capDescSis}
 Sistemas controlados são constituídos essencialmente por uma ou mais plantas e por um dispositivo que implementará os algoritmos de controle aplicados à ela. Neste trabalho o objeto de estudo é uma planta de Quatro-Tanques, descrita na seção a seguir, e o controlador utilizado é um CLP Rockwell 1756-L62, apresentado logo depois na seção homônima.
 
 \section{Sistema de Quatro-Tanques}
@@ -115,7 +113,7 @@ Observa-se na Figura \ref{fig:modulos} a seguir a configuração instalada.
 \end{figure}
 
 \subsection{Integração}
-Seguiu-se a preparação dos softwares de comunicação com o CLP. Dois modos de comunicação são disponíveis para os módulos utilizados: serial, realizada diretamente com o controlador, e Ethernet, através do módulo EtherNetIP. Ambas foram implementadas e testadas.
+Seguiu-se a configuração dos módulos de comunicação com o CLP. Dois modos são disponíveis com os módulos utilizados: serial, realizada diretamente com o controlador, e Ethernet, através do módulo EtherNetIP. Ambas foram implementadas e testadas.
 
 Para comunicação serial, basta configurar a entrada serial no computador a ser utilizado e em seguida configurar o controlador no software RSLinx \cite{rslinx}. Para utilizar a comunicação EtherNetIp é necessário antes configurar o módulo EhterNetIp \cite{ethernetmodule}. O software BOOTP/DHCP torna possível assinar um endereço IP para o módulo recém instalado. Para que a comunicação em uma rede EtherNetIp ocorra corretamente todos os dispositivos dela precisam possuir endereços IP seguindo o padrão definido pela máscara de sub-rede, neste caso, 255.255.255.0. Isso significa, basicamente, que os pontos comunicantes da rede devem possuir ids únicos apenas nos último octeto de seus endereços. A tabela a seguir apresenta os endereços utilizados, bem como a configuração padrão da rede.
 
@@ -139,10 +137,61 @@ Para comunicação serial, basta configurar a entrada serial no computador a ser
 	}
 \end{table}
 
-Ao fim dos processos de conexão realiza-se a configuração do CLP através do RSLinx e passa a ser possível acessar e configurar os módulos através da estação de trabalho. A figura a seguir ilustra configurações funcionais dos módulos no RSLinx.
+Um \textbf{importante} cuidado de segurança observado foi o aterramento de diversos elementos do equipamento. É conhecida sua capacidade de operação em condições adversas, mesmo assim, como precaução houve o cuidado de aterrar o chassi, a placa onde foi instalado e o painel exterior.
 
-Um importante cuidado de segurança observado foi o aterramento de diversos elementos do equipamento. É conhecida sua capacidade de operação em condições adversas, mesmo assim, como precaução houve o cuidado de aterrar o chassi, a placa onde foi instalado e o painel exterior.
+\section{RSLinx e RSLogix}
+Os principais softwares utilizados para implementação do controlador são o RSLinx e o RSLogix. O primeiro é responsável por estabelecer a comunicação com o CLP Rockwell e sua ampla variedade de aplicativos e módulos. A \jhhref{imgRSLinx}{imagem} apresenta sua interface, onde é possível visualizar o controlador e os módulos instalados. A partir deste menu são acessíveis diversas funções de configuração e exibição das informações dos dispositivos.
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/ladder.png}
+	\caption{Exemplo de Diagrama Ladder.}
+	\label{imgRSLinx}
+\end{figure}
 
+O RSLogix 5000 é o ambiente de desenvolvimento proprietário da Rockwell (Allen-Bradley). Neste trabalho, os controladores foram desenvolvidos no RSLogix e enviados (Download) para o CLP em conjunto com o RSLinx. As seções a seguir apresentam as linguagens de o desenvolvimento disponibilizadas pelo RSLogix, a saber linguagem Ladder, blocos de funções e texto estruturado.
+
+\subsection{Linguagem Ladder} \label{subsec:ladder}
+A linguagem Ladder é a pioneira dos CLPs por se tratar de uma evolução natural de diagramas elétricos, utilizados antes da chegada dos controladores digitais.  Seu ambiente de desenvolvimento utiliza o posicionamento de de símbolos e blocos para implementação da lógica de controle. 
+O ambiente inicial é formado por duas linhas verticais, que representam nível lógico alto (à esquerda) e baixo(à direita) de um sistema. Entre essa linhas são desenhados ramais horizontais que representam representados os estados do CLP.
+
+Uma forma de compreender essa linguagem seria como uma série de conexões de contatos e bobinas. Se for possível traçar um caminho da esquerda para direita, conectando-se à uma bobina de saída ao final, então o valor dessa bobina será verdadeiro. Trabalhando-se com controladores digitais, são criadas variáveis no programa que representam diretamente os valores presentes nos módulos de saída e entrada. Essas variáveis recebem o nome de TAGs. Assim, as variáveis de entradas são assinaladas à tags utilizadas como chaves e as variáveis de saídas à tags associadas às bobinas de saída. Percorrendo-se o caminho da esquerda para direita em um ramal, ao se chegar à uma chave, observa-se se o valor assinalado à ela é verdadeiro. Caso seja, continua-se o caminho até uma bobina de saída. Se está for alcançada, seu valor é setado para verdadeiro, consequentemente a saída associada a ela recebe a tensão associado à este nível lógico no controlador.
+
+A figura \ref{fig:ladder} à seguir ilustra um exemplo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/ladder.png}
+	\caption{Exemplo de Diagrama Ladder.}
+	\label{fig:ladder}
+\end{figure}
+
+\subsection{Blocos Funcionais} \label{subsec:blocos}
+Trata-se de outra linguagem de programação gráfica disponível aos CLPs Rockwell. É bastante semelhante à observada em vários outros softwares comuns ao meio acadêmico, como o MATLAB. Para sua utilização, assinala-se tags às entradas e saídas dos módulos já adicionados ao projeto. O desenvolvimento utiliza blocos de entradas e saídas associados à essas variáveis. Conexões entre os blocos, por meio de linhas representam passagem dos valores por esses fios. A lógica de controle é feita por meio de blocos de funções, estes possuem uma ou mais entradas e uma ou mais saídas. Os valores assinalados à suas saídas são determinados pelas funções às quais estão associados e que utilizam os valores de entrada como argumentos.
+
+A figura \ref{fig:blocos} à seguir ilustra um exemplo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/blocos.png}
+	\caption{Exemplo de diagrama de blocos.}
+	\label{fig:blocos}
+\end{figure}
+
+Observa-se o caso do bloco GEQ\_01. Suas entradas são o nível do tanque (SourceA = Tank\_Level) e um valor constante (SourceB = 50). Sua saída (dest) será assinalada com nível lógico verdadeiro apenas quando $SourceA \geq SourceB$, ou seja, $Dest=1$ se $Tank\_Level \geq 50$, sendo $Dest = 0$ caso contrário.
+
+\subsection{Texto Estruturado} \label{secTexEst} 
+A linguagem texto estruturado é muito semelhante às linguagens estruturais C e Pascal. Como elas, é baseada no uso simples de comandos que são executados sequencialmente em seu desenvolvimento. Da mesma forma que as anteriores, esta linguagem utiliza Tags como variáveis e é a partir delas que se faz a leitura das entradas e definem-se as saídas. 
+
+A \jhhref{imgTexEst}{figura} à seguir ilustra um exemplo.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=5cm,keepaspectratio]{figs/blocos.png}
+	\caption{Exemplo de diagrama de blocos.}
+	\label{imgTexEst}
+\end{figure}
+
+%% TODO: Exemplo
 \selectlanguage{brazil}%
 

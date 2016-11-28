@@ -1,8 +1,9 @@
 \selectlanguage{english}%
 
 \chapter{Resultados}
-
-\section{Análise dos Resultados} \label{secAnalise}
+\label{capRes}
+A partir dos  
+\section{Simulações} \label{secAnalise}
 Foram realizadas simulações de resposta ao degrau do sistema de quatro-tanques modelado seguindo as abordagens apresentadas. Por se tratar de um problema multivariável com zeros alocáveis, simulou-se as respostas dos modelos para os casos de \textbf{fase-mínima} e de \textbf{fase não mínima}. Os resultados são observados nas seções a seguir.
 
 \subsection{Fase Mínima}
@@ -28,19 +29,22 @@ A tabela a seguir apresenta as especificações do sistema, nota-se por $\gamma_
 
 Realiza-se
 \begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/FM_h1_5_10_15.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/FM_h1_5_10_15.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=5, \bar{h2}=5$. Linearizações Fuzzy: $\bar{h1}=[10 \ \ 15] \ \ \bar{h2}=[10 \ \ 15]$ }
 	\label{figH1FM_1}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/FM_h1_10_15.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/FM_h1_10_15.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=10, \bar{h2}=10$. Linearizações Fuzzy: $\bar{h1}=[10 \ \ 15] \ \ \bar{h2}=[10 \ \ 15]$ }
 	\label{figH1FM_2}
 \end{figure}
 
 \begin{figure}[]
-	\includegraphics[width=0.5\textwidth]{img/FM_h1_10_15_20.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/FM_h1_10_15_20.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=10, \bar{h2}=10$. Linearizações Fuzzy: $\bar{h1}=[10 \ \ 15 \ \ 20] \ \ \bar{h2}=[10 \ \ 15 \ \ 20]$ }
 	\label{figH1FM_3}
 \end{figure}
@@ -74,26 +78,28 @@ Nas figuras que se seguem apresentam-se as respostas dos modelos à degraus apli
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/h1Fuz5_10_15.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/h1Fuz5_10_15.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=5, \bar{h2}=5$. Linearizações Fuzzy: $\bar{h1}=[5 \ \ 10 \ \ 15] \ \ \bar{h2}=[5 \ \ 10 \ \ 15]$ }
 	\label{figH1FNM_2}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/h1conv10.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/h1conv10.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=10, \bar{h2}=10$. Linearizações Fuzzy: $\bar{h1}=[5 \ \ 10 \ \ 15] \ \ \bar{h2}=[5 \ \ 10 \ \ 15]$ }
 	\label{figH1FNM_3}
 \end{figure}
 
 \begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/h1Fuz_1to30.png}
+	\centering
+	\includegraphics[width=0.7\textwidth]{img/h1Fuz_1to30.png}
 	\caption{\small Linearização Convencional: $ \bar{h1}=10, \bar{h2}=10$. Linearizações Fuzzy: uma linearização a cada 1 centímetro para ambos os níveis.}
 	\label{figH1FNM_4}
 \end{figure}
 
 Como explicado na seção anterior, o conjunto de regras é realizado a partir da combinação simples dos conjuntos de pontos das variáveis aferidas. Assim, na \hyperref[figH1FNM_4]{Figura \ref{figH1FNM_4}} haverão 900 regras, uma combinação de 30 pontos para $h_1$ e 30 pontos para $h_2$.
 
-\section{Simulações}
 
 \section{Implementação}
 

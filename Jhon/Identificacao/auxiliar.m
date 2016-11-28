@@ -1,8 +1,9 @@
-% clear
+clear
 display('Simulating Model');
 % load ident_4000_full.mat
-inicio = 10000;
-final = 20000;
+load simulation_6000_full.mat
+inicio = 1;
+final = 10000;
 
 display('Setting idData');
 samp_time = 0.2;
@@ -19,11 +20,15 @@ display('Estimating');
 amostra = tanks(inicio:final);
 A = 0.01*ones(4);
 K = 0.01*ones(4);
-B = 0.01*ones(4,2);
+B = zeros(4,2);
 C  = eye(4);
 D = zeros(4,2);
 m = idss(A,B,C,D,K);
 S = m.Structure;
+% S.b.Free(1,2) = false;
+% S.b.Free(2,1) = false;
+% S.b.Free(3,1) = false;
+% S.b.Free(4,2) = false;
 S.c.Free = false;
 S.d.Free = false;
 m.Structure = S;
@@ -38,11 +43,11 @@ sys = ss(m1.a, m1.b, m1.c, m1.d, samp_time);
 % plot(inputs.Time(inicio:final),inputs.Data(inicio:final,1));
 % figure
 % plot(inputs.Time(inicio:final),inputs.Data(inicio:final,2));
-% figure
-% plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
-% hold on
-% plot(tEst, yEst(:,1));
-% title('Tank4');
+figure
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
+hold on
+plot(tEst1, yEst1(:,1));
+title('Tank4');
 % 
 % figure
 % plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));

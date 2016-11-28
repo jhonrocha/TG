@@ -27,10 +27,15 @@
 \makeatother
 
 \usepackage{babel}
+\usepackage{indentfirst}
 
 %%%%%%% My Includes %%%%%%%
 \usepackage[hidelinks]{hyperref}
 \usepackage{float}
+
+\newcommand{\jhhref}[2]{
+	\hyperref[{#1}]{{#2} \ref{#1}}
+}
 
 
 \begin{document}
@@ -128,6 +133,8 @@
 \include{capt_fundFuzzy}
 
 \include{capt_modelagem}
+
+\include{capt_controle}
 
 \include{capt_implementacao}
 

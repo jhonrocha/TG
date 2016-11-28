@@ -1,4 +1,4 @@
-% NOT working!
+% Working!
 function output = controleAlocacao()
 A = [0 1 0;
      0 0 1;
@@ -76,7 +76,7 @@ xlabel('Tempo (s)');
 % Reference Inputs
 % /////////////////////////////////////
 function r11 = r1(t)
-    r11 = 2;
+    r11 = 0;
 end
    
 function r22 = r2(t)

@@ -128,7 +128,7 @@ Ac = [(A+Bu*K1) Bu*K2; -Cz zeros(2)];
 Bc = [zeros(4,2); eye(2)];
 % [tv,Hv] = ode15s(@quadtank,t,[h1 h2 h3 h4]);
 sys = ss(Ac,Bc,eye(6),0,samp_time)
-[y, t] = lsim(sys,inputs,t,[10 10 0 0 0 0]);
+[y, t] = lsim(sys,inputs,t,[10 10 20 20 0 0]);
 
 figure;
 plot(t,y(:,1),'-b');
@@ -158,11 +158,11 @@ xlabel('Tempo (s)');
 % Reference Inputs
 % /////////////////////////////////////
 function r11 = r1(t)
-    r11 = 10;
+    r11 = 0;
 end
    
 function r22 = r2(t)
-    r22 = 10;
+    r22 = 0;
 end
 
 end

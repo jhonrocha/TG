@@ -1,38 +1,46 @@
 \BOOKMARK [0][-]{chapter.1}{Introdu\347\343o}{}% 1
-\BOOKMARK [0][-]{chapter.2}{Descri\347\343o do Sistema}{}% 2
-\BOOKMARK [1][-]{section.2.1}{Sistema de Quatro-Tanques}{chapter.2}% 3
-\BOOKMARK [1][-]{section.2.2}{CLP Rockwell 1756-L62}{chapter.2}% 4
-\BOOKMARK [2][-]{subsection.2.2.1}{Instala\347\343o}{section.2.2}% 5
-\BOOKMARK [2][-]{subsection.2.2.2}{Integra\347\343o}{section.2.2}% 6
-\BOOKMARK [0][-]{chapter.3}{Fundamentos Fuzzy}{}% 7
-\BOOKMARK [1][-]{section.3.1}{Conjuntos Fuzzy}{chapter.3}% 8
-\BOOKMARK [1][-]{section.3.2}{Fun\347\365es de Pertin\352ncia}{chapter.3}% 9
-\BOOKMARK [2][-]{subsection.3.2.1}{Vari\341veis Lingu\355sticas}{section.3.2}% 10
-\BOOKMARK [1][-]{section.3.3}{Infer\352ncia}{chapter.3}% 11
-\BOOKMARK [2][-]{subsection.3.3.1}{Fuzzyficac\343o}{section.3.3}% 12
-\BOOKMARK [2][-]{subsection.3.3.2}{Regras}{section.3.3}% 13
-\BOOKMARK [1][-]{section.3.4}{Modelo Fuzzy Takagi-Sugeno}{chapter.3}% 14
-\BOOKMARK [2][-]{subsection.3.4.1}{Conjuntos Fuzzy}{section.3.4}% 15
-\BOOKMARK [2][-]{subsection.3.4.2}{Fun\347\365es De Pertin\352ncia}{section.3.4}% 16
-\BOOKMARK [0][-]{chapter.4}{Modelagem}{}% 17
-\BOOKMARK [1][-]{section.4.1}{Modelo N\343o Linear}{chapter.4}% 18
-\BOOKMARK [1][-]{section.4.2}{Lineariza\347\343o}{chapter.4}% 19
-\BOOKMARK [1][-]{section.4.3}{Modelagem Fuzzy Takagi-Sugeno}{chapter.4}% 20
-\BOOKMARK [2][-]{subsection.4.3.1}{Vari\341veis Lingu\355sticas}{section.4.3}% 21
-\BOOKMARK [2][-]{subsection.4.3.2}{Regras Se-Ent\343o}{section.4.3}% 22
-\BOOKMARK [2][-]{subsection.4.3.3}{Pertin\352ncia}{section.4.3}% 23
-\BOOKMARK [2][-]{subsection.4.3.4}{Ativa\347\343o}{section.4.3}% 24
-\BOOKMARK [2][-]{subsection.4.3.5}{Modelo Final}{section.4.3}% 25
-\BOOKMARK [2][-]{subsection.4.3.6}{Controlador Fuzzy}{section.4.3}% 26
-\BOOKMARK [0][-]{chapter.5}{Implementa\347\343o}{}% 27
-\BOOKMARK [1][-]{section.5.1}{Identifica\347\343o}{chapter.5}% 28
-\BOOKMARK [1][-]{section.5.2}{Controlador Fuzzy}{chapter.5}% 29
-\BOOKMARK [1][-]{section.5.3}{Resultados}{chapter.5}% 30
-\BOOKMARK [0][-]{chapter.6}{Resultados}{}% 31
-\BOOKMARK [1][-]{section.6.1}{An\341lise dos Resultados}{chapter.6}% 32
-\BOOKMARK [2][-]{subsection.6.1.1}{Fase M\355nima}{section.6.1}% 33
-\BOOKMARK [2][-]{subsection.6.1.2}{Fase N\343o-M\355nima}{section.6.1}% 34
-\BOOKMARK [1][-]{section.6.2}{Simula\347\365es}{chapter.6}% 35
-\BOOKMARK [1][-]{section.6.3}{Implementa\347\343o}{chapter.6}% 36
-\BOOKMARK [0][-]{chapter.7}{Conslus\343o}{}% 37
-\BOOKMARK [0][-]{chapter.7}{Refer\352ncias Bibliogr\341ficas}{}% 38
+\BOOKMARK [1][-]{section.1.1}{Organiza\347\343o do Trabalho}{chapter.1}% 2
+\BOOKMARK [0][-]{chapter.2}{Descri\347\343o do Sistema}{}% 3
+\BOOKMARK [1][-]{section.2.1}{Sistema de Quatro-Tanques}{chapter.2}% 4
+\BOOKMARK [1][-]{section.2.2}{CLP Rockwell 1756-L62}{chapter.2}% 5
+\BOOKMARK [2][-]{subsection.2.2.1}{Instala\347\343o}{section.2.2}% 6
+\BOOKMARK [2][-]{subsection.2.2.2}{Integra\347\343o}{section.2.2}% 7
+\BOOKMARK [1][-]{section.2.3}{RSLinx e RSLogix}{chapter.2}% 8
+\BOOKMARK [2][-]{subsection.2.3.1}{Linguagem Ladder}{section.2.3}% 9
+\BOOKMARK [2][-]{subsection.2.3.2}{Blocos Funcionais}{section.2.3}% 10
+\BOOKMARK [2][-]{subsection.2.3.3}{Texto Estruturado}{section.2.3}% 11
+\BOOKMARK [0][-]{chapter.3}{Sistemas Fuzzy}{}% 12
+\BOOKMARK [1][-]{section.3.1}{Conjuntos Fuzzy}{chapter.3}% 13
+\BOOKMARK [2][-]{subsection.3.1.1}{Vari\341veis Lingu\355sticas}{section.3.1}% 14
+\BOOKMARK [1][-]{section.3.2}{Fun\347\365es de Pertin\352ncia}{chapter.3}% 15
+\BOOKMARK [1][-]{section.3.3}{Aplica\347\343o}{chapter.3}% 16
+\BOOKMARK [2][-]{subsection.3.3.1}{Regras Se-Ent\343o}{section.3.3}% 17
+\BOOKMARK [1][-]{section.3.4}{Infer\352ncia}{chapter.3}% 18
+\BOOKMARK [1][-]{section.3.5}{Modelo Fuzzy Takagi-Sugeno}{chapter.3}% 19
+\BOOKMARK [2][-]{subsection.3.5.1}{Conjuntos Fuzzy}{section.3.5}% 20
+\BOOKMARK [2][-]{subsection.3.5.2}{Fun\347\365es De Pertin\352ncia}{section.3.5}% 21
+\BOOKMARK [0][-]{chapter.4}{Modelagem}{}% 22
+\BOOKMARK [1][-]{section.4.1}{Modelo N\343o Linear}{chapter.4}% 23
+\BOOKMARK [1][-]{section.4.2}{Lineariza\347\343o}{chapter.4}% 24
+\BOOKMARK [1][-]{section.4.3}{Modelagem Fuzzy Takagi-Sugeno}{chapter.4}% 25
+\BOOKMARK [2][-]{subsection.4.3.1}{Vari\341veis Lingu\355sticas}{section.4.3}% 26
+\BOOKMARK [2][-]{subsection.4.3.2}{Pertin\352ncia}{section.4.3}% 27
+\BOOKMARK [2][-]{subsection.4.3.3}{Regras Se-Ent\343o}{section.4.3}% 28
+\BOOKMARK [2][-]{subsection.4.3.4}{Ativa\347\343o}{section.4.3}% 29
+\BOOKMARK [2][-]{subsection.4.3.5}{Modelo Final}{section.4.3}% 30
+\BOOKMARK [2][-]{subsection.4.3.6}{Controlador Fuzzy}{section.4.3}% 31
+\BOOKMARK [0][-]{chapter.5}{Controle Fuzzy}{}% 32
+\BOOKMARK [1][-]{section.5.1}{Conceitos de LMIS}{chapter.5}% 33
+\BOOKMARK [1][-]{section.5.2}{Estabilidade Fuzzy}{chapter.5}% 34
+\BOOKMARK [1][-]{section.5.3}{Projeto}{chapter.5}% 35
+\BOOKMARK [0][-]{chapter.6}{Implementa\347\343o}{}% 36
+\BOOKMARK [1][-]{section.6.1}{Identifica\347\343o}{chapter.6}% 37
+\BOOKMARK [1][-]{section.6.2}{Controlador Fuzzy}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Resultados}{chapter.6}% 39
+\BOOKMARK [0][-]{chapter.7}{Resultados}{}% 40
+\BOOKMARK [1][-]{section.7.1}{Simula\347\365es}{chapter.7}% 41
+\BOOKMARK [2][-]{subsection.7.1.1}{Fase M\355nima}{section.7.1}% 42
+\BOOKMARK [2][-]{subsection.7.1.2}{Fase N\343o-M\355nima}{section.7.1}% 43
+\BOOKMARK [1][-]{section.7.2}{Implementa\347\343o}{chapter.7}% 44
+\BOOKMARK [0][-]{chapter.8}{Conslus\343o}{}% 45
+\BOOKMARK [0][-]{chapter.8}{Refer\352ncias Bibliogr\341ficas}{}% 46

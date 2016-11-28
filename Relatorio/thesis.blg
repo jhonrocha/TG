@@ -6,6 +6,7 @@ A level-1 auxiliary file: capt_intro.aux
 A level-1 auxiliary file: capt_descricao.aux
 A level-1 auxiliary file: capt_fundFuzzy.aux
 A level-1 auxiliary file: capt_modelagem.aux
+A level-1 auxiliary file: capt_controle.aux
 A level-1 auxiliary file: capt_implementacao.aux
 A level-1 auxiliary file: capt_resultados.aux
 A level-1 auxiliary file: capt_conclusao.aux
@@ -13,7 +14,7 @@ The style file: IEEEtran.bst
 Database file #1: bibliography.bib
 I was expecting a `,' or a `}'---line 53 of file bibliography.bib
  :  
- :  journal = {Information and Control}
+ :  journal = {System Theory}
 (Error may have been on previous line)
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "zadeh65"
@@ -21,8 +22,8 @@ Warning--I didn't find a database entry for "takagi_sugeno"
 -- IEEEtran.bst version 1.14 (2015/08/26) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
-Warning--empty journal in johansson2
 Warning--empty journal in zadeh
+Warning--empty journal in johansson2
 
 Done.
 (There was 1 error message)
