@@ -12,7 +12,12 @@ A level-1 auxiliary file: capt_resultados.aux
 A level-1 auxiliary file: capt_conclusao.aux
 The style file: IEEEtran.bst
 Database file #1: bibliography.bib
-I was expecting a `,' or a `}'---line 53 of file bibliography.bib
+I was expecting a `,' or a `}'---line 54 of file bibliography.bib
+ :  
+ :  journal = {Fuzzy Sets and Systems}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 62 of file bibliography.bib
  :  
  :  journal = {System Theory}
 (Error may have been on previous line)
@@ -24,6 +29,7 @@ Warning--I didn't find a database entry for "takagi_sugeno"
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
 Warning--empty journal in zadeh
 Warning--empty journal in johansson2
+Warning--empty journal in kang
 
 Done.
-(There was 1 error message)
+(There were 2 error messages)

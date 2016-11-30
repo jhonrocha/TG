@@ -135,9 +135,9 @@ Como descrito na \jhhref{tabDescPlanta}{Tabela}, a altura dos tanques é de 25cm
 	\centering
 	\begin{tabular}{c}
 		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png}\\
-		(a) Primeira\\
+		(a) Pertinências de $h_1(t)$ \\
 		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
-		(b) Terceira
+		(b) Pertinências de $h_2(t)$ \\
 	\end{tabular}
 	\caption{\label{figPertMod} Funções de Pertinência.}
 \end{figure}
@@ -195,23 +195,25 @@ O nível de ativação de cada uma das \textbf{Regras} $i$ é dado respectivamen
 	
 \subsection{Modelo Final}
 O modelo Takagi-Sugeno fornece, finalmente:
-	\begin{align}
+	\begin{align} \label{eqTakSugPlanta}
 		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
 
 \subsection{Controlador Fuzzy}
-	O desenvolvimento do controlador para este modelo segue os mesmos passos: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra, o grau de ativação de cada ganho é obtido pelas mesmas equações \ref{eqGrauAtiv4T}. O ganho final a ser utilizado é dado por:
-	
+No \jhhref{capControle}{capítulo} demonstra-se o projeto de controladores capazes de estabilizar o sistema em todos os pontos de \ref{eqTakSugPlanta}. O desenvolvimento do controlador final para modelo segue os mesmos passos já apresentados: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra e o grau de ativação de cada ganho é obtido pelas mesmas \jhhref{eqGrauAtiv4T}{equações}.
+ O ganho final a ser utilizado é dado por:
 	\begin{align}
 		K = \frac{\sum_{i=1}^{4}  w_i(h(t))K_i}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
-	
-	\begin{figure}
-		\begin{centering}
-			\includegraphics[width=\textwidth]{img/modelo_controlado.png}
-			\par\end{centering}
-		\caption{\label{figSimPlantCtrl}Espaço de estados da planta controlada}
-	\end{figure}
+
+Deseja-se neste trabalho obter um controlador capaz de prover erro nulo para ambas os níveis inferiores em estado estacionário. Desta forma, foi desenvolvido um projeto aumentado dos erros integrais das variáveis controlados. O modelo final dos sistema é apresentado na \jhhref{figSimPlantCtrl}{figura} a seguir:
+
+\begin{figure}[H]
+	\begin{centering}
+		\includegraphics[width=\textwidth]{img/modelo_controlado.png}
+		\par\end{centering}
+	\caption{\label{figSimPlantCtrl}Espaço de estados da planta controlada}
+\end{figure}
 
 \selectlanguage{brazil}%
 
