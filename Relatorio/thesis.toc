@@ -63,42 +63,40 @@
 \contentsline {section}{\numberline {3.2}Fun\IeC {\c c}\IeC {\~o}es de Pertin\IeC {\^e}ncia}{12}{section.3.2}
 \contentsline {section}{\numberline {3.3}Aplica\IeC {\c c}\IeC {\~a}o}{14}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Regras Se-Ent\IeC {\~a}o}{14}{subsection.3.3.1}
-\contentsline {section}{\numberline {3.4}Modelo Fuzzy Takagi-Sugeno}{14}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Conjuntos Fuzzy}{15}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Fun\IeC {\c c}\IeC {\~o}es De Pertin\IeC {\^e}ncia}{16}{subsection.3.4.2}
+\contentsline {section}{\numberline {3.4}Modelo Fuzzy Takagi-Sugeno}{15}{section.3.4}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {4}Modelagem}{17}{chapter.4}
-\contentsline {section}{\numberline {4.1}Modelo N\IeC {\~a}o Linear}{17}{section.4.1}
-\contentsline {section}{\numberline {4.2}Lineariza\IeC {\c c}\IeC {\~a}o}{17}{section.4.2}
-\contentsline {section}{\numberline {4.3}Modelagem Fuzzy Takagi-Sugeno}{18}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Vari\IeC {\'a}veis Lingu\IeC {\'\i }sticas}{18}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Pertin\IeC {\^e}ncia}{18}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Regras Se-Ent\IeC {\~a}o}{19}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Ativa\IeC {\c c}\IeC {\~a}o}{20}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Modelo Final}{20}{subsection.4.3.5}
-\contentsline {subsection}{\numberline {4.3.6}Controlador Fuzzy}{20}{subsection.4.3.6}
+\contentsline {chapter}{\numberline {4}Modelagem}{16}{chapter.4}
+\contentsline {section}{\numberline {4.1}Modelo N\IeC {\~a}o Linear}{16}{section.4.1}
+\contentsline {section}{\numberline {4.2}Lineariza\IeC {\c c}\IeC {\~a}o}{16}{section.4.2}
+\contentsline {section}{\numberline {4.3}Modelagem Fuzzy Takagi-Sugeno}{17}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Vari\IeC {\'a}veis Lingu\IeC {\'\i }sticas}{17}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Pertin\IeC {\^e}ncia}{17}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Regras Se-Ent\IeC {\~a}o}{18}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Ativa\IeC {\c c}\IeC {\~a}o}{19}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Modelo Final}{19}{subsection.4.3.5}
+\contentsline {subsection}{\numberline {4.3.6}Controlador Fuzzy}{19}{subsection.4.3.6}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {5}Controle Fuzzy}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Conceitos de LMIS}{22}{section.5.1}
-\contentsline {section}{\numberline {5.2}Estabilidade Fuzzy}{22}{section.5.2}
-\contentsline {section}{\numberline {5.3}Projeto}{22}{section.5.3}
+\contentsline {chapter}{\numberline {5}Controle Fuzzy}{21}{chapter.5}
+\contentsline {section}{\numberline {5.1}Conceitos de LMIS}{21}{section.5.1}
+\contentsline {section}{\numberline {5.2}Estabilidade Fuzzy}{21}{section.5.2}
+\contentsline {section}{\numberline {5.3}Projeto}{21}{section.5.3}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{23}{chapter.6}
-\contentsline {section}{\numberline {6.1}Identifica\IeC {\c c}\IeC {\~a}o}{23}{section.6.1}
-\contentsline {section}{\numberline {6.2}Controlador Fuzzy}{23}{section.6.2}
-\contentsline {section}{\numberline {6.3}Resultados}{23}{section.6.3}
+\contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{22}{chapter.6}
+\contentsline {section}{\numberline {6.1}Identifica\IeC {\c c}\IeC {\~a}o}{22}{section.6.1}
+\contentsline {section}{\numberline {6.2}Controlador Fuzzy}{22}{section.6.2}
+\contentsline {section}{\numberline {6.3}Resultados}{22}{section.6.3}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {7}Resultados}{24}{chapter.7}
-\contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{24}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{24}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{24}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{24}{section.7.2}
+\contentsline {chapter}{\numberline {7}Resultados}{23}{chapter.7}
+\contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{23}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{23}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{23}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{23}{section.7.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {8}Conslus\IeC {\~a}o}{25}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conslus\IeC {\~a}o}{24}{chapter.8}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{26}{chapter.8}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{25}{chapter.8}

@@ -125,114 +125,86 @@ De maneira similar à tradicional, a lógica fuzzy baseia-se no paradigma de imp
 \end{cases}		
 \end{align}
 
-A afirmação (1) é chamada de regra de implicação, ou regra Se-Então, e é ela quem rege o comportamento da conclusão (3) de acordo com a premissa (2). 
+A afirmação (1) é chamada de regra de implicação, ou regra Se-Então, e é ela quem rege o comportamento da conclusão (3) de acordo com a premissa (2). Ou seja, sempre que (2) é verdadeira, (3) também será.
 
 \subsection{Regras Se-Então}
-Como visto no \jhhref{eqRegrasEx}{exemplo} as regras Se-Então são as premissas que definem os resultados das afirmações. Na teoria fuzzy faz-se uso das funções de pertinência para decidir as conclusões. Assim, ao contrário da lógica clássica onde há ou não ativação de uma determinada regra, em lógica difusa toda regra está ativada em determinado grau. Exemplifica-se a seguir:
+Como visto no \jhhref{eqRegrasEx}{exemplo} as regras Se-Então são parte das premissas que definem os resultados das afirmações. Uma vez que as funções de pertinência fuzzy assumem diferentes níveis de verdade, não binários, então a autenticidade de afirmações envolvendo-as também assumirá diferentes graus de verdade. Assim, ao contrário da lógica clássica onde há ou não ativação de uma determinada regra, em lógica difusa toda regra está ativada em determinado grau. Exemplifica-se a seguir:
 
-\begin{align*} \label{eqRegraDef}
+\begin{align} \label{eqRegraDef}
 \text{Regra: }
 \begin{cases}
 	\text{SE: X pertence a A} \\
 	\text{ENTÃO: Y pertence a B}
 \end{cases}		
-\end{align*}
-
-O grau de ativação da Regra na \jhhref{eqRegraDef}{equação} é definido a partir da pertinência do elemento $X$ em $A$. A conclusão $Y$ será definida de forma a cumprir pertinência semelhante ao conjunto $B$.
-
-Prosseguindo o exemplo inicial, pode-se utilizar a temperatura de uma sala para controlar a potência ativa de um ar condicionado. Define-se então conjuntos para a variável linguística "Potência": \{"muito fraca", "fraca", "forte", "muito forte"\}. 
-
-\section{Modelo Fuzzy Takagi-Sugeno} \label{secTakSug}
-Os trabalhos de Takagi, Sugeno \cite{takagiSugeno} e Kang \cite{kang}
-
-\textbf{Regra i:}
-\begin{align}
-&\textbf{SE:} \text{ $v_1(t)$ é $M_{1i}$ e $v_2(t)$ é $M_{2i}$ e ... e $v_n(t)$ e $M_{ni}$,} \\
-&\textbf{ENTÃO}: \ \ \begin{cases}
-\dot{x}(t) = A_ix(t) + B_iu(t),\\
-y(t) = C_ix(t)
-\end{cases}
-\label{eqRegraIGeral}
 \end{align}
 
+O grau de ativação da Regra na \jhhref{eqRegraDef}{equação} é definido a partir da pertinência do elemento $X$ em $A$. A conclusão $Y$ será definida de forma a cumprir pertinência semelhante ao conjunto $B$. Caso $X$ seja 50\% A, a saída $Y$ deverá ser 50\% B.
 
-	\begin{equation}
-	\begin{aligned}
-		w_{1}(t) = M_1(h_1(t)) * N_1(h_2(t)) \\
-		w_{2}(t) = M_1(h_1(t)) * N_2(h_2(t)) \\
-		w_{3}(t) = M_2(h_1(t)) * N_1(h_2(t)) \\
-		w_{4}(t) = M_2(h_1(t)) * N_2(h_2(t))
-	\end{aligned}
-	\end{equation}
+Prosseguindo o exemplo inicial, pode-se utilizar a temperatura de uma sala para controlar a potência ativa de um ar condicionado.  Seguindo os procedimentos descritos, define-se uma nova variável linguística: "Potência" e seus conjuntos fuzzy: \{"muito fraca", "fraca", "forte", "muito forte"\}. Chamando "T" a temperatura atual e "P" a potência, uma forma simples de projeto poderia ser:
+
+\begin{align*} \label{eqRegrasExTemp}
+\text{Regra 1: }
+	&\begin{cases}
+		\text{SE: T pertence a "muito baixa" } \\
+		\text{ENTÃO: P pertence a "muito fraca"}
+	\end{cases}		\\
+\text{Regra 2: }
+	&\begin{cases}
+		\text{SE: T pertence a "baixa"} \\
+		\text{ENTÃO: P pertence a "fraca"}
+	\end{cases}		\\
+\text{Regra 3: }
+	&\begin{cases}
+		\text{SE: T pertence a "alta"} \\
+		\text{ENTÃO: P pertence a "forte"}
+	\end{cases}		\\
+\text{Regra 4: }
+	&\begin{cases}
+		\text{SE: T pertence a "muito alta"} \\
+		\text{ENTÃO: P pertence a "muito forte"}
+	\end{cases}		
+\end{align*}
+
+\section{Modelo Fuzzy Takagi-Sugeno} \label{secTakSug}
+Os trabalhos de Takagi, Sugeno \cite{takagiSugeno} e Kang \cite{kang} introduziram e desenvolveram a aplicação da lógica difusa em sistemas dinâmicos. Neles é demonstrada a capacidade dos modelos fuzzy (aqui os trataremos por Takagi-Sugeno) de representarem, de forma tão aproximada quanto se queira, qualquer sistema dinâmico (respeito condições de domínio). 
+
+Suponha-se um sistema dinâmico qualquer a seguir:
+\begin{align}
+	\dot{x(t)} &= f(x(t)) + g(u(t)) \\
+	y(t) &= h(x(t))
+\end{align}
+
+Linearizando o obteria-se o seguinte modelo em espaço de estados:
+\begin{align}
+	\dot{x(t)} &= Ax(t) + Bu(t) \\
+	y(t) &= Cx(t)
+\end{align}
+
+As regras fuzzy seriam então:
+
+
+\begin{align} \label{eqRegraIGeral}
+	\textbf{Regra i:}
+	\begin{cases}
+		&\textbf{SE:} \text{ $v_1(t)$ é $M_{1i}$ e $v_2(t)$ é $M_{2i}$ e ... e $v_n(t)$ e $M_{ni}$,} \\
+		&\textbf{ENTÃO}:
+		\begin{cases}
+			\dot{x}(t) = A_i \Delta x(t) + B_i \Delta u(t),\\
+			y(t) = C_ix(t)
+		\end{cases}
+	\end{cases}
+\end{align}
+
+\begin{align}
+	v(t) = [v_1(t) v_2(t) v_3(t) ... v_n(t)]
+\end{align}
 	
-	\begin{align}
-		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h_i(t) +  B_i \Delta u_i(t))}{\sum_{i=1}^{4} w_i(h)}
-	\end{align}
-
-Na concepção fuzzy, a regra Se-Então é disparada quando houver um grau de similaridade
-não nulo entre a variável premissa e o antecedente. Como resultado, infere-se uma conclusão
-que mantenha algum grau de similaridade com o conseqüente da regra. Nota-se, mais uma
-vez, que os conceitos tradicionais estão embutidos na teoria fuzzy. Se a variável premissa x
-possui total similaridade com o antecedente A então a conclusão será que y é o próprio B.
-Uma regra fuzzy pode possuir mais de um antecedente. Um exemplo simples é dado a
-seguir:
-R :
-Se x é A e z é C
-Então y é B
-(2.5)
-Neste caso, a maneira de inferir uma conclusão é bem mais elaborada. A conclusão depende
-tanto da similaridade de x em A, quanto da similaridade de z em C. Além disso, depende da
-relação entre ambos antecedentes, bem como da relação deles com o conseqüente.
-Por exemplo, considere um veículo trafegando em uma estrada. Uma regra com múltiplos
-antecedentes para inferir sobre a velocidade adequada do carro pode ser: “se a curva é fechada
-ou a pista está molhada, então dirija em baixa velocidade”.
-No caso de pista seca, quanto mais fechada for a curva, menor deve ser a velocidade.
-Em outras palavras, quanto maior for a pertinência da variável “curva” no conjunto fuzzy
-“fechada”, maior deverá ser a pertinência da “velocidade” no conjunto “baixa”.
-Se o carro viaja pela mesma curva porém com pista molhada, por questão de segurança,
-a velocidade deverá ser ainda menor. Neste caso a pertinência da “velocidade” no conjunto
-“baixa” será afetada também pelo valor lingüístico da variável “pista”.
-Existem diversas configurações que definem como os antecedentes interagem entre si e
-com o conseqüente da regra para produzir uma conclusão. Tais configurações são chamadas
-mecanismos de inferência e podem ser vistos com maiores
-
-\indent A Teoria Fuzzy tem seu princípio cunhado por \cite{zadeh65}. Os trabalhos seguintes, como o \cite{takagi_sugeno} abordaram sua utilização para a modelagem de sistemas complexos por meio de aproximações, utilizando uma teoria de conjuntos diferente da convencional.
-
-\subsection{Conjuntos Fuzzy}
-\indent A teoria de conjuntos convencional utiliza lógica booleana para definir os valores lógicos das funções de pertinências dos conjuntos. Assim, dado $X$ o universo de discurso de um determinado conjunto $C$, um elemento genérico $x$ tem sua função de pertinência ao conjunto $C$ dado por:
-
-\begin{align*}
-f_{C}(x)&:X \rightarrow \{0,1\} \quad \\
-f_{C}(x)&= 
-\begin{cases}
-1 \text{ se e somente se x} \in C \\
-0 \text{ se e somente se x} \notin C\\
-\end{cases}
-\end{align*}
-
-Existem, no entanto, situações em que a definição dos conjuntos de seus limites se tornam muito subjetivos. Nestas situações, a utilização da lógica difusa apresenta vantagens para a modelagem de sistemas. 
-
-Considere-se como exemplo a temperatura de uma sala. Pode-se definir dois conjuntos de estados \{quente,frio\}. No entanto, torna-se um pouco confuso e arbitrário decidir em qual destes conjuntos um estado específico se encaixa. Utilizando funções de pertinências não binárias, observa-se o \textbf{quanto} determinada temperatura se encaixa em cada um dos conjuntos. Funções de pertinências fuzzy são definidas da forma:
-
-\begin{align*}
-f_{C}(x)&:X \rightarrow [0,1]
-\end{align*}
-
-\subsection{Funções De Pertinência}
-Existem várias normas e regras disponíveis para funções de pertinência. Este trabalho considera a norma triangular. Seguindo o exemplo dado, dada uma temperatura $x$ verifica-se o quão pertencente aos conjuntos \textit{quente} e \textit{fria} ela é utilizando a função do gráfico a seguir:
-
-\begin{figure}[H]
-	\includegraphics[width=0.5\textwidth]{img/pertinencia.png}
-	\caption{Diagrama esquemático do sistema de quatro tanques e planta didática.}
-	\label{figPertinencia}
-\end{figure}
-
-Nota-se que se escolhem limites para os conjuntos: toda temperatura abaixo de 10 é fria; toda temperatura acima de 30 é quente. As demais, pertencem mais ou menos à cada um dos conjuntos.
-
-Em lógica Fuzzy, as variáveis definidas de forma subjetiva, com expressões para limites são chamadas variáveis linguísticas.
-
-
-
+\begin{align}
+	\begin{cases}
+		\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(x(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h)} \vspace{0.5cm}\\
+		y(t) = \frac{\sum_{i=1}^{4}  w_i(x(t)) C_i \Delta x(t)}{\sum_{i=1}^{4} w_i(h)}
+	\end{cases}
+\end{align}
 
 \selectlanguage{brazil}%
 
