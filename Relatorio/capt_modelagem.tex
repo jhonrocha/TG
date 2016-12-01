@@ -7,7 +7,7 @@ Os modelos físicos do sistema de quatro-tanques utilizados neste trabalho são 
 \section{Modelo Não Linear}
 Baseado nos princípios de conservação de massa e na lei de Bernoulli para líquidos incompressíveis tem-se o seguinte sistema de equações não lineares que descrevem o processo.
 
-\begin{equation}
+\begin{equation} \label{eqModNL}
 	\begin{cases}
 		\dot{h_{1}} = \frac{1}{A_{1}}(a_{3}\sqrt{2gh_{3}} + \gamma_{1}k_{1}v_{1} - a_{1}\sqrt{2gh_{1}})\\
 		
@@ -17,7 +17,6 @@ Baseado nos princípios de conservação de massa e na lei de Bernoulli para lí
 		
 		\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - a_{4}\sqrt{2gh_{4}})
 	\end{cases}
-	\label{eqModNL}
 \end{equation}
 
 Na \jhhref{eqModNL}{Equação}, os termos $h_{i}$, $A_{i}$ e $a_{i}$ representam o nível de água, a área da secção transversal da base do tanque $i$ e a área de secção transversal do orifício de saída do tanque $i$, $i=1,2,3,4$, respectivamente. A constante de fluxo da bomba $j$ e a tensão aplicada sobre ela são dadas por $k_{j}$ e $v_{j}$, $j=1,2$. O parâmetro $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4 enquanto $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3 e g é a aceleração da gravidade. 
@@ -27,7 +26,7 @@ Na \jhhref{eqModNL}{Equação}, os termos $h_{i}$, $A_{i}$ e $a_{i}$ representam
 \section{Linearização}
 Linearizando o sistema em torno dos ponto de operação $\overline{h}=(\overline{h_{1}},\overline{h_{2}},\overline{h_{3}},\overline{h_{4}})$ e $\overline{v}=(\overline{v_{1}},\overline{v_{2}})$, por expansão em série de Taylor, obtém-se a seguinte representação no espaço de estados:
 
-\begin{multline}
+\begin{multline} \label{eqModLinear}
 	\begin{bmatrix}
 		\dot{\Delta h_{1}} \\
 		\dot{\Delta h_{2}} \\
@@ -58,7 +57,6 @@ Linearizando o sistema em torno dos ponto de operação $\overline{h}=(\overline
 		\Delta v_{1} \\
 		\Delta v_{2}
 	\end{bmatrix}
-	\label{eq2}
 \end{multline}
 \begin{equation}
 	\begin{bmatrix}
@@ -202,7 +200,7 @@ O modelo Takagi-Sugeno fornece, finalmente:
 \subsection{Controlador Fuzzy}
 No \jhhref{capControle}{capítulo} demonstra-se o projeto de controladores capazes de estabilizar o sistema em todos os pontos de \ref{eqTakSugPlanta}. O desenvolvimento do controlador final para modelo segue os mesmos passos já apresentados: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra e o grau de ativação de cada ganho é obtido pelas mesmas \jhhref{eqGrauAtiv4T}{equações}.
  O ganho final a ser utilizado é dado por:
-	\begin{align}
+	\begin{align} \label{eqModContFuzzy}
 		K = \frac{\sum_{i=1}^{4}  w_i(h(t))K_i}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
 
