@@ -48,7 +48,7 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {2}Descri\IeC {\c c}\IeC {\~a}o do Sistema}{3}{chapter.2}
 \contentsline {section}{\numberline {2.1}Sistema de Quatro-Tanques}{3}{section.2.1}
-\contentsline {section}{\numberline {2.2}CLP Rockwell 1756-L62}{4}{section.2.2}
+\contentsline {section}{\numberline {2.2}CLP Rockwell 1756-L62}{5}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Instala\IeC {\c c}\IeC {\~a}o}{5}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Integra\IeC {\c c}\IeC {\~a}o}{7}{subsection.2.2.2}
 \contentsline {section}{\numberline {2.3}RSLinx e RSLogix}{8}{section.2.3}
@@ -93,10 +93,10 @@
 \contentsline {chapter}{\numberline {7}Resultados}{23}{chapter.7}
 \contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{23}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{23}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{23}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{23}{section.7.2}
+\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{24}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{25}{section.7.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {8}Conslus\IeC {\~a}o}{24}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{26}{chapter.8}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{25}{chapter.8}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{27}{chapter.8}
