@@ -86,17 +86,16 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{22}{chapter.6}
 \contentsline {section}{\numberline {6.1}Identifica\IeC {\c c}\IeC {\~a}o}{22}{section.6.1}
-\contentsline {section}{\numberline {6.2}Controlador Fuzzy}{22}{section.6.2}
-\contentsline {section}{\numberline {6.3}Resultados}{22}{section.6.3}
+\contentsline {section}{\numberline {6.2}CLP}{22}{section.6.2}
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {7}Resultados}{23}{chapter.7}
 \contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{23}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{23}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{26}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{27}{section.7.2}
+\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{28}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o}{33}{section.7.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{28}{chapter.8}
+\contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{34}{chapter.8}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{29}{chapter.8}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{35}{chapter.8}

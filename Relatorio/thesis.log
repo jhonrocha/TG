@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  3 DEC 2016 01:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  3 DEC 2016 01:16
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -722,8 +722,38 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (thesis.aux
 (abstract.aux) (symbols.aux) (notation.aux) (capt_intro.aux)
 (capt_descricao.aux) (capt_fundFuzzy.aux) (capt_modelagem.aux)
-(capt_controle.aux) (capt_implementacao.aux) (capt_resultados.aux)
-(capt_conclusao.aux))
+(capt_controle.aux) (capt_implementacao.aux) (capt_resultados.aux
+
+LaTeX Warning: Label `imgTS5' multiply defined.
+
+
+LaTeX Warning: Label `imgTS15' multiply defined.
+
+
+LaTeX Warning: Label `figH1TS2' multiply defined.
+
+
+LaTeX Warning: Label `figH2TS2' multiply defined.
+
+
+LaTeX Warning: Label `imgTS5' multiply defined.
+
+
+LaTeX Warning: Label `imgTS15' multiply defined.
+
+
+LaTeX Warning: Label `figH1TSCtrl2' multiply defined.
+
+
+LaTeX Warning: Label `figH2CtrlTS2' multiply defined.
+
+
+LaTeX Warning: Label `imgTS5' multiply defined.
+
+
+LaTeX Warning: Label `imgTS15' multiply defined.
+
+) (capt_conclusao.aux))
 \openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
@@ -829,7 +859,7 @@ LaTeX Info: Redefining \nameref on input line 41.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
 
-<figs/capa_fundo.pdf, id=174, 597.50786pt x 845.04686pt>
+<figs/capa_fundo.pdf, id=170, 597.50786pt x 845.04686pt>
 File: figs/capa_fundo.pdf Graphic file (type pdf)
 
 <use figs/capa_fundo.pdf>
@@ -938,12 +968,18 @@ Package babel Info: Redefining portuges shorthand "|
 \openout5 = `thesis.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 118.
+ [4
+
+]
+Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 119.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 119.
- [4
-
-] (thesis.lot)
+ [5]
+(thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
@@ -951,7 +987,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
-[5
+ [6
 
 ]
 \openout2 = `symbols.aux'.
@@ -961,7 +997,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 121.
- [6
+ [7
 
 
 ]
@@ -972,7 +1008,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 123.
- [7
+ [8
 
 
 
@@ -1001,13 +1037,13 @@ Package babel Info: Redefining portuges shorthand "|
 
  (capt_descricao.tex
 Chapter 2.
-<img/4tank.png, id=381, 414.79968pt x 426.84468pt>
+<img/4tank.png, id=409, 414.79968pt x 426.84468pt>
 File: img/4tank.png Graphic file (type png)
  <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 13.
 (pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
 
-<img/tanqLara.jpg, id=384, 2601.72pt x 4625.28pt>
+<img/tanqLara.jpg, id=412, 2601.72pt x 4625.28pt>
 File: img/tanqLara.jpg Graphic file (type jpg)
  <use img/tanqLara.jpg>
 Package pdftex.def Info: img/tanqLara.jpg used on input line 23.
@@ -1023,19 +1059,19 @@ Overfull \hbox (1.98653pt too wide) in paragraph at lines 58--59
 de con-t-role. As-sim, escolheu-se primeira-
  []
 
-<figs/mesa.jpg, id=399, 903.375pt x 1606.0pt>
+<figs/mesa.jpg, id=427, 903.375pt x 1606.0pt>
 File: figs/mesa.jpg Graphic file (type jpg)
  <use figs/mesa.jpg>
 Package pdftex.def Info: figs/mesa.jpg used on input line 62.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
 
-<figs/interior.jpg, id=401, 903.375pt x 1606.0pt>
+<figs/interior.jpg, id=429, 903.375pt x 1606.0pt>
 File: figs/interior.jpg Graphic file (type jpg)
  <use figs/interior.jpg>
 Package pdftex.def Info: figs/interior.jpg used on input line 71.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
 
-[5 <./figs/mesa.jpg>] <figs/modulos.jpg, id=409, 1204.5pt x 1606.0pt>
+[5 <./figs/mesa.jpg>] <figs/modulos.jpg, id=437, 1204.5pt x 1606.0pt>
 File: figs/modulos.jpg Graphic file (type jpg)
 
 <use figs/modulos.jpg>
@@ -1045,18 +1081,18 @@ Package pdftex.def Info: figs/modulos.jpg used on input line 110.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 137.
  [7 <./figs/modulos.jpg>]
-<img/RSLinx.png, id=425, 807.015pt x 450.68375pt>
+<img/RSLinx.png, id=453, 807.015pt x 450.68375pt>
 File: img/RSLinx.png Graphic file (type png)
  <use img/RSLinx.png>
 Package pdftex.def Info: img/RSLinx.png used on input line 147.
 (pdftex.def)             Requested size: 254.74057pt x 142.26378pt.
- [8 <./img/RSLinx.png>] <figs/ladder.png, id=431, 330.48468pt x 237.13594pt>
+ [8 <./img/RSLinx.png>] <figs/ladder.png, id=459, 330.48468pt x 237.13594pt>
 File: figs/ladder.png Graphic file (type png)
 
 <use figs/ladder.png>
 Package pdftex.def Info: figs/ladder.png used on input line 164.
 (pdftex.def)             Requested size: 198.27216pt x 142.26378pt.
- <figs/blocos.png, id=434, 567.62062pt x 199.49532pt>
+ <figs/blocos.png, id=462, 567.62062pt x 199.49532pt>
 File: figs/blocos.png Graphic file (type png)
 
 <use figs/blocos.png>
@@ -1069,7 +1105,7 @@ el do tanque (SourceA = Tank_Level)
  []
 
 [9 <./figs/ladder.png> <./figs/blocos.png>]
-<img/strText.png, id=443, 463.7325pt x 228.855pt>
+<img/strText.png, id=471, 463.7325pt x 228.855pt>
 File: img/strText.png Graphic file (type png)
  <use img/strText.png>
 Package pdftex.def Info: img/strText.png used on input line 190.
@@ -1216,7 +1252,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[19] <img/modelo_controlado.png, id=541, 782.17218pt x 356.83313pt>
+[19] <img/modelo_controlado.png, id=569, 782.17218pt x 356.83313pt>
 File: img/modelo_controlado.png Graphic file (type png)
 
 <use img/modelo_controlado.png>
@@ -1273,7 +1309,7 @@ Overfull \hbox (13.04642pt too wide) in paragraph at lines 47--55
 
 
 
-] <img/FM_h1_5_10_15.png, id=573, 421.575pt x 316.18124pt>
+] <img/FM_h1_5_10_15.png, id=601, 421.575pt x 316.18124pt>
 File: img/FM_h1_5_10_15.png Graphic file (type png)
 
 <use img/FM_h1_5_10_15.png>
@@ -1318,33 +1354,150 @@ LaTeX Warning: Hyper reference `eqContFuzzy' on page 25 undefined on input line
 LaTeX Warning: Reference `eqContFuzzy' on page 25 undefined on input line 97.
 
 [25]
-Overfull \hbox (13.04642pt too wide) in paragraph at lines 162--170
+File: img/modelo_controlado.png Graphic file (type png)
+ <use img/modelo_controlado.png>
+Package pdftex.def Info: img/modelo_controlado.png used on input line 128.
+(pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 136.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [26]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 143.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 153.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 154.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 152--158
+ [][] 
+ []
+
+[27]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 164.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 165.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 163--169
+ [][] 
+ []
+
+[28]
+Overfull \hbox (13.04642pt too wide) in paragraph at lines 209--217
  [] 
  []
 
-[26] <img/h1Fuz5_10.png, id=596, 422.32782pt x 316.18124pt>
-File: img/h1Fuz5_10.png Graphic file (type png)
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 223.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [29]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 230.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
 
-<use img/h1Fuz5_10.png>
-Package pdftex.def Info: img/h1Fuz5_10.png used on input line 176.
-(pdftex.def)             Requested size: 308.71104pt x 231.12398pt.
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 240.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 241.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 239--245
+ [][] 
+ []
+
+[30]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 251.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 252.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 250--256
+ [][] 
+ []
+
+
+LaTeX Warning: Hyper reference `eqContFuzzy' on page 31 undefined on input line
+ 259.
+
+
+LaTeX Warning: Reference `eqContFuzzy' on page 31 undefined on input line 259.
+
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 290.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [31]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 297.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 307.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 308.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 306--312
+ [][] 
+ []
+
+[32]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 318.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 319.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 317--323
+ [][] 
+ []
+
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
- [27 <./img/h1Fuz5_10.png (PNG copy)>]
+ [33]
 \openout2 = `capt_conclusao.aux'.
 
-
-(capt_conclusao.tex
+ (capt_conclusao.tex
 Chapter 8.
 )
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 144.
- [28
+ [34
 
 
 
@@ -1357,7 +1510,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 152.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 152.
- [29
+ [35
 
 
 ]
@@ -1369,21 +1522,24 @@ _descricao.aux) (capt_fundFuzzy.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 32F52A3305B40D710A84940ABEB2CDFF;2847.
+(rerunfilecheck)             Checksum: 31EEB22912FF40D9F61846C1D2578815;2775.
 
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
  ) 
 Here is how much of TeX's memory you used:
- 9997 strings out of 493334
- 146993 string characters out of 3139252
- 269157 words of memory out of 3000000
- 13107 multiletter control sequences out of 15000+200000
+ 10012 strings out of 493334
+ 147165 string characters out of 3139252
+ 271476 words of memory out of 3000000
+ 13105 multiletter control sequences out of 15000+200000
  64630 words of font info for 77 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,22n,42p,1221b,596s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,22n,42p,1221b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
 s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKTeX
  2.9/fonts/type1/public/amsfonts/cmextra/cmex8.pfb><C:/Program Files/MiKTeX 2.9
@@ -1398,9 +1554,9 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
 nts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
 es/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:
 /Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (41 pages, 4704931 bytes).
+Output written on thesis.pdf (48 pages, 4721021 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
- 135 named destinations out of 1000 (max. 500000)
- 410 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 153 named destinations out of 1000 (max. 500000)
+ 397 words of extra memory for PDF output out of 10000 (max. 10000000)
 
