@@ -1,4 +1,5 @@
-function [K,F,G] = fuzzy_ganhos(vec_h1, vec_h2)
+function [outK] = fuzzy_ganhos(vec_h1, vec_h2)
+warning off;
 % Plant Specs
 [A1,A2,A3,A4,a1,a2,a3,a4,g,k1,k2,gamma1,gamma2] = planta();
 
@@ -6,17 +7,23 @@ function [K,F,G] = fuzzy_ganhos(vec_h1, vec_h2)
 C = [1 0 0 0;
      0 1 0 0];
 
-D = [0 0;
-     0 0];
- 
-% Q and R to LQI Tunning
-Q = eye(6);
-R = eye(2);
-
 % Returns
+% outK = zeros(2,4,length(vec_h1),length(vec_h2));
 outK = zeros(2,6,length(vec_h1),length(vec_h2));
-outF = zeros(2,4,length(vec_h1),length(vec_h2));
-outG = zeros(2,2,length(vec_h1),length(vec_h2));
+size(outK)
+% outF = zeros(2,4,length(vec_h1),length(vec_h2));
+% outG = zeros(2,2,length(vec_h1),length(vec_h2));
+
+%new LMI system
+LMIs = [];
+
+%create the variables
+vec_M = [];
+
+% Lyapunov matrix
+W = sdpvar(6,6,'symmetric');
+LMIs = [LMIs, W>0];
+
 
 for i1 = 1:length(vec_h1)
     hp1 = vec_h1(i1);
@@ -44,16 +51,27 @@ for i1 = 1:length(vec_h1)
             0 gamma2*k2/A2;
             0 (1 - gamma2)*k2/A3;
             (1 - gamma1)*k1/A4 0];
-        
-        sys = ss(A,B,C,D);
-        [Kt,S,e] = lqi(sys,Q,R);
+               
+        Aa = [A zeros(4,2); -C zeros(2)];
+        Ba = [B; zeros(2)];
 
-        outK(:,:,i1,i2) = -Kt;
-        outF(:,:,i1,i2) = -Kt(:,1:4);
-        outG(:,:,i1,i2) = -Kt(:,5:6);
+        M = sdpvar(2,6,'full');
+        vec_M = [vec_M M];
+        LMIs = [LMIs, Aa*W + W*Aa' + Ba*M + M'*Ba' <0];
     end
 end
+% Solving
+obj = 0;
+sol = optimize(LMIs,obj,sdpsettings('verbose',0,'solver','sedumi'));
+Mi = value(vec_M);
+vW = value(W);
+invW = inv(vW);
 
-K = outK;
-F = outF;
-G = outG;
+Mn = Mi(:,1:6);
+outK(:,:,1,1) = Mn*invW;
+Mn = Mi(:,7:12);
+outK(:,:,1,2) = Mn*invW;
+Mn = Mi(:,13:18);
+outK(:,:,2,1) = Mn*invW;
+Mn = Mi(:,19:24);
+outK(:,:,2,2) = Mn*invW;

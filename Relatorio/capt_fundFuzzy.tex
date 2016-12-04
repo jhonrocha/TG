@@ -38,18 +38,18 @@ Apesar de operar sobre grandezas linguísticas, é importante notar que normalme
 \begin{figure}[H]
 	\centering
 \begin{tabular}{ccc}
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} \\
 	(a) Triangular &
-	(b) Senoidal
+	(b) Senoidal &
 	(c) Trapezoidal \\
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} \\
 	(d) Gaussiana &
 	(e) Sigmoide &
-	(f) Quadrada
+	(f) Quadrada (Clássica)
 \end{tabular}
 	\caption{\label{figPert}Funcões de Pertinência.}
 \end{figure}
@@ -199,7 +199,7 @@ As regras fuzzy seriam então:
 	c(t) = [c_1(t) \ \ c_2(t) \ \ c_3(t) \ \ ... \ \ c_n(t)]
 \end{align}
 	
-\begin{align}
+\begin{align} \label{eqModTakSug}
 	\begin{cases}
 		\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(c(t))} \vspace{0.5cm}\\
 		y(t) = \frac{\sum_{i=1}^{4}  w_i(c(t)) C_i \Delta x(t)}{\sum_{i=1}^{4} w_i(c(t))}

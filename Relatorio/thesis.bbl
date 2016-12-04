@@ -44,4 +44,15 @@ K.~H. Johansson, A.~Horch, O.~Wijk, and A.~Hansson, ``Teaching multivariable
 \bibitem{kang}
 M.~Sugeno and G.~T. Kang, ``Structure identification of fuzzy model,'' 1986.
 
+\bibitem{mozelli}
+L.~A. Mozelli, ``Controle fuzzy para sistemas takagi-sugeno: Condições
+  aprimoradas e aplicações,'' 2008.
+
+\bibitem{lyapunov}
+A.~M. Lyapunvo, ``The general problem of stability of motion,'' 1992.
+
+\bibitem{tanakaWang}
+K.~Tanaka and H.~O. Wang, ``Fuzzy control systems design and analysis: A linear
+  matrix inequality approcah,'' 2010.
+
 \end{thebibliography}

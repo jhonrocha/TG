@@ -90,7 +90,7 @@ for i1 = 1:length(vec_h1)
 end
 % Solving
 obj = mu;
-sol = solvesdp(LMIs,mu,sdpsettings('verbose',1,'solver','sedumi'));
+sol = solvesdp(LMIs,mu,sdpsettings('verbose',0,'solver','sedumi'));
 Mi = value(vec_M)
 vW = value(W);
 invW = inv(vW)

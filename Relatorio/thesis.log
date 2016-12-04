@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  3 DEC 2016 01:16
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  4 DEC 2016 09:03
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -719,72 +719,83 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \float@box=\box28
 \@float@everytoks=\toks25
 \@floatcapt=\box29
-) (thesis.aux
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\amsfonts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup7
+\symAMSb=\mathgroup8
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\c@mydef=\count128
+\c@myteo=\count129
+ (thesis.aux
 (abstract.aux) (symbols.aux) (notation.aux) (capt_intro.aux)
-(capt_descricao.aux) (capt_fundFuzzy.aux) (capt_modelagem.aux)
-(capt_controle.aux) (capt_implementacao.aux) (capt_resultados.aux
+(capt_descricao.aux) (capt_fundFuzzy.aux) (capt_controle.aux)
+(capt_modelagem.aux) (capt_implementacao.aux
 
-LaTeX Warning: Label `imgTS5' multiply defined.
-
-
-LaTeX Warning: Label `imgTS15' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
 LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `figH2TS2' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `imgTS5' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `imgTS15' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `figH1TSCtrl2' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
+
+) (capt_resultados.aux
+
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `figH2CtrlTS2' multiply defined.
+LaTeX Warning: Label `tabDescPlanta' multiply defined.
 
 
-LaTeX Warning: Label `imgTS5' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 
-LaTeX Warning: Label `imgTS15' multiply defined.
+LaTeX Warning: Label `figH1TS2' multiply defined.
 
 ) (capt_conclusao.aux))
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 41.
-LaTeX Font Info:    ... okay on input line 41.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 41.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
+LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 45.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 ) ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count128
+\scratchcounter=\count130
 \scratchdimen=\dimen146
 \scratchbox=\box30
-\nofMPsegments=\count129
-\nofMParguments=\count130
+\nofMPsegments=\count131
+\nofMParguments=\count132
 \everyMPshowfont=\toks26
-\MPscratchCnt=\count131
+\MPscratchCnt=\count133
 \MPscratchDim=\dimen147
-\MPnumerator=\count132
-\makeMPintoPDFobject=\count133
+\MPnumerator=\count134
+\makeMPintoPDFobject=\count135
 \everyMPtoPDFconversion=\toks27
 ) ("C:\Program Files\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -839,31 +850,41 @@ Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 41.
+Package hyperref Info: Link coloring OFF on input line 45.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count134
+\c@section@level=\count136
 )
-LaTeX Info: Redefining \ref on input line 41.
-LaTeX Info: Redefining \pageref on input line 41.
-LaTeX Info: Redefining \nameref on input line 41.
+LaTeX Info: Redefining \ref on input line 45.
+LaTeX Info: Redefining \pageref on input line 45.
+LaTeX Info: Redefining \nameref on input line 45.
 
 (thesis.out) (thesis.out)
 \@outlinefile=\write3
 \openout3 = `thesis.out'.
 
-LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Try loading font information for U+msa on input line 61.
 
-<figs/capa_fundo.pdf, id=170, 597.50786pt x 845.04686pt>
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 61.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
+
+<figs/capa_fundo.pdf, id=166, 597.50786pt x 845.04686pt>
 File: figs/capa_fundo.pdf Graphic file (type pdf)
 
 <use figs/capa_fundo.pdf>
-Package pdftex.def Info: figs/capa_fundo.pdf used on input line 57.
+Package pdftex.def Info: figs/capa_fundo.pdf used on input line 61.
 (pdftex.def)             Requested size: 614.5797pt x 869.19592pt.
 
 Overfull \hbox (17.07182pt too wide) has occurred while \output is active
@@ -871,67 +892,67 @@ Overfull \hbox (17.07182pt too wide) has occurred while \output is active
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 61.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 57.
+(babel)             in language  on input line 61.
 [1
 
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <./figs/capa_fundo.pdf>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 71.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 75.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 71.
+(babel)             in language  on input line 75.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.71 \capaassinaturas
+l.75 \capaassinaturas
                       [1
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 88--88
+Underfull \hbox (badness 10000) in paragraph at lines 92--92
 
  []
 
 
-Overfull \hbox (9.53748pt too wide) in paragraph at lines 88--88
+Overfull \hbox (9.53748pt too wide) in paragraph at lines 92--92
 [][]  
  []
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 92.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 88.
+(babel)             in language  on input line 92.
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.88 \fichacatalografica
+l.92 \fichacatalografica
                          [1
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 103.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 99.
+(babel)             in language  on input line 103.
  [1
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 115.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 111.
+(babel)             in language  on input line 115.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.111 \agradecimentos
+l.115 \agradecimentos
                       [1
 
 ]
@@ -939,14 +960,14 @@ l.111 \agradecimentos
 
  (abstract.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 117.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 113.
+(babel)             in language  on input line 117.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.113 \include{abstract}
+l.117 \include{abstract}
                          [1
 
 ] (thesis.toc
@@ -960,33 +981,28 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
 \openout4 = `thesis.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 117.
+(babel)             in language  on input line 121.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 117.
- [3] (thesis.lof)
+(babel)             in language  on input line 121.
+ [3] (thesis.lof [4
+
+])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
+(babel)             in language  on input line 123.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 118.
- [4
-
-]
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 119.
+(babel)             in language  on input line 123.
  [5]
 (thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 125.
  [6
 
 ]
@@ -994,9 +1010,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (symbols.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 125.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 121.
+(babel)             in language  on input line 125.
  [7
 
 
@@ -1005,9 +1021,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (notation.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 127.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 123.
+(babel)             in language  on input line 127.
  [8
 
 
@@ -1029,21 +1045,21 @@ l.16
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 133.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 129.
+(babel)             in language  on input line 133.
  [2]
 \openout2 = `capt_descricao.aux'.
 
  (capt_descricao.tex
 Chapter 2.
-<img/4tank.png, id=409, 414.79968pt x 426.84468pt>
+<img/4tank.png, id=423, 414.79968pt x 426.84468pt>
 File: img/4tank.png Graphic file (type png)
  <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 13.
 (pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
 
-<img/tanqLara.jpg, id=412, 2601.72pt x 4625.28pt>
+<img/tanqLara.jpg, id=426, 2601.72pt x 4625.28pt>
 File: img/tanqLara.jpg Graphic file (type jpg)
  <use img/tanqLara.jpg>
 Package pdftex.def Info: img/tanqLara.jpg used on input line 23.
@@ -1053,68 +1069,68 @@ Package pdftex.def Info: img/tanqLara.jpg used on input line 23.
 
 
 
- <./img/4tank.png>] [4 <./img/tanqLara.jpg>]
-Overfull \hbox (1.98653pt too wide) in paragraph at lines 58--59
+ <./img/4tank.png>]
+Overfull \hbox (1.98653pt too wide) in paragraph at lines 53--54
 []\T1/ptm/m/n/10.95 Neste tra-balho realizou-se a mon-tagem de toda a es-tação 
 de con-t-role. As-sim, escolheu-se primeira-
  []
 
-<figs/mesa.jpg, id=427, 903.375pt x 1606.0pt>
+[4 <./img/tanqLara.jpg>] <figs/mesa.jpg, id=442, 903.375pt x 1606.0pt>
 File: figs/mesa.jpg Graphic file (type jpg)
- <use figs/mesa.jpg>
-Package pdftex.def Info: figs/mesa.jpg used on input line 62.
-(pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
 
-<figs/interior.jpg, id=429, 903.375pt x 1606.0pt>
+<use figs/mesa.jpg>
+Package pdftex.def Info: figs/mesa.jpg used on input line 57.
+(pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
+ <figs/interior.jpg, id=444, 903.375pt x 1606.0pt>
 File: figs/interior.jpg Graphic file (type jpg)
- <use figs/interior.jpg>
-Package pdftex.def Info: figs/interior.jpg used on input line 71.
+
+<use figs/interior.jpg>
+Package pdftex.def Info: figs/interior.jpg used on input line 66.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
-
-[5 <./figs/mesa.jpg>] <figs/modulos.jpg, id=437, 1204.5pt x 1606.0pt>
+ [5 <./figs/mesa.jpg>]
+<figs/modulos.jpg, id=452, 1204.5pt x 1606.0pt>
 File: figs/modulos.jpg Graphic file (type jpg)
-
-<use figs/modulos.jpg>
-Package pdftex.def Info: figs/modulos.jpg used on input line 110.
+ <use figs/modulos.jpg>
+Package pdftex.def Info: figs/modulos.jpg used on input line 105.
 (pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
  [6 <./figs/interior.jpg>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 137.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
  [7 <./figs/modulos.jpg>]
-<img/RSLinx.png, id=453, 807.015pt x 450.68375pt>
+<img/RSLinx.png, id=468, 807.015pt x 450.68375pt>
 File: img/RSLinx.png Graphic file (type png)
  <use img/RSLinx.png>
-Package pdftex.def Info: img/RSLinx.png used on input line 147.
+Package pdftex.def Info: img/RSLinx.png used on input line 142.
 (pdftex.def)             Requested size: 254.74057pt x 142.26378pt.
- [8 <./img/RSLinx.png>] <figs/ladder.png, id=459, 330.48468pt x 237.13594pt>
+ [8 <./img/RSLinx.png>] <figs/ladder.png, id=474, 330.48468pt x 237.13594pt>
 File: figs/ladder.png Graphic file (type png)
 
 <use figs/ladder.png>
-Package pdftex.def Info: figs/ladder.png used on input line 164.
+Package pdftex.def Info: figs/ladder.png used on input line 159.
 (pdftex.def)             Requested size: 198.27216pt x 142.26378pt.
- <figs/blocos.png, id=462, 567.62062pt x 199.49532pt>
+ <figs/blocos.png, id=477, 567.62062pt x 199.49532pt>
 File: figs/blocos.png Graphic file (type png)
 
 <use figs/blocos.png>
-Package pdftex.def Info: figs/blocos.png used on input line 176.
+Package pdftex.def Info: figs/blocos.png used on input line 171.
 (pdftex.def)             Requested size: 404.79765pt x 142.26378pt.
 
-Overfull \hbox (1.63736pt too wide) in paragraph at lines 181--182
+Overfull \hbox (1.63736pt too wide) in paragraph at lines 176--177
 []\T1/ptm/m/n/10.95 Observa-se o caso do bloco GEQ_01. Suas en-tradas são o nív
 el do tanque (SourceA = Tank_Level)
  []
 
 [9 <./figs/ladder.png> <./figs/blocos.png>]
-<img/strText.png, id=471, 463.7325pt x 228.855pt>
+<img/strText.png, id=486, 463.7325pt x 228.855pt>
 File: img/strText.png Graphic file (type png)
  <use img/strText.png>
-Package pdftex.def Info: img/strText.png used on input line 190.
+Package pdftex.def Info: img/strText.png used on input line 185.
 (pdftex.def)             Requested size: 288.28246pt x 142.26378pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 135.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 131.
+(babel)             in language  on input line 135.
 
 [10 <./img/strText.png>]
 \openout2 = `capt_fundFuzzy.aux'.
@@ -1125,32 +1141,33 @@ Chapter 3.
 
 
 
-]
-File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 41.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
-File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 42.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
-File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 43.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
-File: img/4tank.png Graphic file (type png)
+] <img/pertSen.png, id=502, 421.575pt x 316.18124pt>
+File: img/pertSen.png Graphic file (type png)
+ <use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 41.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
+File: img/pertSen.png Graphic file (type png)
 
-<use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 47.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
-File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 48.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
-File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
-Package pdftex.def Info: img/4tank.png used on input line 49.
-(pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
+<use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 42.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
+File: img/pertSen.png Graphic file (type png)
+ <use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 43.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
+File: img/pertSen.png Graphic file (type png)
+ <use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 47.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
+File: img/pertSen.png Graphic file (type png)
+
+<use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 48.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
+File: img/pertSen.png Graphic file (type png)
+ <use img/pertSen.png>
+Package pdftex.def Info: img/pertSen.png used on input line 49.
+(pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 LaTeX Font Info:    Try loading font information for OMS+ptm on input line 59.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\omsptm.fd"
@@ -1191,9 +1208,8 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 61.
 LaTeX Warning: Command \textordmasculine invalid in math mode on input line 61.
 
 
-[12]
 File: img/4tank.png Graphic file (type png)
- <use img/4tank.png>
+<use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 69.
 (pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
 File: img/4tank.png Graphic file (type png)
@@ -1209,21 +1225,38 @@ File: img/4tank.png Graphic file (type png)
 <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 74.
 (pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
- [13] [14])
+ [12 <./img/pertSen.png (PNG copy)>] [13] [14])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 133.
+(babel)             in language  on input line 137.
  [15]
-\openout2 = `capt_modelagem.aux'.
+\openout2 = `capt_controle.aux'.
 
- (capt_modelagem.tex
+
+(capt_controle.tex
 Chapter 4.
+LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
 [16
 
 
 
-] [17]
+])
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 139.
+Package babel Info: Redefining portuges shorthand "|
+(babel)             in language  on input line 139.
+ [17]
+\openout2 = `capt_modelagem.aux'.
+
+ (capt_modelagem.tex
+Chapter 5.
+[18
+
+
+
+] [19]
 File: img/4tank.png Graphic file (type png)
  <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 135.
@@ -1237,7 +1270,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[18]
+[20]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -1252,7 +1285,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[19] <img/modelo_controlado.png, id=569, 782.17218pt x 356.83313pt>
+[21] <img/modelo_controlado.png, id=617, 782.17218pt x 356.83313pt>
 File: img/modelo_controlado.png Graphic file (type png)
 
 <use img/modelo_controlado.png>
@@ -1260,269 +1293,332 @@ Package pdftex.def Info: img/modelo_controlado.png used on input line 211.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
+(babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 135.
- [20 <./img/modelo_controlado.png>]
-\openout2 = `capt_controle.aux'.
-
-
-(capt_controle.tex
-Chapter 5.
-)
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
-Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 137.
- [21
-
-
-
-]
+(babel)             in language  on input line 141.
+ [22 <./img/modelo_controlado.png>]
 \openout2 = `capt_implementacao.aux'.
 
- (capt_implementacao.tex
+
+(capt_implementacao.tex
 Chapter 6.
-)
+<img/FM_h1_5_10_15.png, id=624, 421.575pt x 316.18124pt>
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 11.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 18.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 25.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [23
+
+
+
+ <./img/FM_h1_5_10_15.png (PNG copy)>]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 32.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 39.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [24]
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+
+<use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 48.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+File: img/FM_h1_5_10_15.png Graphic file (type png)
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 55.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [25])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
+(babel)             in language  on input line 143.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 139.
- [22
-
-
-
-]
+(babel)             in language  on input line 143.
+ [26]
 \openout2 = `capt_resultados.aux'.
 
- (capt_resultados.tex
+
+(capt_resultados.tex
 Chapter 7.
 
-LaTeX Warning: Citation `matlab' on page 23 undefined on input line 5.
+LaTeX Warning: Citation `matlab' on page 27 undefined on input line 5.
 
 
 Overfull \hbox (13.04642pt too wide) in paragraph at lines 47--55
  [] 
  []
 
-[23
+[27
 
 
 
-] <img/FM_h1_5_10_15.png, id=601, 421.575pt x 316.18124pt>
-File: img/FM_h1_5_10_15.png Graphic file (type png)
+] <img/h1_ts2.png, id=659, 421.575pt x 316.18124pt>
+File: img/h1_ts2.png Graphic file (type png)
+ <use img/h1_ts2.png>
+Package pdftex.def Info: img/h1_ts2.png used on input line 61.
+(pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 61.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 68.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [24 <./img/FM_h1_5_10_15.png (PNG copy)>]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 78.
+<img/h2_ts2.png, id=660, 421.575pt x 316.18124pt>
+File: img/h2_ts2.png Graphic file (type png)
+ <use img/h2_ts2.png>
+Package pdftex.def Info: img/h2_ts2.png used on input line 68.
+(pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
+ [28 <./img/h1_ts2.png (PNG copy)>] <img/h1_ts5.png, id=669, 421.575pt x 316.18
+124pt>
+File: img/h1_ts5.png Graphic file (type png)
+
+<use img/h1_ts5.png>
+Package pdftex.def Info: img/h1_ts5.png used on input line 78.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 79.
+ <img/h2_ts5.png, id=670, 421.575pt x 316.18124pt>
+File: img/h2_ts5.png Graphic file (type png)
+
+<use img/h2_ts5.png>
+Package pdftex.def Info: img/h2_ts5.png used on input line 79.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
 Overfull \hbox (23.99998pt too wide) in paragraph at lines 77--83
  [][] 
  []
 
-File: img/FM_h1_5_10_15.png Graphic file (type png)
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 89.
+<img/h1_ts15.png, id=671, 421.575pt x 316.18124pt>
+File: img/h1_ts15.png Graphic file (type png)
+ <use img/h1_ts15.png>
+Package pdftex.def Info: img/h1_ts15.png used on input line 89.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 90.
+
+<img/h2_ts15.png, id=672, 421.575pt x 316.18124pt>
+File: img/h2_ts15.png Graphic file (type png)
+ <use img/h2_ts15.png>
+Package pdftex.def Info: img/h2_ts15.png used on input line 90.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
 Overfull \hbox (23.99998pt too wide) in paragraph at lines 88--94
  [][] 
  []
 
+[29 <./img/h2_ts2.png (PNG copy)> <./img/h1_ts5.png (PNG copy)> <./img/h2_ts5.p
+ng (PNG copy)>]
 
-LaTeX Warning: Hyper reference `eqContFuzzy' on page 25 undefined on input line
+LaTeX Warning: Hyper reference `eqContFuzzy' on page 30 undefined on input line
  97.
 
 
-LaTeX Warning: Reference `eqContFuzzy' on page 25 undefined on input line 97.
+LaTeX Warning: Reference `eqContFuzzy' on page 30 undefined on input line 97.
 
-[25]
 File: img/modelo_controlado.png Graphic file (type png)
- <use img/modelo_controlado.png>
+<use img/modelo_controlado.png>
 Package pdftex.def Info: img/modelo_controlado.png used on input line 128.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 136.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [26]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
+ [30 <./img/h1_ts15.png (PNG copy)> <./img/h2_ts15.png (PNG copy)>] <img/ctrl_h
+1ts2_free.png, id=682, 421.575pt x 316.18124pt>
+File: img/ctrl_h1ts2_free.png Graphic file (type png)
 
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 143.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 153.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
+<use img/ctrl_h1ts2_free.png>
+Package pdftex.def Info: img/ctrl_h1ts2_free.png used on input line 136.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 154.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+<img/ctrl_h2ts2_free.png, id=683, 421.575pt x 316.18124pt>
+File: img/ctrl_h2ts2_free.png Graphic file (type png)
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 152--158
- [][] 
- []
+<use img/ctrl_h2ts2_free.png>
+Package pdftex.def Info: img/ctrl_h2ts2_free.png used on input line 143.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
+ [31 <./img/ctrl_h1ts2_free.png (PNG copy)>]
+<img/ctrl_h1ts2_ulim.png, id=691, 421.575pt x 316.18124pt>
+File: img/ctrl_h1ts2_ulim.png Graphic file (type png)
 
-[27]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 164.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 165.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+<use img/ctrl_h1ts2_ulim.png>
+Package pdftex.def Info: img/ctrl_h1ts2_ulim.png used on input line 153.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
+ [32 <./img/ctrl_h2ts2_free.png (PNG copy)>]
+<img/ctrl_h2ts2_ulim.png, id=696, 421.575pt x 316.18124pt>
+File: img/ctrl_h2ts2_ulim.png Graphic file (type png)
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 163--169
- [][] 
- []
+<use img/ctrl_h2ts2_ulim.png>
+Package pdftex.def Info: img/ctrl_h2ts2_ulim.png used on input line 160.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-[28]
-Overfull \hbox (13.04642pt too wide) in paragraph at lines 209--217
+<img/ctrl_h1ts2.png, id=697, 421.575pt x 316.18124pt>
+File: img/ctrl_h1ts2.png Graphic file (type png)
+ <use img/ctrl_h1ts2.png>
+Package pdftex.def Info: img/ctrl_h1ts2.png used on input line 168.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
+
+[33 <./img/ctrl_h1ts2_ulim.png (PNG copy)> <./img/ctrl_h2ts2_ulim.png (PNG copy
+)>] <img/ctrl_h2ts2.png, id=702, 421.575pt x 316.18124pt>
+File: img/ctrl_h2ts2.png Graphic file (type png)
+
+<use img/ctrl_h2ts2.png>
+Package pdftex.def Info: img/ctrl_h2ts2.png used on input line 175.
+(pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
+ [34 <./img/ctrl_h1ts2.png (PNG copy)>] [35 <./img/ctrl_h2ts2.png (PNG copy)>]
+Overfull \hbox (13.04642pt too wide) in paragraph at lines 217--225
  [] 
  []
 
-File: img/FM_h1_5_10_15.png Graphic file (type png)
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 223.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [29]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 230.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
+<img/h1_ts2_nm.png, id=721, 421.575pt x 316.18124pt>
+File: img/h1_ts2_nm.png Graphic file (type png)
+ <use img/h1_ts2_nm.png>
+Package pdftex.def Info: img/h1_ts2_nm.png used on input line 231.
+(pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 240.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 241.
+<img/h2_ts2_nm.png, id=722, 421.575pt x 316.18124pt>
+File: img/h2_ts2_nm.png Graphic file (type png)
+ <use img/h2_ts2_nm.png>
+Package pdftex.def Info: img/h2_ts2_nm.png used on input line 238.
+(pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
+
+[36 <./img/h1_ts2_nm.png (PNG copy)>]
+<img/h1_ts5_nm.png, id=733, 421.575pt x 316.18124pt>
+File: img/h1_ts5_nm.png Graphic file (type png)
+ <use img/h1_ts5_nm.png>
+Package pdftex.def Info: img/h1_ts5_nm.png used on input line 248.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 239--245
+<img/h2_ts5_nm.png, id=734, 421.575pt x 316.18124pt>
+File: img/h2_ts5_nm.png Graphic file (type png)
+ <use img/h2_ts5_nm.png>
+Package pdftex.def Info: img/h2_ts5_nm.png used on input line 249.
+(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 247--253
  [][] 
  []
 
-[30]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 251.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 252.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
+<img/h1_ts15_nm.png, id=735, 422.32782pt x 316.18124pt>
+File: img/h1_ts15_nm.png Graphic file (type png)
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 250--256
+<use img/h1_ts15_nm.png>
+Package pdftex.def Info: img/h1_ts15_nm.png used on input line 259.
+(pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
+
+<img/h2_ts15_nm.png, id=736, 422.32782pt x 316.18124pt>
+File: img/h2_ts15_nm.png Graphic file (type png)
+
+<use img/h2_ts15_nm.png>
+Package pdftex.def Info: img/h2_ts15_nm.png used on input line 260.
+(pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
+
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 258--264
  [][] 
  []
 
+[37 <./img/h2_ts2_nm.png (PNG copy)> <./img/h1_ts5_nm.png (PNG copy)> <./img/h2
+_ts5_nm.png (PNG copy)>]
 
-LaTeX Warning: Hyper reference `eqContFuzzy' on page 31 undefined on input line
- 259.
+LaTeX Warning: Hyper reference `eqContFuzzy' on page 38 undefined on input line
+ 267.
 
 
-LaTeX Warning: Reference `eqContFuzzy' on page 31 undefined on input line 259.
+LaTeX Warning: Reference `eqContFuzzy' on page 38 undefined on input line 267.
 
+<img/nm_ctrl_h1ts2_free.png, id=741, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h1ts2_free.png Graphic file (type png)
+
+<use img/nm_ctrl_h1ts2_free.png>
+Package pdftex.def Info: img/nm_ctrl_h1ts2_free.png used on input line 298.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
+ [38 <./img/h1_ts15_nm.png (PNG copy)> <./img/h2_ts15_nm.png (PNG copy)>]
+<img/nm_ctrl_h2ts2_free.png, id=746, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h2ts2_free.png Graphic file (type png)
+
+<use img/nm_ctrl_h2ts2_free.png>
+Package pdftex.def Info: img/nm_ctrl_h2ts2_free.png used on input line 305.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
+
+<img/nm_ctrl_h1ts2_ulim.png, id=750, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h1ts2_ulim.png Graphic file (type png)
+
+<use img/nm_ctrl_h1ts2_ulim.png>
+Package pdftex.def Info: img/nm_ctrl_h1ts2_ulim.png used on input line 315.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
+ [39 <./img/nm_ctrl_h1ts2_free.png (PNG copy)> <./img/nm_ctrl_h2ts2_free.png (P
+NG copy)>]
+<img/nm_ctrl_h2ts2_ulim.png, id=755, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h2ts2_ulim.png Graphic file (type png)
+
+<use img/nm_ctrl_h2ts2_ulim.png>
+Package pdftex.def Info: img/nm_ctrl_h2ts2_ulim.png used on input line 322.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
+
+<img/nm_ctrl_h1ts2.png, id=756, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h1ts2.png Graphic file (type png)
+
+<use img/nm_ctrl_h1ts2.png>
+Package pdftex.def Info: img/nm_ctrl_h1ts2.png used on input line 330.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
+ [40 <./img/nm_ctrl_h1ts2_ulim.png (PNG copy)> <./img/nm_ctrl_h2ts2_ulim.png (P
+NG copy)>]
+<img/nm_ctrl_h2ts2.png, id=761, 1028.34187pt x 497.60907pt>
+File: img/nm_ctrl_h2ts2.png Graphic file (type png)
+
+<use img/nm_ctrl_h2ts2.png>
+Package pdftex.def Info: img/nm_ctrl_h2ts2.png used on input line 337.
+(pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
 File: img/FM_h1_5_10_15.png Graphic file (type png)
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 290.
+ <use img/FM_h1_5_10_15.png>
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 378.
 (pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [31]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 297.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [41 <./img/nm_ctrl_h1ts2.png (PNG copy)> <./img/nm_ctrl_h2ts2.png (PNG copy)>]
 File: img/FM_h1_5_10_15.png Graphic file (type png)
 
 <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 307.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 308.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 306--312
- [][] 
- []
-
-[32]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 318.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 319.
-(pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
-
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 317--323
- [][] 
- []
-
-)
+Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 385.
+(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
+ [42])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 141.
+(babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 141.
- [33]
+(babel)             in language  on input line 145.
+ [43]
 \openout2 = `capt_conclusao.aux'.
 
  (capt_conclusao.tex
 Chapter 8.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
- [34
+(babel)             in language  on input line 148.
+ [44
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 151.
  (thesis.bbl)
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 152.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
- [35
+(babel)             in language  on input line 156.
+ [45
 
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 152.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 156.
  (thesis.aux (abstract.aux) (symbols.aux) (notation.aux) (capt_intro.aux) (capt
-_descricao.aux) (capt_fundFuzzy.aux)
-(capt_modelagem.aux) (capt_controle.aux) (capt_implementacao.aux)
-(capt_resultados.aux) (capt_conclusao.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 152.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 152.
+_descricao.aux) (capt_fundFuzzy.aux) (capt_controle.aux) (capt_modelagem.aux) (
+capt_implementacao.aux) (capt_resultados.aux)
+(capt_conclusao.aux))
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 31EEB22912FF40D9F61846C1D2578815;2775.
+(rerunfilecheck)             Checksum: 05487751BEA567DEC873DBE3B0F6E0B6;2724.
 
 
 LaTeX Warning: There were undefined references.
@@ -1530,14 +1626,14 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 152.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
  ) 
 Here is how much of TeX's memory you used:
- 10012 strings out of 493334
- 147165 string characters out of 3139252
- 271476 words of memory out of 3000000
- 13105 multiletter control sequences out of 15000+200000
- 64630 words of font info for 77 fonts, out of 3000000 for 9000
+ 10290 strings out of 493334
+ 152009 string characters out of 3139252
+ 270152 words of memory out of 3000000
+ 13307 multiletter control sequences out of 15000+200000
+ 67110 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,22n,42p,1221b,618s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
@@ -1551,12 +1647,13 @@ ts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr
 Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKT
 eX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files/MiKTeX 2.9/fo
-nts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/tim
-es/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:
-/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (48 pages, 4721021 bytes).
+nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
+utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on thesis.pdf (58 pages, 4954607 bytes).
 PDF statistics:
- 762 PDF objects out of 1000 (max. 8388607)
- 153 named destinations out of 1000 (max. 500000)
- 397 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 878 PDF objects out of 1000 (max. 8388607)
+ 188 named destinations out of 1000 (max. 500000)
+ 514 words of extra memory for PDF output out of 10000 (max. 10000000)
 

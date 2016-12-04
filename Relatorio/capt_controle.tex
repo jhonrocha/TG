@@ -1,12 +1,76 @@
 \selectlanguage{english}%
 
 \chapter{Controle Fuzzy} \label{capControle}
+A sintonia de controladores para os modelos fuzzy deve garantir estabilidade no sistema final, formado pelo conjunto convexo dos pontos do modelo Takagi-Sugeno. Neste trabalho segue-se a mesma metodologia aplicada por Mozelli \cite{mozelli}, utilizando LMIS (\textit{Desigualdades Lineares Matriciais}), baseadas no método de Lyapunov \cite{lyapunov}, para a sintonia dos ganhos utilizados em malha fechada.
 
-\section{Conceitos de LMIS}
+\section{Método de Lyapunov}
+O método direto de Lyapunov é baseado na positividade de funções. Segue um embasamento para esta última:
+
+\begin{mydef}
+Uma função escalar contínua $w: \mathbb{R}^n \rightarrow \mathbb{R}$, $w(0) = 0$ é semidefinida positiva se, e somente se
+
+	\begin{equation}
+		w(x) \geq 0, \forall \ \ x \in \mathbb{R}^n - {0}
+	\end{equation}
+	Caso desigualdade seja estrita, então w será definida positiva. Uma função g é dita semidefinida (definida) negativa caso -g seja semidifenida (definida) positiva
+\end{mydef}
+
+O método de Lyapunov baseia-se teorema a seguir:
+
+\begin{myteo} \label{teoLyapunov}
+	Um sistema dinâmico autônomo é globalmente estável se existe uma função escalar $V : \mathbb{R}^n \rightarrow \mathbb{R} $ tal que:
+	
+	\begin{itemize}
+		\item V é definida positiva
+		\item V possui derivada de primeira ordem
+		\item $\dot{V}$ é definida negativa
+		\item $V \rightarrow \infty$ a medida em que $\|x\| \rightarrow \infty$
+	\end{itemize}
+\end{myteo}
+
+Assim, uma função V que satisfaça todo os requisitos do Teorema 1 para um dado sistema é chamada de função de Lyapunov. 
+
 
 \section{Estabilidade Fuzzy}
+Para um modelo TS, como proposto na \jhhref{eqModTakSug}{equação}, porém discreto, tem-se:
+\begin{align*}
+	x_{k+1} = \frac{\sum_{i=1}^{r}  w_i(c_k)(A_i x_k}{\sum_{i=1}^{4} w_i(c_k))} 
+\end{align*}
 
-\section{Projeto}
+Simplificando:
+\begin{align*}
+	h_i[c_k] &:= \frac{w_i[c_k]}{\sum_{j=1}^{r}w_j[c_k]} \\
+	A(q) &:= \sum_{i=1}^{r} h_i(c_k)A_i
+\end{align*}
+
+Assim,
+\begin{align}
+	x_{k+1} = A(c) x_k
+\end{align}
+
+\begin{equation}
+	V(x_k) = x_k' P x_k
+\end{equation}
+Com P simétrica.
+
+\begin{align}
+	\Delta V(x_k) &= x_k'\{A'(c)PA(c) - P\}x_k
+\end{align}
+
+De acordo com o \jhhref{teoLyapunov}{Teorema}, se as condições a seguir forem cumpridas, o sistema será assintoticamente estável:
+\begin{align}
+	P = P' \succ 0 \\
+	x_k'\{A'(c)PA(c) - P \}x_k \prec 0 \label{eqLyapXk}
+\end{align}
+Uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{regras}. 
+A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} existe solução para:
+
+\begin{align}
+	encontre \ \ &P \nonumber \\
+	s.a \ \ &P \succ 0 \nonumber \\
+	&A_i'PA_i - P \prec 0, \ \ i=1,2,3, ... , r
+\end{align}
+
 
 \selectlanguage{brazil}%
 

@@ -10,7 +10,7 @@ vec_h1 = [5 15];
 vec_h2 = [5 15];
 
 % System to Each Point
-[K_fuzzy,F,G] = fuzzy_ganhos(vec_h1,vec_h2);
+[K_fuzzy] = fuzzy_ganhos(vec_h1,vec_h2);
 K_fuzzy
 % Initial Condition
 h01 = 0;

@@ -32,10 +32,14 @@
 %%%%%%% My Includes %%%%%%%
 \usepackage[hidelinks]{hyperref}
 \usepackage{float}
+\usepackage{amsfonts}
 
 \newcommand{\jhhref}[2]{
 	\hyperref[{#1}]{{#2} \ref{#1}}
 }
+
+\newtheorem{mydef}{Definição}
+\newtheorem{myteo}{Teorema}
 
 
 \begin{document}
@@ -132,9 +136,9 @@
 
 \include{capt_fundFuzzy}
 
-\include{capt_modelagem}
-
 \include{capt_controle}
+
+\include{capt_modelagem}
 
 \include{capt_implementacao}
 
