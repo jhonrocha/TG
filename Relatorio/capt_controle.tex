@@ -32,12 +32,12 @@ Assim, uma função V que satisfaça todo os requisitos do Teorema 1 para um dad
 
 
 \section{Estabilidade Fuzzy}
-Para um modelo TS, como proposto na \jhhref{eqModTakSug}{equação}, porém discreto, tem-se:
+Para um modelo TS discreto, simular ao na \jhhref{eqModTakSug}{equação}, tem-se:
 \begin{align*}
-	x_{k+1} = \frac{\sum_{i=1}^{r}  w_i(c_k)(A_i x_k}{\sum_{i=1}^{4} w_i(c_k))} 
+	x_{k+1} = \frac{\sum_{i=1}^{r}  w_i(c_k)(A_i x_k)}{\sum_{i=1}^{4} w_i(c_k)} 
 \end{align*}
 
-Simplificando:
+Simplificando os termos de ativação de forma a obter um parâmetro A(c), definido como:
 \begin{align*}
 	h_i[c_k] &:= \frac{w_i[c_k]}{\sum_{j=1}^{r}w_j[c_k]} \\
 	A(q) &:= \sum_{i=1}^{r} h_i(c_k)A_i
@@ -71,6 +71,21 @@ A análise computacional via LMIs possibilita a busca por uma matriz P que satis
 	&A_i'PA_i - P \prec 0, \ \ i=1,2,3, ... , r
 \end{align}
 
+Seguindo estas premissas, o desenvolvimento do controlador para o modelo TS é demonstrado nos trabalho de Wang \cite{wang}, de onde obtém-se o seguinte teorema:
+\begin{myteo} \label{teoControlador}
+Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos correspondentes, em malha fechada com ganhos $K_i = M_i X^{-1}$, sua estabilidade é verificada se existe solução para o problema
+	\begin{align} \label{eqContFuzzy}
+		encontre \ \ &X = X', \ \ i = 1,2,...,r \nonumber \\
+		s.a \ \ & 
+		\begin{bmatrix}
+			X	&	M_j'B_i' + XA_i' \\
+			A_iX + B_iM_j &	X
+		\end{bmatrix}P \succ 0 \nonumber \\
+		& \ \ i,j = 1,2,3, ... , r
+	\end{align}
+\end{myteo}
+
+Assim, neste trabalho, os modelos fuzzy 
 
 \selectlanguage{brazil}%
 

@@ -1,10 +1,10 @@
 \selectlanguage{english}%
 
 \chapter{Descrição do Sistema} \label{capDescSis}
-Sistemas controlados são constituídos essencialmente por uma ou mais plantas e por um dispositivo que implementará os algoritmos de controle aplicados à ela. Neste trabalho o objeto de estudo é uma planta de Quatro-Tanques, descrita na seção a seguir, e o controlador utilizado é um CLP Rockwell 1756-L62, apresentado logo depois na seção homônima.
+Sistemas controlados são constituídos essencialmente por uma ou mais plantas e por um dispositivo que implementará os algoritmos de controle aplicados à ela. O objeto neste trabalho de estudo é uma planta de Quatro-Tanques, descrita na seção a seguir, e o controlador utilizado é um CLP Rockwell 1756-L62, apresentado na seção homônima logo em seguida.
 
 \section{Sistema de Quatro-Tanques}
-Em 1999 o Professor Karl Henrick Johansson publicou o artigo "Theaching Multivariable Control Using the Quadruple-Tank System" \cite{johansson2}, onde são apresentadas as ideias do sistema de quatro-tanques como utilizado neste trabalho. Trata-se de um laboratório didático de processo multivariável capaz de demonstrar dinâmicas de zeros alocáveis em fases mínima e não-mínima. Além disso, ilustra claramente os problemas de controle MIMO (Multiples Inputs Multiples Outputs) e de sistemas não lineares.
+Em 1999 o Professor Karl Henrick Johansson publicou o artigo "Theaching Multivariable Control Using the Quadruple-Tank System" \cite{johansson2}, onde são apresentadas as ideias do sistema de quatro-tanques estudado neste trabalho. Trata-se de um laboratório didático de processo multivariável capaz de demonstrar dinâmicas de zeros alocáveis em fases mínima e não-mínima. Além disso, ilustra claramente os problemas de controle MIMO (Multiples Inputs Multiples Outputs) com acoplamento e de sistemas não lineares.
 
 Seu diagrama esquemático é apresentado na  \hyperref[figDesc4tank]{Figura \ref{figDesc4tank}} a seguir. Ele consiste em quatro tanques interconectados, um reservatório inferior, quatro válvulas esferas e duas bombas de corrente contínua.
 
@@ -14,7 +14,7 @@ Seu diagrama esquemático é apresentado na  \hyperref[figDesc4tank]{Figura \ref
 	\caption{\label{figDesc4tank}Diagrama esquemático do sistema de quatro tanques e planta didática.}
 \end{figure}
 
-As bombas impulsionam fluído por duas rotas: bomba 1 para tanques 1 e 4, bomba 2 para 2 e 3.  As válvulas regulam a proporção direcionada entre os tanques inferiores e superiores de cada rota.
+As bombas impulsionam fluído por duas rotas: bomba 1 para os tanques 1 e 4, bomba 2 para os tanques 2 e 3.  As válvulas regulam a proporção direcionada entre os tanques inferiores e superiores de cada rota.
 
 A \hyperref[imgPlanta]{Imagem \ref{imgPlanta}} a seguir apresenta a planta utilizada neste experimento, localizada no LARA (Laboratório de Automação e Robótica) - SG-11 (UnB) .
 
@@ -24,7 +24,7 @@ A \hyperref[imgPlanta]{Imagem \ref{imgPlanta}} a seguir apresenta a planta utili
 	\caption{\label{imgPlanta}Planta de Quatro-Tanques no LARA.}
 \end{figure}
 
-Suas dimensões aferidas são apresentadas na \jhhref{tabDescPlanta}{Tabela}, onde $A_{i}$ e $H_{i}$ representa a área da secção transversal da base do tanque e  o nível máximo do tanque $i$, $i = 1,2,3,4$, $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4 e $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3. 
+Suas dimensões aferidas são apresentadas na \jhhref{tabDescPlanta}{Tabela}, onde $A_{i}$ e $H_{i}$ representam a área da secção transversal da base do tanque e  o nível máximo do tanque $i$, $i = 1,2,3,4$.  $\gamma_{1}$ é a razão entre os fluxos para os tanques 1 e 4 e $\gamma_{2}$ é a razão entre os fluxos para os tanques 2 e 3. 
 
 \begin{table}[!ht]
 	\caption{Especificações Iniciais da Planta.}

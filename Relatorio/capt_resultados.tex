@@ -2,7 +2,7 @@
 
 \chapter{Resultados} \label{capRes}
 
-O modelo fuzzy desenvolvido a partir das seções anteriores foi simulado utilizando o software MATLAB \cite{matlab} e implementado na bancada real via CLP Rockwell. As seções a seguir apresentam os resultados obtidos em cada caso.
+O modelo fuzzy desenvolvido a partir das seções anteriores foi simulado utilizando o software MATLAB e implementado na bancada real via CLP Rockwell. As seções a seguir apresentam os resultados obtidos em cada caso.
 
 \section{Simulações} \label{secAnalise}
 A planta de quatro-tanques, como apresentada no \jhhref{capDescSis}{capítulo}, compõe um sistema capaz de ilustrar diversas dinâmicas para suas variáveis de processo. Assim, são escolhidas uma configuração em \textbf{fase mínima }e outra em \textbf{fase não-mínima} e a partir delas a modelagem e o controlador fuzzy são desenvolvidos. 
@@ -77,10 +77,10 @@ Haverá então quatro regras Se-Então para composição do modelo TS final. As 
 	\begin{tabular}{cc}
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h1_ts5.png} &
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h2_ts5.png} \\
-		(a) Pertinência do conjunto "muito frio" &
-		(b) Pertinência do conjunto "frio"
+		(a) Nível 1 &
+		(b) Nível 2
 	\end{tabular}
-	\caption{\label{imgTS5} Funções de Pertinência.}
+	\caption{\label{imgTS5} Comparação com 25 regras}
 \end{figure}
 
 \begin{figure}[H]
@@ -88,10 +88,10 @@ Haverá então quatro regras Se-Então para composição do modelo TS final. As 
 	\begin{tabular}{cc}
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h1_ts15.png} &
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h2_ts15.png} \\
-		(a) Pertinência do conjunto "muito frio" &
-		(b) Pertinência do conjunto "frio"
+		(a) Nível 1 &
+		(b) Nível 2
 	\end{tabular}
-	\caption{\label{imgTS15} Funções de Pertinência.}
+	\caption{\label{imgTS15} Comparação com 225 regras}
 \end{figure}
 
 A partir das \jhhref{eqContFuzzy}{equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
@@ -240,17 +240,17 @@ As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{n
 	\label{figH2TS2_nm}
 \end{figure}
 
-É notável que o modelo fuzzy representa de modo mais eficiente o sistema. Como dito, o modelo TS pode se aproximar o quanto se desejar do não-linear no qual se baseia. A \jhhref{imgTS5}{imagem} apresenta um modelo com 5 conjuntos para os dois níveis e a \jhhref{imgTS15}{imagem} utilizando 15. É importante notar, no entanto, que a complexidade do modelo é exponencial, devido a combinação dos conjuntos das variáveis linguísticas presentes, assim, o primeiro é composto por 25 ($5^2$) regras Se-Então e o segundo por 225 ($15^2$).
+Percebe-se novamente que o sistema Takagi-Sugeno apresenta resultados mais próximos do real na maior parte do tempo. Aumentando a quantidade de regras obtém-se resultados cada vez melhores. As imagens a seguir apresentam os modelos com 5 e com 15 pontos linearização
 
 \begin{figure}[H]
 	\centering
 	\begin{tabular}{cc}
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h1_ts5_nm.png} &
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h2_ts5_nm.png} \\
-		(a) Pertinência do conjunto "muito frio" &
-		(b) Pertinência do conjunto "frio"
+		(a) Nível 1 &
+		(b) Nível 2
 	\end{tabular}
-	\caption{\label{imgTS5_nm} Funções de Pertinência.}
+	\caption{\label{imgTS5_nm} Comparação com 25 regras TS}
 \end{figure}
 
 \begin{figure}[H]
@@ -258,10 +258,10 @@ As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{n
 	\begin{tabular}{cc}
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h1_ts15_nm.png} &
 		\includegraphics[width=0.5\textwidth,keepaspectratio]{img/h2_ts15_nm.png} \\
-		(a) Pertinência do conjunto "muito frio" &
-		(b) Pertinência do conjunto "frio"
+		(a) Nível 1 &
+		(b) Nível 2
 	\end{tabular}
-	\caption{\label{imgTS15_nm} Funções de Pertinência.}
+	\caption{\label{imgTS15_nm} Comparação com 225 regras TS}
 \end{figure}
 
 A partir das \jhhref{eqContFuzzy}{equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
@@ -271,23 +271,23 @@ A partir das \jhhref{eqContFuzzy}{equações} são desenvolvidos os controladore
 		Regra & Ganho \\ \hline
 		1 & $ K = 
 		\begin{bmatrix}
-		-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
-		-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
+		490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
+		-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
 		\end{bmatrix}$ \\[20pt] \hline
 		2 & $ K = 
 		\begin{bmatrix}
-		-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
-		-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
+		0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
+		-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 &  -0.0025
 		\end{bmatrix}$ \\[20pt] \hline
 		3 & $ K = 
 		\begin{bmatrix}
-		-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
-		-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
+		490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
+		-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
 		\end{bmatrix}$ \\[20pt] \hline
 		4 & $ K = 
 		\begin{bmatrix}
-		-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
-		-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
+		 0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
+		-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 & -0.0025
 		\end{bmatrix}$ \\[20pt] \hline
 	\end{tabular}
 \end{center}
@@ -337,54 +337,6 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 	\includegraphics[width=\textwidth]{img/nm_ctrl_h2ts2.png}
 	\caption{Nível H2 Controlado - Com \textit{Anti-Windup}}
 	\label{figH2CtrlTS2_nm}
-\end{figure}
-\section{Implementação}
-As imagens a seguir apresentam 
-\begin{table}[!ht]
-	\caption{Ganhos Identificados}
-	\label{tabDescPlanta}
-	\small
-	\centering
-	\scalebox{1}{
-		\begin{tabular}{|c|c|}
-			\hline
-			Regra & Ganho \\ \hline
-			1 & $ K = 
-			\begin{bmatrix}
-			1 & 2 & 3 & 4 & 5 & 6 \\
-			1 & 2 & 3 & 4 & 5 & 6
-			\end{bmatrix}$ \\[20pt] \hline
-			2 & $ K = 
-			\begin{bmatrix}
-			1 & 2 & 3 & 4 & 5 & 6 \\
-			1 & 2 & 3 & 4 & 5 & 6
-			\end{bmatrix}$ \\[20pt] \hline
-			3 & $ K = 
-			\begin{bmatrix}
-			1 & 2 & 3 & 4 & 5 & 6 \\
-			1 & 2 & 3 & 4 & 5 & 6
-			\end{bmatrix}$ \\[20pt] \hline
-			4 & $ K = 
-			\begin{bmatrix}
-			1 & 2 & 3 & 4 & 5 & 6 \\
-			1 & 2 & 3 & 4 & 5 & 6
-			\end{bmatrix}$ \\[20pt] \hline
-		\end{tabular}
-	}
-\end{table}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{img/FM_h1_5_10_15.png}
-	\caption{Resultado H1}
-	\label{figH1TS2}
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-	\includegraphics[width=0.7\textwidth]{img/FM_h1_5_10_15.png}
-	\caption{Resultado H2}
-	\label{figH1TS2}
 \end{figure}
 
 \selectlanguage{brazil}%

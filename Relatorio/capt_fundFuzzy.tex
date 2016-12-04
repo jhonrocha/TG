@@ -180,9 +180,7 @@ Linearizando o obteria-se o seguinte modelo em espaço de estados:
 	y(t) &= Cx(t)
 \end{align*}
 
-As regras fuzzy seriam então:
-
-
+As regras fuzzy são:
 \begin{align} \label{eqRegraIGeral}
 	\textbf{Regra i:}
 	\begin{cases}
@@ -195,10 +193,18 @@ As regras fuzzy seriam então:
 	\end{cases}
 \end{align}
 
+Onde $c_j(t)$ é cada uma das variáveis nas quais são verificadas as pertinência $f_{ij}$ ao conjunto $M_{ji}$ correspondente, sendo $i$ a regra em questão.  Agrupando as premissas, tem-se:
 \begin{align}
 	c(t) = [c_1(t) \ \ c_2(t) \ \ c_3(t) \ \ ... \ \ c_n(t)]
 \end{align}
 	
+O grau de ativação de cada regra é dado pelo produto das $n$ pertinências que compõem seus antecedentes:  
+\begin{align}
+	w_i(c(t)) = \prod_{j=1}^{n} f_{ij}(c_j(t))
+\end{align}
+
+O sistema final é dado pela média ponderada dos consequentes das r regras por seus graus de ativação. Assim, o modelo Takagi-Sugeno final é dado por:
+
 \begin{align} \label{eqModTakSug}
 	\begin{cases}
 		\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(c(t))} \vspace{0.5cm}\\

@@ -18,7 +18,7 @@ hi2 = 0;
 
 % Time
 tAmostragem = 0.01;
-tFinal = 300;
+tFinal = 1200;
 totAmostras = tFinal/tAmostragem;
 t = linspace(0, tFinal, totAmostras);
 

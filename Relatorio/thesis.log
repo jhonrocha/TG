@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  4 DEC 2016 09:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  4 DEC 2016 11:10
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -755,15 +755,6 @@ LaTeX Warning: Label `figH1TS2' multiply defined.
 
 LaTeX Warning: Label `figH1TS2' multiply defined.
 
-
-LaTeX Warning: Label `tabDescPlanta' multiply defined.
-
-
-LaTeX Warning: Label `figH1TS2' multiply defined.
-
-
-LaTeX Warning: Label `figH1TS2' multiply defined.
-
 ) (capt_conclusao.aux))
 \openout1 = `thesis.aux'.
 
@@ -880,7 +871,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 61.
 
-<figs/capa_fundo.pdf, id=166, 597.50786pt x 845.04686pt>
+<figs/capa_fundo.pdf, id=162, 597.50786pt x 845.04686pt>
 File: figs/capa_fundo.pdf Graphic file (type pdf)
 
 <use figs/capa_fundo.pdf>
@@ -1053,13 +1044,13 @@ Package babel Info: Redefining portuges shorthand "|
 
  (capt_descricao.tex
 Chapter 2.
-<img/4tank.png, id=423, 414.79968pt x 426.84468pt>
+<img/4tank.png, id=412, 414.79968pt x 426.84468pt>
 File: img/4tank.png Graphic file (type png)
  <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 13.
 (pdftex.def)             Requested size: 220.50885pt x 226.91048pt.
 
-<img/tanqLara.jpg, id=426, 2601.72pt x 4625.28pt>
+<img/tanqLara.jpg, id=415, 2601.72pt x 4625.28pt>
 File: img/tanqLara.jpg Graphic file (type jpg)
  <use img/tanqLara.jpg>
 Package pdftex.def Info: img/tanqLara.jpg used on input line 23.
@@ -1075,20 +1066,20 @@ Overfull \hbox (1.98653pt too wide) in paragraph at lines 53--54
 de con-t-role. As-sim, escolheu-se primeira-
  []
 
-[4 <./img/tanqLara.jpg>] <figs/mesa.jpg, id=442, 903.375pt x 1606.0pt>
+[4 <./img/tanqLara.jpg>] <figs/mesa.jpg, id=431, 903.375pt x 1606.0pt>
 File: figs/mesa.jpg Graphic file (type jpg)
 
 <use figs/mesa.jpg>
 Package pdftex.def Info: figs/mesa.jpg used on input line 57.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
- <figs/interior.jpg, id=444, 903.375pt x 1606.0pt>
+ <figs/interior.jpg, id=433, 903.375pt x 1606.0pt>
 File: figs/interior.jpg Graphic file (type jpg)
 
 <use figs/interior.jpg>
 Package pdftex.def Info: figs/interior.jpg used on input line 66.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
  [5 <./figs/mesa.jpg>]
-<figs/modulos.jpg, id=452, 1204.5pt x 1606.0pt>
+<figs/modulos.jpg, id=441, 1204.5pt x 1606.0pt>
 File: figs/modulos.jpg Graphic file (type jpg)
  <use figs/modulos.jpg>
 Package pdftex.def Info: figs/modulos.jpg used on input line 105.
@@ -1097,18 +1088,18 @@ Package pdftex.def Info: figs/modulos.jpg used on input line 105.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
  [7 <./figs/modulos.jpg>]
-<img/RSLinx.png, id=468, 807.015pt x 450.68375pt>
+<img/RSLinx.png, id=457, 807.015pt x 450.68375pt>
 File: img/RSLinx.png Graphic file (type png)
  <use img/RSLinx.png>
 Package pdftex.def Info: img/RSLinx.png used on input line 142.
 (pdftex.def)             Requested size: 254.74057pt x 142.26378pt.
- [8 <./img/RSLinx.png>] <figs/ladder.png, id=474, 330.48468pt x 237.13594pt>
+ [8 <./img/RSLinx.png>] <figs/ladder.png, id=463, 330.48468pt x 237.13594pt>
 File: figs/ladder.png Graphic file (type png)
 
 <use figs/ladder.png>
 Package pdftex.def Info: figs/ladder.png used on input line 159.
 (pdftex.def)             Requested size: 198.27216pt x 142.26378pt.
- <figs/blocos.png, id=477, 567.62062pt x 199.49532pt>
+ <figs/blocos.png, id=466, 567.62062pt x 199.49532pt>
 File: figs/blocos.png Graphic file (type png)
 
 <use figs/blocos.png>
@@ -1121,7 +1112,7 @@ el do tanque (SourceA = Tank_Level)
  []
 
 [9 <./figs/ladder.png> <./figs/blocos.png>]
-<img/strText.png, id=486, 463.7325pt x 228.855pt>
+<img/strText.png, id=475, 463.7325pt x 228.855pt>
 File: img/strText.png Graphic file (type png)
  <use img/strText.png>
 Package pdftex.def Info: img/strText.png used on input line 185.
@@ -1141,7 +1132,7 @@ Chapter 3.
 
 
 
-] <img/pertSen.png, id=502, 421.575pt x 316.18124pt>
+] <img/pertSen.png, id=491, 421.575pt x 316.18124pt>
 File: img/pertSen.png Graphic file (type png)
  <use img/pertSen.png>
 Package pdftex.def Info: img/pertSen.png used on input line 41.
@@ -1225,20 +1216,20 @@ File: img/4tank.png Graphic file (type png)
 <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 74.
 (pdftex.def)             Requested size: 132.30666pt x 136.14368pt.
- [12 <./img/pertSen.png (PNG copy)>] [13] [14])
+ [12 <./img/pertSen.png (PNG copy)>] [13] [14] [15])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 137.
- [15]
+
+[16]
 \openout2 = `capt_controle.aux'.
 
-
-(capt_controle.tex
+ (capt_controle.tex
 Chapter 4.
 LaTeX Font Info:    Font shape `OMS/ptm/m/it' in size <10.95> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 24.
-[16
+[17
 
 
 
@@ -1247,16 +1238,16 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 139.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 139.
- [17]
+ [18]
 \openout2 = `capt_modelagem.aux'.
 
  (capt_modelagem.tex
 Chapter 5.
-[18
+[19
 
 
 
-] [19]
+] [20]
 File: img/4tank.png Graphic file (type png)
  <use img/4tank.png>
 Package pdftex.def Info: img/4tank.png used on input line 135.
@@ -1270,7 +1261,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 149--150
 
  []
 
-[20]
+[21]
 Underfull \hbox (badness 10000) in paragraph at lines 157--158
 
  []
@@ -1285,7 +1276,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 173--174
 
  []
 
-[21] <img/modelo_controlado.png, id=617, 782.17218pt x 356.83313pt>
+[22] <img/modelo_controlado.png, id=615, 782.17218pt x 356.83313pt>
 File: img/modelo_controlado.png Graphic file (type png)
 
 <use img/modelo_controlado.png>
@@ -1296,13 +1287,13 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 141.
- [22 <./img/modelo_controlado.png>]
+ [23 <./img/modelo_controlado.png>]
 \openout2 = `capt_implementacao.aux'.
 
 
 (capt_implementacao.tex
 Chapter 6.
-<img/FM_h1_5_10_15.png, id=624, 421.575pt x 316.18124pt>
+<img/FM_h1_5_10_15.png, id=622, 421.575pt x 316.18124pt>
 File: img/FM_h1_5_10_15.png Graphic file (type png)
 
 <use img/FM_h1_5_10_15.png>
@@ -1317,7 +1308,7 @@ File: img/FM_h1_5_10_15.png Graphic file (type png)
 <use img/FM_h1_5_10_15.png>
 Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 25.
 (pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [23
+ [24
 
 
 
@@ -1331,7 +1322,7 @@ File: img/FM_h1_5_10_15.png Graphic file (type png)
  <use img/FM_h1_5_10_15.png>
 Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 39.
 (pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [24]
+ [25]
 File: img/FM_h1_5_10_15.png Graphic file (type png)
 
 <use img/FM_h1_5_10_15.png>
@@ -1341,48 +1332,45 @@ File: img/FM_h1_5_10_15.png Graphic file (type png)
  <use img/FM_h1_5_10_15.png>
 Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 55.
 (pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [25])
+ [26])
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 143.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 143.
- [26]
+ [27]
 \openout2 = `capt_resultados.aux'.
 
 
 (capt_resultados.tex
 Chapter 7.
 
-LaTeX Warning: Citation `matlab' on page 27 undefined on input line 5.
-
-
 Overfull \hbox (13.04642pt too wide) in paragraph at lines 47--55
  [] 
  []
 
-[27
+[28
 
 
 
-] <img/h1_ts2.png, id=659, 421.575pt x 316.18124pt>
+] <img/h1_ts2.png, id=657, 421.575pt x 316.18124pt>
 File: img/h1_ts2.png Graphic file (type png)
  <use img/h1_ts2.png>
 Package pdftex.def Info: img/h1_ts2.png used on input line 61.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-<img/h2_ts2.png, id=660, 421.575pt x 316.18124pt>
+<img/h2_ts2.png, id=658, 421.575pt x 316.18124pt>
 File: img/h2_ts2.png Graphic file (type png)
  <use img/h2_ts2.png>
 Package pdftex.def Info: img/h2_ts2.png used on input line 68.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
- [28 <./img/h1_ts2.png (PNG copy)>] <img/h1_ts5.png, id=669, 421.575pt x 316.18
+ [29 <./img/h1_ts2.png (PNG copy)>] <img/h1_ts5.png, id=667, 421.575pt x 316.18
 124pt>
 File: img/h1_ts5.png Graphic file (type png)
 
 <use img/h1_ts5.png>
 Package pdftex.def Info: img/h1_ts5.png used on input line 78.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
- <img/h2_ts5.png, id=670, 421.575pt x 316.18124pt>
+ <img/h2_ts5.png, id=668, 421.575pt x 316.18124pt>
 File: img/h2_ts5.png Graphic file (type png)
 
 <use img/h2_ts5.png>
@@ -1393,13 +1381,13 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 77--83
  [][] 
  []
 
-<img/h1_ts15.png, id=671, 421.575pt x 316.18124pt>
+<img/h1_ts15.png, id=669, 421.575pt x 316.18124pt>
 File: img/h1_ts15.png Graphic file (type png)
  <use img/h1_ts15.png>
 Package pdftex.def Info: img/h1_ts15.png used on input line 89.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/h2_ts15.png, id=672, 421.575pt x 316.18124pt>
+<img/h2_ts15.png, id=670, 421.575pt x 316.18124pt>
 File: img/h2_ts15.png Graphic file (type png)
  <use img/h2_ts15.png>
 Package pdftex.def Info: img/h2_ts15.png used on input line 90.
@@ -1409,21 +1397,14 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 88--94
  [][] 
  []
 
-[29 <./img/h2_ts2.png (PNG copy)> <./img/h1_ts5.png (PNG copy)> <./img/h2_ts5.p
+[30 <./img/h2_ts2.png (PNG copy)> <./img/h1_ts5.png (PNG copy)> <./img/h2_ts5.p
 ng (PNG copy)>]
-
-LaTeX Warning: Hyper reference `eqContFuzzy' on page 30 undefined on input line
- 97.
-
-
-LaTeX Warning: Reference `eqContFuzzy' on page 30 undefined on input line 97.
-
 File: img/modelo_controlado.png Graphic file (type png)
-<use img/modelo_controlado.png>
+ <use img/modelo_controlado.png>
 Package pdftex.def Info: img/modelo_controlado.png used on input line 128.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
- [30 <./img/h1_ts15.png (PNG copy)> <./img/h2_ts15.png (PNG copy)>] <img/ctrl_h
-1ts2_free.png, id=682, 421.575pt x 316.18124pt>
+ [31 <./img/h1_ts15.png (PNG copy)> <./img/h2_ts15.png (PNG copy)>]
+<img/ctrl_h1ts2_free.png, id=682, 421.575pt x 316.18124pt>
 File: img/ctrl_h1ts2_free.png Graphic file (type png)
 
 <use img/ctrl_h1ts2_free.png>
@@ -1436,14 +1417,14 @@ File: img/ctrl_h2ts2_free.png Graphic file (type png)
 <use img/ctrl_h2ts2_free.png>
 Package pdftex.def Info: img/ctrl_h2ts2_free.png used on input line 143.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
- [31 <./img/ctrl_h1ts2_free.png (PNG copy)>]
+ [32 <./img/ctrl_h1ts2_free.png (PNG copy)>]
 <img/ctrl_h1ts2_ulim.png, id=691, 421.575pt x 316.18124pt>
 File: img/ctrl_h1ts2_ulim.png Graphic file (type png)
 
 <use img/ctrl_h1ts2_ulim.png>
 Package pdftex.def Info: img/ctrl_h1ts2_ulim.png used on input line 153.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
- [32 <./img/ctrl_h2ts2_free.png (PNG copy)>]
+ [33 <./img/ctrl_h2ts2_free.png (PNG copy)>]
 <img/ctrl_h2ts2_ulim.png, id=696, 421.575pt x 316.18124pt>
 File: img/ctrl_h2ts2_ulim.png Graphic file (type png)
 
@@ -1457,38 +1438,38 @@ File: img/ctrl_h1ts2.png Graphic file (type png)
 Package pdftex.def Info: img/ctrl_h1ts2.png used on input line 168.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-[33 <./img/ctrl_h1ts2_ulim.png (PNG copy)> <./img/ctrl_h2ts2_ulim.png (PNG copy
+[34 <./img/ctrl_h1ts2_ulim.png (PNG copy)> <./img/ctrl_h2ts2_ulim.png (PNG copy
 )>] <img/ctrl_h2ts2.png, id=702, 421.575pt x 316.18124pt>
 File: img/ctrl_h2ts2.png Graphic file (type png)
 
 <use img/ctrl_h2ts2.png>
 Package pdftex.def Info: img/ctrl_h2ts2.png used on input line 175.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
- [34 <./img/ctrl_h1ts2.png (PNG copy)>] [35 <./img/ctrl_h2ts2.png (PNG copy)>]
+ [35 <./img/ctrl_h1ts2.png (PNG copy)>] [36 <./img/ctrl_h2ts2.png (PNG copy)>]
 Overfull \hbox (13.04642pt too wide) in paragraph at lines 217--225
  [] 
  []
 
-<img/h1_ts2_nm.png, id=721, 421.575pt x 316.18124pt>
+<img/h1_ts2_nm.png, id=722, 421.575pt x 316.18124pt>
 File: img/h1_ts2_nm.png Graphic file (type png)
  <use img/h1_ts2_nm.png>
 Package pdftex.def Info: img/h1_ts2_nm.png used on input line 231.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-<img/h2_ts2_nm.png, id=722, 421.575pt x 316.18124pt>
+<img/h2_ts2_nm.png, id=723, 421.575pt x 316.18124pt>
 File: img/h2_ts2_nm.png Graphic file (type png)
  <use img/h2_ts2_nm.png>
 Package pdftex.def Info: img/h2_ts2_nm.png used on input line 238.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-[36 <./img/h1_ts2_nm.png (PNG copy)>]
-<img/h1_ts5_nm.png, id=733, 421.575pt x 316.18124pt>
+[37 <./img/h1_ts2_nm.png (PNG copy)>]
+<img/h1_ts5_nm.png, id=729, 421.575pt x 316.18124pt>
 File: img/h1_ts5_nm.png Graphic file (type png)
  <use img/h1_ts5_nm.png>
 Package pdftex.def Info: img/h1_ts5_nm.png used on input line 248.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/h2_ts5_nm.png, id=734, 421.575pt x 316.18124pt>
+<img/h2_ts5_nm.png, id=730, 421.575pt x 316.18124pt>
 File: img/h2_ts5_nm.png Graphic file (type png)
  <use img/h2_ts5_nm.png>
 Package pdftex.def Info: img/h2_ts5_nm.png used on input line 249.
@@ -1498,14 +1479,14 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 247--253
  [][] 
  []
 
-<img/h1_ts15_nm.png, id=735, 422.32782pt x 316.18124pt>
+<img/h1_ts15_nm.png, id=731, 422.32782pt x 316.18124pt>
 File: img/h1_ts15_nm.png Graphic file (type png)
 
 <use img/h1_ts15_nm.png>
 Package pdftex.def Info: img/h1_ts15_nm.png used on input line 259.
 (pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
 
-<img/h2_ts15_nm.png, id=736, 422.32782pt x 316.18124pt>
+<img/h2_ts15_nm.png, id=732, 422.32782pt x 316.18124pt>
 File: img/h2_ts15_nm.png Graphic file (type png)
 
 <use img/h2_ts15_nm.png>
@@ -1516,74 +1497,57 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 258--264
  [][] 
  []
 
-[37 <./img/h2_ts2_nm.png (PNG copy)> <./img/h1_ts5_nm.png (PNG copy)> <./img/h2
+[38 <./img/h2_ts2_nm.png (PNG copy)> <./img/h1_ts5_nm.png (PNG copy)> <./img/h2
 _ts5_nm.png (PNG copy)>]
-
-LaTeX Warning: Hyper reference `eqContFuzzy' on page 38 undefined on input line
- 267.
-
-
-LaTeX Warning: Reference `eqContFuzzy' on page 38 undefined on input line 267.
-
-<img/nm_ctrl_h1ts2_free.png, id=741, 1028.34187pt x 497.60907pt>
+<img/nm_ctrl_h1ts2_free.png, id=739, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h1ts2_free.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2_free.png>
 Package pdftex.def Info: img/nm_ctrl_h1ts2_free.png used on input line 298.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
- [38 <./img/h1_ts15_nm.png (PNG copy)> <./img/h2_ts15_nm.png (PNG copy)>]
-<img/nm_ctrl_h2ts2_free.png, id=746, 1028.34187pt x 497.60907pt>
+ [39 <./img/h1_ts15_nm.png (PNG copy)> <./img/h2_ts15_nm.png (PNG copy)>]
+<img/nm_ctrl_h2ts2_free.png, id=744, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h2ts2_free.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2_free.png>
 Package pdftex.def Info: img/nm_ctrl_h2ts2_free.png used on input line 305.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
 
-<img/nm_ctrl_h1ts2_ulim.png, id=750, 1028.34187pt x 497.60907pt>
+<img/nm_ctrl_h1ts2_ulim.png, id=748, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h1ts2_ulim.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2_ulim.png>
 Package pdftex.def Info: img/nm_ctrl_h1ts2_ulim.png used on input line 315.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
- [39 <./img/nm_ctrl_h1ts2_free.png (PNG copy)> <./img/nm_ctrl_h2ts2_free.png (P
+ [40 <./img/nm_ctrl_h1ts2_free.png (PNG copy)> <./img/nm_ctrl_h2ts2_free.png (P
 NG copy)>]
-<img/nm_ctrl_h2ts2_ulim.png, id=755, 1028.34187pt x 497.60907pt>
+<img/nm_ctrl_h2ts2_ulim.png, id=753, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h2ts2_ulim.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2_ulim.png>
 Package pdftex.def Info: img/nm_ctrl_h2ts2_ulim.png used on input line 322.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
 
-<img/nm_ctrl_h1ts2.png, id=756, 1028.34187pt x 497.60907pt>
+<img/nm_ctrl_h1ts2.png, id=754, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h1ts2.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2.png>
 Package pdftex.def Info: img/nm_ctrl_h1ts2.png used on input line 330.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
- [40 <./img/nm_ctrl_h1ts2_ulim.png (PNG copy)> <./img/nm_ctrl_h2ts2_ulim.png (P
+ [41 <./img/nm_ctrl_h1ts2_ulim.png (PNG copy)> <./img/nm_ctrl_h2ts2_ulim.png (P
 NG copy)>]
-<img/nm_ctrl_h2ts2.png, id=761, 1028.34187pt x 497.60907pt>
+<img/nm_ctrl_h2ts2.png, id=759, 1028.34187pt x 497.60907pt>
 File: img/nm_ctrl_h2ts2.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2.png>
 Package pdftex.def Info: img/nm_ctrl_h2ts2.png used on input line 337.
 (pdftex.def)             Requested size: 441.01772pt x 213.40585pt.
-File: img/FM_h1_5_10_15.png Graphic file (type png)
- <use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 378.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [41 <./img/nm_ctrl_h1ts2.png (PNG copy)> <./img/nm_ctrl_h2ts2.png (PNG copy)>]
-File: img/FM_h1_5_10_15.png Graphic file (type png)
-
-<use img/FM_h1_5_10_15.png>
-Package pdftex.def Info: img/FM_h1_5_10_15.png used on input line 385.
-(pdftex.def)             Requested size: 308.71104pt x 231.53888pt.
- [42])
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 145.
- [43]
+ [42 <./img/nm_ctrl_h1ts2.png (PNG copy)> <./img/nm_ctrl_h2ts2.png (PNG copy)>]
 \openout2 = `capt_conclusao.aux'.
 
  (capt_conclusao.tex
@@ -1593,7 +1557,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 148.
- [44
+ [43
 
 
 
@@ -1606,7 +1570,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 156.
- [45
+ [44
 
 
 ]
@@ -1618,10 +1582,7 @@ capt_implementacao.aux) (capt_resultados.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 156.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 156.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 05487751BEA567DEC873DBE3B0F6E0B6;2724.
-
-
-LaTeX Warning: There were undefined references.
+(rerunfilecheck)             Checksum: BF2A7F2F3CDC48679AE9F60D5E3B160C;2657.
 
 
 LaTeX Warning: There were multiply-defined labels.
@@ -1629,9 +1590,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 156.
  ) 
 Here is how much of TeX's memory you used:
- 10290 strings out of 493334
- 152009 string characters out of 3139252
- 270152 words of memory out of 3000000
+ 10289 strings out of 493334
+ 151986 string characters out of 3139252
+ 270297 words of memory out of 3000000
  13307 multiletter control sequences out of 15000+200000
  67110 words of font info for 89 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1651,9 +1612,9 @@ nts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (58 pages, 4954607 bytes).
+Output written on thesis.pdf (57 pages, 4954115 bytes).
 PDF statistics:
- 878 PDF objects out of 1000 (max. 8388607)
- 188 named destinations out of 1000 (max. 500000)
- 514 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 868 PDF objects out of 1000 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
+ 506 words of extra memory for PDF output out of 10000 (max. 10000000)
 
