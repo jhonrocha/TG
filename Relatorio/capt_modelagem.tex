@@ -102,7 +102,7 @@ Como visto, as regras do modelo são ativadas de acordo com o estado atual do si
 Como visto, a linearização é baseada nos estados estacionários do sistema, ou seja, são escolhidos pontos em que $\dot{h}(t) = 0$. Assim, o modelo linear trata do valor de desvio das variáveis e é dado por: 
 
 	\begin{equation}
-		\dot{h}(t) =  A \Delta h(t) +  B \Delta u(t)
+		\dot{\Delta h}(t) =  A \Delta h(t) +  B \Delta u(t)
 	\end{equation}
 
 Seguindo os passos descritos na \jhhref{secFncPert}{Seção} definem-se os conjuntos escolhidos. Há quatro vértices para os estados do sistema:
@@ -122,21 +122,17 @@ Seguindo os passos descritos na \jhhref{secFncPert}{Seção} definem-se os conju
 \end{align}
 Obtemos um modelo linear em cada um destes vértices:
 	\begin{align}
-	\dot{h}(t) =  A_i \Delta h(t) +  B_i \Delta u(t) \\
+	\dot{\Delta h}(t) =  A_i \Delta h(t) +  B_i \Delta u(t) \\
 	i = 1,2,3,4
 	\end{align}
 
 
 Como descrito na \jhhref{tabDescPlanta}{Tabela}, a altura dos tanques é de 25cm. Assim, escolhe-se os limitantes 5cm como "completamente" verdade para o nível baixo e  25cm como "completamente" verdade para o nível alto. As funções de pertinência obtidas são:
 
+
 \begin{figure}[H]
 	\centering
-	\begin{tabular}{c}
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png}\\
-		(a) Pertinências de $h_1(t)$ \\
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
-		(b) Pertinências de $h_2(t)$ \\
-	\end{tabular}
+	\includegraphics[width=0.7\textwidth]{img/pert_niveis.png}
 	\caption{\label{figPertMod} Funções de Pertinência.}
 \end{figure}
 
@@ -150,7 +146,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 			\begin{cases}
 				\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é baixo} \\
-				\text{ENTÃO } &\dot{h}(t) =  A_1 \Delta h(t) +  B_1 \Delta u(t)
+				\text{ENTÃO } &\dot{\Delta h}(t) =  A_1 \Delta h(t) +  B_1 \Delta u(t)
 			\end{cases}		
 		\end{align*}
 
@@ -158,7 +154,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é alto} \\
-			\text{ENTÃO } &\dot{h}(t) =  A_2 \Delta h(t) +  B_2 \Delta u(t)
+			\text{ENTÃO } &\dot{\Delta h}(t) =  A_2 \Delta h(t) +  B_2 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 
@@ -166,7 +162,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é baixo} \\
-			\text{ENTÃO } &\dot{h}(t) =  A_3 \Delta h(t) +  B_3 \Delta u(t)
+			\text{ENTÃO } &\dot{\Delta h}(t) =  A_3 \Delta h(t) +  B_3 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 
@@ -174,7 +170,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é alto} \\
-			\text{ENTÃO } &\dot{h}(t) =  A_4 \Delta h(t) +  B_4 \Delta u(t)
+			\text{ENTÃO } &\dot{\Delta h}(t) =  A_4 \Delta h(t) +  B_4 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 	\end{itemize}
@@ -194,7 +190,7 @@ O nível de ativação de cada uma das \textbf{Regras} $i$ é dado respectivamen
 \subsection{Modelo Final}
 O modelo Takagi-Sugeno fornece, finalmente:
 	\begin{align} \label{eqTakSugPlanta}
-		\dot{h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h(t))}
+		\dot{\Delta h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
 
 \subsection{Controlador Fuzzy}

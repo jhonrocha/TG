@@ -46,7 +46,7 @@ Escolhendo os cojuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seus
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
-		Sistema & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 1 ($\bar{h_4}$) & Tensão 1 ($\bar{v_1}$) & Tensão 2 ($\bar{v_2}$) \\ \hline
+		Sistema & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 4 ($\bar{h_4}$) & Tensão 1 ($\bar{v_1}$) & Tensão 2 ($\bar{v_2}$) \\ \hline
 		1 & 5 & 5 & 0.0334 & 2.9076 & 3.2321 & 0.5716 \\ \hline
 		2 & 5 & 15 & 0.9431 & 1.1033 & 1.9910 & 3.0390 \\ \hline
 		3 & 15 & 5 & 0.2229 & 13.0191 & 6.8393 & -1.4773 \\ \hline
@@ -216,7 +216,7 @@ De forma similar, escolhendo os cojuntos fuzzy \{"baixo","alto"\} e definindo \{
 \begin{center}
 	\begin{tabular}{|c|c|c|c|c|c|c|}
 		\hline
-		Sistema & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 1 ($\bar{h_4}$) & Tensão 1 ($\bar{v_1}$) & Tensão 2 ($\bar{v_2}$) \\ \hline
+		Sistema & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 4 ($\bar{h_4}$) & Tensão 1 ($\bar{v_1}$) & Tensão 2 ($\bar{v_2}$) \\ \hline
 		1 & 5 & 5 & 2.0804 & 1.7175 & 1.8428 & 2.0890 \\ \hline
 		2 & 5 & 15 & 0.0321 & 15.9038 & 5.6078 & -0.2595 \\ \hline
 		3 & 15 & 5 & 16.9727 & 0.1661 & -0.5730 & 5.9668 \\ \hline
@@ -338,6 +338,24 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 	\caption{Nível H2 Controlado - Com \textit{Anti-Windup}}
 	\label{figH2CtrlTS2_nm}
 \end{figure}
+
+\section{Implementação na Bancada} \label{secResImp}
+Seguindo os procedimentos descritos no \jhhref{capImp}{Capítulo}, os ganhos obtidos na \jhhref{tabGanhosReais}{Tabela} são implementados e um degrau de referência para as alturas $h1=15$ e $h2=15$, observa-se:
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight,keepaspectratio]{img/ctrl_realh1.png}
+	\caption{\small Nível H1 Controlado - Real}
+	\label{imgH1Real}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight,keepaspectratio]{img/ctrl_realh2.png}
+	\caption{Nível H2 Controlado - Real}
+	\label{imgH2Real}
+\end{figure}
+
+Nota-se que o comportamento geral do sistema tende a se estabilizar em torno da referência desejada. A forma oscilatória da resposta, não prevista no modelo, ocorre principalmente porque apesar do sinal de controle enviado, as bombas possuem uma zona de atuação que começa a funcionar apenas para sinais superiores à 30\%. Isso faz com que o erro continue aumentando até que se obtenha entradas superiores à este valor, o que gera a resposta observada.
 
 \selectlanguage{brazil}%
 

@@ -38,15 +38,15 @@ Apesar de operar sobre grandezas linguísticas, é importante notar que normalme
 \begin{figure}[H]
 	\centering
 \begin{tabular}{ccc}
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} \\
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_triang.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_sen.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_trap.png} \\
 	(a) Triangular &
 	(b) Senoidal &
 	(c) Trapezoidal \\
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} &
-	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pertSen.png} \\
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_gaus.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_sig.png} &
+	\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_square.png} \\
 	(d) Gaussiana &
 	(e) Sigmoide &
 	(f) Quadrada (Clássica)
@@ -58,7 +58,7 @@ Apresenta-se a seguir os procedimentos comuns para obtenção da função de per
 \begin{itemize}
 	\item \textbf{Definir a variável linguística:} "Temperatura"
 	\item \textbf{Definir os conjuntos fuzzy:} \{"muito frio"\}, \{"frio"\}, \{"quente"\}, \{"muito quente"\}
-	\item \textbf{Definir os limites de cada conjunto:} $[-10ºC,5ºC]$,$ [5ºC,15ºC]$, $[15ºC,30ºC]$, $[30ºC,45ºC]$ 
+	\item \textbf{Definir os limites de cada conjunto:} $[-\infty,10ºC]$,$ [5ºC,25ºC]$, $[15ºC,35ºC]$, $[25ºC,\infty]$ 
 	\item \textbf{Definir as funções de pertinência:} Neste caso opta-se por funções triangulares, com picos nos centros dos intervalos e nulas em qualquer caso fora deles.
 \end{itemize}
 
@@ -66,12 +66,12 @@ Os resultados do exemplo são apresentados na \jhhref{figPertEx}{Figura} a segui
 \begin{figure}[H]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_mf.png} &
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_f.png} \\
 		(a) Pertinência do conjunto "muito frio" &
 		(b) Pertinência do conjunto "frio" \\
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} &
-		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/4tank.png} \\
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_q.png} &
+		\includegraphics[width=0.3\textwidth,keepaspectratio]{img/pert_mq.png} \\
 		(c) Pertinência do conjunto "quente" &
 		(d) Pertinência do conjunto "muito quente"
 	\end{tabular}
@@ -88,23 +88,25 @@ A \jhhref{tabPertEx}{Tabela} a seguir apresenta os graus de pertinência de vár
 	\scalebox{1}{
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			Temperatura & Muito Frio & Frio & Quente & Muito Quente \\
+			Temperatura ($ºC$) & Muito Frio & Frio & Quente & Muito Quente \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			0 & 1 & 0 & 0 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			5 & 1 & 0 & 0 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			10 & 0.5 & 0.5 & 0 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			15 & 0 & 1 & 0 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			20 & 0 & 0.5 & 0.5 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			25 & 0 & 0 & 1 & 0 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			30 & 0 & 0 & 0.5 & 0.5 \\
 			\hline
-			0 & 0 & 0 & 0 & 0 \\
+			35 & 0 & 0 & 0 & 1 \\
+			\hline
+			40 & 0 & 0 & 0 & 1 \\
 			\hline
 		\end{tabular}
 	}
@@ -187,7 +189,7 @@ As regras fuzzy são:
 		&\textbf{SE:} \text{ $c_1(t)$ é $M_{1i}$ e $c_2(t)$ é $M_{2i}$ e ... e $c_n(t)$ e $M_{ni}$,} \\
 		&\textbf{ENTÃO}:
 		\begin{cases}
-			\dot{x}(t) = A_i \Delta x(t) + B_i \Delta u(t),\\
+			\dot{\Delta x}(t) = A_i \Delta x(t) + B_i \Delta u(t),\\
 			y(t) = C_ix(t)
 		\end{cases}
 	\end{cases}
@@ -207,7 +209,7 @@ O sistema final é dado pela média ponderada dos consequentes das r regras por 
 
 \begin{align} \label{eqModTakSug}
 	\begin{cases}
-		\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(c(t))} \vspace{0.5cm}\\
+		\dot{\Delta x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(c(t))} \vspace{0.5cm}\\
 		y(t) = \frac{\sum_{i=1}^{4}  w_i(c(t)) C_i \Delta x(t)}{\sum_{i=1}^{4} w_i(c(t))}
 	\end{cases}
 \end{align}

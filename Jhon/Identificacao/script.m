@@ -1,18 +1,58 @@
+load ident_4000_full.mat
 figure
 plot(outputs.Time,outputs.Data(:,1),'-b');
-hold on
-plot(tEst1, yEst1(:,1),'-r');
-% title('H1 Ident1');
-
+title('Nível 1');
+grid on;
 figure
 plot(outputs.Time,outputs.Data(:,2),'-b');
+title('Nível 2')
+grid on;
 figure
 plot(outputs.Time,outputs.Data(:,3),'-b');
+title('Nível 3')
+grid on;
 figure
 plot(outputs.Time,outputs.Data(:,4),'-b');
-% hold on
-% plot(tEst1, yEst1(:,2),'-r');
-% title('H2 Ident1');
+title('Nível 4')
+grid on;
+outputs.Data(10000,:)
+% load simulation_6000_full.mat
+% figure;
+% plot(outputs.Time,outputs.Data(:,1),'-b');
+% title('Nível 1');
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,2),'-b');
+% title('Nível 2')
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,3),'-b');
+% title('Nível 3')
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,4),'-b');
+% title('Nível 4')
+% grid on;
+% 
+% 
+% load sim_full_6000_v3.mat
+% figure;
+% plot(outputs.Time,outputs.Data(:,1),'-b');
+% title('Nível 1');
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,2),'-b');
+% title('Nível 2')
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,3),'-b');
+% title('Nível 3')
+% grid on;
+% figure
+% plot(outputs.Time,outputs.Data(:,4),'-b');
+% title('Nível 4')
+% grid on;
+
 
 % figure
 % plot(outputs.Time,outputs.Data(:,1),'-b');
