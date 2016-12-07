@@ -43,7 +43,8 @@
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
-\contentsline {section}{\numberline {1.1}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{1}{section.1.1}
+\contentsline {section}{\numberline {1.1}Objetivos}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{2}{section.1.2}
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {2}Descri\IeC {\c c}\IeC {\~a}o do Sistema}{3}{chapter.2}
@@ -96,5 +97,7 @@
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{44}{chapter.8}
+\contentsline {section}{\numberline {8.1}Objetivos}{44}{section.8.1}
+\contentsline {section}{\numberline {8.2}Trabalhos Futuros}{44}{section.8.2}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{45}{chapter.8}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{45}{section.8.2}

@@ -12,10 +12,10 @@ Uma função escalar contínua $w: \mathbb{R}^n \rightarrow \mathbb{R}$, $w(0) =
 	\begin{equation}
 		w(x) \geq 0, \forall \ \ x \in \mathbb{R}^n - {0}
 	\end{equation}
-	Caso desigualdade seja estrita, então w será definida positiva. Uma função g é dita semidefinida (definida) negativa caso -g seja semidifenida (definida) positiva
+	Caso desigualdade seja estrita, então w será definida positiva. Uma função \textbf{g} é dita semidefinida (definida) negativa caso \textbf{-g} seja semidifenida (definida) positiva
 \end{mydef}
 
-O método de Lyapunov baseia-se teorema a seguir:
+O método de Lyapunov baseia-se no teorema a seguir:
 
 \begin{myteo} \label{teoLyapunov}
 	Um sistema dinâmico autônomo é globalmente estável se existe uma função escalar $V : \mathbb{R}^n \rightarrow \mathbb{R} $ tal que:
@@ -32,37 +32,29 @@ Assim, uma função V que satisfaça todo os requisitos do Teorema 1 para um dad
 
 
 \section{Estabilidade Fuzzy}
-Para um modelo TS discreto, simular ao na \jhhref{eqModTakSug}{equação}, tem-se:
+Para um modelo TS, simular ao na \jhhref{eqModTakSug}{Equação}, tem-se:
 \begin{align*}
-	x_{k+1} = \frac{\sum_{i=1}^{r}  w_i(c_k)(A_i x_k)}{\sum_{i=1}^{4} w_i(c_k)} 
+	\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i  x(t) +  B_i  u(t))}{\sum_{j=1}^{4} w_j(c(t))} \vspace{0.5cm}
 \end{align*}
 
 Simplificando os termos de ativação de forma a obter um parâmetro A(c), definido como:
 \begin{align*}
-	h_i[c_k] &:= \frac{w_i[c_k]}{\sum_{j=1}^{r}w_j[c_k]} \\
-	A(q) &:= \sum_{i=1}^{r} h_i(c_k)A_i
+	\alpha_i (c(t)) &:= \frac{w_i(c(t))}{\sum_{j=1}^{r}w_j(c(t))} \\
+	A(\alpha) &:= \sum_{i=1}^{r} \alpha_i (c(t))A_i
 \end{align*}
 
-Assim,
-\begin{align}
-	x_{k+1} = A(c) x_k
-\end{align}
-
-\begin{equation}
-	V(x_k) = x_k' P x_k
-\end{equation}
-Com P simétrica.
-
-\begin{align}
-	\Delta V(x_k) &= x_k'\{A'(c)PA(c) - P\}x_k
-\end{align}
+Aplicando a Teoria de Lyapunov, ao sistema:
+\begin{align*}
+	V(x) &= x' P x \\
+	\dot{V}(x) &= x'\{A'(\alpha)PA(\alpha) - P\}x
+\end{align*}
 
 De acordo com o \jhhref{teoLyapunov}{Teorema}, se as condições a seguir forem cumpridas, o sistema será assintoticamente estável:
 \begin{align}
 	P = P' \succ 0 \\
-	x_k'\{A'(c)PA(c) - P \}x_k \prec 0 \label{eqLyapXk}
+	x'\{A'(\alpha)PA(\alpha) - P \}x \prec 0 \label{eqLyapXk}
 \end{align}
-Uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{regras}. 
+Uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{Equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
 A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} existe solução para:
 
 \begin{align}
@@ -76,16 +68,14 @@ Seguindo estas premissas, o desenvolvimento do controlador para o modelo TS é d
 Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos correspondentes, em malha fechada com ganhos $K_i = M_i X^{-1}$, sua estabilidade é verificada se existe solução para o problema
 	\begin{align} \label{eqContFuzzy}
 		encontre \ \ &X = X', \ \ i = 1,2,...,r \nonumber \\
+		&X \succ 0 \nonumber \\
 		s.a \ \ & 
 		\begin{bmatrix}
-			X	&	M_j'B_i' + XA_i' \\
-			A_iX + B_iM_j &	X
-		\end{bmatrix}P \succ 0 \nonumber \\
-		& \ \ i,j = 1,2,3, ... , r
+			X	&	M_i'B_i' + XA_i' \\
+			A_iX + B_iM_i &	X
+		\end{bmatrix} \succ 0 \nonumber \\
 	\end{align}
 \end{myteo}
-
-Assim, neste trabalho, os modelos fuzzy 
 
 \selectlanguage{brazil}%
 

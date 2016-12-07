@@ -39,7 +39,7 @@ Suas dimensões aferidas são apresentadas na \jhhref{tabDescPlanta}{Tabela}, on
 			A1, A3 & 47,6 cm$^2$ \\ \hline
 			A2, A4 & 47,6 cm$^2$\\ \hline
 			H1, H2, H3, H4 & 24 cm\\ \hline
-			g & 981 \\ \hline
+			g & 981 cm/s$^2$ \\ \hline
 			$\gamma_1$ & 0.70 \\ \hline
 			$\gamma_2$ & 0.60 \\ \hline
 		\end{tabular}
@@ -50,7 +50,7 @@ Suas dimensões aferidas são apresentadas na \jhhref{tabDescPlanta}{Tabela}, on
 Controladores Lógico Programáveis(CLP) são largamente utilizados para controle de processos e automação industrial atualmente. Trata-se de um equipamento eletrônico digital com hardware e software adaptados para as condições industriais. Utilizam uma memória programável para armazenar instruções de controle e conexões com diversos módulos para interface com processos externos, entrada e saída de dados, comunicação digital, entre diversas outras funções.
 
 \subsection{Instalação}
-Neste trabalho realizou-se a montagem de toda a estação de controle. Assim, escolheu-se primeiramente um local adequado para a disposição do painel de controle: próximo à planta e ao microcomputador ao qual se conecta, porém afastado de fiações elétricas ou locais úmidos. Outro cuidado deve de ser observado durante a instalação da fonte junto ao chassi, observando a compatibilidade com as tensões de entrada e saída do controlador. Seguiu-se fixação do painel no local escolhida, instalação do microcomputador à ser utilizado e instalação da fiação elétrica. Observa-se na figura \ref{fig:mesa} o resultado instalado.
+Neste trabalho realizou-se a montagem de toda a estação de controle. Assim, escolheu-se primeiramente um local adequado para a disposição do painel de controle: próximo à planta e ao microcomputador ao qual se conecta, porém afastado de fiações elétricas ou locais úmidos. Outro cuidado deve de ser observado durante a instalação da fonte junto ao chassi, observando a compatibilidade com as tensões de entrada e saída do controlador. Seguiu-se fixação do painel no local escolhida, instalação do microcomputador à ser utilizado e instalação da fiação elétrica. Observa-se na Figura \ref{fig:mesa} o resultado instalado.
 
 \begin{figure}[H]
 	\centering
@@ -59,7 +59,7 @@ Neste trabalho realizou-se a montagem de toda a estação de controle. Assim, es
 	\label{fig:mesa}
 \end{figure}
 
-A figura \ref{fig:interior} a seguir ilustra o interior do painel, já com o chassi do controlador instalado e as trilhas utilizadas distribuídas no espaço restante para conexão dos bornes a serem utilizados no projeto.
+A Figura \ref{fig:interior} a seguir ilustra o interior do painel, já com o chassi do controlador instalado e as trilhas utilizadas distribuídas no espaço restante para conexão dos bornes a serem utilizados no projeto.
 
 \begin{figure}[H]
 	\centering
@@ -126,7 +126,7 @@ Para comunicação serial, basta configurar a entrada serial no computador a ser
 			\hline
 			1756-ENBT/A (CLP) & 192.168.2.22 \\
 			\hline
-			Geral & 192.168.0.xxx\\
+			Geral & 192.168.2.xxx\\
 			\hline
 		\end{tabular}
 	}
@@ -135,7 +135,7 @@ Para comunicação serial, basta configurar a entrada serial no computador a ser
 Um \textbf{importante} cuidado de segurança observado foi o aterramento de diversos elementos do equipamento. É conhecida sua capacidade de operação em condições adversas, mesmo assim, como precaução houve o cuidado de aterrar o chassi, a placa onde foi instalado e o painel exterior.
 
 \section{RSLinx e RSLogix}
-Os principais softwares utilizados para implementação do controlador são o RSLinx e o RSLogix. O primeiro é responsável por estabelecer a comunicação com o CLP Rockwell e sua ampla variedade de aplicativos e módulos. A \jhhref{imgRSLinx}{imagem} apresenta sua interface, onde é possível visualizar o controlador e os módulos instalados. A partir deste menu são acessíveis diversas funções de configuração e exibição das informações dos dispositivos.
+Os principais softwares utilizados para implementação do controlador são o RSLinx e o RSLogix. O primeiro é responsável por estabelecer a comunicação com o CLP Rockwell e sua ampla variedade de aplicativos e módulos. A \jhhref{imgRSLinx}{Figura} apresenta sua interface, onde é possível visualizar o controlador e os módulos instalados. A partir deste menu são acessíveis diversas funções de configuração e exibição das informações dos dispositivos.
 
 \begin{figure}[H]
 	\centering
@@ -152,7 +152,7 @@ O ambiente inicial é formado por duas linhas verticais, que representam nível 
 
 Uma forma de compreender essa linguagem seria como uma série de conexões de contatos e bobinas. Se for possível traçar um caminho da esquerda para direita, conectando-se à uma bobina de saída ao final, então o valor dessa bobina será verdadeiro. Trabalhando-se com controladores digitais, são criadas variáveis no programa que representam diretamente os valores presentes nos módulos de saída e entrada. Essas variáveis recebem o nome de TAGs. Assim, as variáveis de entradas são assinaladas à tags utilizadas como chaves e as variáveis de saídas à tags associadas às bobinas de saída. Percorrendo-se o caminho da esquerda para direita em um ramal, ao se chegar à uma chave, observa-se se o valor assinalado à ela é verdadeiro. Caso seja, continua-se o caminho até uma bobina de saída. Se está for alcançada, seu valor é setado para verdadeiro, consequentemente a saída associada a ela recebe a tensão associado à este nível lógico no controlador.
 
-A figura \ref{fig:ladder} à seguir ilustra um exemplo.
+A Figura \ref{fig:ladder} à seguir ilustra um exemplo.
 
 \begin{figure}[H]
 	\centering
@@ -164,7 +164,7 @@ A figura \ref{fig:ladder} à seguir ilustra um exemplo.
 \subsection{Blocos Funcionais} \label{subsec:blocos}
 Trata-se de outra linguagem de programação gráfica disponível aos CLPs Rockwell. É bastante semelhante à observada em vários outros softwares comuns ao meio acadêmico, como o MATLAB. Para sua utilização, assinala-se tags às entradas e saídas dos módulos já adicionados ao projeto. O desenvolvimento utiliza blocos de entradas e saídas associados à essas variáveis. Conexões entre os blocos, por meio de linhas representam passagem dos valores por esses fios. A lógica de controle é feita por meio de blocos de funções, estes possuem uma ou mais entradas e uma ou mais saídas. Os valores assinalados à suas saídas são determinados pelas funções às quais estão associados e que utilizam os valores de entrada como argumentos.
 
-A figura \ref{fig:blocos} à seguir ilustra um exemplo.
+A Figura \ref{fig:blocos} à seguir ilustra um exemplo.
 
 \begin{figure}[H]
 	\centering
@@ -178,7 +178,7 @@ Observa-se o caso do bloco GEQ\_01. Suas entradas são o nível do tanque (Sourc
 \subsection{Texto Estruturado} \label{secTexEst} 
 A linguagem texto estruturado é muito semelhante às linguagens estruturais C e Pascal. Como elas, é baseada no uso simples de comandos que são executados sequencialmente em seu desenvolvimento. Da mesma forma que as anteriores, esta linguagem utiliza Tags como variáveis e é a partir delas que se faz a leitura das entradas e definem-se as saídas. 
 
-A \jhhref{imgTexEst}{figura} à seguir ilustra um exemplo.
+A \jhhref{imgTexEst}{Figura} à seguir ilustra um exemplo.
 
 \begin{figure}[H]
 	\centering

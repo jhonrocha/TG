@@ -88,7 +88,7 @@ A \jhhref{tabPertEx}{Tabela} a seguir apresenta os graus de pertinência de vár
 	\scalebox{1}{
 		\begin{tabular}{|c|c|c|c|c|}
 			\hline
-			Temperatura ($ºC$) & Muito Frio & Frio & Quente & Muito Quente \\
+			Temperatura ($^\circ C$) & Muito Frio & Frio & Quente & Muito Quente \\
 			\hline
 			0 & 1 & 0 & 0 & 0 \\
 			\hline
@@ -189,7 +189,7 @@ As regras fuzzy são:
 		&\textbf{SE:} \text{ $c_1(t)$ é $M_{1i}$ e $c_2(t)$ é $M_{2i}$ e ... e $c_n(t)$ e $M_{ni}$,} \\
 		&\textbf{ENTÃO}:
 		\begin{cases}
-			\dot{\Delta x}(t) = A_i \Delta x(t) + B_i \Delta u(t),\\
+			 \dot{x}(t) = A_i  x(t) + B_i  u(t),\\
 			y(t) = C_ix(t)
 		\end{cases}
 	\end{cases}
@@ -207,11 +207,17 @@ O grau de ativação de cada regra é dado pelo produto das $n$ pertinências qu
 
 O sistema final é dado pela média ponderada dos consequentes das r regras por seus graus de ativação. Assim, o modelo Takagi-Sugeno final é dado por:
 
+\begin{align*}
+	 \dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i  x(t) +  B_i  u(t))}{\sum_{j=1}^{4} w_j(c(t))} \vspace{0.5cm}
+\end{align*}
+
+Simplificando o coeficiente de ponderação em cada regras, tem-se:
+\begin{equation*}
+	\alpha_i (h(t)) := \frac{w_i(h(t))}{\sum_{j=1}^{r}w_j(h(t))}
+\end{equation*}
+E finalmente:
 \begin{align} \label{eqModTakSug}
-	\begin{cases}
-		\dot{\Delta x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i \Delta x(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(c(t))} \vspace{0.5cm}\\
-		y(t) = \frac{\sum_{i=1}^{4}  w_i(c(t)) C_i \Delta x(t)}{\sum_{i=1}^{4} w_i(c(t))}
-	\end{cases}
+	 \dot{x}(t) = \alpha_i (c(t))(A_i  x(t) +  B_i  u(t))
 \end{align}
 
 \selectlanguage{brazil}%

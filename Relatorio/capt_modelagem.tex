@@ -102,7 +102,7 @@ Como visto, as regras do modelo são ativadas de acordo com o estado atual do si
 Como visto, a linearização é baseada nos estados estacionários do sistema, ou seja, são escolhidos pontos em que $\dot{h}(t) = 0$. Assim, o modelo linear trata do valor de desvio das variáveis e é dado por: 
 
 	\begin{equation}
-		\dot{\Delta h}(t) =  A \Delta h(t) +  B \Delta u(t)
+		\Delta \dot{h}(t) =  A \Delta h(t) +  B \Delta u(t)
 	\end{equation}
 
 Seguindo os passos descritos na \jhhref{secFncPert}{Seção} definem-se os conjuntos escolhidos. Há quatro vértices para os estados do sistema:
@@ -122,7 +122,7 @@ Seguindo os passos descritos na \jhhref{secFncPert}{Seção} definem-se os conju
 \end{align}
 Obtemos um modelo linear em cada um destes vértices:
 	\begin{align}
-	\dot{\Delta h}(t) =  A_i \Delta h(t) +  B_i \Delta u(t) \\
+	\Delta \dot{h}(t) =  A_i \Delta h(t) +  B_i \Delta u(t) \\
 	i = 1,2,3,4
 	\end{align}
 
@@ -146,7 +146,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 			\begin{cases}
 				\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é baixo} \\
-				\text{ENTÃO } &\dot{\Delta h}(t) =  A_1 \Delta h(t) +  B_1 \Delta u(t)
+				\text{ENTÃO } &\Delta \dot{h}(t) =  A_1 \Delta h(t) +  B_1 \Delta u(t)
 			\end{cases}		
 		\end{align*}
 
@@ -154,7 +154,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é baixo e } h_2 \text{ é alto} \\
-			\text{ENTÃO } &\dot{\Delta h}(t) =  A_2 \Delta h(t) +  B_2 \Delta u(t)
+			\text{ENTÃO } &\Delta \dot{h}(t) =  A_2 \Delta h(t) +  B_2 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 
@@ -162,7 +162,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é baixo} \\
-			\text{ENTÃO } &\dot{\Delta h}(t) =  A_3 \Delta h(t) +  B_3 \Delta u(t)
+			\text{ENTÃO } &\Delta \dot{h}(t) =  A_3 \Delta h(t) +  B_3 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 
@@ -170,7 +170,7 @@ Haverá uma regra para cada um dos sistemas dados:
 		\begin{align*}
 		\begin{cases}
 			\text{SE } &h_1 \text{ é alto e } h_2 \text{ é alto} \\
-			\text{ENTÃO } &\dot{\Delta h}(t) =  A_4 \Delta h(t) +  B_4 \Delta u(t)
+			\text{ENTÃO } &\Delta \dot{h}(t) =  A_4 \Delta h(t) +  B_4 \Delta u(t)
 		\end{cases}		
 		\end{align*}
 	\end{itemize}
@@ -188,19 +188,25 @@ O nível de ativação de cada uma das \textbf{Regras} $i$ é dado respectivamen
 	\end{equation}
 	
 \subsection{Modelo Final}
+O peso de cada regra, na ponderação final, é dado por:
+\begin{equation*}
+	\alpha_i (h(t)) := \frac{w_i(h(t))}{\sum_{j=1}^{r}w_j(h(t))}
+\end{equation*}
+
 O modelo Takagi-Sugeno fornece, finalmente:
 	\begin{align} \label{eqTakSugPlanta}
-		\dot{\Delta h}(t) = \frac{\sum_{i=1}^{4}  w_i(h(t))(A_i \Delta h(t) +  B_i \Delta u(t))}{\sum_{i=1}^{4} w_i(h(t))}
+		\Delta \dot{h}(t) = \alpha_i (h(t))(A_i \Delta h(t) +  B_i \Delta u(t))
 	\end{align}
 
+
 \subsection{Controlador Fuzzy}
-No \jhhref{capControle}{capítulo} demonstra-se o projeto de controladores capazes de estabilizar o sistema em todos os pontos de \ref{eqTakSugPlanta}. O desenvolvimento do controlador final para modelo segue os mesmos passos já apresentados: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra e o grau de ativação de cada ganho é obtido pelas mesmas \jhhref{eqGrauAtiv4T}{equações}.
+No \jhhref{capControle}{Capítulo} demonstra-se o projeto de controladores capazes de estabilizar o sistema em todos os pontos de \ref{eqTakSugPlanta}. O desenvolvimento do controlador final para modelo segue os mesmos passos já apresentados: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra e o grau de ativação de cada ganho é obtido pelas mesmas \jhhref{eqGrauAtiv4T}{Equações}.
  O ganho final a ser utilizado é dado por:
 	\begin{align} \label{eqModContFuzzy}
 		K = \frac{\sum_{i=1}^{4}  w_i(h(t))K_i}{\sum_{i=1}^{4} w_i(h(t))}
 	\end{align}
 
-Deseja-se neste trabalho obter um controlador capaz de prover erro nulo para ambas os níveis inferiores em estado estacionário. Desta forma, foi desenvolvido um projeto aumentado dos erros integrais das variáveis controlados. O modelo final dos sistema é apresentado na \jhhref{figSimPlantCtrl}{figura} a seguir:
+Deseja-se neste trabalho obter um controlador capaz de prover erro nulo para ambas os níveis inferiores em estado estacionário. Desta forma, foi desenvolvido um projeto aumentado dos erros integrais das variáveis controlados. O modelo final dos sistema é apresentado na \jhhref{figSimPlantCtrl}{Figura} a seguir:
 
 \begin{figure}[H]
 	\begin{centering}
