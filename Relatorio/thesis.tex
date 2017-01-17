@@ -35,13 +35,11 @@
 \usepackage{amsfonts}
 \usepackage[]{mcode}
 
-\newcommand{\jhhref}[2]{
-	\hyperref[{#1}]{{#2} \ref{#1}}
-}
+\newcommand{\jhhref}[2]{\hyperref[{#1}]{{#2} \ref{#1}}}
 
 \newtheorem{mydef}{Definição}
 \newtheorem{myteo}{Teorema}
-
+\newtheorem{myexmp}{Exemplo}
 
 \begin{document}
 %CAPA
@@ -49,7 +47,7 @@
 
 % Título do trabalho (nao deletar linhas. Caso desejado, deixar em branco)
 \titulolinhai{Implementação de Controle Fuzzy} 
-\titulolinhaii{Em CLP Industrial} 
+\titulolinhaii{ Em CLP Industrial} 
 \titulolinhaiii{} 
 \titulolinhaiv{}
 \tituloingles{Fuzzy Control Implementation in Industrial CLP}
@@ -66,12 +64,12 @@
 %Membros da banca (até 5 membros) 
 \membrodabancai{Prof. Eduardo Stockler Tognetti, ENE/UnB} \membrodabancaifuncao{Orientador} 
 \membrodabancaii{Prof. Eugênio Fortaleza, ENM/UnB} \membrodabancaiifuncao{Examinador Externo}
-\membrodabancaiii{Prof. Luis Felipe Cruz Figueredo, ENE/UnB} \membrodabancaiiifuncao{Examinador Externo} 
+\membrodabancaiii{Dr. Luis Felipe Cruz Figueredo, ENE/UnB} \membrodabancaiiifuncao{Examinador Externo} 
 \membrodabancaiv{} \membrodabancaivfuncao{} 
 \membrodabancav{} \membrodabancavfuncao{}
 
 %Data de defesa: dia, mês e ano. 
-\dia{07} \mes{dezembro} \ano{2016}
+\dia{08} \mes{dezembro} \ano{2016}
 
 \capaassinaturas
 
@@ -96,10 +94,6 @@
 \frontmatter
 % Texto primeiro autor 
 \dedicatoriaautori{Dedicatória do autor 1}
-% Texto segundo autor
-\dedicatoriaautorii{Dedicatória do autor 2}
-% Texto terceiro autor
-\dedicatoriaautoriii{Dedicatória do autor 3}
 
 \dedicatoria
 
@@ -155,6 +149,6 @@
 \bibliography{bibliography}
 
 %ANEXOS
-%\include{anexo_matlab}
+\include{anexo_matlab}
 
 \end{document}

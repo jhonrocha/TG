@@ -128,13 +128,11 @@ Obtemos um modelo linear em cada um destes vértices:
 
 
 Como descrito na \jhhref{tabDescPlanta}{Tabela}, a altura dos tanques é de 25cm. Assim, escolhe-se os limitantes 5cm como "completamente" verdade para o nível baixo e  25cm como "completamente" verdade para o nível alto. As funções de pertinência obtidas são:
-
-
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.7\textwidth]{img/pert_niveis.png}
 	\caption{\label{figPertMod} Funções de Pertinência.}
-\end{figure}
+\end{figure} 
 
 Onde $M_1(h_1(t))$ e $M_2(h_1(t))$ é o grau de pertinência do nível $h_1(t)$ aos conjuntos "baixo" e "alto", respectivamente. De maneira análoga, tem-se $N_1(h_2(t))$ e $N_2(h_2(t))$ para o nível $h_2(t)$.
 
@@ -195,16 +193,22 @@ O peso de cada regra, na ponderação final, é dado por:
 
 O modelo Takagi-Sugeno fornece, finalmente:
 	\begin{align} \label{eqTakSugPlanta}
-		\Delta \dot{h}(t) = \alpha_i (h(t))(A_i \Delta h(t) +  B_i \Delta u(t))
+		\Delta \dot{h}(t) = \sum_{i=1}^{4} \alpha_i (h(t))(A_i \Delta h(t) +  B_i \Delta u(t))
 	\end{align}
 
 
 \subsection{Controlador Fuzzy}
 No \jhhref{capControle}{Capítulo} demonstra-se o projeto de controladores capazes de estabilizar o sistema em todos os pontos de \ref{eqTakSugPlanta}. O desenvolvimento do controlador final para modelo segue os mesmos passos já apresentados: realiza-se a sintonização do ganho $K$ a ser utilizado para cada regra e o grau de ativação de cada ganho é obtido pelas mesmas \jhhref{eqGrauAtiv4T}{Equações}.
  O ganho final a ser utilizado é dado por:
-	\begin{align} \label{eqModContFuzzy}
+	\begin{align*}
 		K = \frac{\sum_{i=1}^{4}  w_i(h(t))K_i}{\sum_{i=1}^{4} w_i(h(t))}
-	\end{align}
+	\end{align*}
+	
+Ou seja,
+
+\begin{align} \label{eqModContFuzzy}
+K = \sum_{i=1}^{4}  \alpha_i (h(t)) K_i
+\end{align}
 
 Deseja-se neste trabalho obter um controlador capaz de prover erro nulo para ambas os níveis inferiores em estado estacionário. Desta forma, foi desenvolvido um projeto aumentado dos erros integrais das variáveis controlados. O modelo final dos sistema é apresentado na \jhhref{figSimPlantCtrl}{Figura} a seguir:
 

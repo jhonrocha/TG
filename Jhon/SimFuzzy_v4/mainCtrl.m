@@ -18,7 +18,7 @@ hi2 = 0;
 
 % Time
 tAmostragem = 0.01;
-tFinal = 1200;
+tFinal = 50;
 totAmostras = tFinal/tAmostragem;
 t = linspace(0, tFinal, totAmostras);
 
@@ -74,17 +74,17 @@ function dh = quadtank(t,h)
     erro = [r1(t) - h(1);
             r2(t) - h(2)];
         
-    if(u(1) >= 5)
-        u(1) = 5.0;
+%     if(u(1) >= 5)
+%         u(1) = 5.0;
 %         erro(1) = 0;
 %         erro(2) = 0;
-    end
-    
-    if(u(2)>=5)
-        u(2) = 5.0;
+%     end
+%     
+%     if(u(2)>=5)
+%         u(2) = 5.0;
 %         erro(1) = 0;
 %         erro(2) = 0;
-    end
+%     end
     
     dh = zeros(6,1);
     % System Equation

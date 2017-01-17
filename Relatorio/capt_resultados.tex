@@ -5,28 +5,34 @@
 O modelo fuzzy desenvolvido a partir das seções anteriores foi simulado utilizando o software MATLAB e implementado na bancada real via CLP Rockwell. As seções a seguir apresentam os resultados obtidos em cada caso.
 
 \section{Simulações} \label{secAnalise}
-A planta de quatro-tanques, como apresentada no \jhhref{capDescSis}{capítulo}, compõe um sistema capaz de ilustrar diversas dinâmicas para suas variáveis de processo. Assim, são escolhidas uma configuração em \textbf{fase mínima }e outra em \textbf{fase não-mínima} e a partir delas a modelagem e o controlador fuzzy são desenvolvidos. 
+A planta de quatro-tanques, como apresentada no \jhhref{capDescSis}{Capítulo}, compõe um sistema capaz de ilustrar diversas dinâmicas para suas variáveis de processo. Assim, são escolhidas uma configuração em \textbf{fase mínima }e outra em \textbf{fase não-mínima} e a partir delas a modelagem e o controlador fuzzy são desenvolvidos. 
 
 \subsection{Fase Mínima}
-Nesta configuração a maior parte do fluído que saí das bombas é direcionado diretamente para os tanques controlados, ou seja $\gamma_i > 0.5$. A \jhhref{tabFaseMinima}{tablea} a seguir apresenta suas especificações.
+Nesta configuração a maior parte do fluído que saí das bombas é direcionado diretamente para os tanques controlados, ou seja $\gamma_i > 0.5$. A \jhhref{tabFaseMinima}{Tabela} a seguir apresenta suas especificações.
 
-\begin{center} \label{tabFaseMinima}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{Especificações Iniciais da Planta} \\
-		\hline
-		A1, A3 $(cm^2)$ & 28 \\ \hline
-		A2, A4 $(cm^2)$ & 32 \\ \hline
-		a1, a3 $(cm^2)$ & 0.071 \\ \hline
-		a2, a4 $(cm^2)$ & 0.057 \\ \hline
-		g $cm/s$ & 981 \\ \hline
-		k1 & 3,33 $cm^3/Vs$ \\ \hline
-		k2 & 3.35 $cm^3/Vs$ \\ \hline
-		$\gamma_1$ & 0.60 \\ \hline
-		$\gamma_2$ & 0.70 \\ \hline
-		\hline
-	\end{tabular}
-\end{center}
+\begin{table}[!ht]
+	\caption{Parâmetros da planta em fase mínima.}
+	\label{tabFaseMinima}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|}
+			\hline
+			\multicolumn{2}{|c|}{Especificações Iniciais da Planta} \\
+			\hline
+			A1, A3 $(cm^2)$ & 28 \\ \hline
+			A2, A4 $(cm^2)$ & 32 \\ \hline
+			a1, a3 $(cm^2)$ & 0.071 \\ \hline
+			a2, a4 $(cm^2)$ & 0.057 \\ \hline
+			g $cm/s$ & 981 \\ \hline
+			k1 & 3,33 $cm^3/Vs$ \\ \hline
+			k2 & 3.35 $cm^3/Vs$ \\ \hline
+			$\gamma_1$ & 0.60 \\ \hline
+			$\gamma_2$ & 0.70 \\ \hline
+			\hline
+		\end{tabular}
+	}
+\end{table}
 
 O \jhhref{eqModNL}{modelo não linear} para esta configuração é:
 \begin{equation}
@@ -42,19 +48,24 @@ O \jhhref{eqModNL}{modelo não linear} para esta configuração é:
 \label{eqFMNL}
 \end{equation}
 
-Escolhendo os cojuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seus representantes os níveis 1 e 2, por combinação simples obtém-se os seguintes pontos de linearização:
-\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-		\hline
-		Sistema & $\bar{h_1}$ (cm) & $\bar{h_2}$ (cm) & $\bar{h_3}$ (cm) & $\bar{h_4}$ (cm) & $\bar{v_1}$ (v) & $\bar{v_2}$ (v) \\ \hline
-		1 & 5 & 5 & 0.0334 & 2.9076 & 3.2321 & 0.5716 \\ \hline
-		2 & 5 & 15 & 0.9431 & 1.1033 & 1.9910 & 3.0390 \\ \hline
-		3 & 15 & 5 & 0.2229 & 13.0191 & 6.8393 & -1.4773 \\ \hline
-		4 & 15 & 15 & 0.1001 & 8.7228 & 5.5982 & 0.9900 \\	\hline
-	\end{tabular}
-\end{center}
+Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seus representantes os níveis 1 e 2, por combinação simples obtém-se os seguintes pontos de linearização:
+\begin{table}[!ht]
+	\caption{Pontos de Operação}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Sistema & $\bar{h_1}$ (cm) & $\bar{h_2}$ (cm) & $\bar{h_3}$ (cm) & $\bar{h_4}$ (cm) & $\bar{v_1}$ (v) & $\bar{v_2}$ (v) \\ \hline
+			1 & 5 & 5 & 0.0334 & 2.9076 & 3.2321 & 0.5716 \\ \hline
+			2 & 5 & 15 & 0.9431 & 1.1033 & 1.9910 & 3.0390 \\ \hline
+			3 & 15 & 5 & 0.2229 & 13.0191 & 6.8393 & -1.4773 \\ \hline
+			4 & 15 & 15 & 0.1001 & 8.7228 & 5.5982 & 0.9900 \\	\hline
+		\end{tabular}
+	}
+\end{table}
 
-Haverá então quatro regras Se-Então para composição do modelo TS final. As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
+Haverá então quatro regras Se-Então para composição do modelo TS final. As imagens a seguir apresentam a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
 \begin{figure}[H]
 	\centering
@@ -70,7 +81,7 @@ Haverá então quatro regras Se-Então para composição do modelo TS final. As 
 	\label{figH2TS2}
 \end{figure}
 
-É notável que o modelo fuzzy representa de modo mais eficiente o sistema. Como dito, o modelo TS pode se aproximar o quanto se desejar do não-linear no qual se baseia. A \jhhref{imgTS5}{imagem} apresenta um modelo com 5 conjuntos para os dois níveis e a \jhhref{imgTS15}{imagem} utilizando 15. É importante notar, no entanto, que a complexidade do modelo é exponencial, devido a combinação dos conjuntos das variáveis linguísticas presentes, assim, o primeiro é composto por 25 ($5^2$) regras Se-Então e o segundo por 225 ($15^2$).
+É notável que o modelo fuzzy representa de modo mais eficiente o sistema. Como dito, o modelo TS pode se aproximar o quanto se desejar do não-linear no qual se baseia. A \jhhref{imgTS5}{Imagem} apresenta um modelo com 5 conjuntos para os dois níveis e a \jhhref{imgTS15}{Imagem} utilizando 15. É importante notar, no entanto, que a complexidade do modelo é exponencial, devido a combinação dos conjuntos das variáveis linguísticas presentes, assim, o primeiro é composto por 25 ($5^2$) regras Se-Então e o segundo por 225 ($15^2$).
 
 \begin{figure}[H]
 	\centering
@@ -94,33 +105,38 @@ Haverá então quatro regras Se-Então para composição do modelo TS final. As 
 	\caption{\label{imgTS15} Comparação com 225 regras}
 \end{figure}
 
-A partir das \jhhref{eqContFuzzy}{equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
-\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		Regra & Ganho \\ \hline
-		 1 & $ K = 
-			\begin{bmatrix}
-				-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
-				-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
-			\end{bmatrix}$ \\[20pt] \hline
-		2 & $ K = 
-			\begin{bmatrix}
-				-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
-				-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
-			\end{bmatrix}$ \\[20pt] \hline
-		3 & $ K = 
-			\begin{bmatrix}
-				-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
-				-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
-			\end{bmatrix}$ \\[20pt] \hline
-		4 & $ K = 
-			\begin{bmatrix}
-				-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
-				-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
-			\end{bmatrix}$ \\[20pt] \hline
-	\end{tabular}
-\end{center}
+A partir das \jhhref{eqContFuzzy}{Equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
+\begin{table}[!ht]
+	\caption{Ganhos}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|}
+			\hline
+			Regra & Ganho \\ \hline
+			 1 & $ K = 
+				\begin{bmatrix}
+					-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
+					-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
+				\end{bmatrix}$ \\[20pt] \hline
+			2 & $ K = 
+				\begin{bmatrix}
+					-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
+					-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
+				\end{bmatrix}$ \\[20pt] \hline
+			3 & $ K = 
+				\begin{bmatrix}
+					-13.1962 & 3.0637 & -3.0992 & 0.1430 & 15.0539 & -1.3580\\
+					-5.4607 & -15.2912 & 3.4223 & 0.0239 & 1.6964 & 15.9282
+				\end{bmatrix}$ \\[20pt] \hline
+			4 & $ K = 
+				\begin{bmatrix}
+					-12.8885 & 1.0745 & -1.5395 & -0.0323 & 14.9563 & -0.5608\\
+					-1.7706 & -13.2431 & 1.0214 & -0.0123 & 0.4755 & 15.4671
+				\end{bmatrix}$ \\[20pt] \hline
+		\end{tabular}
+	}
+\end{table}
 
 Os ganhos são sintonizados para o sistema na forma:
 \begin{figure}[H]
@@ -178,25 +194,31 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 \end{figure}
 
 \subsection{Fase Não-Mínima}
-Ao contrário da configuração anterior, nesta a maior parte do fluído que saí das bombas é direcionado  para os tanques superiores, ou seja $\gamma_i < 0.5$. A \jhhref{tabFaseNM}{tabela} a seguir apresenta as especificações da planta simulada.
+Ao contrário da configuração anterior, nesta a maior parte do fluído que saí das bombas é direcionado  para os tanques superiores, ou seja $\gamma_i < 0.5$. A \jhhref{tabFaseNM}{Tabela} a seguir apresenta as especificações da planta simulada.
 
-\begin{center} \label{tabFaseNM}
-	\begin{tabular}{|c|c|}
-		\hline
-		\multicolumn{2}{|c|}{Especificações Iniciais da Planta} \\
-		\hline
-		A1, A3 $(cm^2)$ & 28 \\ \hline
-		A2, A4 $(cm^2)$ & 32 \\ \hline
-		a1, a3 $(cm^2)$ & 0.071 \\ \hline
-		a2, a4 $(cm^2)$ & 0.057 \\ \hline
-		g $cm/s$ & 981 \\ \hline
-		k1 & 3,15 $cm^3/Vs$ \\ \hline
-		k2 & 3.29 $cm^3/Vs$ \\ \hline
-		$\gamma_1$ & 0.43 \\ \hline
-		$\gamma_2$ & 0.34 \\ \hline
-		\hline
-	\end{tabular}
-\end{center}
+\begin{table}[!ht]
+	\label{tabFaseNM}
+	\caption{Parâmetros da planta em fase não-mínima}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|}
+			\hline
+			\multicolumn{2}{|c|}{Especificações Iniciais da Planta} \\
+			\hline
+			A1, A3 $(cm^2)$ & 28 \\ \hline
+			A2, A4 $(cm^2)$ & 32 \\ \hline
+			a1, a3 $(cm^2)$ & 0.071 \\ \hline
+			a2, a4 $(cm^2)$ & 0.057 \\ \hline
+			g $cm/s$ & 981 \\ \hline
+			k1 & 3,15 $cm^3/Vs$ \\ \hline
+			k2 & 3.29 $cm^3/Vs$ \\ \hline
+			$\gamma_1$ & 0.43 \\ \hline
+			$\gamma_2$ & 0.34 \\ \hline
+			\hline
+		\end{tabular}
+	}
+\end{table}
 
 O \jhhref{eqModNL}{modelo não linear} para esta configuração é dado por:
 \begin{equation}
@@ -264,7 +286,7 @@ Percebe-se novamente que o sistema Takagi-Sugeno apresenta resultados mais próx
 	\caption{\label{imgTS15_nm} Comparação com 225 regras TS}
 \end{figure}
 
-A partir das \jhhref{eqContFuzzy}{equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
+A partir das \jhhref{eqContFuzzy}{Equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
 \begin{center}
 	\begin{tabular}{|c|c|}
 		\hline

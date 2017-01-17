@@ -4,7 +4,7 @@
 A lógica fuzzy, ou difusa, foi introduzida originalmente por Lofti A. Zadeh, em seu artigo "Fuzzy sets and systems" \cite{zadeh}. Sua teoria diverge da lógica booleana convencional no tratamento da pertinência das variáveis, podendo assumir qualquer valor entre todos os possíveis de um intervalo. Essa abordagem é mais eficaz na descrição de alguns sistemas reais, uma vez que é praticamente impossível eliminar todas as incertezas nos modelos que os representam. Este capítulo apresenta os fundamentos desse paradigma bem como sua aplicação na modelagem, proposta por Takagi e Sugeno \cite{takagiSugeno}.
 
 \section{Conjuntos Fuzzy}
-De acordo com a teoria de conjuntos clássica, um elemento $x$ qualquer, pode pertencer ou não à um conjunto universo de discurso $U$, ou seja $x \in U$ ou $x \notin U$ . Portanto, para qualquer conjunto determinado, pode-se estar completamento dentro ou completamente fora dele.
+De acordo com a teoria de conjuntos clássica, um elemento $x$ qualquer, pode pertencer ou não à um conjunto universo de discurso $U$, ou seja $x \in U$ ou $x \notin U$ . Portanto, para qualquer conjunto determinado, pode-se estar completamente dentro ou totalmente fora dele.
 
 \begin{align}
 	f_u(x) : U \rightarrow \{0,1\}
@@ -117,20 +117,22 @@ A \jhhref{tabPertEx}{Tabela} a seguir apresenta os graus de pertinência de vár
 \section{Aplicação}
 A aplicação da lógica fuzzy na teoria de controle se dá através da utilização de regras que definem o modelo final baseando-se no grau de pertinência do estado do sistema a cada um dos conjuntos difusos. 
 
-De maneira similar à tradicional, a lógica fuzzy baseia-se no paradigma de implicações, ou \textit{modus ponens}. Esta linha de raciocínio é organizada em regras que implicam em conclusões a partir da autenticidade de premissas. O \jhhref{eqRegrasEx}{exemplo} a seguir ilustra:
+De maneira similar à tradicional, a lógica fuzzy baseia-se no paradigma de implicações, ou \textit{modus ponens}. Esta linha de raciocínio é organizada em regras que implicam em conclusões a partir da autenticidade de premissas. O \jhhref{exmpRegrasEx}{Exemplo} a seguir ilustra:
 
-\begin{align} \label{eqRegrasEx}
-\begin{cases}
-	\text{(1) Se está  chovendo então é perigoso dirigir}\\
-	\text{(2) Está chovendo }\\
-	\text{(3) É perigoso dirigir}
-\end{cases}		
-\end{align}
+\begin{myexmp}  \label{exmpRegrasEx}
+	\begin{align*}
+		\begin{cases}
+			\text{(1) Se está  chovendo então é perigoso dirigir}\\
+			\text{(2) Está chovendo }\\
+			\text{(3) É perigoso dirigir}
+		\end{cases}		
+	\end{align*}
+\end{myexmp}
 
 A afirmação (1) é chamada de regra de implicação, ou regra Se-Então, e é ela quem rege o comportamento da conclusão (3) de acordo com a premissa (2). Ou seja, sempre que (2) é verdadeira, (3) também será.
 
 \subsection{Regras Se-Então}
-Como visto no \jhhref{eqRegrasEx}{exemplo} as regras Se-Então são parte das premissas que definem os resultados das afirmações. Uma vez que as funções de pertinência fuzzy assumem diferentes níveis de verdade, não binários, então a autenticidade de afirmações envolvendo-as também assumirá diferentes graus de verdade. Assim, ao contrário da lógica clássica onde há ou não ativação de uma determinada regra, em lógica difusa toda regra está ativada em determinado grau. Exemplifica-se a seguir:
+Como visto no \jhhref{exmpRegrasEx}{Exemplo} as regras Se-Então são parte das premissas que definem os resultados das afirmações. Uma vez que as funções de pertinência fuzzy assumem diferentes níveis de verdade, não binários, então a autenticidade de afirmações envolvendo-as também assumirá diferentes graus de verdade. Assim, ao contrário da lógica clássica onde há ou não ativação de uma determinada regra, em lógica difusa toda regra está ativada em determinado grau. Exemplifica-se a seguir:
 
 \begin{align} \label{eqRegraDef}
 \text{Regra: }
@@ -140,7 +142,7 @@ Como visto no \jhhref{eqRegrasEx}{exemplo} as regras Se-Então são parte das pr
 \end{cases}		
 \end{align}
 
-O grau de ativação da Regra na \jhhref{eqRegraDef}{equação} é definido a partir da pertinência do elemento $X$ em $A$. A conclusão $Y$ será definida de forma a cumprir pertinência semelhante ao conjunto $B$. Caso $X$ seja 50\% A, a saída $Y$ deverá ser 50\% B.
+O grau de ativação da Regra na \jhhref{eqRegraDef}{Equação} é definido a partir da pertinência do elemento $X$ em $A$. A conclusão $Y$ será definida de forma a cumprir pertinência semelhante ao conjunto $B$. Caso $X$ seja 50\% A, a saída $Y$ deverá ser 50\% B.
 
 Prosseguindo o exemplo inicial, pode-se utilizar a temperatura de uma sala para controlar a potência ativa de um ar condicionado.  Seguindo os procedimentos descritos, define-se uma nova variável linguística: "Potência" e seus conjuntos fuzzy: \{"muito fraca", "fraca", "forte", "muito forte"\}. Chamando "T" a temperatura atual e "P" a potência, uma forma simples de projeto poderia ser:
 
@@ -172,14 +174,14 @@ Os trabalhos de Takagi, Sugeno \cite{takagiSugeno} e Kang \cite{kang} introduzir
 
 Suponha-se um sistema dinâmico qualquer a seguir:
 \begin{align*}
-	\dot{x(t)} &= f(x(t)) + g(u(t)) \\
+	\dot{x}(t) &= f(x(t)) + g(u(t)) \\
 	y(t) &= h(x(t))
 \end{align*}
 
 Linearizando o obteria-se o seguinte modelo em espaço de estados:
 \begin{align*}
-	\dot{x(t)} &= Ax(t) + Bu(t) \\
-	y(t) &= Cx(t)
+	\Delta \dot{x(t)} &= A \Delta x(t) + B \Delta u(t) \\
+	y(t) &= C \Delta x(t)
 \end{align*}
 
 As regras fuzzy são:
@@ -189,8 +191,8 @@ As regras fuzzy são:
 		&\textbf{SE:} \text{ $c_1(t)$ é $M_{1i}$ e $c_2(t)$ é $M_{2i}$ e ... e $c_n(t)$ e $M_{ni}$,} \\
 		&\textbf{ENTÃO}:
 		\begin{cases}
-			 \dot{x}(t) = A_i  x(t) + B_i  u(t),\\
-			y(t) = C_ix(t)
+			 \dot{x}(t) = A_i \Delta x(t) + B_i \Delta u(t),\\
+			y(t) = C_i \Delta x(t)
 		\end{cases}
 	\end{cases}
 \end{align}
@@ -208,7 +210,7 @@ O grau de ativação de cada regra é dado pelo produto das $n$ pertinências qu
 O sistema final é dado pela média ponderada dos consequentes das r regras por seus graus de ativação. Assim, o modelo Takagi-Sugeno final é dado por:
 
 \begin{align*}
-	 \dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i  x(t) +  B_i  u(t))}{\sum_{j=1}^{4} w_j(c(t))} \vspace{0.5cm}
+	 \dot{x}(t) = \frac{\sum_{i=1}^{r}  w_i(c(t))(A_i  x(t) +  B_i  u(t))}{\sum_{j=1}^{r} w_j(c(t))} \vspace{0.5cm}
 \end{align*}
 
 Simplificando o coeficiente de ponderação em cada regras, tem-se:
@@ -217,7 +219,7 @@ Simplificando o coeficiente de ponderação em cada regras, tem-se:
 \end{equation*}
 E finalmente:
 \begin{align} \label{eqModTakSug}
-	 \dot{x}(t) = \alpha_i (c(t))(A_i  x(t) +  B_i  u(t))
+	 \dot{x}(t) = \sum_{i=1}^{r} \alpha_i (c(t))(A_i  x(t) +  B_i  u(t))
 \end{align}
 
 \selectlanguage{brazil}%

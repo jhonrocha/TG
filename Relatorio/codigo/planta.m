@@ -13,6 +13,7 @@ a4 = 0.057;
 kc = 1;
 g = 981;
 
+% Minimum Phase
 % Pump Specs
 k1 = 3.33;
 k2 = 3.35;
@@ -22,6 +23,7 @@ gamma1 = 0.60;
 gamma2 = 0.70;
 
 % % Non Minimum Phase
+% Pump Specs
 % k1 = 3.15;
 % k2 = 3.29;
 % 

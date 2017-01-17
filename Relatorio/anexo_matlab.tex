@@ -4,10 +4,28 @@
 \chapter{Códigos Utilizados} \label{anexoCodigos}
 
 \section{Matlab}
-	Planta Simulada:
-	\lstinputlisting{./codigo/planta.m}
+	\subsection{Planta Simulada}
+		\lstinputlisting{./codigo/planta.m}
+
+	\subsection{Modelo TS com 4 Regras}
+		\lstinputlisting{./codigo/mainTS2.m}
 	
+	\subsection{Função de Cálculo dos "r" Sistemas }
+		\lstinputlisting{./codigo/fuzzy_pontos_v2.m}
+	
+	\subsection{Função de Cálculo da Pertinências}
+		\lstinputlisting{./codigo/fuzzy_pertinencia.m}
+	
+	\subsection{Simulink de Comunicação OPC}
+		\begin{figure}[H]
+			\begin{centering}
+				\includegraphics[width=\textwidth]{img/simOPC.png}
+				\par\end{centering}
+			\caption{Comunicação OPC Simulink-RSLinx}
+		\end{figure}
+			
 \section{Texto Estruturado}
+	\subsection{SUBROTINA: FuzzyInputCalc}
 	\lstinputlisting{./codigo/tg_strutcText.txt}
 
 \selectlanguage{brazil}%

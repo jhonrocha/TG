@@ -43,27 +43,16 @@ Simplificando os termos de ativação de forma a obter um parâmetro A(c), defin
 	A(\alpha) &:= \sum_{i=1}^{r} \alpha_i (c(t))A_i
 \end{align*}
 
-Aplicando a Teoria de Lyapunov, ao sistema:
-\begin{align*}
-	V(x) &= x' P x \\
-	\dot{V}(x) &= x'\{A'(\alpha)PA(\alpha) - P\}x
-\end{align*}
-
-De acordo com o \jhhref{teoLyapunov}{Teorema}, se as condições a seguir forem cumpridas, o sistema será assintoticamente estável:
-\begin{align}
-	P = P' \succ 0 \\
-	x'\{A'(\alpha)PA(\alpha) - P \}x \prec 0 \label{eqLyapXk}
-\end{align}
-Uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{Equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
+Aplicando-se a Teoria de Lyapunov, como proposto por Tanaka e Wang \cite{wang}, uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{Equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
 A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} existe solução para:
 
-\begin{align}
+\begin{align} \label{eqLyapXk}
 	encontre \ \ &P \nonumber \\
 	s.a \ \ &P \succ 0 \nonumber \\
-	&A_i'PA_i - P \prec 0, \ \ i=1,2,3, ... , r
+	&A_i'P + P A_i \prec 0, \ \ i=1,2,3, ... , r
 \end{align}
 
-Seguindo estas premissas, o desenvolvimento do controlador para o modelo TS é demonstrado nos trabalho de Wang \cite{wang}, de onde obtém-se o seguinte teorema:
+Seguindo estas premissas \cite{wang}, obtém-se o seguinte teorema:
 \begin{myteo} \label{teoControlador}
 Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos correspondentes, em malha fechada com ganhos $K_i = M_i X^{-1}$, sua estabilidade é verificada se existe solução para o problema
 	\begin{align} \label{eqContFuzzy}
@@ -71,8 +60,8 @@ Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos co
 		&X \succ 0 \nonumber \\
 		s.a \ \ & 
 		\begin{bmatrix}
-			X	&	M_i'B_i' + XA_i' \\
-			A_iX + B_iM_i &	X
+			X	&	XA_i' - M_i'B_i'  \\
+			A_iX - B_iM_i &	X
 		\end{bmatrix} \succ 0 \nonumber \\
 	\end{align}
 \end{myteo}

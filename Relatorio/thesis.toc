@@ -42,6 +42,21 @@
 \select@language {english}
 \select@language {brazil}
 \select@language {english}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
+\select@language {brazil}
+\select@language {brazil}
+\select@language {english}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Objetivos}{1}{section.1.1}
 \contentsline {section}{\numberline {1.2}Organiza\IeC {\c c}\IeC {\~a}o do Trabalho}{2}{section.1.2}
@@ -81,7 +96,7 @@
 \contentsline {subsection}{\numberline {5.3.3}Regras Se-Ent\IeC {\~a}o}{20}{subsection.5.3.3}
 \contentsline {subsection}{\numberline {5.3.4}Ativa\IeC {\c c}\IeC {\~a}o}{21}{subsection.5.3.4}
 \contentsline {subsection}{\numberline {5.3.5}Modelo Final}{21}{subsection.5.3.5}
-\contentsline {subsection}{\numberline {5.3.6}Controlador Fuzzy}{21}{subsection.5.3.6}
+\contentsline {subsection}{\numberline {5.3.6}Controlador Fuzzy}{22}{subsection.5.3.6}
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{23}{chapter.6}
@@ -101,3 +116,14 @@
 \contentsline {section}{\numberline {8.2}Trabalhos Futuros}{44}{section.8.2}
 \select@language {brazil}
 \contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{45}{section.8.2}
+\select@language {english}
+\contentsline {chapter}{\numberline {A}C\IeC {\'o}digos Utilizados}{46}{appendix.A}
+\contentsline {section}{\numberline {A.1}Matlab}{46}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Planta Simulada}{46}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Modelo TS com 4 Regras}{46}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo dos "r" Sistemas }{48}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo da Pertin\IeC {\^e}ncias}{49}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}Simulink de Comunica\IeC {\c c}\IeC {\~a}o OPC}{51}{subsection.A.1.5}
+\contentsline {section}{\numberline {A.2}Texto Estruturado}{51}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}SUBROTINA: FuzzyInputCalc}{51}{subsection.A.2.1}
+\select@language {brazil}
