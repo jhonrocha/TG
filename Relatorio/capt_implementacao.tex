@@ -56,30 +56,48 @@ Optou-se então por realizar manualmente a identificação do sistema. Ao enviar
 
 Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização.
 
-\begin{center} \label{tabIdentKs}
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-		\hline
-		Identificação & Tensão ($v_i$)&  $\gamma_1$ & $\gamma_2$ & Ganho 1 ($k_1$) & Ganho 2 ($k_2$) \\ \hline
-		1 & 42\% & 0.8980 & 0.6810 & 7.4044 $cm^3/Vs$ & 7.1022 $cm^3/Vs$\\ \hline
-		2 & 45\% & 0.8276 & 0.6827 & 8.1801 $cm^3/Vs$ & 7.3339 $cm^3/Vs$\\ \hline
-	\end{tabular}
-\end{center}
+\begin{table}[!ht]
+	\caption{Tensões Escolhidas}
+	\label{tabIdentKs}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Identificação & Tensão ($v_i$)&  $\gamma_1$ & $\gamma_2$ & Ganho 1 ($k_1$) & Ganho 2 ($k_2$) \\ \hline
+			1 & 42\% & 0.8980 & 0.6810 & 7.4044 $cm^3/Vs$ & 7.1022 $cm^3/Vs$\\ \hline
+			2 & 45\% & 0.8276 & 0.6827 & 8.1801 $cm^3/Vs$ & 7.3339 $cm^3/Vs$\\ \hline
+		\end{tabular}
+	}
+\end{table}
 
 Realiza-se então a identificação do modelo, a partir dos estados estacionários, nos 4 pontos dados pela interpolação destes conjuntos. Os resultados obtidos são exibidos a seguir:
 
-\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-		\hline
-		Sistema & Bomba 1 ($\bar{v_1}$) & Bomba 2 ($\bar{v_1}$) & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 4 ($\bar{h_4}$) \\ \hline
-		1 & 42\% & 42\% & 11.1024 cm &  9.4410 cm &  8.7849 cm & 17.4466 cm \\ \hline
-		2 & 42\% & 45\% & 16.3767 cm &  16.1350 cm & 11.4907 cm & 20.5671 cm \\ \hline
-		3 & 45\% & 42\% & 15.0037 cm &  13.9138 cm & 20.7899 cm & 19.5759 cm \\ \hline
-		4 & 45\% & 45\% & 18.0278 cm &  18.8761 cm & 18.3048 cm & 19.6136 cm \\	\hline
-	\end{tabular}
-\end{center}
+\begin{table}[!ht]
+	\caption{Pontos de Operação da Planta Instalada}
+	\label{tabPontOp}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Sistema & Bomba 1 ($\bar{v_1}$) & Bomba 2 ($\bar{v_1}$) & Nível 1 ($\bar{h_1}$) & Nível 2 ($\bar{h_2}$) & Nível 3 ($\bar{h_3}$) & Nível 4 ($\bar{h_4}$) \\ \hline
+			1 & 42\% & 42\% & 11.1024 cm &  9.4410 cm &  8.7849 cm & 17.4466 cm \\ \hline
+			2 & 42\% & 45\% & 16.3767 cm &  16.1350 cm & 11.4907 cm & 20.5671 cm \\ \hline
+			3 & 45\% & 42\% & 15.0037 cm &  13.9138 cm & 20.7899 cm & 19.5759 cm \\ \hline
+			4 & 45\% & 45\% & 18.0278 cm &  18.8761 cm & 18.3048 cm & 19.6136 cm \\	\hline
+		\end{tabular}
+	}
+\end{table}
 
 São obtidas então 4 regras e para cada uma delas um controlador, sintonizado seguindo as \jhhref{eqContFuzzy}{equações}. A tabela a seguir apresenta os ganhos obtidos:
-\begin{center} \label{tabGanhosReais}
+
+\begin{table}[!ht]
+	\caption{Ganhos aplicados à planta}
+	\label{tabGanhosReais}
+	\small
+	\centering
+	\scalebox{1}{
 	\begin{tabular}{|c|c|}
 		\hline
 		Regra & Ganho \\ \hline
@@ -104,7 +122,8 @@ São obtidas então 4 regras e para cada uma delas um controlador, sintonizado s
 			0.5519  & -8.7291  &  0.0082  & -0.0090  & -0.2028  & 11.0068
 		\end{bmatrix}$ \\[10pt] \hline
 	\end{tabular}
-\end{center}
+	}
+\end{table}
 
 \section{CLP}
 Os ganhos obtidos a partir da identificação do modelo foram implementados no CLP utilizando um diagrama de bloco de funções e uma rotina em texto estruturado. A \jhhref{figCLPCLPbf}{Figura} a seguir apresenta o programa principal. 

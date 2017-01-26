@@ -107,7 +107,7 @@ Haverá então quatro regras Se-Então para composição do modelo TS final. As 
 
 A partir das \jhhref{eqContFuzzy}{Equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
 \begin{table}[!ht]
-	\caption{Ganhos}
+	\caption{Ganhos Obtidos}
 	\small
 	\centering
 	\scalebox{1}{
@@ -194,10 +194,9 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 \end{figure}
 
 \subsection{Fase Não-Mínima}
-Ao contrário da configuração anterior, nesta a maior parte do fluído que saí das bombas é direcionado  para os tanques superiores, ou seja $\gamma_i < 0.5$. A \jhhref{tabFaseNM}{Tabela} a seguir apresenta as especificações da planta simulada.
+Ao contrário da configuração anterior, nesta a maior parte do fluído que saí das bombas é direcionado  para os tanques superiores, ou seja $\gamma_i < 0.5$. A \jhhref{tabFaseNaoMinima}{Tabela} a seguir apresenta as especificações da planta simulada.
 
 \begin{table}[!ht]
-	\label{tabFaseNM}
 	\caption{Parâmetros da planta em fase não-mínima}
 	\small
 	\centering
@@ -218,6 +217,7 @@ Ao contrário da configuração anterior, nesta a maior parte do fluído que sa�
 			\hline
 		\end{tabular}
 	}
+	\label{tabFaseNaoMinima}
 \end{table}
 
 O \jhhref{eqModNL}{modelo não linear} para esta configuração é dado por:
@@ -234,17 +234,22 @@ O \jhhref{eqModNL}{modelo não linear} para esta configuração é dado por:
 \label{eqFNMNL}
 \end{equation}
 
-De forma similar, escolhendo os cojuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seus representantes os níveis 1 e 2, tem-se os seguintes pontos de linearização:
-\begin{center}
-	\begin{tabular}{|c|c|c|c|c|c|c|}
-		\hline
-		Sistema & $\bar{h_1}$ (cm) & $\bar{h_2}$ (cm) & $\bar{h_3}$ (cm) & $\bar{h_4}$ (cm) & $\bar{v_1}$ (v) & $\bar{v_2}$ (v) \\ \hline
-		1 & 5 & 5 & 2.0804 & 1.7175 & 1.8428 & 2.0890 \\ \hline
-		2 & 5 & 15 & 0.0321 & 15.9038 & 5.6078 & -0.2595 \\ \hline
-		3 & 15 & 5 & 16.9727 & 0.1661 & -0.5730 & 5.9668 \\ \hline
-		4 & 15 & 15 & 6.2413 & 5.1525 & 3.1919 & 3.6183 \\	\hline
-	\end{tabular}
-\end{center}
+De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seus representantes os níveis 1 e 2, tem-se os seguintes pontos de linearização:
+\begin{table}[!ht]
+	\caption{Pontos de operação}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|c|}
+			\hline
+			Sistema & $\bar{h_1}$ (cm) & $\bar{h_2}$ (cm) & $\bar{h_3}$ (cm) & $\bar{h_4}$ (cm) & $\bar{v_1}$ (v) & $\bar{v_2}$ (v) \\ \hline
+			1 & 5 & 5 & 2.0804 & 1.7175 & 1.8428 & 2.0890 \\ \hline
+			2 & 5 & 15 & 0.0321 & 15.9038 & 5.6078 & -0.2595 \\ \hline
+			3 & 15 & 5 & 16.9727 & 0.1661 & -0.5730 & 5.9668 \\ \hline
+			4 & 15 & 15 & 6.2413 & 5.1525 & 3.1919 & 3.6183 \\	\hline
+		\end{tabular}
+	}
+\end{table}
 
 As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
@@ -287,32 +292,37 @@ Percebe-se novamente que o sistema Takagi-Sugeno apresenta resultados mais próx
 \end{figure}
 
 A partir das \jhhref{eqContFuzzy}{Equações} são desenvolvidos os controladores para cada uma das regras. A tabela a seguir apresenta os ganhos obtidos:
-\begin{center}
-	\begin{tabular}{|c|c|}
-		\hline
-		Regra & Ganho \\ \hline
-		1 & $ K = 
-		\begin{bmatrix}
-		490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
-		-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
-		\end{bmatrix}$ \\[20pt] \hline
-		2 & $ K = 
-		\begin{bmatrix}
-		0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
-		-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 &  -0.0025
-		\end{bmatrix}$ \\[20pt] \hline
-		3 & $ K = 
-		\begin{bmatrix}
-		490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
-		-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
-		\end{bmatrix}$ \\[20pt] \hline
-		4 & $ K = 
-		\begin{bmatrix}
-		 0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
-		-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 & -0.0025
-		\end{bmatrix}$ \\[20pt] \hline
-	\end{tabular}
-\end{center}
+\begin{table}[!ht]
+	\caption{Ganhos Obtidos}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|}
+			\hline
+			Regra & Ganho \\ \hline
+			1 & $ K = 
+			\begin{bmatrix}
+			490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
+			-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
+			\end{bmatrix}$ \\[20pt] \hline
+			2 & $ K = 
+			\begin{bmatrix}
+			0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
+			-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 &  -0.0025
+			\end{bmatrix}$ \\[20pt] \hline
+			3 & $ K = 
+			\begin{bmatrix}
+			490.5249 & -805.4358 & 366.4860 & -439.5865 & 0.3923 &  19.9419 \\
+			-385.9505 & 484.5975 & -230.7682 & 333.2462 & 10.4116 & -4.9420
+			\end{bmatrix}$ \\[20pt] \hline
+			4 & $ K = 
+			\begin{bmatrix}
+			 0.9652 & -1.5850 & 0.7224 & -0.8567 & -0.0047 & 0.0357 \\
+			-0.2384 & 0.3018 & -0.1458 & 0.2055 & 0.0069 & -0.0025
+			\end{bmatrix}$ \\[20pt] \hline
+		\end{tabular}
+	}
+\end{table}
 
 Os níveis controlados podem ser observados nas imagens a seguir:
 \begin{figure}[H]

@@ -101,29 +101,29 @@
 \select@language {english}
 \contentsline {chapter}{\numberline {6}Implementa\IeC {\c c}\IeC {\~a}o}{23}{chapter.6}
 \contentsline {section}{\numberline {6.1}Identifica\IeC {\c c}\IeC {\~a}o}{23}{section.6.1}
-\contentsline {section}{\numberline {6.2}CLP}{25}{section.6.2}
+\contentsline {section}{\numberline {6.2}CLP}{26}{section.6.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {7}Resultados}{27}{chapter.7}
-\contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{27}{section.7.1}
-\contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{27}{subsection.7.1.1}
-\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{35}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o na Bancada}{41}{section.7.2}
+\contentsline {chapter}{\numberline {7}Resultados}{28}{chapter.7}
+\contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{28}{section.7.1}
+\contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{28}{subsection.7.1.1}
+\contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{36}{subsection.7.1.2}
+\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o na Bancada}{42}{section.7.2}
 \select@language {brazil}
 \select@language {english}
-\contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{44}{chapter.8}
-\contentsline {section}{\numberline {8.1}Objetivos}{44}{section.8.1}
-\contentsline {section}{\numberline {8.2}Trabalhos Futuros}{44}{section.8.2}
+\contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{45}{chapter.8}
+\contentsline {section}{\numberline {8.1}Objetivos}{45}{section.8.1}
+\contentsline {section}{\numberline {8.2}Trabalhos Futuros}{45}{section.8.2}
 \select@language {brazil}
-\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{45}{section.8.2}
+\contentsline {chapter}{Refer\IeC {\^e}ncias Bibliogr\IeC {\'a}ficas}{46}{section.8.2}
 \select@language {english}
-\contentsline {chapter}{\numberline {A}C\IeC {\'o}digos Utilizados}{46}{appendix.A}
-\contentsline {section}{\numberline {A.1}Matlab}{46}{section.A.1}
-\contentsline {subsection}{\numberline {A.1.1}Planta Simulada}{46}{subsection.A.1.1}
-\contentsline {subsection}{\numberline {A.1.2}Modelo TS com 4 Regras}{46}{subsection.A.1.2}
-\contentsline {subsection}{\numberline {A.1.3}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo dos "r" Sistemas }{48}{subsection.A.1.3}
-\contentsline {subsection}{\numberline {A.1.4}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo da Pertin\IeC {\^e}ncias}{49}{subsection.A.1.4}
-\contentsline {subsection}{\numberline {A.1.5}Simulink de Comunica\IeC {\c c}\IeC {\~a}o OPC}{51}{subsection.A.1.5}
-\contentsline {section}{\numberline {A.2}Texto Estruturado}{51}{section.A.2}
-\contentsline {subsection}{\numberline {A.2.1}SUBROTINA: FuzzyInputCalc}{51}{subsection.A.2.1}
+\contentsline {chapter}{\numberline {A}C\IeC {\'o}digos Utilizados}{47}{appendix.A}
+\contentsline {section}{\numberline {A.1}Matlab}{47}{section.A.1}
+\contentsline {subsection}{\numberline {A.1.1}Planta Simulada}{47}{subsection.A.1.1}
+\contentsline {subsection}{\numberline {A.1.2}Modelo TS com 4 Regras}{47}{subsection.A.1.2}
+\contentsline {subsection}{\numberline {A.1.3}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo dos "r" Sistemas }{49}{subsection.A.1.3}
+\contentsline {subsection}{\numberline {A.1.4}Fun\IeC {\c c}\IeC {\~a}o de C\IeC {\'a}lculo da Pertin\IeC {\^e}ncias}{50}{subsection.A.1.4}
+\contentsline {subsection}{\numberline {A.1.5}Simulink de Comunica\IeC {\c c}\IeC {\~a}o OPC}{52}{subsection.A.1.5}
+\contentsline {section}{\numberline {A.2}Texto Estruturado}{52}{section.A.2}
+\contentsline {subsection}{\numberline {A.2.1}SUBROTINA: FuzzyInputCalc}{52}{subsection.A.2.1}
 \select@language {brazil}
