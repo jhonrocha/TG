@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  25 JAN 2017 21:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  28 JAN 2017 10:46
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1235,61 +1235,61 @@ Package pdftex.def Info: img/tanqLara.jpg used on input line 23.
 
 
  <./img/4tank.png>]
-Overfull \hbox (1.98653pt too wide) in paragraph at lines 53--54
+Overfull \hbox (1.98653pt too wide) in paragraph at lines 51--52
 []\T1/ptm/m/n/10.95 Neste tra-balho realizou-se a mon-tagem de toda a es-tação 
 de con-t-role. As-sim, escolheu-se primeira-
  []
 
-[4 <./img/tanqLara.jpg>] <figs/mesa.jpg, id=517, 903.375pt x 1606.0pt>
+[4 <./img/tanqLara.jpg>] <figs/mesa.jpg, id=516, 903.375pt x 1606.0pt>
 File: figs/mesa.jpg Graphic file (type jpg)
 
 <use figs/mesa.jpg>
-Package pdftex.def Info: figs/mesa.jpg used on input line 57.
+Package pdftex.def Info: figs/mesa.jpg used on input line 55.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
- <figs/interior.jpg, id=519, 903.375pt x 1606.0pt>
+ <figs/interior.jpg, id=518, 903.375pt x 1606.0pt>
 File: figs/interior.jpg Graphic file (type jpg)
 
 <use figs/interior.jpg>
-Package pdftex.def Info: figs/interior.jpg used on input line 66.
+Package pdftex.def Info: figs/interior.jpg used on input line 64.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
  [5 <./figs/mesa.jpg>]
-<figs/modulos.jpg, id=527, 1204.5pt x 1606.0pt>
+<figs/modulos.jpg, id=526, 1204.5pt x 1606.0pt>
 File: figs/modulos.jpg Graphic file (type jpg)
  <use figs/modulos.jpg>
-Package pdftex.def Info: figs/modulos.jpg used on input line 105.
+Package pdftex.def Info: figs/modulos.jpg used on input line 103.
 (pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
  [6 <./figs/interior.jpg>]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 132.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 130.
  [7 <./figs/modulos.jpg>]
-<img/RSLinx.png, id=543, 807.015pt x 450.68375pt>
+<img/RSLinx.png, id=542, 807.015pt x 450.68375pt>
 File: img/RSLinx.png Graphic file (type png)
  <use img/RSLinx.png>
-Package pdftex.def Info: img/RSLinx.png used on input line 142.
+Package pdftex.def Info: img/RSLinx.png used on input line 140.
 (pdftex.def)             Requested size: 254.74057pt x 142.26378pt.
- [8 <./img/RSLinx.png>] <figs/ladder.png, id=549, 330.48468pt x 237.13594pt>
+ [8 <./img/RSLinx.png>] <figs/ladder.png, id=548, 330.48468pt x 237.13594pt>
 File: figs/ladder.png Graphic file (type png)
 
 <use figs/ladder.png>
-Package pdftex.def Info: figs/ladder.png used on input line 159.
+Package pdftex.def Info: figs/ladder.png used on input line 157.
 (pdftex.def)             Requested size: 198.27216pt x 142.26378pt.
- <figs/blocos.png, id=552, 567.62062pt x 199.49532pt>
+ <figs/blocos.png, id=551, 567.62062pt x 199.49532pt>
 File: figs/blocos.png Graphic file (type png)
 
 <use figs/blocos.png>
-Package pdftex.def Info: figs/blocos.png used on input line 171.
+Package pdftex.def Info: figs/blocos.png used on input line 169.
 (pdftex.def)             Requested size: 404.79765pt x 142.26378pt.
 
-Overfull \hbox (1.63736pt too wide) in paragraph at lines 176--177
+Overfull \hbox (1.63736pt too wide) in paragraph at lines 174--175
 []\T1/ptm/m/n/10.95 Observa-se o caso do bloco GEQ_01. Suas en-tradas são o nív
 el do tanque (SourceA = Tank_Level)
  []
 
 [9 <./figs/ladder.png> <./figs/blocos.png>]
-<img/strText.png, id=561, 463.7325pt x 228.855pt>
+<img/strText.png, id=560, 463.7325pt x 228.855pt>
 File: img/strText.png Graphic file (type png)
  <use img/strText.png>
-Package pdftex.def Info: img/strText.png used on input line 185.
+Package pdftex.def Info: img/strText.png used on input line 183.
 (pdftex.def)             Requested size: 288.28246pt x 142.26378pt.
 )
 Package babel Info: Redefining portuges shorthand "|
@@ -1306,37 +1306,37 @@ Chapter 3.
 
 
 
-] <img/pert_triang.png, id=577, 421.575pt x 316.18124pt>
+] <img/pert_triang.png, id=576, 421.575pt x 316.18124pt>
 File: img/pert_triang.png Graphic file (type png)
 
 <use img/pert_triang.png>
 Package pdftex.def Info: img/pert_triang.png used on input line 41.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_sen.png, id=578, 421.575pt x 316.18124pt>
+ <img/pert_sen.png, id=577, 421.575pt x 316.18124pt>
 File: img/pert_sen.png Graphic file (type png)
 
 <use img/pert_sen.png>
 Package pdftex.def Info: img/pert_sen.png used on input line 42.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_trap.png, id=579, 421.575pt x 316.18124pt>
+ <img/pert_trap.png, id=578, 421.575pt x 316.18124pt>
 File: img/pert_trap.png Graphic file (type png)
 
 <use img/pert_trap.png>
 Package pdftex.def Info: img/pert_trap.png used on input line 43.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_gaus.png, id=580, 421.575pt x 316.18124pt>
+ <img/pert_gaus.png, id=579, 421.575pt x 316.18124pt>
 File: img/pert_gaus.png Graphic file (type png)
 
 <use img/pert_gaus.png>
 Package pdftex.def Info: img/pert_gaus.png used on input line 47.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_sig.png, id=581, 421.575pt x 316.18124pt>
+ <img/pert_sig.png, id=580, 421.575pt x 316.18124pt>
 File: img/pert_sig.png Graphic file (type png)
 
 <use img/pert_sig.png>
 Package pdftex.def Info: img/pert_sig.png used on input line 48.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_square.png, id=582, 421.575pt x 316.18124pt>
+ <img/pert_square.png, id=581, 421.575pt x 316.18124pt>
 File: img/pert_square.png Graphic file (type png)
 
 <use img/pert_square.png>
@@ -1401,25 +1401,25 @@ LaTeX Warning: Command \textordmasculine invalid in math mode on input line 61.
 
 
 Missing character: There is no º in font cmr10!
-<img/pert_mf.png, id=585, 421.575pt x 316.18124pt>
+<img/pert_mf.png, id=584, 421.575pt x 316.18124pt>
 File: img/pert_mf.png Graphic file (type png)
  <use img/pert_mf.png>
 Package pdftex.def Info: img/pert_mf.png used on input line 69.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_f.png, id=586, 421.575pt x 316.18124pt>
+<img/pert_f.png, id=585, 421.575pt x 316.18124pt>
 File: img/pert_f.png Graphic file (type png)
  <use img/pert_f.png>
 Package pdftex.def Info: img/pert_f.png used on input line 70.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_q.png, id=587, 421.575pt x 316.18124pt>
+<img/pert_q.png, id=586, 421.575pt x 316.18124pt>
 File: img/pert_q.png Graphic file (type png)
  <use img/pert_q.png>
 Package pdftex.def Info: img/pert_q.png used on input line 73.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_mq.png, id=588, 421.575pt x 316.18124pt>
+<img/pert_mq.png, id=587, 421.575pt x 316.18124pt>
 File: img/pert_mq.png Graphic file (type png)
  <use img/pert_mq.png>
 Package pdftex.def Info: img/pert_mq.png used on input line 74.
@@ -1948,7 +1948,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on thesis.pdf (68 pages, 5277328 bytes).
+Output written on thesis.pdf (68 pages, 5277180 bytes).
 PDF statistics:
  1492 PDF objects out of 1728 (max. 8388607)
  580 named destinations out of 1000 (max. 500000)
