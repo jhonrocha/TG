@@ -1,6 +1,8 @@
 \selectlanguage{english}%
 
 \chapter{Introdução} \label{capIntrod}
+\epigraph{Não há assunto tão velho que não possa ser dito algo de novo sobre ele.}{Fiodor Dostoievski}
+
 Desenvolver controladores para sistemas não-lineares é quase sempre uma tarefa dispendiosa e complexa. Para plantas multivariáveis não-lineares este desafio é ainda maior. É por este motivo que é prática comum recorrer-se à linearização das equações que as descrevem, obtendo uma aproximação do sistema inicial num formato que se encaixa às teorias de controle convencionais para sistemas lineares.
 
 Esta linearização simples, realizada por meio da série de Taylor, resulta numa aproximação local do sistema não-linear. No entanto, à medida que as variáveis controladas e manipuladas se afastam deste ponto de operação, condição na qual foi realizada a linearização, o modelo passa a se afastar da planta real.
@@ -16,7 +18,6 @@ Como objetivos específicos apresentam-se a instalação do CLP e sua integraç�
 
 \section{Organização do Trabalho}
 Os capítulos iniciais deste trabalham tratam da teoria fuzzy e sua aplicação em sistemas controlados. Já os capítulos finais aplicam essa teoria diretamente sobre a bancada de quatro-tanques e por meio de LMIs são desenvolvidos controladores para ela. No \jhhref{capDescSis}{Capítulo} são apresentados a planta estudada e o CLP Rockwell onde os algoritmos são implementados. Em seguida, o \jhhref{capFundFuzzy}{Capítulo} apresenta uma introdução aos conceitos da lógica e modelagem fuzzy e como aplicá-los. No \jhhref{capMod}{Capítulo} são realizadas as três formas de modelagem do sistema abordadas neste trabalho: não-linear, linear e o modelo Takagi-Sugeno. No \jhhref{capControle}{Capítulo} o projeto do controlador é desenvolvido, seguindo os conceitos de estabilidade baseados em desigualdade lineares matriciais. O \jhhref{capImp}{Capítulo} apresenta a implementação dos algoritmos no CLP, utilizando as linguagens de programação aceitas por este. No \jhhref{capRes}{Capítulo} são apresentados os resultados das simulações e do sistema real. Por fim as considerações finais são apresentadas no \jhhref{capConclusao}{Capítulo}.
-
 
 \selectlanguage{brazil}%
 

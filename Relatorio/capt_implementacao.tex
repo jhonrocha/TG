@@ -1,19 +1,31 @@
 \selectlanguage{english}%
 
 \chapter{Implementação} \label{capImp}
-A implementação em bancada inicia-se com a calibração dos sensores, uma vez que o comportamento observado no sistema real parece não manter suas configurações dia a dia. Em seguida, realiza-se a identificação dos ganhos das bombas e do sistema em 4 pontos, que irão compor os conjuntos fuzzy TS. Por fim, os ganhos são calculados seguindo as \jhhref{eqContFuzzy}{equações} e aplicados utilizando os procedimentos demonstrados a seguir.
+Uma vez que se tenha modelado o sistema, é necessário realizar a identificação dos parâmetros da planta real afim de aplicar os mesmos passos para a sintonia do controlador. A implementação em bancada inicia-se com a calibração dos sensores e identificação dos ganhos das bombas e do sistema em 4 pontos, que irão compor os conjuntos das regras TS. Por fim, os ganhos são calculados desenvolvendo-se as matrizes de cada uma das regras e seguindo as \jhhref{eqContFuzzy}{equações}.
 
 \section{Identificação}
-Inicialmente, tentou-se realizar a identificação do sistema utilizando algoritmos computacionais, como a Toolbox de Identificação do Matlab. Para isso foram realizadas várias testes de entrada e saída no sistema:
+Há diversas formas de realizar a identificação de um sistema. Baseando-se na forma e quantidade de informações disponíveis, existem três tipos de identificação:
+\begin{itemize}
+	\item \textbf{Caixa-Branca:} ocorre quando é realizada aferindo-se diretamente todos os parâmetros envolvidos.
+	\item \textbf{Caixa-Preta:} baseia-se completamente nos dados externos do sistema como seus resultados para algum teste para identificação desejada.
+	\item \textbf{Caixa-Cinza:} é realizada a partir de informações internas aferidas diretamente do sistema utilizando resultados externos para determinação dos parâmetros ainda não identificados.
+\end{itemize}
+
+Neste trabalho utilizou-se inicialmente o software MATLAB em uma tentativa de realizar uma identificação caixa-preta, puramente baseada nos dados obtidos a partir de degraus nas entradas. Como será visto a seguir, está abordagem não forneceu um sistema condizente com o esperado, portanto optou-se por seguir a estratégia caixa-cinza para realizar a identificação. As descrições de ambas são apresentadas a seguir.
+
+\subsection{Identificação Caixa-Preta}
+A identificação caixa-preta verifica o comportamento das saídas em relação às entradas e tenta inferir, por meio de algoritmos de regressão e outros, as equações que descrevem a dinâmica do sistema. Assim, as imagens \ref{imgID_4000} - \ref{imgID_6000} a seguir apresentam as respostas do sistema aos degraus nas entradas. Esses dados foram tratados e enviados para a Toolbox de Identificação do Matlab. 
+Essa ferramenta permite a configuração de diversos parâmetros e estratégias para identificação.
+
 \begin{figure}[H]
 	\centering
 	\begin{tabular}{cc}
-		\includegraphics[height=0.2\paperheight,keepaspectratio]{img/sim1_h1.png} &
-		\includegraphics[height=0.2\paperheight,keepaspectratio]{img/sim1_h2.png} \\
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h1.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h2.png} \\
 		(a) Nível 1 &
 		(b) Nível 2 \\
-		\includegraphics[height=0.2\paperheight,keepaspectratio]{img/sim1_h3.png} &
-		\includegraphics[height=0.2\paperheight,keepaspectratio]{img/sim1_h4.png} \\
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h3.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h4.png} \\
 		(c) Nível 3 &
 		(d) Nível 4
 	\end{tabular}
@@ -51,6 +63,8 @@ Inicialmente, tentou-se realizar a identificação do sistema utilizando algorit
 \end{figure}
 
 No entanto, apesar de encontrar modelos que se encaixavam bem as curvas, os resultados obtidos por este método não eram nada condizentes com a dinâmica já conhecida e os ganhos obtidos foram muito esdrúxulos.
+
+\subsection{Identificação Caixa-Cinza}
 
 Optou-se então por realizar manualmente a identificação do sistema. Ao enviar degraus de entrada e observando as respostas em regime permanente, em conjunto com os parâmetros conhecidos da planta, torna-se possível a identificação de um modelo condizente ao esperado e muito eficiente localmente, o que é desejado na modelagem TS.
 

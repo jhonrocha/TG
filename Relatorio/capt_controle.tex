@@ -1,10 +1,26 @@
 \selectlanguage{english}%
 
 \chapter{Controle Fuzzy} \label{capControle}
-A sintonia de controladores para os modelos fuzzy deve garantir estabilidade no sistema final, formado pelo conjunto convexo dos pontos do modelo Takagi-Sugeno. Neste trabalho segue-se a mesma metodologia aplicada por Mozelli \cite{mozelli}, utilizando LMIS (\textit{Desigualdades Lineares Matriciais}), baseadas no método de Lyapunov \cite{lyapunov}, para a sintonia dos ganhos utilizados em malha fechada.
+\epigraph{Se você entende como o universo funciona, de certa forma pode controlá-lo.}{Stephen Hawking}
+
+Neste capítulo, busca-se realizar a sintonia de controladores por realimentação de estados do modelo TS utilizado.
+
+\section{Sistema Aumentado}
+ A \jhhref{figModRealim}{Figura} apresenta o sistema em malha fechada.
+
+\begin{figure}[H]
+	\begin{centering}
+		\includegraphics[width=\textwidth]{img/modelo_controlado.png}
+		\par\end{centering}
+	\caption{\label{figModRealim}Sistema em Malha Fechada}
+\end{figure}
+
+O controlador realizado consiste em aplicar um ganho $K = [Kp \ \ Ki]$ sobre o vetor espaço de estados. As condições buscadas são simplesmente erro nulo em regime permanente e estabilidade do sistema. Para a primeira, realiza-se a expansão do espaço de estado, acrescentando as integrais do erro em relação à referência para as duas variáveis controladas (níveis 1 e 2).
 
 \section{Método de Lyapunov}
-O método direto de Lyapunov é baseado na positividade de funções. Segue um embasamento para esta última:
+A utilização de LMIs é uma abordagem prática e eficiente para garantir a estabilidade de sistemas fuzzy. Baseando-se no método de Lyapunov \cite{lyapunov}, desenvolvem-se as LMIs que aplicadas a cada um dos sistemas que compõem o TS final garantem sua estabilidade em malha fechada \cite{mozelli}.
+
+O método direto de Lyapunov é baseado na positividade de funções. Define-se então:
 
 \begin{mydef}
 Uma função escalar contínua $w: \mathbb{R}^n \rightarrow \mathbb{R}$, $w(0) = 0$ é semidefinida positiva se, e somente se
@@ -12,10 +28,10 @@ Uma função escalar contínua $w: \mathbb{R}^n \rightarrow \mathbb{R}$, $w(0) =
 	\begin{equation}
 		w(x) \geq 0, \forall \ \ x \in \mathbb{R}^n - {0}
 	\end{equation}
-	Caso desigualdade seja estrita, então w será definida positiva. Uma função \textbf{g} é dita semidefinida (definida) negativa caso \textbf{-g} seja semidifenida (definida) positiva
+	Caso desigualdade seja estrita, então $w$ será definida positiva. Uma função \textbf{g} é dita semidefinida (definida) negativa caso \textbf{-g} seja semidifenida (definida) positiva.
 \end{mydef}
 
-O método de Lyapunov baseia-se no teorema a seguir:
+O método de Lyapunov consiste em encontrar uma função que seja sempre positiva e que decaia à medida que o estado do sistema avance. Sua formalização é dada pelo \jhhref{teoLyapunov}{Teorema} a seguir:
 
 \begin{myteo} \label{teoLyapunov}
 	Um sistema dinâmico autônomo é globalmente estável se existe uma função escalar $V : \mathbb{R}^n \rightarrow \mathbb{R} $ tal que:
@@ -30,7 +46,23 @@ O método de Lyapunov baseia-se no teorema a seguir:
 
 Assim, uma função V que satisfaça todo os requisitos do Teorema 1 para um dado sistema é chamada de função de Lyapunov. 
 
+\section{Estabilidade De Sistemas}
+Para o sistema dinâmico contínuo e invariante no tempo definido pela \jhhref{eqSisSimple}{Equação} a seguir:
+\begin{equation} \label{eqSisSimple}
+	\dot{x}(t) = Ax(t) + Bu(t)
+\end{equation}
+Aplicando-se o teorema de Lyapunov \cite{wang}, definindo uma matriz P, chega-se à:
 
+\begin{myteo}
+	O equilíbrio de um sistema dinâmico (\ref{eqSisSimple}) é globalmente assintoticamente estável se existe uma matriz P, tal que:
+	\begin{align*}
+		&P=P'  \\
+		&P > 0 \\
+		&A'P + P A < 0
+	\end{align*}
+\end{myteo}
+
+%TODO!!!!
 \section{Estabilidade Fuzzy}
 Para um modelo TS, simular ao na \jhhref{eqModTakSug}{Equação}, tem-se:
 \begin{align*}
