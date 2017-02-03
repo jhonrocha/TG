@@ -15,8 +15,6 @@ Neste trabalho utilizou-se inicialmente o software MATLAB em uma tentativa de re
 
 \subsection{Identificação Caixa-Preta}
 A identificação caixa-preta verifica o comportamento das saídas em relação às entradas e tenta inferir, por meio de algoritmos de regressão e outros, as equações que descrevem a dinâmica do sistema. Assim, as imagens \ref{imgID_4000} - \ref{imgID_6000} a seguir apresentam as respostas do sistema aos degraus nas entradas. Esses dados foram tratados e enviados para a Toolbox de Identificação do Matlab. 
-Essa ferramenta permite a configuração de diversos parâmetros e estratégias para identificação.
-
 \begin{figure}[H]
 	\centering
 	\begin{tabular}{cc}
@@ -62,13 +60,150 @@ Essa ferramenta permite a configuração de diversos parâmetros e estratégias 
 	\caption{\label{imgID_6000} Identificação 3 - 6000 segundos}
 \end{figure}
 
-No entanto, apesar de encontrar modelos que se encaixavam bem as curvas, os resultados obtidos por este método não eram nada condizentes com a dinâmica já conhecida e os ganhos obtidos foram muito esdrúxulos.
+A ferramenta recebe os dados de entrada e saída dos testes do sistema para estimação que retorna as matrizes índices no espaço de estados. É possível determinar as ordens dos parâmetros para estimação e quais elementos de cada matriz são conhecidos. Neste trabalho, determinou-se:
+
+\begin{align}
+	& A =
+	\begin{bmatrix}
+		a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\
+		a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4} \\
+		a_{3,1} & a_{3,2} & a_{3,3} & a_{3,4} \\
+		a_{4,1} & a_{4,2} & a_{4,3} & a_{4,4}
+	\end{bmatrix}
+	& B =
+	\begin{bmatrix}
+		b_{1,1} & 0 \\
+		0 & b_{2,2} \\
+		0 & b_{3,2} \\
+		b_{4,1} & 0
+	\end{bmatrix} \\
+	& C  = 
+	\begin{bmatrix}
+		1 & 0 & 0 & 0 \\
+		0 & 1 & 0 & 0 \\
+		0 & 0 & 1 & 0 \\
+		0 & 0 & 0 & 1
+	\end{bmatrix} 
+	& D  = 
+	\begin{bmatrix}
+		0 & 0 \\
+		0 & 0 \\
+		0 & 0 \\
+		0 & 0
+	\end{bmatrix}
+\end{align}
+
+Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é nula e C é a identidade, selecionando os quatro níveis, que compõe o estado, como as saídas. Os resultados obtidos são apresentados a seguir:
+
+\begin{itemize}
+\newpage \item  Identificação I:
+
+\begin{figure}[H]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h1.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h2.png} \\
+		(a) Nível 1 &
+		(b) Nível 2 \\
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h3.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim1_h4.png} \\
+		(c) Nível 3 &
+		(d) Nível 4
+	\end{tabular}
+	\caption{\label{imgID_4Results} Identificação 1 - 4000 segundos}
+\end{figure}
+
+\begin{align}
+	& A =
+	\begin{bmatrix}
+		a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\
+		a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4} \\
+		a_{3,1} & a_{3,2} & a_{3,3} & a_{3,4} \\
+		a_{4,1} & a_{4,2} & a_{4,3} & a_{4,4}
+	\end{bmatrix}
+	& B =
+	\begin{bmatrix}
+		b_{1,1} & 0 \\
+		0 & b_{2,2} \\
+		0 & b_{3,2} \\
+		b_{4,1} & 0
+	\end{bmatrix}
+\end{align}
+
+\newpage \item Identificação II:
+\begin{figure}[H]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim2_h1.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim2_h2.png} \\
+		(a) Nível 1 &
+		(b) Nível 2 \\
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim2_h3.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim2_h4.png} \\
+		(c) Nível 3 &
+		(d) Nível 4
+	\end{tabular}
+	\caption{\label{imgID_45Results} Identificação 2 - 4500 segundos}
+\end{figure}
+
+\begin{align}
+	& A =
+	\begin{bmatrix}
+		a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\
+		a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4} \\
+		a_{3,1} & a_{3,2} & a_{3,3} & a_{3,4} \\
+		a_{4,1} & a_{4,2} & a_{4,3} & a_{4,4}
+	\end{bmatrix}
+	& B =
+	\begin{bmatrix}
+		b_{1,1} & 0 \\
+		0 & b_{2,2} \\
+		0 & b_{3,2} \\
+		b_{4,1} & 0
+	\end{bmatrix}
+\end{align}
+
+\newpage \item Identificação III:
+\begin{figure}[H]
+	\centering
+	\begin{tabular}{cc}
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim3_h1.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim3_h2.png} \\
+		(a) Nível 1 &
+		(b) Nível 2 \\
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim3_h3.png} &
+		\includegraphics[height=0.15\paperheight,keepaspectratio]{img/sim3_h4.png} \\
+		(c) Nível 3 &
+		(d) Nível 4
+	\end{tabular}
+	\caption{\label{imgID_6Results} Identificação 3 - 6000 segundos}
+\end{figure}
+
+\begin{align}
+	& A =
+	\begin{bmatrix}
+		a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\
+		a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4} \\
+		a_{3,1} & a_{3,2} & a_{3,3} & a_{3,4} \\
+		a_{4,1} & a_{4,2} & a_{4,3} & a_{4,4}
+	\end{bmatrix}
+	& B =
+	\begin{bmatrix}
+		b_{1,1} & 0 \\
+		0 & b_{2,2} \\
+		0 & b_{3,2} \\
+		b_{4,1} & 0
+	\end{bmatrix}
+\end{align}
+\end{itemize}
+
+Embora os modelos se aproximem muito das curvas reais, nota-se que os coeficientes obtidos %TODO!!!!
 
 \subsection{Identificação Caixa-Cinza}
 
-Optou-se então por realizar manualmente a identificação do sistema. Ao enviar degraus de entrada e observando as respostas em regime permanente, em conjunto com os parâmetros conhecidos da planta, torna-se possível a identificação de um modelo condizente ao esperado e muito eficiente localmente, o que é desejado na modelagem TS.
+Nesta abordagem obtêm-se os parâmetros aferindo diretamente do sistema ou por meio de respostas à entradas controladas e utiliza-se as \jhhref{eqModLinear}{equações} para definir o modelo linear identificado. A \jhhref{tabDescPlanta}{Tabela} apresenta os valores das dimensões mensuráveis do tanque e da aceleração da gravidade. Os demais parâmetros serão identificados em 4 pontos, escolhidos por observação, que comporão as regras do modelo TS. 
 
-Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização.
+Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização. Os valores de $\gamma$ são obtidos enviando tensões constantes para cada bomba e verificando a proporção de fluído enviado para os tanques respectivos. Como o comportamento real da bomba é não linear, esses valores são identificados para cada uma das regras. De forma semelhante, ose $k$ são identificados 
 
 \begin{table}[!ht]
 	\caption{Tensões Escolhidas}
@@ -84,7 +219,6 @@ Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\%
 		\end{tabular}
 	}
 \end{table}
-
 Realiza-se então a identificação do modelo, a partir dos estados estacionários, nos 4 pontos dados pela interpolação destes conjuntos. Os resultados obtidos são exibidos a seguir:
 
 \begin{table}[!ht]
