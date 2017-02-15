@@ -1,27 +1,20 @@
 \selectlanguage{english}%
 
 \chapter{Conclusão} \label{capConclusao}
-
-
-Neste trabalho foi realizado o desenvolvimento de controladores fuzzy para o sistema de quatro-tanques. Inicialmente foram realizadas as modelagens não-linear e linear do sistema. Em seguida, partindo da teoria fuzzy e dos modelos Takagi-Sugeno, foram estudadas suas aplicações e o desenvolvimento sistemático de controladores via LMIs.
-
-O CLP Rockwell foi instalado e integrado à bancada, juntamente com os módulos de entrada e saída de dados utilizados. Seguiu-se a integração aos softwares de desenvolvimento e as configurações de comunicação entre eles. Foram implementados os algoritmos para controle da banca.
-
-Por fim, foram simulados os modelos TS, que demonstraram os resultados esperados. Em seguida, os controladores desenvolvidos a partir deles foram simulados sobre o modelo não linear e os resultados obtidos foram satisfatórios. A implementação em bancada e seus resultados foram observados.
-
-\section{Objetivos}
-O objetivo geral de desenvolver o controlador fuzzy foi obtido e testado, os resultados simulados dos modelos demonstraram comportamento eficiente, embora o sistema real tenha apresentado uma resposta não tão eficaz. A aplicação dos métodos propostos por Takagi-Sugeno à planta de quatro tanques foi realizada e a interpolação dos múltiplos ganhos utilizando as linguagens disponíveis no CLP Rockwell instalado foi desenvolvida.
-
-\section{Trabalhos Futuros}
-% TODO: Critérios de Desempenho
-% TODO: Esse processo precisa ser  uma vez que o comportamento observado no sistema real parece não manter suas configurações dia a dia
-Para trabalhos futuros indica-se a inclusão das restrições de entrada na sintonia baseada em LMI dos controladores. Como visto, o modelo TS pode aproximar-se tanto quanto se queira do real, assim, realizar-se a identificação do sistemas em vários pontos também tornaria o projeto do controlador mais preciso. A inclusão da zona morta da bomba no modelo poderia eliminar as oscilações observadas nos resultados.
-
 \epigraph{Há momentos, e você chega a esses momentos, em que de repente o tempo para e acontece a eternidade.}{Fiodor Dostoievski}
 
-\epigraph{texto}{referencia}
-\epigraph{texto}{referencia}
-\epigraph{texto}{referencia}
+Neste trabalho foi realizado o desenvolvimento de controladores fuzzy para o sistema de quatro-tanques. Iniciou-se com as modelagens não-linear e linear do sistema. Em seguida, partindo da teoria fuzzy e dos modelos Takagi-Sugeno, foram estudadas suas aplicações e o desenvolvimento sistemático de controladores via LMIs.
 
+O CLP Rockwell foi instalado e integrado à bancada, juntamente com os módulos de entrada e saída de dados utilizados. Seguiu-se a integração aos softwares de desenvolvimento e as configurações de comunicação entre eles. Os algoritmos para controle da banca visam puramente a estabilidade em regime permanente.
+
+Por fim, foram simulados os modelos TS, para validação em relação aos resultados esperados. Em seguida, simulou-se os controladores desenvolvidos a partir deles aplicados ao modelo não linear. Por fim, a implementação em bancada e seus resultados foram observados.
+
+
+\section{Objetivos}
+O objetivo geral de desenvolver o controlador fuzzy foi obtido e testado, os resultados simulados dos modelos demonstraram comportamento eficiente e bastante confiável. A aplicação real dos métodos propostos por Takagi-Sugeno à planta de quatro tanques foi realizada e a interpolação dos múltiplos ganhos utilizando as linguagens disponíveis no CLP Rockwell instalado foi desenvolvida. Os resultados da implementação não seguiram os simulados em decorrência das faixas de operações da bomba e de suas limitações reais, que não foram acrescentadas ao modelo para manter a simplicidade do projeto. 
+
+\section{Trabalhos Futuros}
+Para trabalhos futuros indica-se a inclusão de critérios de desempenho específicos aos controladores como ultrapassagem percentual e tempo de assentamento. Além disso, a utilização de restrições de entrada na sintonia realizando um controle anti-windup mais eficaz.
+Como visto, o modelo TS pode aproximar-se tanto quanto se queira do real, assim, novas estratégias de identificação do sistema, mais claras em vários pontos, tornariam o projeto do controlador mais preciso. Além disso, deveria-se incluir a zona morta da bomba no modelo para delegar ao controlador uma estratégia que elimine as oscilações observadas nos resultados obtidos, gerando assim um controle mais eficaz. 
 \selectlanguage{brazil}%
 

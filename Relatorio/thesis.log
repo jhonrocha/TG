@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.28)  3 FEB 2017 19:30
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.28)  15 FEB 2017 09:53
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1144,7 +1144,7 @@ l.115 \include{abstract}
 
 ] (thesis.toc
 LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 60.
+(Font)              Font shape `T1/ptm/b/sc' tried instead on input line 10.
  [2
 
 
@@ -1652,7 +1652,7 @@ File: img/sim3_h4.png Graphic file (type png)
 Package pdftex.def Info: img/sim3_h4.png used on input line 175.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
  [30]
-Overfull \hbox (2.1739pt too wide) in paragraph at lines 242--243
+Overfull \hbox (2.1739pt too wide) in paragraph at lines 243--244
 []\T1/ptm/m/n/10.95 São obti-das en-tão 4 re-gras e para cada uma de-las um con
 -tro-lador, sin-tonizado seguindo as []equações
  []
@@ -1660,19 +1660,19 @@ Overfull \hbox (2.1739pt too wide) in paragraph at lines 242--243
 <img/clp_bf2.png, id=809, 865.2325pt x 474.77374pt>
 File: img/clp_bf2.png Graphic file (type png)
  <use img/clp_bf2.png>
-Package pdftex.def Info: img/clp_bf2.png used on input line 282.
+Package pdftex.def Info: img/clp_bf2.png used on input line 283.
 (pdftex.def)             Requested size: 441.01772pt x 241.99376pt.
 
 [31] <img/tags1.png, id=818, 782.925pt x 495.8525pt>
 File: img/tags1.png Graphic file (type png)
  <use img/tags1.png>
-Package pdftex.def Info: img/tags1.png used on input line 291.
+Package pdftex.def Info: img/tags1.png used on input line 292.
 (pdftex.def)             Requested size: 308.71104pt x 195.51534pt.
 
 <img/tags2.png, id=819, 782.925pt x 77.28876pt>
 File: img/tags2.png Graphic file (type png)
  <use img/tags2.png>
-Package pdftex.def Info: img/tags2.png used on input line 292.
+Package pdftex.def Info: img/tags2.png used on input line 293.
 (pdftex.def)             Requested size: 308.71104pt x 30.47505pt.
 )
 Package babel Info: Redefining portuges shorthand "|
@@ -1899,16 +1899,16 @@ Package babel Info: Redefining portuges shorthand "|
 
  (capt_conclusao.tex
 Chapter 8.
-[50
-
-
-
-])
+)
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 146.
- [51]
+ [50
+
+
+
+]
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 149.
  (thesis.bbl)
@@ -1916,7 +1916,7 @@ Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 155.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 155.
- [52
+ [51
 
 
 ]
@@ -1930,33 +1930,33 @@ LaTeX Font Info:    Try loading font information for T1+pcr on input line 8.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) (codigo/planta.m)
-(codigo/mainTS2.m [53
+(codigo/mainTS2.m [52
 
 
 ]
 LaTeX Font Info:    Try loading font information for TS1+pcr on input line 30.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ts1pcr.fd"
 File: ts1pcr.fd 2001/06/04 font definitions for TS1/pcr.
-) [54]
+) [53]
 Overfull \hbox (487.79173pt too wide) in paragraph at lines 66--67
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
 [][][][][][][][][][] 
  []
 
-) (codigo/fuzzy_pontos_v2.m [55]
+) (codigo/fuzzy_pontos_v2.m [54]
 Overfull \hbox (120.588pt too wide) in paragraph at lines 18--19
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][] 
  []
 
-) (codigo/fuzzy_pertinencia.m [56])
-<img/simOPC.png, id=1190, 878.53218pt x 453.94594pt>
+) (codigo/fuzzy_pertinencia.m [55])
+<img/simOPC.png, id=1186, 878.53218pt x 453.94594pt>
 File: img/simOPC.png Graphic file (type png)
  <use img/simOPC.png>
 Package pdftex.def Info: img/simOPC.png used on input line 22.
 (pdftex.def)             Requested size: 441.01772pt x 227.87979pt.
 
-[57] (codigo/tg_strutcText.txt [58 <./img/simOPC.png>] [59]
+[56] (codigo/tg_strutcText.txt [57 <./img/simOPC.png>] [58]
 Overfull \hbox (28.78706pt too wide) in paragraph at lines 93--94
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][] 
@@ -1968,12 +1968,12 @@ Overfull \hbox (28.78706pt too wide) in paragraph at lines 94--96
 ][][][] 
  []
 
-[60]))
+[59]))
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 155.
 Package babel Info: Redefining portuges shorthand "|
 (babel)             in language  on input line 155.
- [61]
+ [60]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
  (thesis.aux (abstract.aux) (symbols.aux) (notation.aux)
@@ -1987,8 +1987,8 @@ Package rerunfilecheck Info: File `thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
  ) 
 Here is how much of TeX's memory you used:
- 13364 strings out of 493334
- 193640 string characters out of 3139236
+ 13363 strings out of 493334
+ 193633 string characters out of 3139236
  318019 words of memory out of 3000000
  15872 multiletter control sequences out of 15000+200000
  76829 words of font info for 100 fonts, out of 3000000 for 9000
@@ -2012,9 +2012,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on thesis.pdf (74 pages, 5296123 bytes).
+Output written on thesis.pdf (73 pages, 5297188 bytes).
 PDF statistics:
- 1571 PDF objects out of 1728 (max. 8388607)
- 601 named destinations out of 1000 (max. 500000)
+ 1566 PDF objects out of 1728 (max. 8388607)
+ 600 named destinations out of 1000 (max. 500000)
  777 words of extra memory for PDF output out of 10000 (max. 10000000)
 

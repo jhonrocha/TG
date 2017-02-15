@@ -76,7 +76,7 @@ Simplificando os termos de ativação de forma a obter um parâmetro A(c), defin
 \end{align*}
 
 Aplicando-se a Teoria de Lyapunov, como proposto por Tanaka e Wang \cite{wang}, uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{Equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
-A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} existe solução para:
+A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} se existe solução para:
 
 \begin{align} \label{eqLyapXk}
 	encontre \ \ &P \nonumber \\
@@ -84,9 +84,9 @@ A análise computacional via LMIs possibilita a busca por uma matriz P que satis
 	&A_i'P + P A_i \prec 0, \ \ i=1,2,3, ... , r
 \end{align}
 
-Seguindo estas premissas \cite{wang}, obtém-se o seguinte teorema:
+Seguindo estas premissas, obtém-se o seguinte teorema:
 \begin{myteo} \label{teoControlador}
-Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos correspondentes, em malha fechada com ganhos $K_i = M_i X^{-1}$, sua estabilidade é verificada se existe solução para o problema
+Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos correspondentes, em malha fechada com ganhos $K_i = M_i X^{-1}$, sua estabilidade é verificada \cite{wang} se existe solução para o problema
 	\begin{align} \label{eqContFuzzy}
 		encontre \ \ &X = X', \ \ i = 1,2,...,r \nonumber \\
 		&X \succ 0 \nonumber \\

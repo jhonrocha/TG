@@ -197,13 +197,15 @@ Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é
 \end{align}
 \end{itemize}
 
-Embora os modelos se aproximem muito das curvas reais, nota-se que os coeficientes obtidos %TODO!!!!
+Embora os modelos se aproximem muito das curvas reais, nota-se que os coeficientes obtidos são absurdos, muito dispares dos esperados teoricamente. Por essa razão, ao se aplicar os métodos de obtenção de ganhos pro controlador, descritos nos capítulos anteriores, se obtém valores muito altos ou excessivamente baixos, o que torna o controle inviável.
 
 \subsection{Identificação Caixa-Cinza}
 
 Nesta abordagem obtêm-se os parâmetros aferindo diretamente do sistema ou por meio de respostas à entradas controladas e utiliza-se as \jhhref{eqModLinear}{equações} para definir o modelo linear identificado. A \jhhref{tabDescPlanta}{Tabela} apresenta os valores das dimensões mensuráveis do tanque e da aceleração da gravidade. Os demais parâmetros serão identificados em 4 pontos, escolhidos por observação, que comporão as regras do modelo TS. 
 
-Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização. Os valores de $\gamma$ são obtidos enviando tensões constantes para cada bomba e verificando a proporção de fluído enviado para os tanques respectivos. Como o comportamento real da bomba é não linear, esses valores são identificados para cada uma das regras. De forma semelhante, ose $k$ são identificados 
+Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização. Os valores de $\gamma$ são obtidos enviando tensões constantes para cada bomba e verificando a proporção de fluído enviado para os tanques respectivos. Como o comportamento real da bomba é não linear, esses valores são identificados para cada uma das regras.
+
+De forma semelhante, as constantes de fluxo $k$ são identificadas aferindo-se o volume enviado aos tanques, para uma dada tensão constante num tempo fixo. A taxa volume/tempo é utilizada como fluxo médio, $k_i$ é obtido dividindo o fluxo médio $i$ pela tensão $i$ utilizada.
 
 \begin{table}[!ht]
 	\caption{Tensões Escolhidas}
