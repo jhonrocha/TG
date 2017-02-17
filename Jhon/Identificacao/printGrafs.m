@@ -1,29 +1,33 @@
 figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1));
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,1),'LineWidth',2);
 hold on
 grid on
-plot(tEst2(inicio:final), yEst2(inicio:final,1),'-r');
+plot(tEst2(inicio:final), yEst2(inicio:final,1),'-r','LineWidth',2);
+legend('Resposta ao degrau','Identificação','Location','southeast');
 title('Nível 1');
 
 figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2));
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,2),'LineWidth',2);
 hold on
 grid on
-plot(tEst2(inicio:final), yEst2(inicio:final,2),'-r');
+plot(tEst2(inicio:final), yEst2(inicio:final,2),'-r','LineWidth',2);
+legend('Resposta ao degrau','Identificação','Location','southeast');
 title('Nível 2');
 
 figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3));
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,3),'LineWidth',2);
 hold on
 grid on
-plot(tEst2(inicio:final), yEst2(inicio:final,3),'-r');
+plot(tEst2(inicio:final), yEst2(inicio:final,3),'-r','LineWidth',2);
+legend('Resposta ao degrau','Identificação','Location','southeast');
 title('Nível 3');
 
 figure
-plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4));
+plot(outputs.Time(inicio:final),outputs.Data(inicio:final,4),'LineWidth',2);
 hold on
 grid on
-plot(tEst2(inicio:final), yEst2(inicio:final,4),'-r');
+plot(tEst2(inicio:final), yEst2(inicio:final,4),'-r','LineWidth',2);
+legend('Resposta ao degrau','Identificação','Location','southeast');
 title('Nível 4');
 
 %   4000
