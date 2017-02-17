@@ -38,13 +38,13 @@ Nesta configuração a maior parte do fluído que saí das bombas é direcionado
 O \jhhref{eqModNL}{modelo não linear} para esta configuração é:
 \begin{equation}
 \begin{cases}
-\dot{h_{1}} = \frac{1}{28}(0.071\sqrt{1962*h_{3}} + 1,998*v_{1} - a_{1}\sqrt{1962*h_{1}})\\
+\dot{h_{1}} = \frac{1}{28}(0.071\sqrt{1962*h_{3}} + 1,998*v_{1} - 0,071\sqrt{1962*h_{1}})\\
 
-\dot{h_{2}} = \frac{1}{A_{2}}(a_{4}\sqrt{1962*h_{4}} + \gamma_{2}k_{2}v_{2} - a_{2}\sqrt{1962*h_{2}})\\
+\dot{h_{2}} = \frac{1}{32}(0,057\sqrt{1962*h_{4}} + 2,345*v_{2} - 0,057\sqrt{1962*h_{2}})\\
 
-\dot{h_{3}} = \frac{1}{A_{3}}((1 - \gamma_{2})k_{2}v_{2} - a_{3}\sqrt{1962*h_{3}})\\
+\dot{h_{3}} = \frac{1}{28}(1,005*v_{2} - 0,071\sqrt{1962*h_{3}})\\
 
-\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - a_{4}\sqrt{1962*h_{4}})
+\dot{h_{4}} = \frac{1}{32}(1,332*v_{1} - 0,057\sqrt{1962*h_{4}})
 \end{cases}
 \label{eqFMNL}
 \end{equation}
@@ -224,13 +224,13 @@ Ao contrário da configuração anterior, nesta a maior parte do fluído que sa�
 O \jhhref{eqModNL}{modelo não linear} para esta configuração é dado por:
 \begin{equation}
 \begin{cases}
-\dot{h_{1}} = \frac{1}{A_{1}}(a_{3}\sqrt{2gh_{3}} + \gamma_{1}k_{1}v_{1} - a_{1}\sqrt{2gh_{1}})\\
+\dot{h_{1}} = \frac{1}{28}(0.071\sqrt{1962*h_{3}} + 1,3545*v_{1} - 0,071\sqrt{1962*h_{1}})\\
 
-\dot{h_{2}} = \frac{1}{A_{2}}(a_{4}\sqrt{2gh_{4}} + \gamma_{2}k_{2}v_{2} - a_{2}\sqrt{2gh_{2}})\\
+\dot{h_{2}} = \frac{1}{32}(0.057\sqrt{1962*h_{4}} + 1,1186*v_{2} - 0,057\sqrt{1962*h_{2}})\\
 
-\dot{h_{3}} = \frac{1}{A_{3}}((1 - \gamma_{2})k_{2}v_{2} - a_{3}\sqrt{2gh_{3}})\\
+\dot{h_{3}} = \frac{1}{28}(2,1714*v_{2} - 0,071\sqrt{1962*h_{3}})\\
 
-\dot{h_{4}} = \frac{1}{A_{4}}((1 - \gamma_{1})k_{1}v_{1} - a_{4}\sqrt{2gh_{4}})
+\dot{h_{4}} = \frac{1}{32}(1,7955*v_{1} - 0,057\sqrt{1962*h_{4}})
 \end{cases}
 \label{eqFNMNL}
 \end{equation}
