@@ -1,21 +1,21 @@
 function output = mainLinear()
 % Fuzzy Sets
-vec_h1 = [10];
-vec_h2 = [10];
+vec_h1 = [5 15];
+vec_h2 = [5 15];
 
 % System to Each Point
 [Ai, Bi, vec_v1, vec_v2, vec_h3, vec_h4] = fuzzy_pontos_v2(vec_h1,vec_h2);
 h01 = 5;
 h02 = 5;
-h03 = 0.0334;
-h04 = 2.9076;
-v01 = 3.2321;
-v02 = 0.5716;
+% h03 = 0.0334;
+% h04 = 2.9076;
+% v01 = 3.2321;
+% v02 = 0.5716;
 
-% h03 = 2.0804;
-% h04 = 1.7175;
-% v01 = 1.8428;
-% v02 = 2.0890;
+h03 = 2.0804;
+h04 = 1.7175;
+v01 = 1.8428;
+v02 = 2.0890;
 
 % Solving
 samp_time = 0.01;
@@ -27,22 +27,22 @@ t = linspace(0, final_time, tot_samps);
 
 % Vizualization
 y = [ Hv(:,1) Hv(:,2)];
-% plot(t,y(:,1),'--r',t,y(:,2),'--b');
-% figure
-% plot(t,y(:,1),'--b', 'LineWidth',2);
-% title('Modelo TS')
-% ylabel('Altura (cm)');
-% xlabel('Tempo (s)');
-% legend('h1 TS [5 15]');
-% grid on
-% 
-% figure
-% plot(t,y(:,2),'--r', 'LineWidth',2);
-% title('Modelo TS')
-% ylabel('Altura (cm)');
-% xlabel('Tempo (s)');
-% legend('h2 TS [5 15]');
-% grid on
+plot(t,y(:,1),'--r',t,y(:,2),'--b');
+figure
+plot(t,y(:,1),'--b', 'LineWidth',2);
+title('Modelo TS')
+ylabel('Altura (cm)');
+xlabel('Tempo (s)');
+legend('h1 TS [5 15]');
+grid on
+
+figure
+plot(t,y(:,2),'--r', 'LineWidth',2);
+title('Modelo TS')
+ylabel('Altura (cm)');
+xlabel('Tempo (s)');
+legend('h2 TS [5 15]');
+grid on
 
 mML_h = Hv;
 save('mainLinear.mat');

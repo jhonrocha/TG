@@ -34,7 +34,7 @@ Uma função escalar contínua $w: \mathbb{R}^n \rightarrow \mathbb{R}$, $w(0) =
 O método de Lyapunov consiste em encontrar uma função que seja sempre positiva e que decaia à medida que o estado do sistema avance. Sua formalização é dada pelo \jhhref{teoLyapunov}{Teorema} a seguir:
 
 \begin{myteo} \label{teoLyapunov}
-	Um sistema dinâmico autônomo é globalmente estável se existe uma função escalar $V : \mathbb{R}^n \rightarrow \mathbb{R} $ tal que:
+	Um ponto de equilíbrio de um sistema dinâmico é assintoticamente estável se existe uma função escalar $V : \mathbb{R}^n \rightarrow \mathbb{R} $ tal que:
 	
 	\begin{itemize}
 		\item V é definida positiva
@@ -53,7 +53,7 @@ Para o sistema dinâmico contínuo e invariante no tempo definido pela \jhhref{e
 \end{equation}
 Aplicando-se o teorema de Lyapunov \cite{wang}, definindo uma matriz P, chega-se à:
 
-\begin{myteo}
+\begin{myteo} \label{teoremaLyapP}
 	O equilíbrio de um sistema dinâmico (\ref{eqSisSimple}) é globalmente assintoticamente estável se existe uma matriz P, tal que:
 	\begin{align*}
 		&P=P'  \\
@@ -62,21 +62,9 @@ Aplicando-se o teorema de Lyapunov \cite{wang}, definindo uma matriz P, chega-se
 	\end{align*}
 \end{myteo}
 
-%TODO!!!!
 \section{Estabilidade Fuzzy}
-Para um modelo TS, simular ao na \jhhref{eqModTakSug}{Equação}, tem-se:
-\begin{align*}
-	\dot{x}(t) = \frac{\sum_{i=1}^{4}  w_i(c(t))(A_i  x(t) +  B_i  u(t))}{\sum_{j=1}^{4} w_j(c(t))} \vspace{0.5cm}
-\end{align*}
-
-Simplificando os termos de ativação de forma a obter um parâmetro A(c), definido como:
-\begin{align*}
-	\alpha_i (c(t)) &:= \frac{w_i(c(t))}{\sum_{j=1}^{r}w_j(c(t))} \\
-	A(\alpha) &:= \sum_{i=1}^{r} \alpha_i (c(t))A_i
-\end{align*}
-
-Aplicando-se a Teoria de Lyapunov, como proposto por Tanaka e Wang \cite{wang}, uma vez que o modelo final é convexo, basta tratar a \jhhref{eqLyapXk}{Equação} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
-A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS é globalmente assintoticamente estável \cite{tanakaWang} se existe solução para:
+Aplicando-se a Teoria de Lyapunov, como proposto por Tanaka e Wang \cite{wang}, uma vez que o modelo final é convexo, basta aplicar o \jhhref{teoremaLyapP}{Teorema} nos vértices do sistema, ou seja, em cada um dos sistemas que compõem as \jhhref{eqRegraIGeral}{Regras}. 
+A análise computacional via LMIs possibilita a busca por uma matriz P que satisfaça essas condições, caso ela exista, prova-se a estabilidade do sistema. Assim, o sistema TS dado pela \jhhref{eqModTakSug}{Equação} é assintoticamente estável na região de validade do modelo \cite{tanakaWang} se existir solução para:
 
 \begin{align} \label{eqLyapXk}
 	encontre \ \ &P \nonumber \\
@@ -90,11 +78,8 @@ Dado um sistema fuzzy Takagi-Sugeno, convexo, composto por r regras e modelos co
 	\begin{align} \label{eqContFuzzy}
 		encontre \ \ &X = X', \ \ i = 1,2,...,r \nonumber \\
 		&X \succ 0 \nonumber \\
-		s.a \ \ & 
-		\begin{bmatrix}
-			X	&	XA_i' - M_i'B_i'  \\
-			A_iX - B_iM_i &	X
-		\end{bmatrix} \succ 0 \nonumber \\
+		s.a \ \ &-XA_i'-A_iX + M_i'B_i' + B_iM_i > 0 \nonumber \\
+		&-XA_i'-A_iX + M_i'B_i' + B_iM_i + M_j'B_i' + B_iM_j + M_i'B_j' + B_jM_i \geq 0
 	\end{align}
 \end{myteo}
 

@@ -66,6 +66,73 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 	}
 \end{table}
 
+\begin{align*} % Planta 1
+	& A_1 =
+	\begin{bmatrix}
+		-0.0251 &       0    &  0.3074 &      0 \\
+			0   &    -0.0176 &     0   & 0.0231 \\
+			0   &       0    & -0.3074 &      0 \\
+			0   &       0    &     0   & -0.0231
+	\end{bmatrix}
+	& B_1 =
+	\begin{bmatrix}
+	    0.0714 &       0 \\
+			0  &  0.0733 \\
+			0  &  0.0359 \\
+		0.0416 &	      0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 2
+	& A_2 =
+	\begin{bmatrix}
+	   -0.0251 &        0 &   0.0578 &       0 \\
+			0  & -0.0102  &       0  &  0.0376 \\
+			0  &       0  & -0.0578  &       0 \\
+			0  &       0  &       0  & -0.0376 
+	\end{bmatrix}
+	& B_2 =
+	\begin{bmatrix}
+		0.0714 &       0 \\
+			0  &  0.0733 \\
+			0  &  0.0359 \\
+		0.0416 &      0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 3
+	& A_3 =
+	\begin{bmatrix}
+	   -0.0145 &        0 &   0.1190 &       0 \\
+			0  & -0.0176  &       0  &  0.0109 \\
+			0  &       0  & -0.1190  &       0 \\
+			0  &       0  &       0  & -0.0109
+	\end{bmatrix}
+	& B_3 =
+	\begin{bmatrix}
+		0.0714 &       0 \\
+			0  &  0.0733 \\
+			0  &  0.0359 \\
+		0.0416 &       0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 4
+	& A_4 =
+	\begin{bmatrix}
+	   -0.0145 &        0 &   0.1775 &       0 \\
+			0  & -0.0102  &       0  &  0.0134 \\
+			0  &       0  & -0.1775  &       0 \\
+			0  &       0  &       0  & -0.0134
+	\end{bmatrix}
+	& B_4 =
+	\begin{bmatrix}
+	    0.0714 &       0 \\
+			0  &  0.0733 \\
+			0  &  0.0359 \\
+		0.0416 &       0
+	\end{bmatrix}
+\end{align*}
 Haverá então quatro regras Se-Então para composição do modelo TS final. As imagens a seguir apresentam a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
 \begin{figure}[H]
@@ -252,6 +319,73 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 	}
 \end{table}
 
+\begin{align*} % Planta 1
+	& A_1 =
+	\begin{bmatrix}
+	   -0.0251 &       0 &   0.0389  &      0 \\
+			0  & -0.0176 &        0    0.0301 \\
+			0  &       0 &  -0.0389         0 \\
+			0  &       0 &        0   -0.0301
+	\end{bmatrix}
+	& B_1 =
+	\begin{bmatrix}
+	    0.0484 &       0 \\
+			0  &  0.0350 \\
+			0  &  0.0775 \\
+		0.0561 &       0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 2
+	& A_2 =
+	\begin{bmatrix}
+	   -0.0251 &       0 &   0.3134  &       0 \\
+			0  & -0.0102 &        0  &  0.0099 \\
+			0  &       0 &  -0.3134  &       0 \\
+			0  &       0 &        0  & -0.0099
+	\end{bmatrix}
+	& B_2 =
+	\begin{bmatrix}
+	    0.0484 &       0 \\
+			0  &  0.0350 \\
+			0  &  0.0775 \\
+		0.0561 &       0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 3
+	& A_3 =
+	\begin{bmatrix}
+	   -0.0145 &       0 &   0.0136  &       0 \\
+			0  & -0.0176 &        0  &  0.0968 \\
+			0  &       0 &  -0.0136  &       0 \\
+			0  &       0 &        0  & -0.0968
+	\end{bmatrix}
+	& B_3 =
+	\begin{bmatrix}
+	    0.0484 &       0 \\
+			0  &  0.0350 \\
+			0  &  0.0775 \\
+		0.0561 &       0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 4
+	& A_4 =
+	\begin{bmatrix}
+	   -0.0145 &       0 &   0.0225  &      0 \\
+			0  & -0.0102 &        0  &  0.0174 \\
+			0  &       0 &  -0.0225  &       0 \\
+			0  &       0 &        0  & -0.0174
+	\end{bmatrix}
+	& B_4 =
+	\begin{bmatrix}
+	    0.0484 &       0 \\
+			0  &  0.0350 \\
+			0  &  0.0775 \\
+		0.0561 &       0
+	\end{bmatrix}
+\end{align*}
 As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
 \begin{figure}[H]
@@ -373,7 +507,7 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 \end{figure}
 
 \section{Implementação na Bancada} \label{secResImp}
-Seguindo os procedimentos descritos no \jhhref{capImp}{Capítulo}, os ganhos obtidos na \jhhref{tabGanhosReais}{Tabela} são implementados e um degrau de referência para as alturas $h1=15$ e $h2=15$, observa-se:
+Seguindo os procedimentos descritos no \jhhref{capImp}{Capítulo}, para o sistema atuando em fase-mínima nas regiões dos pontos dados pelas Tabelas \ref{tabIdentKs} e \ref{tabPontOp}, cjujos os ganhos obtidos na \jhhref{tabGanhosReais}{Tabela} são implementados e um degrau de referência para as alturas $h1=15$ e $h2=15$, observa-se:
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=0.35\paperheight,keepaspectratio]{img/ctrl_realh1.png}

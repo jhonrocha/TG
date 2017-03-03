@@ -29,12 +29,12 @@ for i1 = 1:length(vec_h1)
         A = [-(1/T1) 0 (A3/(A1*T3)) 0;
              0 -(1/T2) 0 (A4/(A2*T4));
              0 0 -(1/T3) 0;
-             0 0 0 -(1/T4)];
+             0 0 0 -(1/T4)]
 
         B = [gamma1*k1/A1 0;
             0 gamma2*k2/A2;
             0 (1 - gamma2)*k2/A3;
-            (1 - gamma1)*k1/A4 0];
+            (1 - gamma1)*k1/A4 0]
         
         outA(:,:,i1,i2) = A;
         outB(:,:,i1,i2) = B;

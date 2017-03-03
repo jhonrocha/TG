@@ -114,14 +114,14 @@ Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é
 \end{figure}
 
 \begin{align*}
-	& A =
+	& A_1 =
 	\begin{bmatrix}
 			0.9985 & -0.0002098 &  0.0007881 & 0.0001684 \\
 		  0.000169 &      0.999 & -7.159e-05 & 0.0004413 \\
 		 -0.000736 &  0.0001313 &          1 & 0.0001939 \\
 		-0.0009293 & -0.0008117 &    0.00109 &         1
 	\end{bmatrix}\\
-	& B =
+	& B_1 =
 	\begin{bmatrix}
 		-0.0006189 &  0.0008599 \\
 		  0.000715 & -0.0005701 \\
@@ -147,14 +147,14 @@ Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é
 \end{figure}
 
 \begin{align*}
-	& A =
+	& A_2 =
 	\begin{bmatrix}
 		     0.999 &    0.0002 &   0.000456 &  3.182e-05 \\
 		-0.0001421 &         1 & -0.0001671 &  0.0002886 \\
 		-0.0005784 & 0.0003516 &     0.9999 &  0.0001039 \\
 		 0.0006769 & -0.001255 &  0.0006098 &     0.9999
 	\end{bmatrix}\\
-	& B =
+	& B_2 =
 	\begin{bmatrix}
 		-0.0004175 &  0.0005107 \\
 		 0.0006248 & -0.0005959 \\
@@ -180,14 +180,14 @@ Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é
 \end{figure}
 
 \begin{align*}
-	& A =
+	& A_3 =
 	\begin{bmatrix}
 		   0.9834 & 0.02014 & -0.007577 &  -0.00362 \\
 		  -0.0117 &   1.019 & -0.009873 & -0.003866 \\
 		-0.009733 & 0.02102 &    0.9863 & -0.004788 \\
 		 -0.02114 & 0.02447 & -0.008362 &    0.9952
 	\end{bmatrix} \\
-	& B =
+	& B_3 =
 	\begin{bmatrix}
 		-0.007073  & 0.009851 \\
 		-0.004253  & 0.006861 \\
@@ -197,7 +197,7 @@ Os parâmetros que se deseja encontrar são $a_{i,j}$ e $b_{i,j}$. A matriz D é
 \end{align*}
 \end{itemize}
 
-Embora os modelos se aproximem muito das curvas reais, nota-se que os coeficientes obtidos são absurdos, muito dispares dos esperados teoricamente. Por essa razão, ao se aplicar os métodos de obtenção de ganhos pro controlador, descritos nos capítulos anteriores, se obtém valores muito altos ou excessivamente baixos, o que torna o controle inviável.
+Observou-se ao se aplicar os métodos de obtenção de ganhos pro controlador, descritos nos capítulos anteriores, se obtém valores muito altos ou excessivamente baixos, o que torna o controle inviável do ponto de vista prático devido a saturação dos atuadores que não foram levados em conta no projeto.
 
 \subsection{Identificação Caixa-Cinza}
 
@@ -205,7 +205,7 @@ Nesta abordagem obtêm-se os parâmetros aferindo diretamente do sistema ou por 
 
 Escolheu-se realizar-se a identificação para o funcionamento das bombas a 42\% e 45\% de suas capacidades. Nota-se que abaixo de 30\% não há resposta aparente e durante todo este trabalho limitou-se a atuar abaixo de 70\% de sua potência máxima, uma vez que este valor foi observado como limiar seguro de utilização. Os valores de $\gamma$ são obtidos enviando tensões constantes para cada bomba e verificando a proporção de fluído enviado para os tanques respectivos. Como o comportamento real da bomba é não linear, esses valores são identificados para cada uma das regras.
 
-De forma semelhante, as constantes de fluxo $k$ são identificadas aferindo-se o volume enviado aos tanques, para uma dada tensão constante num tempo fixo. A taxa volume/tempo é utilizada como fluxo médio, $k_i$ é obtido dividindo o fluxo médio $i$ pela tensão $i$ utilizada.
+De forma semelhante, as constantes de fluxo $k$ são identificadas aferindo-se o volume enviado aos tanques, para uma dada tensão constante num tempo fixo. A taxa volume/tempo é utilizada como fluxo médio, $k_i$ é obtido dividindo o fluxo médio $i$ pela tensão $i$ utilizada. Optou-se por realizar a identificação do sistema em uma configuração em fase mínima, visando a simplificação dos cálculos e ilustração das práticas abordadas.
 
 \begin{table}[!ht]
 	\caption{Tensões Escolhidas}
@@ -241,6 +241,74 @@ Realiza-se então a identificação do modelo, a partir dos estados estacionári
 \end{table}
 
 São obtidas então 4 regras e para cada uma delas um controlador, sintonizado seguindo as \jhhref{eqContFuzzy}{equações}. A tabela a seguir apresenta os ganhos obtidos:
+
+\begin{align*} % Planta 1
+	& A_1 =
+	\begin{bmatrix}
+	-0.0177 &     0   &  0.0057   &      0 \\
+         0  & -0.0131 &       0   &  0.0010 \\
+         0  &       0 &  -0.0057  &      0 \\
+         0  &       0 &        0  & -0.0010 
+	\end{bmatrix}
+	& B_1 =
+	\begin{bmatrix}
+    0.1397  &      0 \\
+		0   & 0.1016 \\
+		0   & 0.0476 \\
+	0.0159  &      0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 2
+	& A_2 =
+	\begin{bmatrix}
+		-0.0123 &       0 &    0.0048 &        0 \\
+			0  & -0.0084 &         0 &   0.0008 \\
+			0  &       0 &   -0.0048 &        0 \\
+			0  &       0 &         0 &  -0.0008
+	\end{bmatrix}
+	& B_2 =
+	\begin{bmatrix}
+		0.1397 &        0 \\
+			0  &  0.1052 \\
+			0  &  0.0489 \\
+		0.0159 &        0
+	\end{bmatrix}
+\end{align*}
+
+\begin{align*} % Planta 3
+	& A_3 =
+	\begin{bmatrix}
+	   -0.0140 &        0 &   0.0024 &        0 \\
+			0  & -0.0101  &       0  &  0.0017 \\
+			0  &       0  & -0.0024  &       0 \\
+			0  7       0  &       0  & -0.0017
+	\end{bmatrix}
+	& B_3 =
+	\begin{bmatrix}
+	    0.1422 &       0 \\
+			0  &  0.1016 \\
+			0  &  0.0476 \\
+		0.0296 &       0 
+	\end{bmatrix}
+\end{align*}
+		
+\begin{align*} % Planta 4
+	& A_4 =
+	\begin{bmatrix}
+   -0.0119 &       0  &  0.0030 &        0 \\
+		0  & -0.0080  &       0 &   0.0017 \\
+		0  &       0  & -0.0030 &        0 \\
+		0  &       0  &       0 &  -0.0017
+	\end{bmatrix}
+	& B_4 =
+	\begin{bmatrix}
+	0.1422 &       0 \\
+		0  &  0.1052 \\
+		0  &  0.0489 \\
+	0.0296 &       0
+	\end{bmatrix}
+\end{align*}
 
 \begin{table}[!ht]
 	\caption{Ganhos aplicados à planta}
@@ -285,7 +353,7 @@ Os ganhos obtidos a partir da identificação do modelo foram implementados no C
 	\label{figCLPCLPbf}
 \end{figure}
 
-O controlador recebe os estados atuais do sistema e os erros acumulados das variáveis controladas. A rotina textit{FuzzyInputCalc} implementa o controlador fuzzy a partir destas entradas e dos ganhos já apresentados assinalando às variáveis de saída o valor da tensão nas bombas desejado. A \jhhref{figCLPTags1}{Figura} a seguir apresenta as variáveis definidas no trabalho.
+O controlador recebe os estados atuais do sistema e os erros acumulados das variáveis controladas. A rotina textit{FuzzyInputCalc} implementa o controlador fuzzy a partir destas entradas e dos ganhos já apresentados assinalando às variáveis de saída o valor da tensão nas bombas desejado. A \jhhref{figCLPTags1}{Figura} a seguir apresenta as variáveis definidas no trabalho. O código em texto estruturado do bloco FuzzyInputCalc acima pode ser visto no Anexo A2.
 
 \begin{figure}[H]
 	\centering
