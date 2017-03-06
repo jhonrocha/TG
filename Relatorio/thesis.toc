@@ -62,7 +62,7 @@
 \contentsline {section}{\numberline {7.1}Simula\IeC {\c c}\IeC {\~o}es}{35}{section.7.1}
 \contentsline {subsection}{\numberline {7.1.1}Fase M\IeC {\'\i }nima}{35}{subsection.7.1.1}
 \contentsline {subsection}{\numberline {7.1.2}Fase N\IeC {\~a}o-M\IeC {\'\i }nima}{47}{subsection.7.1.2}
-\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o na Bancada}{58}{section.7.2}
+\contentsline {section}{\numberline {7.2}Implementa\IeC {\c c}\IeC {\~a}o na Bancada}{59}{section.7.2}
 \select@language {brazil}
 \select@language {english}
 \contentsline {chapter}{\numberline {8}Conclus\IeC {\~a}o}{62}{chapter.8}
