@@ -98,13 +98,58 @@ Os módulos de entrada e saída foram instalados conforme a \hyperref[tab:modulo
 	}
 \end{table}
 
-Observa-se na Figura \ref{fig:modulos} a seguir a configuração instalada.
+Neste trabalho foram configuradas 4 entradas analógicas, sensores de pressão e 2 saídas analógicas, as bombas. O range de tensão fornecida pelos sensores de pressão é de 0-10V e o de entrada para utilização das bombas é de 0-24V. A tradução das tensões de entrada para os valores físicos, utilizados nas variáveis do controlador, foi feita a partir de uma interpolação de primeiro grau. O software RSLogix apresenta uma interface de simples configuração para esta tradução: tomando como entrada os valores físicos e aferidos em dois pontos, a proporção que descreve essas entradas é calculada automaticamente.
 
+A tabela a seguir descreve a configuração de cada um dos sinais de entrada e saída e os valores utilizados para identificação da curva que os traduzem:
+\begin{table}[H]
+	\caption{Entradas Analógicas}
+	\label{tab:entradasAC}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Módulo & Descrição & Canal & Range & \jhmrow{Sinal Analógico\\Variável Física} & \jhmrow{Sinal Analógico\\Variável Física} \\
+			\hline
+			1756-IF8/A & Tanque 1 & xxx & 0-5 V & \jhmrow{1.49 V \\ 0 cm} & \jhmrow{2.44 V \\ 10 cm} \\
+			\hline
+			1756-IF8/A & Tanque 2 & xxx & 0-5 V & \jhmrow{1.41 V \\ 0 cm} & \jhmrow{2.38 V \\ 10 cm} \\
+			\hline
+			1756-IF8/A & Tanque 3 & xxx & 0-5 V & \jhmrow{1.41 V \\ 0 cm} & \jhmrow{2.35 V \\ 10 cm} \\
+			\hline
+			1756-IF8/A & Tanque 4 & xxx & 0-5 V & \jhmrow{1.53 V \\ 0 cm} & \jhmrow{2.47 V \\ 10 cm} \\
+			\hline
+		\end{tabular}
+	}
+\end{table}
+
+\begin{table}[H]
+	\caption{Saídas Analógicas}
+	\label{tab:saidasAC}
+	\small
+	\centering
+	\scalebox{1}{
+		\begin{tabular}{|c|c|c|c|c|c|}
+			\hline
+			Módulo & Descrição & Canal & Range  \\
+			1756-IF8/A & Bomba 1 & xxx & 0-24 V \\
+			\hline
+			1756-IF8/A & Bomba 2 & xxx & 0-24 V \\
+			\hline
+		\end{tabular}
+	}
+\end{table}
+
+Observa-se na Figura \ref{fig:modulos} a seguir a configuração instalada.
 \begin{figure}[H]
 	\centering
-	\includegraphics[height=10cm,keepaspectratio]{figs/modulos.jpg}
-	\caption{Módulos do painel.}
-	\label{fig:modulos}
+	\begin{tabular}{cc}
+		\includegraphics[height=10cm,keepaspectratio]{figs/modulos.jpg} &
+		\includegraphics[height=10cm,keepaspectratio]{figs/modulos.jpg} \\
+		(a) Esqueleto do painel &
+		(b) Instalação Final
+	\end{tabular}
+	\caption{\label{fig:modulos} Interior do CLP.}
 \end{figure}
 
 \subsection{Integração}

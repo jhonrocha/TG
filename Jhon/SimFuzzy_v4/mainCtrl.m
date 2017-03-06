@@ -18,10 +18,11 @@ hi2 = 0;
 
 % Time
 tAmostragem = 0.01;
-tFinal = 50;
+tFinal = 1200;
 totAmostras = tFinal/tAmostragem;
 t = linspace(0, tFinal, totAmostras);
-
+vec_u = [];
+vec_t = [];
 % Simulating
 [t,y] = ode45(@quadtank,t,[h01 h02 h03 h04 hi1 hi2]);
 
@@ -30,7 +31,6 @@ for idx = 1:numel(t)
     v1(idx) = r1(t(idx));
     v2(idx) = r2(t(idx));
 end
-
 % figure
 % hold on
 % % plot(t,v1,'--r',t,y(:,1),'-b')
@@ -57,6 +57,23 @@ xlabel('Tempo (s)');
 legend('Referência h2', 'Nível h2','Location','southeast');
 grid on
 
+figure
+plot(vec_t,vec_u(1,:),'-b','LineWidth',0.5);
+ylim([-0.5 5.5]);
+title('Tensão da Bomba 1 - v1(t)');
+ylabel('Tensão (V)');
+xlabel('Tempo (s)');
+legend('v1(t)','Location','southeast');
+grid on
+
+figure
+plot(vec_t,vec_u(2,:),'-b','LineWidth',0.5);
+ylim([-0.5 5.5]);
+title('Tensão da Bomba 2 - v2(t)');
+ylabel('Tensão (V)');
+xlabel('Tempo (s)');
+legend('v2(t)','Location','southeast');
+grid on
 % /////////////////////////////////////
 % System Simulation
 % /////////////////////////////////////
@@ -70,21 +87,31 @@ function dh = quadtank(t,h)
         end
     end
     u = K*h;
-    
     erro = [r1(t) - h(1);
             r2(t) - h(2)];
         
-%     if(u(1) >= 5)
-%         u(1) = 5.0;
-%         erro(1) = 0;
-%         erro(2) = 0;
-%     end
-%     
-%     if(u(2)>=5)
-%         u(2) = 5.0;
-%         erro(1) = 0;
-%         erro(2) = 0;
-%     end
+    if(u(1) >= 5)
+        u(1) = 5.0;
+        erro(1) = 0;
+        erro(2) = 0;
+    elseif(u(1) < 0)
+        u(1) = 0;
+        erro(1) = 0;
+        erro(2) = 0;
+    end
+    
+    if(u(2)>=5)
+        u(2) = 5.0;
+        erro(1) = 0;
+        erro(2) = 0;
+    elseif(u(2) < 0)
+        u(2) = 0;
+        erro(1) = 0;
+        erro(2) = 0;
+    end
+    
+    vec_u = [vec_u u];
+    vec_t = [vec_t t];
     
     dh = zeros(6,1);
     % System Equation

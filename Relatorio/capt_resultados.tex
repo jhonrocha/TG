@@ -66,7 +66,7 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 	}
 \end{table}
 
-\begin{align*} % Planta 1
+\begin{align} % Planta 1
 	& A_1 =
 	\begin{bmatrix}
 		-0.0251 &       0    &  0.3074 &      0 \\
@@ -80,10 +80,8 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 			0  &  0.0733 \\
 			0  &  0.0359 \\
 		0.0416 &	      0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 2
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	 % Planta 2
 	& A_2 =
 	\begin{bmatrix}
 	   -0.0251 &        0 &   0.0578 &       0 \\
@@ -97,10 +95,8 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 			0  &  0.0733 \\
 			0  &  0.0359 \\
 		0.0416 &      0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 3
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	% Planta 3
 	& A_3 =
 	\begin{bmatrix}
 	   -0.0145 &        0 &   0.1190 &       0 \\
@@ -114,10 +110,8 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 			0  &  0.0733 \\
 			0  &  0.0359 \\
 		0.0416 &       0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 4
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	 % Planta 4
 	& A_4 =
 	\begin{bmatrix}
 	   -0.0145 &        0 &   0.1775 &       0 \\
@@ -132,7 +126,7 @@ Escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \{5 , 15\} como seu
 			0  &  0.0359 \\
 		0.0416 &       0
 	\end{bmatrix}
-\end{align*}
+\end{align}
 Haverá então quatro regras Se-Então para composição do modelo TS final. As imagens a seguir apresentam a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
 \begin{figure}[H]
@@ -214,7 +208,7 @@ Os ganhos são sintonizados para o sistema na forma:
 	\caption{\label{figPlantCtrl}Espaço de estados da planta controlada}
 \end{figure}
 
-Os níveis controlados podem ser observados nas imagens a seguir:
+Os níveis controlados e as tensões, em volts, das bombas podem ser observados nas imagens a seguir:
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/ctrl_h1ts2_free.png}
@@ -229,9 +223,22 @@ Os níveis controlados podem ser observados nas imagens a seguir:
 	\label{figH2CtrlTS2_free}
 \end{figure}
 
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u1_free.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figFm_u1_free}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u2_free.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{figFm_u2_free}
+\end{figure}
+
 No entanto, é importante notar que o controle desenvolvido até aqui não leva em consideração os limites(5 V) dos atuadores (bomba). Incluindo-a ao modelo, tem-se:
 
-Para os sistemas das \jhhref{imgTS5}{imagens} e \ref{imgTS15} são sintonizados de forma similar 15 e 225 ganhos e aplicados ao sistema. As imagens a seguir ilustram os resultados obtidos:
 \begin{figure}[H]
 	\centering
 	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/ctrl_h1ts2_ulim.png}
@@ -244,6 +251,20 @@ Para os sistemas das \jhhref{imgTS5}{imagens} e \ref{imgTS15} são sintonizados 
 	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/ctrl_h2ts2_ulim.png}
 	\caption{Nível H2 Controlado - Com saturação do Controlador }
 	\label{figH2CtrlTS2_ulim}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u1_ulim.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figFm_u1_ulim}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u2_ulim.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{figFm_u2_ulim}
 \end{figure}
 
 Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a saturação simples dos integradores nos momentos em que as variáveis manipuladas alcançam seus limites de atuação. Os gráficos a seguir ilustram:
@@ -259,6 +280,20 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/ctrl_h2ts2.png}
 	\caption{Nível H2 Controlado - Com \textit{Anti-Windup}}
 	\label{figH2CtrlTS2}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u1_wind.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figFm_u1_wind}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight ,keepaspectratio]{img/fm_u2_wind.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{figFm_u2_wind}
 \end{figure}
 
 \subsection{Fase Não-Mínima}
@@ -319,13 +354,13 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 	}
 \end{table}
 
-\begin{align*} % Planta 1
+\begin{align} % Planta 1
 	& A_1 =
 	\begin{bmatrix}
 	   -0.0251 &       0 &   0.0389  &      0 \\
-			0  & -0.0176 &        0    0.0301 \\
-			0  &       0 &  -0.0389         0 \\
-			0  &       0 &        0   -0.0301
+			0  & -0.0176 &        0  &  0.0301 \\
+			0  &       0 &  -0.0389  &       0 \\
+			0  &       0 &        0  & -0.0301
 	\end{bmatrix}
 	& B_1 =
 	\begin{bmatrix}
@@ -333,10 +368,8 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 			0  &  0.0350 \\
 			0  &  0.0775 \\
 		0.0561 &       0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 2
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	 % Planta 2
 	& A_2 =
 	\begin{bmatrix}
 	   -0.0251 &       0 &   0.3134  &       0 \\
@@ -350,10 +383,8 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 			0  &  0.0350 \\
 			0  &  0.0775 \\
 		0.0561 &       0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 3
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	 % Planta 3
 	& A_3 =
 	\begin{bmatrix}
 	   -0.0145 &       0 &   0.0136  &       0 \\
@@ -367,10 +398,8 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 			0  &  0.0350 \\
 			0  &  0.0775 \\
 		0.0561 &       0
-	\end{bmatrix}
-\end{align*}
-
-\begin{align*} % Planta 4
+	\end{bmatrix} \nonumber \\ \nonumber \\
+	 % Planta 4 
 	& A_4 =
 	\begin{bmatrix}
 	   -0.0145 &       0 &   0.0225  &      0 \\
@@ -385,7 +414,7 @@ De forma similar, escolhendo os conjuntos fuzzy \{"baixo","alto"\} e definindo \
 			0  &  0.0775 \\
 		0.0561 &       0
 	\end{bmatrix}
-\end{align*}
+\end{align}
 As imagens a seguir apresenta a comparação entre os modelos \jhhref{eqModNL}{não-linear}, \jhhref{eqModLinear}{linearizado} em um ponto único e \jhhref{eqTakSugPlanta}{Takagi-Sugeno}:
 
 \begin{figure}[H]
@@ -459,51 +488,92 @@ A partir das \jhhref{eqContFuzzy}{Equações} são desenvolvidos os controladore
 	}
 \end{table}
 
-Os níveis controlados podem ser observados nas imagens a seguir:
+Os níveis controlados e as tensões em volts controladas podem ser observados nas imagens a seguir:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h1ts2_free.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h1ts2_free.png}
 	\caption{\small Nível H1 Controlado }
 	\label{figH1TSCtrl2_free_nm}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h2ts2_free.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h2ts2_free.png}
 	\caption{Nível H2 Controlado }
 	\label{figH2CtrlTS2_free_nm}
 \end{figure}
 
-No entanto, é importante notar que o controle desenvolvido até aqui não leva em consideração os limites(5 V) dos atuadores (bomba). Incluindo-a ao modelo, tem-se:
-
-Para os sistemas das \jhhref{imgTS5}{imagens} e \ref{imgTS15} são sintonizados de forma similar 15 e 225 ganhos e aplicados ao sistema. As imagens a seguir ilustram os resultados obtidos:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h1ts2_ulim.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u1_free.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figNm_u1_free}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u2_free.png}
+	\caption{Sinal de saída do controlador v2 }
+	\label{figNm_u2_free}
+\end{figure}
+
+No entanto, é importante notar que o controle desenvolvido até aqui não leva em consideração os limites(5 V) dos atuadores (bomba). Incluindo-a ao modelo, tem-se:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h1ts2_ulim.png}
 	\caption{\small Nível H1 Controlado - Com saturação do Controlador }
 	\label{figH1TSCtrl2_ulim_nm}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h2ts2_ulim.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h2ts2_ulim.png}
 	\caption{Nível H2 Controlado - Com saturação do Controlador }
 	\label{figH2CtrlTS2_ulim_nm}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u1_ulim.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figNm_u1_ulim}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u2_ulim.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{figNm_u2_ulim}
 \end{figure}
 
 Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a saturação simples dos integradores nos momentos em que as variáveis manipuladas alcançam seus limites de atuação. Os gráficos a seguir ilustram:
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h1ts2.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h1ts2.png}
 	\caption{\small Nível H1 Controlado - Com \textit{Anti-Windup}}
 	\label{figH1TSCtrl2_nm}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=\textwidth]{img/nm_ctrl_h2ts2.png}
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_ctrl_h2ts2.png}
 	\caption{Nível H2 Controlado - Com \textit{Anti-Windup}}
 	\label{figH2CtrlTS2_nm}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u1_wind.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{figNm_u1_wind}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/nm_u2_wind.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{figNm_u2_wind}
 \end{figure}
 
 \section{Implementação na Bancada} \label{secResImp}
@@ -521,6 +591,21 @@ Seguindo os procedimentos descritos no \jhhref{capImp}{Capítulo}, para o sistem
 	\caption{Nível H2 Controlado - Real}
 	\label{imgH2Real}
 \end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/ctrl_realv1.png}
+	\caption{\small Sinal de saída do controlador - v1 }
+	\label{imgV1Real}
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[height=0.35\paperheight, keepaspectratio]{img/ctrl_realv2.png}
+	\caption{Sinal de saída do controlador - v2 }
+	\label{imgV2Real}
+\end{figure}
+
 
 Nota-se que o comportamento geral do sistema tende a se estabilizar em torno da referência desejada. A forma oscilatória da resposta, não prevista no modelo, ocorre principalmente porque apesar do sinal de controle enviado, as bombas possuem uma zona de atuação que começa a funcionar apenas para sinais superiores à 30\%. Isso faz com que o erro continue aumentando até que se obtenha entradas superiores à este valor, o que gera a resposta observada.
 
