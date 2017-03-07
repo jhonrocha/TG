@@ -295,6 +295,7 @@ Para aliviar a ultrapassagem, dada pelo efeito \textit{windup}, utiliza-se a sat
 	\caption{Sinal de saída do controlador - v2 }
 	\label{figFm_u2_wind}
 \end{figure}
+Nota-se que inicialmente ocorre uma oscilação muito brusca do sinal de entrada dos atuadores. Isso ocorre porquê o erro inicial do sistema é muito alto, o que joga o sinal de entrada para valores bastante elevados. O controle anti-windup implementado é muito simples e tenta manter o sinal em níveis aceitáveis de funcionamento. O que observa-se na parte sombreada é portanto essa divergência entre a saída dada pelo ganho e a regulação dos saturadores.
 
 \subsection{Fase Não-Mínima}
 Ao contrário da configuração anterior, nesta a maior parte do fluído que saí das bombas é direcionado  para os tanques superiores, ou seja $\gamma_i < 0.5$. A \jhhref{tabFaseNaoMinima}{Tabela} a seguir apresenta as especificações da planta simulada.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.10.28)  6 MAR 2017 14:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  6 MAR 2017 20:38
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1121,14 +1121,14 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 124.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 114.
+(babel)             in language  on input line 124.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.114 \agradecimentos
+l.124 \agradecimentos
                       [1
 
 ]
@@ -1136,14 +1136,14 @@ l.114 \agradecimentos
 
  (abstract.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 126.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 116.
+(babel)             in language  on input line 126.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.116 \include{abstract}
+l.126 \include{abstract}
                          [1
 
 ] (thesis.toc
@@ -1157,9 +1157,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
 \openout4 = `thesis.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 130.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 120.
+(babel)             in language  on input line 130.
  [3] (thesis.lof [4
 
 ])
@@ -1167,18 +1167,18 @@ Package babel Info: Redefining portuges shorthand "|
 \openout5 = `thesis.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 132.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 122.
+(babel)             in language  on input line 132.
  [5]
 (thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 134.
  [6
 
 ]
@@ -1186,9 +1186,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (symbols.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 134.
  [7
 
 
@@ -1197,9 +1197,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (notation.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 136.
  [8
 
 
@@ -1222,9 +1222,9 @@ l.17 C
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 142.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 142.
  [2]
 \openout2 = `capt_descricao.aux'.
 
@@ -1263,41 +1263,43 @@ File: figs/interior.jpg Graphic file (type jpg)
 Package pdftex.def Info: figs/interior.jpg used on input line 66.
 (pdftex.def)             Requested size: 160.03659pt x 284.52756pt.
 
-[5 <./figs/mesa.jpg>] [6 <./figs/interior.jpg>]
-<figs/modulos.jpg, id=591, 1204.5pt x 1606.0pt>
-File: figs/modulos.jpg Graphic file (type jpg)
- <use figs/modulos.jpg>
-Package pdftex.def Info: figs/modulos.jpg used on input line 147.
-(pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
-File: figs/modulos.jpg Graphic file (type jpg)
-
-<use figs/modulos.jpg>
-Package pdftex.def Info: figs/modulos.jpg used on input line 148.
-(pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
-
-Overfull \hbox (9.7465pt too wide) in paragraph at lines 146--152
+[5 <./figs/mesa.jpg>]
+Overfull \hbox (26.93666pt too wide) in paragraph at lines 123--124
  [][] 
  []
 
-[7]
+[6 <./figs/interior.jpg>] <figs/modulos.jpg, id=591, 1204.5pt x 1606.0pt>
+File: figs/modulos.jpg Graphic file (type jpg)
+
+<use figs/modulos.jpg>
+Package pdftex.def Info: figs/modulos.jpg used on input line 147.
+(pdftex.def)             Requested size: 213.38211pt x 284.52756pt.
+ <figs/interior_comp.jpg, id=592, 2601.72pt x 4625.28pt>
+File: figs/interior_comp.jpg Graphic file (type jpg)
+
+<use figs/interior_comp.jpg>
+Package pdftex.def Info: figs/interior_comp.jpg used on input line 148.
+(pdftex.def)             Requested size: 160.02666pt x 284.52756pt.
+ [7]
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 177.
- [8 <./figs/modulos.jpg>] <img/RSLinx.png, id=606, 807.015pt x 450.68375pt>
+ [8 <./figs/modulos.jpg> <./figs/interior_comp.jpg>] <img/RSLinx.png, id=607, 8
+07.015pt x 450.68375pt>
 File: img/RSLinx.png Graphic file (type png)
-
-<use img/RSLinx.png>
+ <use img/RSLinx.png>
 Package pdftex.def Info: img/RSLinx.png used on input line 187.
 (pdftex.def)             Requested size: 254.74057pt x 142.26378pt.
- [9 <./img/RSLinx.png>]
-<figs/ladder.png, id=612, 330.48468pt x 237.13594pt>
+
+[9 <./img/RSLinx.png>] <figs/ladder.png, id=613, 330.48468pt x 237.13594pt>
 File: figs/ladder.png Graphic file (type png)
- <use figs/ladder.png>
+
+<use figs/ladder.png>
 Package pdftex.def Info: figs/ladder.png used on input line 204.
 (pdftex.def)             Requested size: 198.27216pt x 142.26378pt.
-
-<figs/blocos.png, id=615, 567.62062pt x 199.49532pt>
+ <figs/blocos.png, id=616, 567.62062pt x 199.49532pt>
 File: figs/blocos.png Graphic file (type png)
- <use figs/blocos.png>
+
+<use figs/blocos.png>
 Package pdftex.def Info: figs/blocos.png used on input line 216.
 (pdftex.def)             Requested size: 404.79765pt x 142.26378pt.
 
@@ -1307,16 +1309,16 @@ el do tanque (SourceA = Tank_Level)
  []
 
 [10 <./figs/ladder.png> <./figs/blocos.png>]
-<img/strText.png, id=624, 463.7325pt x 228.855pt>
+<img/strText.png, id=625, 463.7325pt x 228.855pt>
 File: img/strText.png Graphic file (type png)
  <use img/strText.png>
 Package pdftex.def Info: img/strText.png used on input line 230.
 (pdftex.def)             Requested size: 288.28246pt x 142.26378pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 144.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 144.
 
 [11 <./img/strText.png>]
 \openout2 = `capt_fundFuzzy.aux'.
@@ -1327,37 +1329,37 @@ Chapter 3.
 
 
 
-] <img/pert_triang.png, id=641, 421.575pt x 316.18124pt>
+] <img/pert_triang.png, id=642, 421.575pt x 316.18124pt>
 File: img/pert_triang.png Graphic file (type png)
 
 <use img/pert_triang.png>
 Package pdftex.def Info: img/pert_triang.png used on input line 43.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_sen.png, id=642, 421.575pt x 316.18124pt>
+ <img/pert_sen.png, id=643, 421.575pt x 316.18124pt>
 File: img/pert_sen.png Graphic file (type png)
 
 <use img/pert_sen.png>
 Package pdftex.def Info: img/pert_sen.png used on input line 44.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_trap.png, id=643, 421.575pt x 316.18124pt>
+ <img/pert_trap.png, id=644, 421.575pt x 316.18124pt>
 File: img/pert_trap.png Graphic file (type png)
 
 <use img/pert_trap.png>
 Package pdftex.def Info: img/pert_trap.png used on input line 45.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_gaus.png, id=644, 421.575pt x 316.18124pt>
+ <img/pert_gaus.png, id=645, 421.575pt x 316.18124pt>
 File: img/pert_gaus.png Graphic file (type png)
 
 <use img/pert_gaus.png>
 Package pdftex.def Info: img/pert_gaus.png used on input line 49.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_sig.png, id=645, 421.575pt x 316.18124pt>
+ <img/pert_sig.png, id=646, 421.575pt x 316.18124pt>
 File: img/pert_sig.png Graphic file (type png)
 
 <use img/pert_sig.png>
 Package pdftex.def Info: img/pert_sig.png used on input line 50.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
- <img/pert_square.png, id=646, 421.575pt x 316.18124pt>
+ <img/pert_square.png, id=647, 421.575pt x 316.18124pt>
 File: img/pert_square.png Graphic file (type png)
 
 <use img/pert_square.png>
@@ -1425,25 +1427,25 @@ Missing character: There is no º in font cmr10!
 [13 <./img/pert_triang.png (PNG copy)> <./img/pert_sen.png (PNG copy)> <./img/p
 ert_trap.png (PNG copy)> <./img/pert_gaus.png (PNG copy)> <./img/pert_sig.png (
 PNG copy)> <./img/pert_square.png (PNG copy)>]
-<img/pert_mf.png, id=655, 421.575pt x 316.18124pt>
+<img/pert_mf.png, id=656, 421.575pt x 316.18124pt>
 File: img/pert_mf.png Graphic file (type png)
  <use img/pert_mf.png>
 Package pdftex.def Info: img/pert_mf.png used on input line 71.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_f.png, id=656, 421.575pt x 316.18124pt>
+<img/pert_f.png, id=657, 421.575pt x 316.18124pt>
 File: img/pert_f.png Graphic file (type png)
  <use img/pert_f.png>
 Package pdftex.def Info: img/pert_f.png used on input line 72.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_q.png, id=657, 421.575pt x 316.18124pt>
+<img/pert_q.png, id=658, 421.575pt x 316.18124pt>
 File: img/pert_q.png Graphic file (type png)
  <use img/pert_q.png>
 Package pdftex.def Info: img/pert_q.png used on input line 75.
 (pdftex.def)             Requested size: 132.30666pt x 99.23094pt.
 
-<img/pert_mq.png, id=658, 421.575pt x 316.18124pt>
+<img/pert_mq.png, id=659, 421.575pt x 316.18124pt>
 File: img/pert_mq.png Graphic file (type png)
  <use img/pert_mq.png>
 Package pdftex.def Info: img/pert_mq.png used on input line 76.
@@ -1452,16 +1454,16 @@ Package pdftex.def Info: img/pert_mq.png used on input line 76.
 [14 <./img/pert_mf.png (PNG copy)> <./img/pert_f.png (PNG copy)> <./img/pert_q.
 png (PNG copy)> <./img/pert_mq.png (PNG copy)>] [15] [16])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 146.
  [17]
 \openout2 = `capt_controle.aux'.
 
 
 (capt_controle.tex
 Chapter 4.
-<img/modelo_controlado.png, id=695, 782.17218pt x 356.83313pt>
+<img/modelo_controlado.png, id=696, 782.17218pt x 356.83313pt>
 File: img/modelo_controlado.png Graphic file (type png)
 
 <use img/modelo_controlado.png>
@@ -1476,9 +1478,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
  [19])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 138.
+(babel)             in language  on input line 148.
 
 [20]
 \openout2 = `capt_modelagem.aux'.
@@ -1489,7 +1491,7 @@ Chapter 5.
 
 
 
-] [22] <img/pert_niveis.png, id=764, 421.575pt x 316.18124pt>
+] [22] <img/pert_niveis.png, id=765, 421.575pt x 316.18124pt>
 File: img/pert_niveis.png Graphic file (type png)
 
 <use img/pert_niveis.png>
@@ -1522,33 +1524,33 @@ Package pdftex.def Info: img/modelo_controlado.png used on input line 217.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 140.
+(babel)             in language  on input line 150.
  [25]
 \openout2 = `capt_implementacao.aux'.
 
  (capt_implementacao.tex
 Chapter 6.
-<img/sim1_h1.png, id=795, 421.575pt x 316.18124pt>
+<img/sim1_h1.png, id=796, 421.575pt x 316.18124pt>
 File: img/sim1_h1.png Graphic file (type png)
  <use img/sim1_h1.png>
 Package pdftex.def Info: img/sim1_h1.png used on input line 21.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim1_h2.png, id=796, 421.575pt x 316.18124pt>
+<img/sim1_h2.png, id=797, 421.575pt x 316.18124pt>
 File: img/sim1_h2.png Graphic file (type png)
  <use img/sim1_h2.png>
 Package pdftex.def Info: img/sim1_h2.png used on input line 22.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim1_h3.png, id=797, 421.575pt x 316.18124pt>
+<img/sim1_h3.png, id=798, 421.575pt x 316.18124pt>
 File: img/sim1_h3.png Graphic file (type png)
  <use img/sim1_h3.png>
 Package pdftex.def Info: img/sim1_h3.png used on input line 25.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim1_h4.png, id=798, 421.575pt x 316.18124pt>
+<img/sim1_h4.png, id=799, 421.575pt x 316.18124pt>
 File: img/sim1_h4.png Graphic file (type png)
  <use img/sim1_h4.png>
 Package pdftex.def Info: img/sim1_h4.png used on input line 26.
@@ -1558,49 +1560,49 @@ Package pdftex.def Info: img/sim1_h4.png used on input line 26.
 
 
 
-] <img/sim2_h1.png, id=803, 421.575pt x 316.18124pt>
+] <img/sim2_h1.png, id=804, 421.575pt x 316.18124pt>
 File: img/sim2_h1.png Graphic file (type png)
  <use img/sim2_h1.png>
 Package pdftex.def Info: img/sim2_h1.png used on input line 36.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim2_h2.png, id=804, 421.575pt x 316.18124pt>
+<img/sim2_h2.png, id=805, 421.575pt x 316.18124pt>
 File: img/sim2_h2.png Graphic file (type png)
  <use img/sim2_h2.png>
 Package pdftex.def Info: img/sim2_h2.png used on input line 37.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim2_h3.png, id=805, 421.575pt x 316.18124pt>
+<img/sim2_h3.png, id=806, 421.575pt x 316.18124pt>
 File: img/sim2_h3.png Graphic file (type png)
  <use img/sim2_h3.png>
 Package pdftex.def Info: img/sim2_h3.png used on input line 40.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim2_h4.png, id=806, 421.575pt x 316.18124pt>
+<img/sim2_h4.png, id=807, 421.575pt x 316.18124pt>
 File: img/sim2_h4.png Graphic file (type png)
  <use img/sim2_h4.png>
 Package pdftex.def Info: img/sim2_h4.png used on input line 41.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim3_h1.png, id=807, 421.575pt x 316.18124pt>
+<img/sim3_h1.png, id=808, 421.575pt x 316.18124pt>
 File: img/sim3_h1.png Graphic file (type png)
  <use img/sim3_h1.png>
 Package pdftex.def Info: img/sim3_h1.png used on input line 51.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim3_h2.png, id=808, 421.575pt x 316.18124pt>
+<img/sim3_h2.png, id=809, 421.575pt x 316.18124pt>
 File: img/sim3_h2.png Graphic file (type png)
  <use img/sim3_h2.png>
 Package pdftex.def Info: img/sim3_h2.png used on input line 52.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim3_h3.png, id=809, 421.575pt x 316.18124pt>
+<img/sim3_h3.png, id=810, 421.575pt x 316.18124pt>
 File: img/sim3_h3.png Graphic file (type png)
  <use img/sim3_h3.png>
 Package pdftex.def Info: img/sim3_h3.png used on input line 55.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/sim3_h4.png, id=810, 421.575pt x 316.18124pt>
+<img/sim3_h4.png, id=811, 421.575pt x 316.18124pt>
 File: img/sim3_h4.png Graphic file (type png)
  <use img/sim3_h4.png>
 Package pdftex.def Info: img/sim3_h4.png used on input line 56.
@@ -1611,25 +1613,25 @@ Package pdftex.def Info: img/sim3_h4.png used on input line 56.
  <./img/sim2_h2.png (PNG copy)> <./img/sim2_h3.png (PNG copy)> <./img/sim2_h4.p
 ng (PNG copy)>] [28 <./img/sim3_h1.png (PNG copy)> <./img/sim3_h2.png (PNG copy
 )> <./img/sim3_h3.png (PNG copy)> <./img/sim3_h4.png (PNG copy)>]
-<img/ident1_h1.png, id=821, 421.575pt x 316.18124pt>
+<img/ident1_h1.png, id=822, 421.575pt x 316.18124pt>
 File: img/ident1_h1.png Graphic file (type png)
  <use img/ident1_h1.png>
 Package pdftex.def Info: img/ident1_h1.png used on input line 104.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident1_h2.png, id=822, 421.575pt x 316.18124pt>
+<img/ident1_h2.png, id=823, 421.575pt x 316.18124pt>
 File: img/ident1_h2.png Graphic file (type png)
  <use img/ident1_h2.png>
 Package pdftex.def Info: img/ident1_h2.png used on input line 105.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident1_h3.png, id=823, 421.575pt x 316.18124pt>
+<img/ident1_h3.png, id=824, 421.575pt x 316.18124pt>
 File: img/ident1_h3.png Graphic file (type png)
  <use img/ident1_h3.png>
 Package pdftex.def Info: img/ident1_h3.png used on input line 108.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident1_h4.png, id=824, 421.575pt x 316.18124pt>
+<img/ident1_h4.png, id=825, 421.575pt x 316.18124pt>
 File: img/ident1_h4.png Graphic file (type png)
  <use img/ident1_h4.png>
 Package pdftex.def Info: img/ident1_h4.png used on input line 109.
@@ -1637,25 +1639,25 @@ Package pdftex.def Info: img/ident1_h4.png used on input line 109.
 
 [29 <./img/ident1_h1.png (PNG copy)> <./img/ident1_h2.png (PNG copy)> <./img/id
 ent1_h3.png (PNG copy)> <./img/ident1_h4.png (PNG copy)>]
-<img/ident2_h1.png, id=829, 421.575pt x 316.18124pt>
+<img/ident2_h1.png, id=830, 421.575pt x 316.18124pt>
 File: img/ident2_h1.png Graphic file (type png)
  <use img/ident2_h1.png>
 Package pdftex.def Info: img/ident2_h1.png used on input line 137.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident2_h2.png, id=830, 421.575pt x 316.18124pt>
+<img/ident2_h2.png, id=831, 421.575pt x 316.18124pt>
 File: img/ident2_h2.png Graphic file (type png)
  <use img/ident2_h2.png>
 Package pdftex.def Info: img/ident2_h2.png used on input line 138.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident2_h3.png, id=831, 421.575pt x 316.18124pt>
+<img/ident2_h3.png, id=832, 421.575pt x 316.18124pt>
 File: img/ident2_h3.png Graphic file (type png)
  <use img/ident2_h3.png>
 Package pdftex.def Info: img/ident2_h3.png used on input line 141.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident2_h4.png, id=832, 421.575pt x 316.18124pt>
+<img/ident2_h4.png, id=833, 421.575pt x 316.18124pt>
 File: img/ident2_h4.png Graphic file (type png)
  <use img/ident2_h4.png>
 Package pdftex.def Info: img/ident2_h4.png used on input line 142.
@@ -1663,25 +1665,25 @@ Package pdftex.def Info: img/ident2_h4.png used on input line 142.
 
 [30 <./img/ident2_h1.png (PNG copy)> <./img/ident2_h2.png (PNG copy)> <./img/id
 ent2_h3.png (PNG copy)> <./img/ident2_h4.png (PNG copy)>]
-<img/ident3_h1.png, id=838, 421.575pt x 316.18124pt>
+<img/ident3_h1.png, id=839, 421.575pt x 316.18124pt>
 File: img/ident3_h1.png Graphic file (type png)
  <use img/ident3_h1.png>
 Package pdftex.def Info: img/ident3_h1.png used on input line 170.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident3_h2.png, id=839, 421.575pt x 316.18124pt>
+<img/ident3_h2.png, id=840, 421.575pt x 316.18124pt>
 File: img/ident3_h2.png Graphic file (type png)
  <use img/ident3_h2.png>
 Package pdftex.def Info: img/ident3_h2.png used on input line 171.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident3_h3.png, id=840, 421.575pt x 316.18124pt>
+<img/ident3_h3.png, id=841, 421.575pt x 316.18124pt>
 File: img/ident3_h3.png Graphic file (type png)
  <use img/ident3_h3.png>
 Package pdftex.def Info: img/ident3_h3.png used on input line 174.
 (pdftex.def)             Requested size: 169.0001pt x 126.75186pt.
 
-<img/ident3_h4.png, id=841, 421.575pt x 316.18124pt>
+<img/ident3_h4.png, id=842, 421.575pt x 316.18124pt>
 File: img/ident3_h4.png Graphic file (type png)
  <use img/ident3_h4.png>
 Package pdftex.def Info: img/ident3_h4.png used on input line 175.
@@ -1689,28 +1691,28 @@ Package pdftex.def Info: img/ident3_h4.png used on input line 175.
 
 [31 <./img/ident3_h1.png (PNG copy)> <./img/ident3_h2.png (PNG copy)> <./img/id
 ent3_h3.png (PNG copy)> <./img/ident3_h4.png (PNG copy)>] [32]
-<img/clp_bf2.png, id=861, 865.2325pt x 474.77374pt>
+<img/clp_bf2.png, id=862, 865.2325pt x 474.77374pt>
 File: img/clp_bf2.png Graphic file (type png)
  <use img/clp_bf2.png>
 Package pdftex.def Info: img/clp_bf2.png used on input line 352.
 (pdftex.def)             Requested size: 441.01772pt x 241.99376pt.
 
-[33] <img/tags1.png, id=868, 782.925pt x 495.8525pt>
+[33] <img/tags1.png, id=869, 782.925pt x 495.8525pt>
 File: img/tags1.png Graphic file (type png)
  <use img/tags1.png>
 Package pdftex.def Info: img/tags1.png used on input line 361.
 (pdftex.def)             Requested size: 308.71104pt x 195.51534pt.
 
-<img/tags2.png, id=869, 782.925pt x 77.28876pt>
+<img/tags2.png, id=870, 782.925pt x 77.28876pt>
 File: img/tags2.png Graphic file (type png)
  <use img/tags2.png>
 Package pdftex.def Info: img/tags2.png used on input line 362.
 (pdftex.def)             Requested size: 308.71104pt x 30.47505pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 152.
  [34 <./img/clp_bf2.png> <./img/tags1.png> <./img/tags2.png>]
 \openout2 = `capt_resultados.aux'.
 
@@ -1720,26 +1722,26 @@ Chapter 7.
 
 
 
-] <img/h1_ts2.png, id=894, 421.575pt x 316.18124pt>
+] <img/h1_ts2.png, id=895, 421.575pt x 316.18124pt>
 File: img/h1_ts2.png Graphic file (type png)
  <use img/h1_ts2.png>
 Package pdftex.def Info: img/h1_ts2.png used on input line 134.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-[36] <img/h2_ts2.png, id=901, 421.575pt x 316.18124pt>
+[36] <img/h2_ts2.png, id=902, 421.575pt x 316.18124pt>
 File: img/h2_ts2.png Graphic file (type png)
  <use img/h2_ts2.png>
 Package pdftex.def Info: img/h2_ts2.png used on input line 141.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
 [37 <./img/h1_ts2.png (PNG copy)>]
-<img/h1_ts5.png, id=910, 421.575pt x 316.18124pt>
+<img/h1_ts5.png, id=911, 421.575pt x 316.18124pt>
 File: img/h1_ts5.png Graphic file (type png)
  <use img/h1_ts5.png>
 Package pdftex.def Info: img/h1_ts5.png used on input line 151.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/h2_ts5.png, id=911, 421.575pt x 316.18124pt>
+<img/h2_ts5.png, id=912, 421.575pt x 316.18124pt>
 File: img/h2_ts5.png Graphic file (type png)
  <use img/h2_ts5.png>
 Package pdftex.def Info: img/h2_ts5.png used on input line 152.
@@ -1749,13 +1751,13 @@ Overfull \hbox (23.99998pt too wide) in paragraph at lines 150--156
  [][] 
  []
 
-<img/h1_ts15.png, id=912, 421.575pt x 316.18124pt>
+<img/h1_ts15.png, id=913, 421.575pt x 316.18124pt>
 File: img/h1_ts15.png Graphic file (type png)
  <use img/h1_ts15.png>
 Package pdftex.def Info: img/h1_ts15.png used on input line 162.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/h2_ts15.png, id=913, 421.575pt x 316.18124pt>
+<img/h2_ts15.png, id=914, 421.575pt x 316.18124pt>
 File: img/h2_ts15.png Graphic file (type png)
  <use img/h2_ts15.png>
 Package pdftex.def Info: img/h2_ts15.png used on input line 163.
@@ -1772,81 +1774,81 @@ File: img/modelo_controlado.png Graphic file (type png)
 Package pdftex.def Info: img/modelo_controlado.png used on input line 206.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
  [39 <./img/h1_ts15.png (PNG copy)> <./img/h2_ts15.png (PNG copy)>]
-<img/ctrl_h1ts2_free.png, id=924, 421.575pt x 316.18124pt>
+<img/ctrl_h1ts2_free.png, id=925, 421.575pt x 316.18124pt>
 File: img/ctrl_h1ts2_free.png Graphic file (type png)
 
 <use img/ctrl_h1ts2_free.png>
 Package pdftex.def Info: img/ctrl_h1ts2_free.png used on input line 214.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/ctrl_h2ts2_free.png, id=925, 421.575pt x 316.18124pt>
+<img/ctrl_h2ts2_free.png, id=926, 421.575pt x 316.18124pt>
 File: img/ctrl_h2ts2_free.png Graphic file (type png)
 
 <use img/ctrl_h2ts2_free.png>
 Package pdftex.def Info: img/ctrl_h2ts2_free.png used on input line 221.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [40 <./img/ctrl_h1ts2_free.png (PNG copy)>]
-<img/fm_u1_free.png, id=930, 421.575pt x 316.18124pt>
+<img/fm_u1_free.png, id=931, 421.575pt x 316.18124pt>
 File: img/fm_u1_free.png Graphic file (type png)
  <use img/fm_u1_free.png>
 Package pdftex.def Info: img/fm_u1_free.png used on input line 228.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/fm_u2_free.png, id=931, 421.575pt x 316.18124pt>
+<img/fm_u2_free.png, id=932, 421.575pt x 316.18124pt>
 File: img/fm_u2_free.png Graphic file (type png)
  <use img/fm_u2_free.png>
 Package pdftex.def Info: img/fm_u2_free.png used on input line 235.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
 [41 <./img/ctrl_h2ts2_free.png (PNG copy)> <./img/fm_u1_free.png (PNG copy)>]
-<img/ctrl_h1ts2_ulim.png, id=938, 421.575pt x 316.18124pt>
+<img/ctrl_h1ts2_ulim.png, id=939, 421.575pt x 316.18124pt>
 File: img/ctrl_h1ts2_ulim.png Graphic file (type png)
 
 <use img/ctrl_h1ts2_ulim.png>
 Package pdftex.def Info: img/ctrl_h1ts2_ulim.png used on input line 244.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [42 <./img/fm_u2_free.png (PNG copy)>]
-<img/ctrl_h2ts2_ulim.png, id=944, 422.32782pt x 316.18124pt>
+<img/ctrl_h2ts2_ulim.png, id=945, 422.32782pt x 316.18124pt>
 File: img/ctrl_h2ts2_ulim.png Graphic file (type png)
 
 <use img/ctrl_h2ts2_ulim.png>
 Package pdftex.def Info: img/ctrl_h2ts2_ulim.png used on input line 251.
 (pdftex.def)             Requested size: 395.09361pt x 295.77155pt.
 
-<img/fm_u1_ulim.png, id=945, 421.575pt x 316.18124pt>
+<img/fm_u1_ulim.png, id=946, 421.575pt x 316.18124pt>
 File: img/fm_u1_ulim.png Graphic file (type png)
  <use img/fm_u1_ulim.png>
 Package pdftex.def Info: img/fm_u1_ulim.png used on input line 258.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
 [43 <./img/ctrl_h1ts2_ulim.png (PNG copy)> <./img/ctrl_h2ts2_ulim.png (PNG copy
-)>] <img/fm_u2_ulim.png, id=950, 421.575pt x 316.18124pt>
+)>] <img/fm_u2_ulim.png, id=951, 421.575pt x 316.18124pt>
 File: img/fm_u2_ulim.png Graphic file (type png)
 
 <use img/fm_u2_ulim.png>
 Package pdftex.def Info: img/fm_u2_ulim.png used on input line 265.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
- <img/ctrl_h1ts2.png, id=951, 421.575pt x 316.18124pt>
+ <img/ctrl_h1ts2.png, id=952, 421.575pt x 316.18124pt>
 File: img/ctrl_h1ts2.png Graphic file (type png)
 
 <use img/ctrl_h1ts2.png>
 Package pdftex.def Info: img/ctrl_h1ts2.png used on input line 273.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [44 <./img/fm_u1_ulim.png (PNG copy)> <./img/fm_u2_ulim.png (PNG copy)>] <img/
-ctrl_h2ts2.png, id=956, 421.575pt x 316.18124pt>
+ctrl_h2ts2.png, id=957, 421.575pt x 316.18124pt>
 File: img/ctrl_h2ts2.png Graphic file (type png)
 
 <use img/ctrl_h2ts2.png>
 Package pdftex.def Info: img/ctrl_h2ts2.png used on input line 280.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [45 <./img/ctrl_h1ts2.png (PNG copy)>]
-<img/fm_u1_wind.png, id=961, 421.575pt x 316.18124pt>
+<img/fm_u1_wind.png, id=962, 421.575pt x 316.18124pt>
 File: img/fm_u1_wind.png Graphic file (type png)
  <use img/fm_u1_wind.png>
 Package pdftex.def Info: img/fm_u1_wind.png used on input line 287.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/fm_u2_wind.png, id=962, 421.575pt x 316.18124pt>
+<img/fm_u2_wind.png, id=963, 421.575pt x 316.18124pt>
 File: img/fm_u2_wind.png Graphic file (type png)
  <use img/fm_u2_wind.png>
 Package pdftex.def Info: img/fm_u2_wind.png used on input line 294.
@@ -1854,174 +1856,174 @@ Package pdftex.def Info: img/fm_u2_wind.png used on input line 294.
 
 [46 <./img/ctrl_h2ts2.png (PNG copy)> <./img/fm_u1_wind.png (PNG copy)>]
 [47 <./img/fm_u2_wind.png (PNG copy)>]
-<img/h1_ts2_nm.png, id=981, 421.575pt x 316.18124pt>
+<img/h1_ts2_nm.png, id=983, 421.575pt x 316.18124pt>
 File: img/h1_ts2_nm.png Graphic file (type png)
  <use img/h1_ts2_nm.png>
-Package pdftex.def Info: img/h1_ts2_nm.png used on input line 422.
+Package pdftex.def Info: img/h1_ts2_nm.png used on input line 423.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
 
-[48] <img/h2_ts2_nm.png, id=989, 421.575pt x 316.18124pt>
+[48] <img/h2_ts2_nm.png, id=990, 421.575pt x 316.18124pt>
 File: img/h2_ts2_nm.png Graphic file (type png)
 
 <use img/h2_ts2_nm.png>
-Package pdftex.def Info: img/h2_ts2_nm.png used on input line 429.
+Package pdftex.def Info: img/h2_ts2_nm.png used on input line 430.
 (pdftex.def)             Requested size: 441.01772pt x 330.76984pt.
  [49 <./img/h1_ts2_nm.png (PNG copy)>]
-<img/h1_ts5_nm.png, id=994, 421.575pt x 316.18124pt>
+<img/h1_ts5_nm.png, id=995, 421.575pt x 316.18124pt>
 File: img/h1_ts5_nm.png Graphic file (type png)
  <use img/h1_ts5_nm.png>
-Package pdftex.def Info: img/h1_ts5_nm.png used on input line 439.
+Package pdftex.def Info: img/h1_ts5_nm.png used on input line 440.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-<img/h2_ts5_nm.png, id=995, 421.575pt x 316.18124pt>
+<img/h2_ts5_nm.png, id=996, 421.575pt x 316.18124pt>
 File: img/h2_ts5_nm.png Graphic file (type png)
  <use img/h2_ts5_nm.png>
-Package pdftex.def Info: img/h2_ts5_nm.png used on input line 440.
+Package pdftex.def Info: img/h2_ts5_nm.png used on input line 441.
 (pdftex.def)             Requested size: 220.50885pt x 165.38492pt.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 438--444
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 439--445
  [][] 
  []
 
-<img/h1_ts15_nm.png, id=996, 422.32782pt x 316.18124pt>
+<img/h1_ts15_nm.png, id=997, 422.32782pt x 316.18124pt>
 File: img/h1_ts15_nm.png Graphic file (type png)
 
 <use img/h1_ts15_nm.png>
-Package pdftex.def Info: img/h1_ts15_nm.png used on input line 450.
+Package pdftex.def Info: img/h1_ts15_nm.png used on input line 451.
 (pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
 
-<img/h2_ts15_nm.png, id=997, 422.32782pt x 316.18124pt>
+<img/h2_ts15_nm.png, id=998, 422.32782pt x 316.18124pt>
 File: img/h2_ts15_nm.png Graphic file (type png)
 
 <use img/h2_ts15_nm.png>
-Package pdftex.def Info: img/h2_ts15_nm.png used on input line 451.
+Package pdftex.def Info: img/h2_ts15_nm.png used on input line 452.
 (pdftex.def)             Requested size: 220.50885pt x 165.09062pt.
 
-Overfull \hbox (23.99998pt too wide) in paragraph at lines 449--455
+Overfull \hbox (23.99998pt too wide) in paragraph at lines 450--456
  [][] 
  []
 
 [50 <./img/h2_ts2_nm.png (PNG copy)> <./img/h1_ts5_nm.png (PNG copy)> <./img/h2
 _ts5_nm.png (PNG copy)>]
-<img/nm_ctrl_h1ts2_free.png, id=1004, 422.32782pt x 316.18124pt>
+<img/nm_ctrl_h1ts2_free.png, id=1005, 422.32782pt x 316.18124pt>
 File: img/nm_ctrl_h1ts2_free.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2_free.png>
-Package pdftex.def Info: img/nm_ctrl_h1ts2_free.png used on input line 494.
+Package pdftex.def Info: img/nm_ctrl_h1ts2_free.png used on input line 495.
 (pdftex.def)             Requested size: 395.09361pt x 295.77155pt.
  [51 <./img/h1_ts15_nm.png (PNG copy)> <./img/h2_ts15_nm.png (PNG copy)>]
-<img/nm_ctrl_h2ts2_free.png, id=1009, 422.32782pt x 316.18124pt>
+<img/nm_ctrl_h2ts2_free.png, id=1010, 422.32782pt x 316.18124pt>
 File: img/nm_ctrl_h2ts2_free.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2_free.png>
-Package pdftex.def Info: img/nm_ctrl_h2ts2_free.png used on input line 501.
+Package pdftex.def Info: img/nm_ctrl_h2ts2_free.png used on input line 502.
 (pdftex.def)             Requested size: 395.09361pt x 295.77155pt.
 
-<img/nm_u1_free.png, id=1010, 421.575pt x 316.18124pt>
+<img/nm_u1_free.png, id=1011, 421.575pt x 316.18124pt>
 File: img/nm_u1_free.png Graphic file (type png)
 
 <use img/nm_u1_free.png>
-Package pdftex.def Info: img/nm_u1_free.png used on input line 508.
+Package pdftex.def Info: img/nm_u1_free.png used on input line 509.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [52 <./img/nm_ctrl_h1ts2_free.png (PNG copy)> <./img/nm_ctrl_h2ts2_free.png (P
 NG copy)>]
-<img/nm_u2_free.png, id=1015, 421.575pt x 316.18124pt>
+<img/nm_u2_free.png, id=1016, 421.575pt x 316.18124pt>
 File: img/nm_u2_free.png Graphic file (type png)
 
 <use img/nm_u2_free.png>
-Package pdftex.def Info: img/nm_u2_free.png used on input line 515.
+Package pdftex.def Info: img/nm_u2_free.png used on input line 516.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [53 <./img/nm_u1_free.png (PNG copy)> <./img/nm_u2_free.png (PNG copy)>]
-<img/nm_ctrl_h1ts2_ulim.png, id=1022, 421.575pt x 316.18124pt>
+<img/nm_ctrl_h1ts2_ulim.png, id=1023, 421.575pt x 316.18124pt>
 File: img/nm_ctrl_h1ts2_ulim.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2_ulim.png>
-Package pdftex.def Info: img/nm_ctrl_h1ts2_ulim.png used on input line 524.
+Package pdftex.def Info: img/nm_ctrl_h1ts2_ulim.png used on input line 525.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/nm_ctrl_h2ts2_ulim.png, id=1023, 421.575pt x 316.18124pt>
+<img/nm_ctrl_h2ts2_ulim.png, id=1024, 421.575pt x 316.18124pt>
 File: img/nm_ctrl_h2ts2_ulim.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2_ulim.png>
-Package pdftex.def Info: img/nm_ctrl_h2ts2_ulim.png used on input line 531.
+Package pdftex.def Info: img/nm_ctrl_h2ts2_ulim.png used on input line 532.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
- [54 <./img/nm_ctrl_h1ts2_ulim.png (PNG copy)>] <img/nm_u1_ulim.png, id=1029, 4
+ [54 <./img/nm_ctrl_h1ts2_ulim.png (PNG copy)>] <img/nm_u1_ulim.png, id=1030, 4
 21.575pt x 316.18124pt>
 File: img/nm_u1_ulim.png Graphic file (type png)
 
 <use img/nm_u1_ulim.png>
-Package pdftex.def Info: img/nm_u1_ulim.png used on input line 538.
+Package pdftex.def Info: img/nm_u1_ulim.png used on input line 539.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/nm_u2_ulim.png, id=1030, 421.575pt x 316.18124pt>
+<img/nm_u2_ulim.png, id=1031, 421.575pt x 316.18124pt>
 File: img/nm_u2_ulim.png Graphic file (type png)
 
 <use img/nm_u2_ulim.png>
-Package pdftex.def Info: img/nm_u2_ulim.png used on input line 545.
+Package pdftex.def Info: img/nm_u2_ulim.png used on input line 546.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [55 <./img/nm_ctrl_h2ts2_ulim.png (PNG copy)> <./img/nm_u1_ulim.png (PNG copy)
 >]
-<img/nm_ctrl_h1ts2.png, id=1035, 421.575pt x 316.18124pt>
+<img/nm_ctrl_h1ts2.png, id=1036, 421.575pt x 316.18124pt>
 File: img/nm_ctrl_h1ts2.png Graphic file (type png)
 
 <use img/nm_ctrl_h1ts2.png>
-Package pdftex.def Info: img/nm_ctrl_h1ts2.png used on input line 553.
+Package pdftex.def Info: img/nm_ctrl_h1ts2.png used on input line 554.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [56 <./img/nm_u2_ulim.png (PNG copy)>]
-<img/nm_ctrl_h2ts2.png, id=1040, 421.575pt x 316.18124pt>
+<img/nm_ctrl_h2ts2.png, id=1041, 421.575pt x 316.18124pt>
 File: img/nm_ctrl_h2ts2.png Graphic file (type png)
 
 <use img/nm_ctrl_h2ts2.png>
-Package pdftex.def Info: img/nm_ctrl_h2ts2.png used on input line 560.
+Package pdftex.def Info: img/nm_ctrl_h2ts2.png used on input line 561.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/nm_u1_wind.png, id=1041, 422.32782pt x 316.18124pt>
+<img/nm_u1_wind.png, id=1042, 422.32782pt x 316.18124pt>
 File: img/nm_u1_wind.png Graphic file (type png)
 
 <use img/nm_u1_wind.png>
-Package pdftex.def Info: img/nm_u1_wind.png used on input line 567.
+Package pdftex.def Info: img/nm_u1_wind.png used on input line 568.
 (pdftex.def)             Requested size: 395.09361pt x 295.77155pt.
  [57 <./img/nm_ctrl_h1ts2.png (PNG copy)> <./img/nm_ctrl_h2ts2.png (PNG copy)>]
 
-<img/nm_u2_wind.png, id=1046, 421.575pt x 316.18124pt>
+<img/nm_u2_wind.png, id=1047, 421.575pt x 316.18124pt>
 File: img/nm_u2_wind.png Graphic file (type png)
 
 <use img/nm_u2_wind.png>
-Package pdftex.def Info: img/nm_u2_wind.png used on input line 574.
+Package pdftex.def Info: img/nm_u2_wind.png used on input line 575.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/ctrl_realh1.png, id=1053, 421.575pt x 316.18124pt>
+<img/ctrl_realh1.png, id=1054, 421.575pt x 316.18124pt>
 File: img/ctrl_realh1.png Graphic file (type png)
 
 <use img/ctrl_realh1.png>
-Package pdftex.def Info: img/ctrl_realh1.png used on input line 583.
+Package pdftex.def Info: img/ctrl_realh1.png used on input line 584.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [58 <./img/nm_u1_wind.png (PNG copy)> <./img/nm_u2_wind.png (PNG copy)>] <img/
-ctrl_realh2.png, id=1058, 421.575pt x 316.18124pt>
+ctrl_realh2.png, id=1059, 421.575pt x 316.18124pt>
 File: img/ctrl_realh2.png Graphic file (type png)
 
 <use img/ctrl_realh2.png>
-Package pdftex.def Info: img/ctrl_realh2.png used on input line 590.
+Package pdftex.def Info: img/ctrl_realh2.png used on input line 591.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [59 <./img/ctrl_realh1.png (PNG copy)>]
-<img/ctrl_realv1.png, id=1063, 421.575pt x 316.18124pt>
+<img/ctrl_realv1.png, id=1064, 421.575pt x 316.18124pt>
 File: img/ctrl_realv1.png Graphic file (type png)
 
 <use img/ctrl_realv1.png>
-Package pdftex.def Info: img/ctrl_realv1.png used on input line 597.
+Package pdftex.def Info: img/ctrl_realv1.png used on input line 598.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
 
-<img/ctrl_realv2.png, id=1064, 421.575pt x 316.18124pt>
+<img/ctrl_realv2.png, id=1065, 421.575pt x 316.18124pt>
 File: img/ctrl_realv2.png Graphic file (type png)
 
 <use img/ctrl_realv2.png>
-Package pdftex.def Info: img/ctrl_realv2.png used on input line 604.
+Package pdftex.def Info: img/ctrl_realv2.png used on input line 605.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [60 <./img/ctrl_realh2.png (PNG copy)> <./img/ctrl_realv1.png (PNG copy)>])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 154.
  [61 <./img/ctrl_realv2.png (PNG copy)>]
 \openout2 = `capt_conclusao.aux'.
 
@@ -2030,21 +2032,21 @@ Package babel Info: Redefining portuges shorthand "|
 Chapter 8.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 147.
+(babel)             in language  on input line 157.
  [62
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 160.
  (thesis.bbl)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 165.
  [63
 
 
@@ -2079,7 +2081,7 @@ Overfull \hbox (120.588pt too wide) in paragraph at lines 18--19
  []
 
 ) (codigo/fuzzy_pertinencia.m [67])
-<img/simOPC.png, id=1294, 878.53218pt x 453.94594pt>
+<img/simOPC.png, id=1295, 878.53218pt x 453.94594pt>
 File: img/simOPC.png Graphic file (type png)
  <use img/simOPC.png>
 Package pdftex.def Info: img/simOPC.png used on input line 22.
@@ -2099,27 +2101,27 @@ Overfull \hbox (28.78706pt too wide) in paragraph at lines 94--96
 
 [71]))
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 165.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 155.
+(babel)             in language  on input line 165.
  [72]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 157.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 157.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
  (thesis.aux (abstract.aux) (symbols.aux) (notation.aux)
 (capt_intro.aux) (capt_descricao.aux) (capt_fundFuzzy.aux) (capt_controle.aux)
 (capt_modelagem.aux) (capt_implementacao.aux) (capt_resultados.aux)
 (capt_conclusao.aux) (anexo_matlab.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 157.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 157.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 53267602A2C83B42269DFC140DC95349;3919.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 157.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 13564 strings out of 493334
- 197246 string characters out of 3139236
+ 13569 strings out of 493334
+ 197370 string characters out of 3139252
  319610 words of memory out of 3000000
- 16016 multiletter control sequences out of 15000+200000
+ 16020 multiletter control sequences out of 15000+200000
  76829 words of font info for 100 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  44i,22n,42p,1221b,1828s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2141,9 +2143,9 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on thesis.pdf (85 pages, 5466928 bytes).
+Output written on thesis.pdf (85 pages, 9451810 bytes).
 PDF statistics:
- 1680 PDF objects out of 1728 (max. 8388607)
+ 1681 PDF objects out of 1728 (max. 8388607)
  627 named destinations out of 1000 (max. 500000)
- 907 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 912 words of extra memory for PDF output out of 10000 (max. 10000000)
 
