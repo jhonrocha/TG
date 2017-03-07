@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  6 MAR 2017 20:38
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2016.11.8)  7 MAR 2017 17:01
 entering extended mode
 **./thesis.tex
 (thesis.tex
@@ -1121,14 +1121,14 @@ Package babel Info: Redefining portuges shorthand "|
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 128.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 124.
+(babel)             in language  on input line 128.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.124 \agradecimentos
+l.128 \agradecimentos
                       [1
 
 ]
@@ -1136,14 +1136,14 @@ l.124 \agradecimentos
 
  (abstract.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 130.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 126.
+(babel)             in language  on input line 130.
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.126 \include{abstract}
+l.130 \include{abstract}
                          [1
 
 ] (thesis.toc
@@ -1157,9 +1157,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sc' in size <10.95> not available
 \openout4 = `thesis.toc'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 134.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 130.
+(babel)             in language  on input line 134.
  [3] (thesis.lof [4
 
 ])
@@ -1167,18 +1167,18 @@ Package babel Info: Redefining portuges shorthand "|
 \openout5 = `thesis.lof'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 136.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 132.
+(babel)             in language  on input line 136.
  [5]
 (thesis.lot)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 138.
  [6
 
 ]
@@ -1186,9 +1186,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (symbols.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 138.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 134.
+(babel)             in language  on input line 138.
  [7
 
 
@@ -1197,9 +1197,9 @@ Package babel Info: Redefining portuges shorthand "|
 
  (notation.tex)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 140.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 136.
+(babel)             in language  on input line 140.
  [8
 
 
@@ -1222,9 +1222,9 @@ l.17 C
 
 ])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 146.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 142.
+(babel)             in language  on input line 146.
  [2]
 \openout2 = `capt_descricao.aux'.
 
@@ -1316,9 +1316,9 @@ Package pdftex.def Info: img/strText.png used on input line 230.
 (pdftex.def)             Requested size: 288.28246pt x 142.26378pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 148.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 144.
+(babel)             in language  on input line 148.
 
 [11 <./img/strText.png>]
 \openout2 = `capt_fundFuzzy.aux'.
@@ -1454,9 +1454,9 @@ Package pdftex.def Info: img/pert_mq.png used on input line 76.
 [14 <./img/pert_mf.png (PNG copy)> <./img/pert_f.png (PNG copy)> <./img/pert_q.
 png (PNG copy)> <./img/pert_mq.png (PNG copy)>] [15] [16])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 150.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 146.
+(babel)             in language  on input line 150.
  [17]
 \openout2 = `capt_controle.aux'.
 
@@ -1478,9 +1478,9 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/ptm/b/it' tried instead on input line 31.
  [19])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 152.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 148.
+(babel)             in language  on input line 152.
 
 [20]
 \openout2 = `capt_modelagem.aux'.
@@ -1524,9 +1524,9 @@ Package pdftex.def Info: img/modelo_controlado.png used on input line 217.
 (pdftex.def)             Requested size: 441.01772pt x 201.19728pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 154.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 150.
+(babel)             in language  on input line 154.
  [25]
 \openout2 = `capt_implementacao.aux'.
 
@@ -1710,9 +1710,9 @@ Package pdftex.def Info: img/tags2.png used on input line 362.
 (pdftex.def)             Requested size: 308.71104pt x 30.47505pt.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 156.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 152.
+(babel)             in language  on input line 156.
  [34 <./img/clp_bf2.png> <./img/tags1.png> <./img/tags2.png>]
 \openout2 = `capt_resultados.aux'.
 
@@ -2021,9 +2021,9 @@ Package pdftex.def Info: img/ctrl_realv2.png used on input line 605.
 (pdftex.def)             Requested size: 394.38933pt x 295.77155pt.
  [60 <./img/ctrl_realh2.png (PNG copy)> <./img/ctrl_realv1.png (PNG copy)>])
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 158.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 154.
+(babel)             in language  on input line 158.
  [61 <./img/ctrl_realv2.png (PNG copy)>]
 \openout2 = `capt_conclusao.aux'.
 
@@ -2032,21 +2032,21 @@ Package babel Info: Redefining portuges shorthand "|
 Chapter 8.
 )
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 161.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 157.
+(babel)             in language  on input line 161.
  [62
 
 
 
 ]
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 160.
+(babel)             in language  on input line 164.
  (thesis.bbl)
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 169.
  [63
 
 
@@ -2101,21 +2101,21 @@ Overfull \hbox (28.78706pt too wide) in paragraph at lines 94--96
 
 [71]))
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 169.
 Package babel Info: Redefining portuges shorthand "|
-(babel)             in language  on input line 165.
+(babel)             in language  on input line 169.
  [72]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 167.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 167.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 171.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 171.
  (thesis.aux (abstract.aux) (symbols.aux) (notation.aux)
 (capt_intro.aux) (capt_descricao.aux) (capt_fundFuzzy.aux) (capt_controle.aux)
 (capt_modelagem.aux) (capt_implementacao.aux) (capt_resultados.aux)
 (capt_conclusao.aux) (anexo_matlab.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 167.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 167.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 171.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 171.
 Package rerunfilecheck Info: File `thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 53267602A2C83B42269DFC140DC95349;3919.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 171.
  ) 
 Here is how much of TeX's memory you used:
  13569 strings out of 493334
@@ -2143,7 +2143,7 @@ C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmbi8a.pfb><C:/Program Files
 /MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts
 /type1/urw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmri8a.pfb>
-Output written on thesis.pdf (85 pages, 9451810 bytes).
+Output written on thesis.pdf (85 pages, 9459185 bytes).
 PDF statistics:
  1681 PDF objects out of 1728 (max. 8388607)
  627 named destinations out of 1000 (max. 500000)

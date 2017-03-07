@@ -98,7 +98,7 @@ Os módulos de entrada e saída foram instalados conforme a \hyperref[tab:modulo
 	}
 \end{table}
 
-Neste trabalho foram configuradas 4 entradas analógicas, sensores de pressão e 2 saídas analógicas, as bombas. O range de tensão fornecida pelos sensores de pressão é de 0-10V e o de entrada para utilização das bombas é de 0-24V. A tradução das tensões de entrada para os valores físicos, utilizados nas variáveis do controlador, foi feita a partir de uma interpolação de primeiro grau. O software RSLogix apresenta uma interface de simples configuração para esta tradução: tomando como entrada os valores físicos e aferidos em dois pontos, a proporção que descreve essas entradas é calculada automaticamente.
+Neste trabalho foram configuradas 4 entradas analógicas, sensores de pressão e 2 saídas analógicas, as bombas. O range de tensão fornecida pelos sensores de pressão é de 0-5V e o de entrada para utilização das bombas é de 0-5V. A tradução das tensões de entrada para os valores físicos, utilizados nas variáveis do controlador, foi feita a partir de uma interpolação de primeiro grau. O software RSLogix apresenta uma interface de simples configuração para esta tradução: tomando como entrada os valores físicos e aferidos em dois pontos, a proporção que descreve essas entradas é calculada automaticamente.
 
 A tabela a seguir descreve a configuração de cada um dos sinais de entrada e saída e os valores utilizados para identificação da curva que os traduzem:
 \begin{table}[H]
@@ -132,9 +132,9 @@ A tabela a seguir descreve a configuração de cada um dos sinais de entrada e s
 		\begin{tabular}{|c|c|c|c|c|c|}
 			\hline
 			Módulo & Descrição & Canal(Saída Analógica) & Range  \\
-			1756-IF8/A & Bomba 1 & 8 & 0-24 V \\
+			1756-IF8/A & Bomba 1 & 8 & 0-5 V \\
 			\hline
-			1756-IF8/A & Bomba 2 & 18 & 0-24 V \\
+			1756-IF8/A & Bomba 2 & 18 & 0-5 V \\
 			\hline
 		\end{tabular}
 	}
